@@ -21,3 +21,10 @@ Premium static brand website built with Astro.
 npm install
 npm run dev
 ```
+
+## Deploy
+
+```bash
+npm run build
+# 构建产物在 dist/，可部署到 Cloudflare Pages
+```
