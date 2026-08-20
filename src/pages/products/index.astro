@@ -1,17 +1,11 @@
 ---
-// 产品列表页（支持分类过滤）
+// 产品列表页（客户端分类过滤 - 适配纯静态部署）
 import Layout from '../../layouts/Layout.astro';
 import ProductGrid from '../../components/ProductGrid.astro';
 import { getCollection } from 'astro:content';
-import { CATEGORIES, getCategory } from '../../consts';
+import { CATEGORIES } from '../../consts';
 
 const allProducts = await getCollection('products');
-const activeCategory = Astro.url.searchParams.get('category') || 'all';
-
-const products =
-  activeCategory === 'all'
-    ? allProducts
-    : allProducts.filter((p) => p.data.category === activeCategory);
 ---
 
 <Layout title="Pet Carriers, Harnesses & Travel Essentials" description="Explore ONEPENUT premium pet carriers, dog harnesses, cat harnesses and travel essentials for wholesale, OEM and ODM.">
@@ -28,44 +22,121 @@ const products =
       </p>
     </div>
 
-    <!-- 分类过滤 -->
-    <div class="mt-8 flex flex-wrap justify-center gap-2">
-      <a
-        href="/products"
-        class={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-          activeCategory === 'all'
-            ? 'bg-olive text-cream'
-            : 'border border-milk-tea bg-white text-stone hover:border-olive hover:text-olive-dark'
-        }`}
+    <!-- 分类过滤（客户端） -->
+    <div class="mt-8 flex flex-wrap justify-center gap-2" id="category-filter">
+      <button
+        type="button"
+        class="filter-btn rounded-full px-4 py-2 text-sm font-medium transition-colors"
+        data-category="all"
       >
         All
-      </a>
+      </button>
       {CATEGORIES.map((c) => (
-        <a
-          href={`/products?category=${c.slug}`}
-          class={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-            activeCategory === c.slug
-              ? 'bg-olive text-cream'
-              : 'border border-milk-tea bg-white text-stone hover:border-olive hover:text-olive-dark'
-          }`}
+        <button
+          type="button"
+          class="filter-btn rounded-full px-4 py-2 text-sm font-medium transition-colors"
+          data-category={c.slug}
         >
           {c.name}
-        </a>
+        </button>
       ))}
     </div>
   </section>
 
   <!-- 产品网格 -->
   <section class="container-site pb-16 md:pb-24">
-    {products.length > 0 ? (
-      <ProductGrid products={products} />
-    ) : (
-      <div class="py-20 text-center">
-        <p class="text-lg font-medium text-dark-brown">No products in this category yet.</p>
-        <p class="mt-2 text-sm text-stone">
-          Check back soon, or contact us to learn about available lines.
-        </p>
-      </div>
-    )}
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" id="product-grid">
+      {allProducts.map((p) => (
+        <a
+          href={`/products/${p.slug}/`}
+          data-category={p.data.category || 'other'}
+          class="product-card group flex flex-col overflow-hidden rounded-3xl border border-milk-tea/60 bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-hover"
+        >
+          <div class="relative aspect-[4/3] overflow-hidden bg-milk-tea/30">
+            {p.data.image ? (
+              <img
+                src={p.data.image}
+                alt={p.data.title}
+                loading="lazy"
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            ) : (
+              <div class="flex h-full w-full items-center justify-center bg-milk-tea/30 text-olive/30">
+                <svg class="h-14 w-14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+            )}
+          </div>
+          <div class="flex flex-1 flex-col p-5">
+            <h3 class="font-display text-lg font-bold text-dark-brown transition-colors group-hover:text-olive-dark">
+              {p.data.title}
+            </h3>
+            <p class="mt-2 line-clamp-2 flex-1 text-sm leading-relaxed text-stone">
+              {p.data.description}
+            </p>
+            {p.data.sku && (
+              <p class="mt-3 text-xs font-medium text-caramel-dark">SKU: {p.data.sku}</p>
+            )}
+            <div class="mt-4 flex items-center justify-between border-t border-milk-tea/40 pt-4">
+              <span class="text-sm font-semibold text-olive-dark">View Details</span>
+              <svg class="h-4 w-4 text-stone transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+    <div id="empty-state" class="hidden py-20 text-center">
+      <p class="text-lg font-medium text-dark-brown">No products in this category yet.</p>
+      <p class="mt-2 text-sm text-stone">
+        Check back soon, or contact us to learn about available lines.
+      </p>
+    </div>
   </section>
 </Layout>
+
+<script>
+  // 客户端分类过滤
+  const btns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.product-card');
+  const emptyState = document.getElementById('empty-state');
+  const grid = document.getElementById('product-grid');
+
+  // 从 URL 读取初始分类
+  const params = new URLSearchParams(window.location.search);
+  let active = params.get('category') || 'all';
+
+  function applyFilter() {
+    let visible = 0;
+    cards.forEach((card) => {
+      const cat = card.dataset.category;
+      const show = active === 'all' || cat === active;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    if (emptyState) emptyState.classList.toggle('hidden', visible > 0);
+    if (grid) grid.classList.toggle('hidden', visible === 0);
+    btns.forEach((btn) => {
+      const isActive = btn.dataset.category === active;
+      btn.className =
+        'filter-btn rounded-full px-4 py-2 text-sm font-medium transition-colors ' +
+        (isActive ? 'bg-olive text-cream' : 'border border-milk-tea bg-white text-stone hover:border-olive hover:text-olive-dark');
+    });
+    // 更新 URL（不刷新页面）
+    const url = new URL(window.location);
+    if (active === 'all') url.searchParams.delete('category');
+    else url.searchParams.set('category', active);
+    window.history.replaceState({}, '', url);
+  }
+
+  btns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      active = btn.dataset.category;
+      applyFilter();
+    });
+  });
+
+  applyFilter();
+</script>
