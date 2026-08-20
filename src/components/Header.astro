@@ -1,0 +1,107 @@
+---
+// 顶部导航：Logo + 导航 + 获取报价 WhatsApp 按钮
+import { CONTACT, NAV_LINKS, SITE, whatsappLink } from '../consts';
+
+const path = Astro.url.pathname;
+const isActive = (href: string) =>
+  href === '/' ? path === '/' : path.startsWith(href);
+
+const quoteMsg = 'Hello ONEPENUT, I would like to get a quote for your pet products.';
+const quoteLink = whatsappLink(quoteMsg);
+---
+
+<header class="sticky top-0 z-40 border-b border-milk-tea/60 bg-cream/85 backdrop-blur-md">
+  <div class="container-site flex items-center justify-between py-3 md:py-4">
+    <!-- Logo -->
+    <a href="/" class="flex items-center gap-2.5" aria-label={SITE.name}>
+      <span class="flex h-10 w-10 items-center justify-center rounded-2xl bg-olive text-cream shadow-soft">
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+          <path d="M2 21c0-3 1.85-5.36 5.08-6"></path>
+        </svg>
+      </span>
+      <span class="flex flex-col leading-none">
+        <span class="font-display text-lg font-bold text-dark-brown md:text-xl">ONEPENUT</span>
+        <span class="text-[11px] tracking-[0.18em] text-stone">Pet Travel Essentials</span>
+      </span>
+    </a>
+
+    <!-- 桌面导航 -->
+    <nav class="hidden items-center gap-1 lg:flex">
+      {NAV_LINKS.map((link) => (
+        <a
+          href={link.href}
+          class={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+            isActive(link.href)
+              ? 'bg-olive/10 text-olive-dark'
+              : 'text-stone hover:bg-milk-tea/40 hover:text-dark-brown'
+          }`}
+        >
+          {link.label}
+        </a>
+      ))}
+    </nav>
+
+    <!-- 右侧操作区 -->
+    <div class="flex items-center gap-3">
+      <a
+        href={quoteLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-caramel hidden md:inline-flex"
+      >
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+        Get a Quote
+      </a>
+      <!-- 移动端菜单按钮 -->
+      <button
+        type="button"
+        id="menu-toggle"
+        class="inline-flex h-10 w-10 items-center justify-center rounded-2xl border border-milk-tea text-dark-brown lg:hidden"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- 移动端菜单 -->
+  <nav id="mobile-menu" class="hidden border-t border-milk-tea/60 bg-cream px-4 py-3 lg:hidden">
+    <div class="flex flex-col gap-1">
+      {NAV_LINKS.map((link) => (
+        <a
+          href={link.href}
+          class={`rounded-xl px-4 py-2.5 text-sm font-medium ${
+            isActive(link.href) ? 'bg-olive/10 text-olive-dark' : 'text-stone'
+          }`}
+        >
+          {link.label}
+        </a>
+      ))}
+      <a
+        href={quoteLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-caramel mt-2 justify-center"
+      >
+        Get a Quote
+      </a>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      const hidden = menu.classList.toggle('hidden');
+      toggle.setAttribute('aria-expanded', String(!hidden));
+    });
+  }
+</script>

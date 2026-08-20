@@ -1,19 +1,30 @@
-# Onepenut
+# ONEPENUT
 
-Premium static brand website built with Astro.
+Premium pet travel products brand website — carriers, harnesses and travel
+essentials for cats and dogs. B2B showcase with WhatsApp inquiry.
 
 ## Stack
 
 - Astro
-- Tailwind CSS
+- Tailwind CSS (v4, `@theme` custom palette)
 - Content Collections
-- Cloudflare Pages
+- Cloudflare Pages (Git integration, auto-deploy)
 
 ## Structure
 
+- `src/pages` - pages (home, products, product detail, about, contact)
+- `src/components` - Header, Footer, Hero, ProductCard/Grid, WhatsAppButton
 - `src/content/products` - product markdown data
-- `public/images` - static images
-- `src/pages/products` - product pages
+- `src/consts.ts` - brand, contact & category configuration
+- `src/styles/global.css` - Tailwind theme & brand palette
+
+## Configuration
+
+Edit `src/consts.ts` to update:
+
+- `CONTACT.whatsapp` - WhatsApp number (currently a placeholder, replace with real one)
+- `CONTACT.email` - contact email
+- `SITE` - brand name, tagline, SEO title/description
 
 ## Development
 
@@ -24,7 +35,7 @@ npm run dev
 
 ## Deploy
 
-```bash
-npm run build
-# 构建产物在 dist/，可部署到 Cloudflare Pages
-```
+Pushed to `main` on GitHub → Cloudflare Pages auto-builds & deploys
+(`npm run build`, output `dist/`). No local build needed.
+
+Live: https://onepenut.pages.dev

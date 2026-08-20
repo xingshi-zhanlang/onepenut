@@ -1,0 +1,14 @@
+---
+// 产品网格
+import ProductCard from './ProductCard.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  products: CollectionEntry<'products'>[];
+}
+const { products } = Astro.props;
+---
+
+<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  {products.map((p) => <ProductCard product={p} />)}
+</div>

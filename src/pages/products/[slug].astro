@@ -1,0 +1,95 @@
+---
+// 产品详情页
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+import { getCategory, whatsappLink } from '../../consts';
+
+export async function getStaticPaths() {
+  const products = await getCollection('products');
+  return products.map((p) => ({ params: { slug: p.slug }, props: { product: p } }));
+}
+
+const { product } = Astro.props;
+const { title, description, image, category, keywords } = product.data;
+const cat = category ? getCategory(category) : undefined;
+const inquiryMsg = `Hello ONEPENUT, I'm interested in "${title}". Please send me wholesale pricing and details.`;
+const inquiryLink = whatsappLink(inquiryMsg);
+const { Content } = await render(product);
+---
+
+<Layout title={title} description={description}>
+  <!-- 面包屑 -->
+  <div class="container-site pt-8">
+    <nav class="flex items-center gap-2 text-sm text-stone">
+      <a href="/" class="hover:text-olive-dark">Home</a>
+      <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg>
+      <a href="/products" class="hover:text-olive-dark">Products</a>
+      {cat && (
+        <>
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg>
+          <a href={`/products?category=${cat.slug}`} class="hover:text-olive-dark">{cat.name}</a>
+        </>
+      )}
+      <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"></path></svg>
+      <span class="text-dark-brown">{title}</span>
+    </nav>
+  </div>
+
+  <!-- 产品主体 -->
+  <section class="container-site grid gap-10 py-10 md:py-14 lg:grid-cols-2 lg:gap-16">
+    <!-- 图片 -->
+    <div class="overflow-hidden rounded-[2rem] border border-milk-tea/60 bg-white/60 shadow-card">
+      {image ? (
+        <img src={image} alt={title} class="aspect-square h-full w-full object-cover" />
+      ) : (
+        <div class="flex aspect-square items-center justify-center bg-gradient-to-br from-olive/10 via-milk-tea/30 to-caramel/10 text-olive/30">
+          <svg class="h-40 w-40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+          </svg>
+        </div>
+      )}
+    </div>
+
+    <!-- 详情 -->
+    <div>
+      {cat && (
+        <a href={`/products?category=${cat.slug}`} class="inline-flex items-center gap-1 rounded-full bg-olive/10 px-3 py-1 text-xs font-semibold text-olive-dark">
+          {cat.name}
+        </a>
+      )}
+      <h1 class="mt-4 font-display text-3xl font-bold text-dark-brown md:text-4xl">{title}</h1>
+      <p class="mt-4 text-base leading-relaxed text-stone">{description}</p>
+
+      {keywords && keywords.length > 0 && (
+        <div class="mt-5 flex flex-wrap gap-2">
+          {keywords.map((k) => (
+            <span class="rounded-full border border-milk-tea bg-white px-3 py-1 text-xs text-stone">{k}</span>
+          ))}
+        </div>
+      )}
+
+      <!-- 询盘 CTA -->
+      <div class="mt-8 rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+        <h2 class="font-display text-xl font-bold text-dark-brown">Interested in this product?</h2>
+        <p class="mt-2 text-sm text-stone">
+          Contact us for wholesale pricing, samples and OEM / ODM options. We
+          typically respond within 24 hours.
+        </p>
+        <div class="mt-5 flex flex-col gap-3 sm:flex-row">
+          <a href={inquiryLink} target="_blank" rel="noopener noreferrer" class="btn-wa">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.515 5.26l-.999 3.648 3.973-1.041z"/>
+            </svg>
+            Inquire on WhatsApp
+          </a>
+          <a href="/contact" class="btn-caramel">Contact Page</a>
+        </div>
+      </div>
+
+      <!-- 产品正文 -->
+      <div class="mt-8">
+        <Content />
+      </div>
+    </div>
+  </section>
+</Layout>
