@@ -40,7 +40,7 @@ const { Content } = await render(product);
     <!-- 图片 -->
     <div class="overflow-hidden rounded-[2rem] border border-milk-tea/60 bg-white/60 shadow-card">
       {image ? (
-        <img src={image} alt={title} class="aspect-square h-full w-full object-cover" />
+        <img src={image} alt={title} class="aspect-[4/3] h-full w-full object-cover" />
       ) : (
         <div class="flex aspect-square items-center justify-center bg-gradient-to-br from-olive/10 via-milk-tea/30 to-caramel/10 text-olive/30">
           <svg class="h-40 w-40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">

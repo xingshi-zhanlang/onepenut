@@ -1,32 +1,29 @@
 ---
-// 首页 Hero
+// 首页 Hero - 参考 Tuft&Paw 高端感：产品摄影 + 信任背书
 import { whatsappLink } from '../consts';
 const msg = 'Hello ONEPENUT, I would like to know more about your pet products.';
 const link = whatsappLink(msg);
 ---
 
-<section class="relative overflow-hidden">
+<section class="relative overflow-hidden bg-cream">
   <!-- 背景装饰 -->
   <div class="absolute inset-0 -z-10">
     <div class="absolute -left-24 -top-24 h-96 w-96 rounded-full bg-olive/10 blur-3xl"></div>
     <div class="absolute -right-24 top-40 h-96 w-96 rounded-full bg-caramel/10 blur-3xl"></div>
-    <svg class="absolute -right-10 top-20 h-40 w-40 text-olive/10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
-    </svg>
   </div>
 
-  <div class="container-site grid items-center gap-10 py-16 md:py-24 lg:grid-cols-2 lg:gap-16">
+  <div class="container-site grid items-center gap-12 py-16 md:py-24 lg:grid-cols-2 lg:gap-16">
     <div class="text-center lg:text-left">
       <span class="inline-flex items-center gap-2 rounded-full border border-caramel/30 bg-caramel/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-caramel-dark">
         Pet Travel Essentials
       </span>
       <h1 class="mt-5 text-4xl font-bold leading-tight text-dark-brown md:text-5xl lg:text-6xl">
-        Premium Pet Carriers, <span class="text-olive-dark">Made for the Journey</span>
+        Premium Pet Travel Gear, <span class="text-olive-dark">Designed for Comfort</span>
       </h1>
       <p class="mt-6 max-w-xl text-base leading-relaxed text-stone md:text-lg">
         ONEPENUT designs comfortable, safe and stylish travel gear for cats and
-        dogs. From airline-approved carriers to everyday harnesses — crafted for
-        global wholesale, OEM and ODM partners.
+        dogs. From airline-approved carriers to everyday harnesses — crafted
+        for global wholesale, OEM and ODM partners.
       </p>
 
       <div class="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start">
@@ -44,45 +41,48 @@ const link = whatsappLink(msg);
         </a>
       </div>
 
-      <!-- 统计 -->
-      <div class="mt-10 grid grid-cols-3 gap-4 border-t border-milk-tea/60 pt-8">
-        <div>
-          <p class="font-display text-2xl font-bold text-olive-dark md:text-3xl">5+</p>
-          <p class="mt-1 text-xs text-stone">Product Lines</p>
+      <!-- 信任背书（参考 Tuft&Paw 的专家背书） -->
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 border-t border-milk-tea/60 pt-8 lg:justify-start">
+        <div class="flex items-center gap-2">
+          <svg class="h-5 w-5 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 12l2 2 4-4M21 12c0 5-3.5 7.5-8.5 9.5C7.5 19.5 4 17 4 12V6l8.5-3.5L21 6v6z"></path>
+          </svg>
+          <span class="text-sm font-medium text-dark-brown">Quality Tested</span>
         </div>
-        <div>
-          <p class="font-display text-2xl font-bold text-olive-dark md:text-3xl">100+</p>
-          <p class="mt-1 text-xs text-stone">SKUs for Wholesale</p>
+        <div class="flex items-center gap-2">
+          <svg class="h-5 w-5 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zM9 22V12h6v10"></path>
+          </svg>
+          <span class="text-sm font-medium text-dark-brown">Global Shipping</span>
         </div>
-        <div>
-          <p class="font-display text-2xl font-bold text-olive-dark md:text-3xl">OEM</p>
-          <p class="mt-1 text-xs text-stone">Custom Branding</p>
+        <div class="flex items-center gap-2">
+          <svg class="h-5 w-5 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z M2 21c0-3 1.85-5.36 5.08-6"></path>
+          </svg>
+          <span class="text-sm font-medium text-dark-brown">Eco Materials</span>
         </div>
       </div>
     </div>
 
-    <!-- 右侧视觉卡片 -->
+    <!-- 右侧产品摄影（真实图片） -->
     <div class="relative">
-      <div class="overflow-hidden rounded-[2rem] border border-milk-tea/60 bg-white/60 shadow-card">
-        <div class="relative flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-olive/15 via-milk-tea/40 to-caramel/15">
-          <svg class="h-40 w-40 text-olive/30 md:h-52 md:w-52" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
-            <path d="M2 21c0-3 1.85-5.36 5.08-6"/>
-          </svg>
-          <span class="absolute inset-0 flex items-center justify-center text-sm font-medium text-olive-dark/60">
-            Pet carrier · travel · comfort
-          </span>
-        </div>
+      <div class="overflow-hidden rounded-[2rem] border border-milk-tea/60 bg-white shadow-card">
+        <img
+          src="/images/products/carrier-backpack.jpg"
+          alt="Pet carrier backpack for travel"
+          class="aspect-[4/3] h-full w-full object-cover"
+          loading="eager"
+        />
       </div>
 
       <!-- 浮动小卡片 -->
-      <div class="absolute -bottom-5 -left-4 rounded-2xl border border-milk-tea/60 bg-white/90 px-5 py-4 shadow-soft backdrop-blur md:-left-8">
+      <div class="absolute -bottom-5 -left-4 rounded-2xl border border-milk-tea/60 bg-white/95 px-5 py-4 shadow-soft backdrop-blur md:-left-8">
         <p class="text-xs text-stone">Airline Approved</p>
         <p class="font-display text-lg font-bold text-olive-dark">Safe Travel</p>
       </div>
-      <div class="absolute -top-4 -right-2 rounded-2xl border border-milk-tea/60 bg-white/90 px-5 py-4 shadow-soft backdrop-blur md:-right-6">
-        <p class="text-xs text-stone">Eco Materials</p>
-        <p class="font-display text-lg font-bold text-caramel-dark">RPET & Nylon</p>
+      <div class="absolute -top-4 -right-2 rounded-2xl border border-milk-tea/60 bg-white/95 px-5 py-4 shadow-soft backdrop-blur md:-right-6">
+        <p class="text-xs text-stone">Trusted Quality</p>
+        <p class="font-display text-lg font-bold text-caramel-dark">100+ SKUs</p>
       </div>
     </div>
   </div>
