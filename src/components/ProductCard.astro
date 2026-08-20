@@ -7,7 +7,7 @@ interface Props {
   product: CollectionEntry<'products'>;
 }
 const { product } = Astro.props;
-const { title, description, image, category } = product.data;
+const { title, description, image, category, sku } = product.data;
 const cat = category ? getCategory(category) : undefined;
 const inquiryMsg = `Hello ONEPENUT, I'm interested in "${title}". Please send me more details.`;
 ---
@@ -45,6 +45,9 @@ const inquiryMsg = `Hello ONEPENUT, I'm interested in "${title}". Please send me
     <p class="mt-2 line-clamp-2 flex-1 text-sm leading-relaxed text-stone">
       {description}
     </p>
+    {sku && (
+      <p class="mt-3 text-xs font-medium text-caramel-dark">SKU: {sku}</p>
+    )}
 
     <div class="mt-4 flex items-center justify-between border-t border-milk-tea/40 pt-4">
       <span class="text-sm font-semibold text-olive-dark">View Details</span>

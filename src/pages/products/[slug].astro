@@ -10,7 +10,7 @@ export async function getStaticPaths() {
 }
 
 const { product } = Astro.props;
-const { title, description, image, category, keywords } = product.data;
+const { title, description, image, category, keywords, gallery, sku } = product.data;
 const cat = category ? getCategory(category) : undefined;
 const inquiryMsg = `Hello ONEPENUT, I'm interested in "${title}". Please send me wholesale pricing and details.`;
 const inquiryLink = whatsappLink(inquiryMsg);
@@ -27,6 +27,7 @@ const productSchema = JSON.stringify({
       description,
       image: image ? new URL(image, SITE.url).href : undefined,
       brand: { '@type': 'Brand', name: SITE.name },
+      sku: sku || undefined,
       category: cat?.name,
       offers: {
         '@type': 'Offer',
@@ -73,26 +74,62 @@ const productSchema = JSON.stringify({
 
   <!-- 产品主体 -->
   <section class="container-site grid gap-10 py-10 md:py-14 lg:grid-cols-2 lg:gap-16">
-    <!-- 图片 -->
-    <div class="overflow-hidden rounded-[2rem] border border-milk-tea/60 bg-white/60 shadow-card">
-      {image ? (
-        <img src={image} alt={title} class="aspect-[4/3] h-full w-full object-cover" />
-      ) : (
-        <div class="flex aspect-square items-center justify-center bg-gradient-to-br from-olive/10 via-milk-tea/30 to-caramel/10 text-olive/30">
-          <svg class="h-40 w-40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
-          </svg>
-        </div>
-      )}
+    <!-- 图片画廊 -->
+    <div>
+      <div class="overflow-hidden rounded-[2rem] border border-milk-tea/60 bg-white/60 shadow-card">
+        <img
+          id="main-image"
+          src={image || (gallery?.home || gallery?.studio || gallery?.outdoor)}
+          alt={title}
+          class="aspect-[4/3] h-full w-full object-cover"
+        />
+      </div>
+      <!-- 缩略图切换 -->
+      <div class="mt-4 flex gap-3">
+        {(gallery?.home || image) && (
+          <button
+            type="button"
+            class="gallery-thumb flex-1 overflow-hidden rounded-xl border-2 border-olive"
+            data-img={gallery?.home || image}
+          >
+            <img src={gallery?.home || image} alt="Home scene" class="aspect-[4/3] h-full w-full object-cover" />
+          </button>
+        )}
+        {gallery?.studio && (
+          <button
+            type="button"
+            class="gallery-thumb flex-1 overflow-hidden rounded-xl border border-milk-tea"
+            data-img={gallery.studio}
+          >
+            <img src={gallery.studio} alt="Studio scene" class="aspect-[4/3] h-full w-full object-cover" />
+          </button>
+        )}
+        {gallery?.outdoor && (
+          <button
+            type="button"
+            class="gallery-thumb flex-1 overflow-hidden rounded-xl border border-milk-tea"
+            data-img={gallery.outdoor}
+          >
+            <img src={gallery.outdoor} alt="Outdoor use scene" class="aspect-[4/3] h-full w-full object-cover" />
+          </button>
+        )}
+      </div>
     </div>
 
     <!-- 详情 -->
     <div>
-      {cat && (
-        <a href={`/products?category=${cat.slug}`} class="inline-flex items-center gap-1 rounded-full bg-olive/10 px-3 py-1 text-xs font-semibold text-olive-dark">
-          {cat.name}
-        </a>
-      )}
+      <div class="flex items-center gap-2">
+        {cat && (
+          <a href={`/products?category=${cat.slug}`} class="inline-flex items-center gap-1 rounded-full bg-olive/10 px-3 py-1 text-xs font-semibold text-olive-dark">
+            {cat.name}
+          </a>
+        )}
+        {sku && (
+          <span class="inline-flex items-center rounded-full bg-caramel/10 px-3 py-1 text-xs font-semibold text-caramel-dark">
+            SKU: {sku}
+          </span>
+        )}
+      </div>
       <h1 class="mt-4 font-display text-3xl font-bold text-dark-brown md:text-4xl">{title}</h1>
       <p class="mt-4 text-base leading-relaxed text-stone">{description}</p>
 
@@ -129,3 +166,22 @@ const productSchema = JSON.stringify({
     </div>
   </section>
 </Layout>
+
+<script>
+  // 产品图画廊：点击缩略图切换主图
+  const mainImage = document.getElementById('main-image');
+  document.querySelectorAll('.gallery-thumb').forEach((thumb) => {
+    thumb.addEventListener('click', () => {
+      const img = thumb.dataset.img;
+      if (img && mainImage) {
+        mainImage.src = img;
+        document.querySelectorAll('.gallery-thumb').forEach((t) => {
+          t.classList.remove('border-olive');
+          t.classList.add('border-milk-tea');
+        });
+        thumb.classList.remove('border-milk-tea');
+        thumb.classList.add('border-olive');
+      }
+    });
+  });
+</script>

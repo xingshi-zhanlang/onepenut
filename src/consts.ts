@@ -40,6 +40,13 @@ export interface CategoryInfo {
 
 export const CATEGORIES: CategoryInfo[] = [
   {
+    slug: 'new-arrivals',
+    name: 'New Arrivals',
+    description:
+      'Latest designs — fresh from the studio, ready for wholesale and OEM.',
+    tagline: 'Fresh from the studio',
+  },
+  {
     slug: 'carrier-bags',
     name: 'Carrier Bags',
     description:
@@ -47,24 +54,24 @@ export const CATEGORIES: CategoryInfo[] = [
     tagline: 'Carry your companion',
   },
   {
-    slug: 'dog-travel',
-    name: 'Dog Travel',
-    description:
-      'Dog harnesses, leashes, head collars and travel accessories for every adventure.',
-    tagline: 'Adventure together',
-  },
-  {
     slug: 'cat-products',
     name: 'Cat Products',
     description:
-      'Cat harnesses, leashes, recovery suits and interactive toys designed for feline comfort.',
+      'Cat harnesses, leashes and travel gear designed for feline comfort and safety.',
     tagline: 'Made for cats',
+  },
+  {
+    slug: 'dog-travel',
+    name: 'Dog Travel',
+    description:
+      'Dog harnesses, leashes and travel accessories for every adventure.',
+    tagline: 'Adventure together',
   },
   {
     slug: 'functional',
     name: 'Functional Gear',
     description:
-      'Pet strollers, travel bowls, car seats and bath accessories for every journey.',
+      'Pet travel bowls, strollers and essentials for every journey.',
     tagline: 'Thoughtful essentials',
   },
 ];
