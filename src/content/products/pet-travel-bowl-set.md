@@ -1,7 +1,7 @@
 ---
 title: "Pet Travel Bowl Set with Collapsible Design"
 description: "A collapsible, portable travel bowl set for pets on the go. Food and water bowls fold flat for easy storage, perfect for trips and outdoor adventures."
-image: "/images/products/travel-bowl.jpg"
+image: "/images/products/travel-bowl.webp"
 category: "functional"
 seoTitle: "Pet Travel Bowl Set | ONEPENUT"
 seoDescription: "Collapsible portable pet travel bowl set. Food and water bowls fold flat for easy storage. Wholesale and OEM available."

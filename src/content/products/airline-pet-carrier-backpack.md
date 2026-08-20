@@ -1,7 +1,7 @@
 ---
 title: "Airline-Approved Pet Carrier Backpack"
 description: "A comfortable, expandable pet carrier backpack designed for airline travel and everyday outings. Ventilated mesh panels keep your pet cool and comfortable."
-image: "/images/products/carrier-backpack.jpg"
+image: "/images/products/carrier-backpack.webp"
 category: "carrier-bags"
 seoTitle: "Pet Carrier Backpack | ONEPENUT"
 seoDescription: "Airline-approved pet carrier backpack with expandable design and breathable mesh. Wholesale and OEM available."

@@ -2,7 +2,7 @@
 // 产品详情页
 import Layout from '../../layouts/Layout.astro';
 import { getCollection, render } from 'astro:content';
-import { getCategory, whatsappLink } from '../../consts';
+import { getCategory, whatsappLink, SITE } from '../../consts';
 
 export async function getStaticPaths() {
   const products = await getCollection('products');
@@ -15,9 +15,45 @@ const cat = category ? getCategory(category) : undefined;
 const inquiryMsg = `Hello ONEPENUT, I'm interested in "${title}". Please send me wholesale pricing and details.`;
 const inquiryLink = whatsappLink(inquiryMsg);
 const { Content } = await render(product);
+const pageUrl = new URL(`/products/${product.slug}/`, SITE.url).href;
+
+// Product 结构化数据 + 面包屑
+const productSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Product',
+      name: title,
+      description,
+      image: image ? new URL(image, SITE.url).href : undefined,
+      brand: { '@type': 'Brand', name: SITE.name },
+      category: cat?.name,
+      offers: {
+        '@type': 'Offer',
+        priceCurrency: 'USD',
+        availability: 'https://schema.org/InStock',
+        seller: { '@type': 'Organization', name: SITE.name },
+      },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: SITE.url },
+        { '@type': 'ListItem', position: 2, name: 'Products', item: `${SITE.url}/products/` },
+        ...(cat
+          ? [{ '@type': 'ListItem', position: 3, name: cat.name, item: `${SITE.url}/products/?category=${cat.slug}` }]
+          : []),
+        { '@type': 'ListItem', position: 4, name: title, item: pageUrl },
+      ],
+    },
+  ],
+});
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} image={image} type="product">
+  <!-- Product 结构化数据 -->
+  <script type="application/ld+json" set:html={productSchema}></script>
+
   <!-- 面包屑 -->
   <div class="container-site pt-8">
     <nav class="flex items-center gap-2 text-sm text-stone">
