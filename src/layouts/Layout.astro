@@ -20,10 +20,10 @@ const pageDesc = description || SITE.description;
 // canonical URL（基于当前请求地址）
 const canonicalUrl = new URL(Astro.url.pathname, SITE.url).href;
 
-// OG 图片（默认用品牌占位，可用 props 覆盖）
+// OG 图片（默认用品牌字母 Logo 分享图，可用 props 覆盖）
 const ogImage = image
   ? new URL(image, SITE.url).href
-  : `${SITE.url}/favicon.svg`;
+  : `${SITE.url}/og-default.png`;
 
 // 结构化数据：Organization + WebSite
 const orgSchema = JSON.stringify({
@@ -74,7 +74,11 @@ const orgSchema = JSON.stringify({
     <meta name="twitter:description" content={pageDesc} />
     <meta name="twitter:image" content={ogImage} />
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Favicon：字母 Logo 多尺寸 -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <!-- 字体异步加载（避免阻塞首屏渲染） -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
