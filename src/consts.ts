@@ -15,8 +15,8 @@ export const SITE = {
 export const CONTACT = {
   email: 'amy@onepenut.com',
   address: 'ONEPENUT Pet Products Co., Ltd. · China',
-  // Web3Forms access key（部署前替换为真实 key，见 https://web3forms.com）
-  web3formsKey: 'YOUR_ACCESS_KEY',
+  // Web3Forms access key（公开 key，可用于客户端代码）
+  web3formsKey: 'b344153d-527f-49f6-a5c8-5e25b5f4069b',
 } as const;
 
 // WhatsApp 询盘链接（预填默认消息）

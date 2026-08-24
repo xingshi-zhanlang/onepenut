@@ -38,6 +38,7 @@ const waMsg =
         <input type="hidden" name="access_key" value={CONTACT.web3formsKey} />
         <input type="hidden" name="subject" value="New Quote Request - ONEPENUT" />
         <input type="hidden" name="from_name" value="ONEPENUT Website" />
+        <input type="hidden" name="reply_to" value="email" />
         <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
 
         <div class="grid gap-5 sm:grid-cols-2">
@@ -169,10 +170,47 @@ const waMsg =
         >
           Send Quote Request
         </button>
-        <p class="mt-4 text-center text-xs text-stone">
+        <p id="form-status" class="mt-4 text-center text-xs text-stone">
           We typically reply within 24 hours. Your information is kept confidential.
         </p>
       </form>
+
+      <script>
+        const form = document.querySelector('form[action="https://api.web3forms.com/submit"]');
+        const status = document.getElementById('form-status');
+        if (form && status) {
+          form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            status.textContent = 'Sending your request...';
+            status.className = 'mt-4 text-center text-xs text-stone';
+            const btn = form.querySelector('button[type="submit"]');
+            if (btn) btn.disabled = true;
+            try {
+              const res = await fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { Accept: 'application/json' },
+              });
+              const data = await res.json();
+              if (data.success) {
+                status.textContent =
+                  'Thank you! Your quote request has been sent. We will reply within 24 hours.';
+                status.className =
+                  'mt-4 text-center text-xs font-semibold text-olive-dark';
+                form.reset();
+              } else {
+                throw new Error(data.message || 'Submit failed');
+              }
+            } catch (err) {
+              status.textContent =
+                'Sorry, something went wrong. Please try again or contact us on WhatsApp.';
+              status.className =
+                'mt-4 text-center text-xs font-semibold text-caramel';
+            }
+            if (btn) btn.disabled = false;
+          });
+        }
+      </script>
 
       <!-- 备选：WhatsApp -->
       <div class="mt-8 rounded-3xl border border-milk-tea/60 bg-cream/50 p-6 text-center md:p-8">
