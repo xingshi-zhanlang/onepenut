@@ -1,5 +1,7 @@
 // 站点全局配置：品牌与联系方式
-// ⚠️ TODO: 替换 WhatsApp 号码为真实号码
+// 🔒 隐私说明：真实 WhatsApp 号码不写入前端代码/HTML，仅存于服务端函数
+//    functions/whatsapp.js（或 Cloudflare 环境变量 WHATSAPP_NUMBER），
+//    前端通过 /api/whatsapp?msg=... 由服务端 302 跳转，防止爬虫抓取明文号码。
 export const SITE = {
   name: 'ONEPENUT',
   tagline: 'Pet Travel Essentials',
@@ -10,9 +12,7 @@ export const SITE = {
   url: 'https://onepenut.pages.dev',
 } as const;
 
-// ⚠️ TODO: 填入真实 WhatsApp 号码（含国家代码，如 8613800138000），由用户提供后替换
 export const CONTACT = {
-  whatsapp: '8613800138000', // 占位符：等待用户提供真实号码后替换
   email: 'amy@onepenut.com',
   address: 'ONEPENUT Pet Products Co., Ltd. · China',
   // Web3Forms access key（部署前替换为真实 key，见 https://web3forms.com）
@@ -20,8 +20,10 @@ export const CONTACT = {
 } as const;
 
 // WhatsApp 询盘链接（预填默认消息）
+// 安全实现：返回站内代理路径，由 Cloudflare Pages Function 服务端 302 跳转到 wa.me，
+// 前端 HTML/JS 中不出现真实号码，避免被爬虫抓取明文手机号。
 export const whatsappLink = (msg: string) =>
-  `https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent(msg)}`;
+  `/api/whatsapp?msg=${encodeURIComponent(msg)}`;
 
 // 导航
 export const NAV_LINKS = [
