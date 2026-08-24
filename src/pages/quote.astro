@@ -1,0 +1,194 @@
+---
+// 报价请求页：表单提交至 Web3Forms（发到 amy@onepenut.com）
+import Layout from '../layouts/Layout.astro';
+import { CONTACT, whatsappLink } from '../consts';
+
+const waMsg =
+  'Hello ONEPENUT, I would like to request a quotation for your pet products.';
+---
+
+<Layout
+  title="Request a Quote - Wholesale, OEM & ODM"
+  description="Request a wholesale quotation from ONEPENUT. Tell us about your product, quantity and OEM / ODM requirements — we reply within 24 hours."
+>
+  <!-- 页头 -->
+  <section class="container-site py-12 md:py-16">
+    <div class="mx-auto max-w-3xl text-center">
+      <span class="text-sm font-semibold uppercase tracking-[0.2em] text-caramel">
+        Get a Quote
+      </span>
+      <h1 class="mt-3 font-display text-4xl font-bold text-dark-brown md:text-5xl">
+        Request a wholesale quotation
+      </h1>
+      <p class="mt-5 text-lg text-stone">
+        Tell us about your project — products, quantities and customization.
+        Our team replies within 24 hours, usually much faster.
+      </p>
+    </div>
+  </section>
+
+  <section class="container-site pb-16 md:pb-24">
+    <div class="mx-auto max-w-3xl">
+      <!-- 报价表单 -->
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card md:p-10"
+      >
+        <input type="hidden" name="access_key" value={CONTACT.web3formsKey} />
+        <input type="hidden" name="subject" value="New Quote Request - ONEPENUT" />
+        <input type="hidden" name="from_name" value="ONEPENUT Website" />
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
+
+        <div class="grid gap-5 sm:grid-cols-2">
+          <div>
+            <label for="name" class="mb-1.5 block text-sm font-semibold text-dark-brown">
+              Your Name <span class="text-caramel">*</span>
+            </label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+              placeholder="John Smith"
+              class="w-full rounded-xl border border-milk-tea/60 bg-cream/50 px-4 py-3 text-sm text-dark-brown outline-none transition-colors placeholder:text-stone/60 focus:border-olive"
+            />
+          </div>
+          <div>
+            <label for="email" class="mb-1.5 block text-sm font-semibold text-dark-brown">
+              Business Email <span class="text-caramel">*</span>
+            </label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="you@company.com"
+              class="w-full rounded-xl border border-milk-tea/60 bg-cream/50 px-4 py-3 text-sm text-dark-brown outline-none transition-colors placeholder:text-stone/60 focus:border-olive"
+            />
+          </div>
+          <div>
+            <label for="company" class="mb-1.5 block text-sm font-semibold text-dark-brown">
+              Company
+            </label>
+            <input
+              id="company"
+              name="company"
+              type="text"
+              placeholder="Your company name"
+              class="w-full rounded-xl border border-milk-tea/60 bg-cream/50 px-4 py-3 text-sm text-dark-brown outline-none transition-colors placeholder:text-stone/60 focus:border-olive"
+            />
+          </div>
+          <div>
+            <label for="country" class="mb-1.5 block text-sm font-semibold text-dark-brown">
+              Country / Region
+            </label>
+            <input
+              id="country"
+              name="country"
+              type="text"
+              placeholder="e.g. Germany"
+              class="w-full rounded-xl border border-milk-tea/60 bg-cream/50 px-4 py-3 text-sm text-dark-brown outline-none transition-colors placeholder:text-stone/60 focus:border-olive"
+            />
+          </div>
+          <div>
+            <label for="product" class="mb-1.5 block text-sm font-semibold text-dark-brown">
+              Product of Interest <span class="text-caramel">*</span>
+            </label>
+            <select
+              id="product"
+              name="product"
+              required
+              class="w-full rounded-xl border border-milk-tea/60 bg-cream/50 px-4 py-3 text-sm text-dark-brown outline-none transition-colors focus:border-olive"
+            >
+              <option value="">Select a category</option>
+              <option value="Carrier Bags">Carrier Bags</option>
+              <option value="Cat Products">Cat Products</option>
+              <option value="Dog Travel">Dog Travel</option>
+              <option value="Functional Gear">Functional Gear</option>
+              <option value="New Arrivals">New Arrivals</option>
+              <option value="Multiple / Whole Range">Multiple / Whole Range</option>
+            </select>
+          </div>
+          <div>
+            <label for="quantity" class="mb-1.5 block text-sm font-semibold text-dark-brown">
+              Estimated Quantity
+            </label>
+            <select
+              id="quantity"
+              name="quantity"
+              class="w-full rounded-xl border border-milk-tea/60 bg-cream/50 px-4 py-3 text-sm text-dark-brown outline-none transition-colors focus:border-olive"
+            >
+              <option value="">Select quantity</option>
+              <option value="Less than 100 pcs">Less than 100 pcs</option>
+              <option value="100 - 500 pcs">100 - 500 pcs</option>
+              <option value="500 - 2000 pcs">500 - 2000 pcs</option>
+              <option value="2000+ pcs">2000+ pcs</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <label for="service" class="mb-1.5 block text-sm font-semibold text-dark-brown">
+            Service Needed
+          </label>
+          <div class="flex flex-wrap gap-2.5">
+            {[
+              ['wholesale', 'Wholesale'],
+              ['oem', 'OEM / ODM'],
+              ['custom', 'Custom Branding'],
+              ['sample', 'Samples'],
+            ].map(([val, label]) => (
+              <label
+                class="inline-flex cursor-pointer items-center gap-2 rounded-full border border-milk-tea/60 bg-cream/50 px-4 py-2 text-sm font-medium text-stone transition-colors has-[:checked]:border-olive has-[:checked]:bg-olive/10 has-[:checked]:text-olive-dark"
+              >
+                <input type="checkbox" name="service" value={val} class="accent-olive" />
+                {label}
+              </label>
+            ))}
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <label for="message" class="mb-1.5 block text-sm font-semibold text-dark-brown">
+            Project Details
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Tell us about your project — target products, materials, colors, packaging, timeline..."
+            class="w-full rounded-xl border border-milk-tea/60 bg-cream/50 px-4 py-3 text-sm text-dark-brown outline-none transition-colors placeholder:text-stone/60 focus:border-olive"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="btn-caramel mt-7 w-full justify-center text-base"
+        >
+          Send Quote Request
+        </button>
+        <p class="mt-4 text-center text-xs text-stone">
+          We typically reply within 24 hours. Your information is kept confidential.
+        </p>
+      </form>
+
+      <!-- 备选：WhatsApp -->
+      <div class="mt-8 rounded-3xl border border-milk-tea/60 bg-cream/50 p-6 text-center md:p-8">
+        <p class="text-sm text-stone">Prefer instant messaging?</p>
+        <a
+          href={whatsappLink(waMsg)}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-wa mt-4 inline-flex"
+        >
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.515 5.26l-.999 3.648 3.973-1.041z"/>
+          </svg>
+          Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

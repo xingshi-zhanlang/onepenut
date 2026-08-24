@@ -1,13 +1,10 @@
 ---
-// 顶部导航：Logo + 导航 + 获取报价 WhatsApp 按钮
-import { CONTACT, NAV_LINKS, SITE, whatsappLink } from '../consts';
+// 顶部导航：Logo + 导航 + 获取报价按钮
+import { NAV_LINKS, SITE } from '../consts';
 
 const path = Astro.url.pathname;
 const isActive = (href: string) =>
   href === '/' ? path === '/' : path.startsWith(href);
-
-const quoteMsg = 'Hello ONEPENUT, I would like to get a quote for your pet products.';
-const quoteLink = whatsappLink(quoteMsg);
 ---
 
 <header class="sticky top-0 z-40 border-b border-milk-tea/60 bg-cream/85 backdrop-blur-md">
@@ -46,9 +43,7 @@ const quoteLink = whatsappLink(quoteMsg);
     <!-- 右侧操作区 -->
     <div class="flex items-center gap-3">
       <a
-        href={quoteLink}
-        target="_blank"
-        rel="noopener noreferrer"
+        href="/quote"
         class="btn-caramel hidden md:inline-flex"
       >
         <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -85,9 +80,7 @@ const quoteLink = whatsappLink(quoteMsg);
         </a>
       ))}
       <a
-        href={quoteLink}
-        target="_blank"
-        rel="noopener noreferrer"
+        href="/quote"
         class="btn-caramel mt-2 justify-center"
       >
         Get a Quote

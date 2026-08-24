@@ -10,12 +10,13 @@ export const SITE = {
   url: 'https://onepenut.pages.dev',
 } as const;
 
-// TODO: 替换为真实 WhatsApp 号码（含国家代码，如 8613800138000）
+// ⚠️ TODO: 填入真实 WhatsApp 号码（含国家代码，如 8613800138000），由用户提供后替换
 export const CONTACT = {
-  whatsapp: '8613800138000', // 占位符，请替换
-  whatsappDisplay: '+86 138 0013 8000',
-  email: 'sales@onepenut.com',
+  whatsapp: '8613800138000', // 占位符：等待用户提供真实号码后替换
+  email: 'amy@onepenut.com',
   address: 'ONEPENUT Pet Products Co., Ltd. · China',
+  // Web3Forms access key（部署前替换为真实 key，见 https://web3forms.com）
+  web3formsKey: 'YOUR_ACCESS_KEY',
 } as const;
 
 // WhatsApp 询盘链接（预填默认消息）
@@ -26,6 +27,7 @@ export const whatsappLink = (msg: string) =>
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/products', label: 'Products' },
+  { href: '/quote', label: 'Get a Quote' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];
