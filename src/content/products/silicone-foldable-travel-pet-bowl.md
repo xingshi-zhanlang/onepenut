@@ -2,7 +2,7 @@
 title: "Silicone Foldable Travel Pet Bowl"
 description: "Silicone Foldable Travel Pet Bowl for cats and dogs. Premium quality pet travel gear from ONEPENUT, available for wholesale, OEM and ODM."
 image: "/images/products/silicone-foldable-travel-pet-bowl-home.webp"
-category: "functional"
+category: "accessories"
 seoTitle: "Silicone Foldable Travel Pet Bowl | ONEPENUT"
 sku: "HD013017"
 seoDescription: "Silicone Foldable Travel Pet Bowl. Premium pet products for wholesale, OEM and ODM from ONEPENUT."

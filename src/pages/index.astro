@@ -88,7 +88,7 @@ const quoteLink = whatsappLink(quoteMsg);
         >
           <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-olive/10 text-olive-dark">
             <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+              <path d={c.icon}></path>
             </svg>
           </div>
           <h3 class="mt-4 font-display text-lg font-bold text-dark-brown group-hover:text-olive-dark">
@@ -189,6 +189,98 @@ const quoteLink = whatsappLink(quoteMsg);
           <p class="font-display text-3xl font-bold text-cream md:text-4xl">24h</p>
           <p class="mt-2 text-sm text-cream/70">Response Time</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 工厂实力 -->
+  <section class="container-site py-16 md:py-20">
+    <div class="flex flex-col items-center text-center">
+      <span class="text-sm font-semibold uppercase tracking-[0.2em] text-caramel">
+        Our Factory
+      </span>
+      <h2 class="mt-3 font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        In-house production, quality controlled
+      </h2>
+      <p class="mt-3 max-w-2xl text-stone">
+        From fabric to finished product under one roof — with strict QC at
+        every stage and OEM / ODM support for your private label.
+      </p>
+    </div>
+
+    <div class="mt-12 grid gap-5 lg:grid-cols-3">
+      <div class="group overflow-hidden rounded-3xl border border-milk-tea/60 bg-white shadow-card lg:col-span-2">
+        <div class="grid md:grid-cols-2">
+          <div class="aspect-[4/3] overflow-hidden bg-milk-tea/30">
+            <img
+              src="/images/placeholders/factory-workshop.svg"
+              alt="Factory workshop and sewing lines"
+              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+            />
+          </div>
+          <div class="flex flex-col justify-center p-8">
+            <h3 class="font-display text-xl font-bold text-dark-brown">
+              Sewing & assembly lines
+            </h3>
+            <p class="mt-3 text-sm leading-relaxed text-stone">
+              Carriers, harnesses and soft goods produced in-house with
+              dedicated cutting, sewing and assembly stations. We control
+              quality and lead time end to end.
+            </p>
+            <ul class="mt-5 space-y-2 text-sm text-stone">
+              <li class="flex items-center gap-2">
+                <svg class="h-4 w-4 shrink-0 text-olive-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4M21 12c0 5-3.5 7.5-8.5 9.5C7.5 19.5 4 17 4 12V6l8.5-3.5L21 6v6z"/></svg>
+                Material, in-line & pre-shipment QC
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="h-4 w-4 shrink-0 text-olive-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4M21 12c0 5-3.5 7.5-8.5 9.5C7.5 19.5 4 17 4 12V6l8.5-3.5L21 6v6z"/></svg>
+                OEM / ODM — colors, logos, packaging
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="h-4 w-4 shrink-0 text-olive-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4M21 12c0 5-3.5 7.5-8.5 9.5C7.5 19.5 4 17 4 12V6l8.5-3.5L21 6v6z"/></svg>
+                Export & FBA preparation support
+              </li>
+            </ul>
+            <a
+              href="/factory"
+              class="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-olive-dark"
+            >
+              Tour our factory
+              <svg class="h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-5">
+        {[
+          {
+            img: '/images/placeholders/factory-qc.svg',
+            title: 'Strict quality control',
+            desc: 'Four-stage QC from material to pre-shipment.',
+          },
+          {
+            img: '/images/placeholders/factory-team.svg',
+            title: 'R&D & sample team',
+            desc: 'Custom pattern and sample development in-house.',
+          },
+        ].map((c) => (
+          <div class="group flex-1 overflow-hidden rounded-3xl border border-milk-tea/60 bg-white shadow-card">
+            <div class="aspect-[16/9] overflow-hidden bg-milk-tea/30">
+              <img
+                src={c.img}
+                alt={c.title}
+                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-display text-base font-bold text-dark-brown">{c.title}</h3>
+              <p class="mt-1.5 text-sm text-stone">{c.desc}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   </section>

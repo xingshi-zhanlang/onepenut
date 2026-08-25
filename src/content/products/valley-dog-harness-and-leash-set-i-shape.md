@@ -2,7 +2,7 @@
 title: "Valley Dog Harness & Leash Set (I-Shape)"
 description: "Valley Dog Harness & Leash Set (I-Shape) for cats and dogs. Premium quality pet travel gear from ONEPENUT, available for wholesale, OEM and ODM."
 image: "/images/products/valley-dog-harness-and-leash-set-i-shape-home.webp"
-category: "dog-travel"
+category: "harnesses-leashes"
 seoTitle: "Valley Dog Harness & Leash Set (I-Shape) | ONEPENUT"
 sku: "HD029006"
 seoDescription: "Valley Dog Harness & Leash Set (I-Shape). Premium pet products for wholesale, OEM and ODM from ONEPENUT."

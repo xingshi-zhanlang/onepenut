@@ -2,7 +2,7 @@
 title: "Valley Vest-Style Cat Harness & Leash Set"
 description: "Valley Vest-Style Cat Harness & Leash Set for cats and dogs. Premium quality pet travel gear from ONEPENUT, available for wholesale, OEM and ODM."
 image: "/images/products/valley-vest-style-cat-harness-and-leash-set-home.webp"
-category: "cat-products"
+category: "harnesses-leashes"
 seoTitle: "Valley Vest-Style Cat Harness & Leash Set | ONEPENUT"
 sku: "HD029003"
 seoDescription: "Valley Vest-Style Cat Harness & Leash Set. Premium pet products for wholesale, OEM and ODM from ONEPENUT."

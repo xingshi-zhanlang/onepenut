@@ -2,7 +2,7 @@
 title: "Leather Rope Cat Harness & Leash Set"
 description: "Leather Rope Cat Harness & Leash Set for cats and dogs. Premium quality pet travel gear from ONEPENUT, available for wholesale, OEM and ODM."
 image: "/images/products/leather-rope-cat-harness-and-leash-set-home.webp"
-category: "cat-products"
+category: "harnesses-leashes"
 seoTitle: "Leather Rope Cat Harness & Leash Set | ONEPENUT"
 sku: "HD024015"
 seoDescription: "Leather Rope Cat Harness & Leash Set. Premium pet products for wholesale, OEM and ODM from ONEPENUT."

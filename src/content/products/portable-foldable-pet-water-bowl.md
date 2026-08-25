@@ -2,7 +2,7 @@
 title: "Portable Foldable Pet Water Bowl"
 description: "Portable Foldable Pet Water Bowl for cats and dogs. Premium quality pet travel gear from ONEPENUT, available for wholesale, OEM and ODM."
 image: "/images/products/portable-foldable-pet-water-bowl-home.webp"
-category: "functional"
+category: "accessories"
 seoTitle: "Portable Foldable Pet Water Bowl | ONEPENUT"
 sku: "HD028002"
 seoDescription: "Portable Foldable Pet Water Bowl. Premium pet products for wholesale, OEM and ODM from ONEPENUT."

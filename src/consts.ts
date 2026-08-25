@@ -29,54 +29,62 @@ export const whatsappLink = (msg: string) =>
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/products', label: 'Products' },
+  { href: '/factory', label: 'Factory' },
   { href: '/quote', label: 'Get a Quote' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];
 
-// 产品分类
+// 产品分类 —— 品牌 5 大核心品类
+// ① 外出包/背包（品牌主打）② 胸背+牵引 ③ 伊丽莎白圈/防护 ④ 推车 ⑤ 功能配件/猫用品
 export interface CategoryInfo {
   slug: string;
   name: string;
   description: string;
   tagline: string;
+  icon: string;
 }
 
 export const CATEGORIES: CategoryInfo[] = [
   {
-    slug: 'new-arrivals',
-    name: 'New Arrivals',
-    description:
-      'Latest designs — fresh from the studio, ready for wholesale and OEM.',
-    tagline: 'Fresh from the studio',
-  },
-  {
     slug: 'carrier-bags',
-    name: 'Carrier Bags',
+    name: 'Carrier Bags & Backpacks',
     description:
-      'Airline-approved and everyday pet carriers. Backpacks, totes, sling bags and travel carriers for cats and dogs.',
+      'Airline-approved pet carriers, backpacks, totes and travel bags for cats and dogs. The core of our travel collection.',
     tagline: 'Carry your companion',
+    icon: 'M6 3h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8 7h8M8 11h8M8 15h4',
   },
   {
-    slug: 'cat-products',
-    name: 'Cat Products',
+    slug: 'harnesses-leashes',
+    name: 'Harnesses & Leashes',
     description:
-      'Cat harnesses, leashes and travel gear designed for feline comfort and safety.',
-    tagline: 'Made for cats',
+      'Escape-proof cat harnesses, no-pull dog harnesses, collars and bungee leashes. Comfortable, adjustable and training-friendly.',
+    tagline: 'Walk with confidence',
+    icon: 'M6 4h12M6 4v4m0-4V2M6 8h12v4a6 6 0 0 1-6 6 6 6 0 0 1-6-6V8z',
   },
   {
-    slug: 'dog-travel',
-    name: 'Dog Travel',
+    slug: 'recovery-collars',
+    name: 'Recovery Collars',
     description:
-      'Dog harnesses, leashes and travel accessories for every adventure.',
-    tagline: 'Adventure together',
+      'Soft fabric Elizabethan collars, donut collars and cone alternatives — gentle post-surgery protection that pets actually tolerate.',
+    tagline: 'Comfort after care',
+    icon: 'M12 2a10 10 0 0 0 0 20 10 10 0 0 0 0-20zM12 6a6 6 0 0 0 0 12',
   },
   {
-    slug: 'functional',
-    name: 'Functional Gear',
+    slug: 'pet-strollers',
+    name: 'Pet Strollers',
     description:
-      'Pet travel bowls, strollers and essentials for every journey.',
+      'Lightweight one-hand-fold pet strollers with sturdy aluminum frames. Built for senior pets, small dogs and travel.',
+    tagline: 'Roll with ease',
+    icon: 'M12 2v8m0 0l-3 3m3-3l3 3M5 15h14l-1 7H6l-1-7zM9 10h6',
+  },
+  {
+    slug: 'accessories',
+    name: 'Accessories & Cat Gear',
+    description:
+      'Car seat belts, recovery suits, beds, bowls, toys and everyday essentials that complete every journey.',
     tagline: 'Thoughtful essentials',
+    icon: 'M12 2l10 5-10 5L2 7l10-5zM2 17l10 5 10-5M2 12l10 5 10-5',
   },
 ];
 

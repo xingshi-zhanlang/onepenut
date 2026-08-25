@@ -1,0 +1,296 @@
+---
+// 工厂实力页：生产制造能力、车间、质检、认证、合作展示
+// 图片全部为占位图（/images/placeholders/*.svg），后续替换为实拍照片
+import Layout from '../layouts/Layout.astro';
+import { CONTACT, SITE, whatsappLink } from '../consts';
+
+const waMsg =
+  'Hello ONEPENUT, I would like to learn more about your factory and manufacturing capabilities.';
+---
+
+<Layout
+  title="Factory & Manufacturing - OEM / ODM Capabilities"
+  description="ONEPENUT factory overview — in-house production, strict QC, certifications and OEM / ODM support for pet carriers, harnesses and travel gear."
+>
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-olive-dark py-20 md:py-28">
+    <div class="container-site relative z-10">
+      <div class="max-w-3xl">
+        <span class="text-sm font-semibold uppercase tracking-[0.2em] text-cream/70">
+          Factory & Manufacturing
+        </span>
+        <h1 class="mt-3 font-display text-4xl font-bold text-cream md:text-5xl">
+          From fabric to finished product — under one roof
+        </h1>
+        <p class="mt-5 text-lg leading-relaxed text-cream/80">
+          In-house sewing, cutting and assembly lines for pet carriers,
+          harnesses and travel gear. We control quality at every step so your
+          private label lands right the first time.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a
+            href={whatsappLink(waMsg)}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-wa"
+          >
+            Talk to Our Team
+          </a>
+          <a
+            href="/quote"
+            class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-cream/40 px-6 py-3 text-sm font-semibold text-cream transition-colors hover:bg-cream/10"
+          >
+            Request a Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 数字统计 -->
+  <section class="container-site py-14 md:py-16">
+    <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
+      {[
+        { num: '1,200+', label: 'SQM factory floor' },
+        { num: '50+', label: 'Production workers' },
+        { num: '120K+', label: 'Pcs monthly capacity' },
+        { num: '30+', label: 'Export countries' },
+      ].map((s) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 text-center shadow-card">
+          <div class="font-display text-3xl font-bold text-olive-dark md:text-4xl">
+            {s.num}
+          </div>
+          <div class="mt-2 text-sm text-stone">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 车间实拍（占位） -->
+  <section class="container-site pb-16 md:pb-20">
+    <div class="text-center">
+      <span class="text-sm font-semibold uppercase tracking-[0.2em] text-caramel">
+        Inside Our Factory
+      </span>
+      <h2 class="mt-3 font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        Production, step by step
+      </h2>
+      <p class="mt-3 mx-auto max-w-2xl text-stone">
+        From material inspection to finished goods, every stage is managed
+        in-house with dedicated QC checkpoints.
+      </p>
+    </div>
+
+    <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {[
+        {
+          img: '/images/placeholders/factory-workshop.svg',
+          title: 'Workshop & Sewing Lines',
+          desc: 'Full sewing and assembly lines for carriers, harnesses and soft goods.',
+        },
+        {
+          img: '/images/placeholders/factory-machines.svg',
+          title: 'Cutting & Machinery',
+          desc: 'Fabric cutting, webbing machines and hardware tooling in-house.',
+        },
+        {
+          img: '/images/placeholders/factory-qc.svg',
+          title: 'QC & Inspection',
+          desc: 'Material, in-production and pre-shipment inspections on every order.',
+        },
+        {
+          img: '/images/placeholders/factory-materials.svg',
+          title: 'Material Warehouse',
+          desc: 'Fabric, webbing, buckles and accessories stocked for fast sampling.',
+        },
+        {
+          img: '/images/placeholders/factory-packaging.svg',
+          title: 'Packaging & Folding',
+          desc: 'Custom packaging, folding and labeling handled in-house.',
+        },
+        {
+          img: '/images/placeholders/factory-team.svg',
+          title: 'R&D & Sample Team',
+          desc: 'Design, pattern and sample development for your custom projects.',
+        },
+      ].map((card) => (
+        <div class="group overflow-hidden rounded-3xl border border-milk-tea/60 bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-hover">
+          <div class="aspect-[4/3] overflow-hidden bg-milk-tea/30">
+            <img
+              src={card.img}
+              alt={card.title}
+              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-5">
+            <h3 class="font-display text-lg font-bold text-dark-brown">
+              {card.title}
+            </h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone">{card.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 质量与认证 -->
+  <section class="bg-white/50 py-16 md:py-20">
+    <div class="container-site">
+      <div class="text-center">
+        <span class="text-sm font-semibold uppercase tracking-[0.2em] text-caramel">
+          Quality & Compliance
+        </span>
+        <h2 class="mt-3 font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          Certified, tested, consistent
+        </h2>
+        <p class="mt-3 mx-auto max-w-2xl text-stone">
+          We support compliance documentation, testing and certifications based
+          on your target market and product requirements.
+        </p>
+      </div>
+
+      <div class="mt-12 grid gap-8 lg:grid-cols-2">
+        <!-- 质检流程 -->
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-8 shadow-card">
+          <h3 class="font-display text-xl font-bold text-dark-brown">
+            Our QC process
+          </h3>
+          <ul class="mt-6 space-y-4">
+            {[
+              ['01', 'Material check', 'Fabric, webbing and hardware inspected before production starts.'],
+              ['02', 'In-line inspection', 'Random checks during sewing and assembly catch issues early.'],
+              ['03', 'Pre-shipment QC', 'Full inspection of finish, stitching, sizes and packaging before shipping.'],
+              ['04', 'Testing support', 'Tensile strength, safety and compliance testing arranged on request.'],
+            ].map(([num, title, desc]) => (
+              <li class="flex gap-4">
+                <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-olive/10 font-display text-sm font-bold text-olive-dark">
+                  {num}
+                </span>
+                <div>
+                  <div class="font-semibold text-dark-brown">{title}</div>
+                  <div class="mt-1 text-sm text-stone">{desc}</div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <!-- 认证展示（占位） -->
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-8 shadow-card">
+          <h3 class="font-display text-xl font-bold text-dark-brown">
+            Certifications & compliance
+          </h3>
+          <div class="mt-6 overflow-hidden rounded-2xl border border-milk-tea/60 bg-cream/50">
+            <img
+              src="/images/placeholders/factory-certificates.svg"
+              alt="Factory certifications"
+              class="w-full"
+              loading="lazy"
+            />
+          </div>
+          <p class="mt-5 text-sm leading-relaxed text-stone">
+            Compliance documentation, testing reports and certificates can be
+            arranged based on your product, order and destination market —
+            including EU and US requirements. Tell us your target market and we
+            will confirm what is needed.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 合作与信任 -->
+  <section class="container-site py-16 md:py-20">
+    <div class="text-center">
+      <span class="text-sm font-semibold uppercase tracking-[0.2em] text-caramel">
+        Who We Work With
+      </span>
+      <h2 class="mt-3 font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        Trusted by growing pet brands
+      </h2>
+      <p class="mt-3 mx-auto max-w-2xl text-stone">
+        We support pet retailers, e-commerce sellers, chain stores and private
+        label brands with flexible sourcing and reliable delivery.
+      </p>
+    </div>
+
+    <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      {[
+        ['Pet Retail Shops', 'Mixed-order and trial options reviewed by product and available models.'],
+        ['Amazon Sellers', 'FBA preparation, labeling and packaging coordinated per project.'],
+        ['Chain Stores & Importers', 'Production follow-up, inspection and documentation support.'],
+        ['Private Label Brands', 'OEM / ODM customization, custom packaging, logo and branding.'],
+      ].map(([title, desc]) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+          <h3 class="font-display text-lg font-bold text-dark-brown">{title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone">{desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <!-- 客户到访 & 出货（占位） -->
+    <div class="mt-8 grid gap-5 md:grid-cols-2">
+      <div class="group overflow-hidden rounded-3xl border border-milk-tea/60 bg-white shadow-card">
+        <div class="aspect-[16/9] overflow-hidden bg-milk-tea/30">
+          <img
+            src="/images/placeholders/factory-client-visit.svg"
+            alt="Client factory visit"
+            class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+        <div class="p-5">
+          <h3 class="font-display text-lg font-bold text-dark-brown">
+            Client visits & audits
+          </h3>
+          <p class="mt-2 text-sm text-stone">
+            Factory visits, video audits and inspection coordination are
+            welcome — transparency builds long-term partnerships.
+          </p>
+        </div>
+      </div>
+      <div class="group overflow-hidden rounded-3xl border border-milk-tea/60 bg-white shadow-card">
+        <div class="aspect-[16/9] overflow-hidden bg-milk-tea/30">
+          <img
+            src="/images/placeholders/factory-logistics.svg"
+            alt="Logistics and shipping"
+            class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+        </div>
+        <div class="p-5">
+          <h3 class="font-display text-lg font-bold text-dark-brown">
+            Logistics & shipping
+          </h3>
+          <p class="mt-2 text-sm text-stone">
+            Export shipping, DDP options and Amazon FBA preparation supported
+            for cross-border buyers in the US and Europe.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-br from-olive to-olive-dark py-14 md:py-16">
+    <div class="container-site text-center">
+      <h2 class="font-display text-3xl font-bold text-cream md:text-4xl">
+        Let's build your pet brand together
+      </h2>
+      <p class="mx-auto mt-4 max-w-xl text-cream/80">
+        Tell us about your product and target market — we will come back within
+        24 hours with options and honest feedback.
+      </p>
+      <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a href="/quote" class="btn-caramel text-base">Request a Quote</a>
+        <a
+          href={`mailto:${CONTACT.email}`}
+          class="inline-flex items-center gap-2 rounded-full border-2 border-cream/40 px-5 py-2.5 text-sm font-semibold text-cream transition-colors hover:bg-cream/10"
+        >
+          Email Us
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

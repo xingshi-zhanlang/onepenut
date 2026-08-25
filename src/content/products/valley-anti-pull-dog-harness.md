@@ -2,7 +2,7 @@
 title: "Valley Anti-Pull Dog Harness"
 description: "Valley Anti-Pull Dog Harness for cats and dogs. Premium quality pet travel gear from ONEPENUT, available for wholesale, OEM and ODM."
 image: "/images/products/valley-anti-pull-dog-harness-home.webp"
-category: "dog-travel"
+category: "harnesses-leashes"
 seoTitle: "Valley Anti-Pull Dog Harness | ONEPENUT"
 sku: "HD029007"
 seoDescription: "Valley Anti-Pull Dog Harness. Premium pet products for wholesale, OEM and ODM from ONEPENUT."

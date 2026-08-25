@@ -2,7 +2,7 @@
 title: "Two-Tone Leather Cat Harness & Leash Set"
 description: "Two-Tone Leather Cat Harness & Leash Set for cats and dogs. Premium quality pet travel gear from ONEPENUT, available for wholesale, OEM and ODM."
 image: "/images/products/two-tone-leather-cat-harness-and-leash-set-home.webp"
-category: "cat-products"
+category: "harnesses-leashes"
 seoTitle: "Two-Tone Leather Cat Harness & Leash Set | ONEPENUT"
 sku: "HD024016"
 seoDescription: "Two-Tone Leather Cat Harness & Leash Set. Premium pet products for wholesale, OEM and ODM from ONEPENUT."
