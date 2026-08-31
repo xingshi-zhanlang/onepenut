@@ -17,6 +17,12 @@ const inquiryLink = whatsappLink(inquiryMsg);
 const { Content } = await render(product);
 const pageUrl = new URL(`/products/${product.slug}/`, SITE.url).href;
 
+// 兼容两种 gallery 形式：数组(任意张) 或 {home,studio,outdoor}
+const galleryImages = Array.isArray(gallery)
+  ? gallery
+  : [gallery?.home, gallery?.studio, gallery?.outdoor].filter(Boolean);
+const mainImg = image || galleryImages[0] || '';
+
 // Product 结构化数据 + 面包屑
 const productSchema = JSON.stringify({
   '@context': 'https://schema.org',
@@ -79,40 +85,22 @@ const productSchema = JSON.stringify({
       <div class="overflow-hidden rounded-[2rem] border border-milk-tea/60 bg-white/60 shadow-card">
         <img
           id="main-image"
-          src={image || (gallery?.home || gallery?.studio || gallery?.outdoor)}
+          src={mainImg}
           alt={title}
           class="aspect-[4/3] h-full w-full object-cover"
         />
       </div>
       <!-- 缩略图切换 -->
       <div class="mt-4 flex gap-3">
-        {(gallery?.home || image) && (
+        {galleryImages.map((img, idx) => (
           <button
             type="button"
-            class="gallery-thumb flex-1 overflow-hidden rounded-xl border-2 border-olive"
-            data-img={gallery?.home || image}
+            class={'gallery-thumb flex-1 overflow-hidden rounded-xl border ' + (idx === 0 ? 'border-2 border-olive' : 'border-milk-tea')}
+            data-img={img}
           >
-            <img src={gallery?.home || image} alt="Home scene" class="aspect-[4/3] h-full w-full object-cover" />
+            <img src={img} alt={`${title} image ${idx + 1}`} class="aspect-[4/3] h-full w-full object-cover" />
           </button>
-        )}
-        {gallery?.studio && (
-          <button
-            type="button"
-            class="gallery-thumb flex-1 overflow-hidden rounded-xl border border-milk-tea"
-            data-img={gallery.studio}
-          >
-            <img src={gallery.studio} alt="Studio scene" class="aspect-[4/3] h-full w-full object-cover" />
-          </button>
-        )}
-        {gallery?.outdoor && (
-          <button
-            type="button"
-            class="gallery-thumb flex-1 overflow-hidden rounded-xl border border-milk-tea"
-            data-img={gallery.outdoor}
-          >
-            <img src={gallery.outdoor} alt="Outdoor use scene" class="aspect-[4/3] h-full w-full object-cover" />
-          </button>
-        )}
+        ))}
       </div>
     </div>
 

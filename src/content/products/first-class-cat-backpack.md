@@ -1,7 +1,7 @@
 ---
 title: "First-Class Cat Backpack"
 description: "First-Class Cat Backpack for cats and dogs. Premium quality pet travel gear from ONEPENUT, available for wholesale, OEM and ODM."
-image: "/images/products/first-class-cat-backpack-home.webp"
+image: "/images/products/first-class-cat-backpack-1.webp"
 category: "carrier-bags"
 seoTitle: "First-Class Cat Backpack | ONEPENUT"
 sku: "HD015049"
@@ -12,9 +12,11 @@ keywords:
   - wholesale
   - OEM
 gallery:
-  home: "/images/products/first-class-cat-backpack-home.webp"
-  studio: "/images/products/first-class-cat-backpack-studio.webp"
-  outdoor: "/images/products/first-class-cat-backpack-outdoor.webp"
+  - "/images/products/first-class-cat-backpack-1.webp"
+  - "/images/products/first-class-cat-backpack-2.webp"
+  - "/images/products/first-class-cat-backpack-3.webp"
+  - "/images/products/first-class-cat-backpack-4.webp"
+  - "/images/products/first-class-cat-backpack-5.webp"
 ---
 
 ## Product Overview

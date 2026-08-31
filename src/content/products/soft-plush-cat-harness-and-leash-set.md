@@ -1,7 +1,7 @@
 ---
 title: "Soft Plush Cat Harness & Leash Set"
 description: "Soft Plush Cat Harness & Leash Set for cats and dogs. Premium quality pet travel gear from ONEPENUT, available for wholesale, OEM and ODM."
-image: "/images/products/soft-plush-cat-harness-and-leash-set-home.webp"
+image: "/images/products/soft-plush-cat-harness-and-leash-set-1.webp"
 category: "harnesses-leashes"
 seoTitle: "Soft Plush Cat Harness & Leash Set | ONEPENUT"
 sku: "HD024018"
@@ -12,9 +12,11 @@ keywords:
   - wholesale
   - OEM
 gallery:
-  home: "/images/products/soft-plush-cat-harness-and-leash-set-home.webp"
-  studio: "/images/products/soft-plush-cat-harness-and-leash-set-studio.webp"
-  outdoor: "/images/products/soft-plush-cat-harness-and-leash-set-outdoor.webp"
+  - "/images/products/soft-plush-cat-harness-and-leash-set-1.webp"
+  - "/images/products/soft-plush-cat-harness-and-leash-set-2.webp"
+  - "/images/products/soft-plush-cat-harness-and-leash-set-3.webp"
+  - "/images/products/soft-plush-cat-harness-and-leash-set-4.webp"
+  - "/images/products/soft-plush-cat-harness-and-leash-set-5.webp"
 ---
 
 ## Product Overview
