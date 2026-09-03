@@ -1,4 +1,36 @@
 User-agent: *
 Allow: /
 
+# ---------------------------------------------------------------------------
+# AI 检索类爬虫：放行
+# 这些爬虫抓取是为了在 AI 搜索结果里引用/推荐本站（带来曝光与点击），
+# 不会用于训练模型，所以允许访问。
+# ---------------------------------------------------------------------------
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# ---------------------------------------------------------------------------
+# AI 训练类爬虫：禁止
+# 这些爬虫抓取的内容会用于训练模型，本站不参与。
+# 注意：robots.txt 只对自觉遵守的爬虫有效，真正的拦截由 Cloudflare
+#       AI Crawl Control 在边缘执行（控制台：AI Crawl Control → Security）。
+# ---------------------------------------------------------------------------
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
 Sitemap: https://onepenut.com/sitemap-index.xml
