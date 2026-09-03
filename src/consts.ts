@@ -9,7 +9,7 @@ export const SITE = {
   title: 'ONEPENUT | Premium Pet Travel Products',
   description:
     'ONEPENUT designs premium pet carriers, harnesses and travel essentials for cats and dogs. Wholesale, OEM and ODM support for global partners.',
-  url: 'https://onepenut.pages.dev',
+  url: 'https://onepenut.com',
 } as const;
 
 export const CONTACT = {

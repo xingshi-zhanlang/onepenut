@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://onepenut.pages.dev/sitemap-index.xml
+Sitemap: https://onepenut.com/sitemap-index.xml
