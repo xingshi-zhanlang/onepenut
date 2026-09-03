@@ -1,0 +1,34 @@
+# Cloudflare Pages 静态资源缓存头
+#
+# 作用：把源站（Pages）返回的 Cache-Control 从默认的 4 小时改成 7 天。
+#       Cloudflare 边缘对静态扩展名的缓存时长默认跟随源站的 max-age，
+#       所以改这个头能同时改善「浏览器缓存」和「边缘缓存命中率」。
+#
+# 现状（改之前）：
+#   /_astro/*、/images/*  →  cache-control: public, max-age=14400, must-revalidate
+#                            cf-cache-status: REVALIDATED（每次都回源校验一次）
+#
+# 与 Cache Rules 的关系：
+#   后续如果再加 Cache Rule「静态资源 Edge TTL 30 天 / Browser TTL 7 天」，
+#   浏览器侧会被那条规则统一改成 7 天（会覆盖这里 /_astro/* 的 1 年）。
+#   边缘 TTL 30 天由那条规则兜底，两者不冲突。
+
+# Astro 构建产物：文件名带内容哈希，内容变了文件名就变，可以放心缓存最久
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# 图片资源：7 天
+/images/*
+  Cache-Control: public, max-age=604800
+
+# 站点根目录下的图标 / 字体类静态文件：7 天
+/*.ico
+  Cache-Control: public, max-age=604800
+/*.png
+  Cache-Control: public, max-age=604800
+/*.svg
+  Cache-Control: public, max-age=604800
+/*.webp
+  Cache-Control: public, max-age=604800
+/*.woff2
+  Cache-Control: public, max-age=604800
