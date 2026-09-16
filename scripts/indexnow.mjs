@@ -17,9 +17,11 @@
  *
  * 注意：Google 不参与 IndexNow，仍需用 Search Console 提交 sitemap。
  */
-import { readFileSync, existsSync, readdirSync } from 'node:fs';
+import { readFileSync, existsSync, readdirSync, writeFileSync, unlinkSync } from 'node:fs';
+import { spawnSync } from 'node:child_process';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { tmpdir } from 'node:os';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const HOST = 'onepenut.com';
@@ -56,7 +58,47 @@ function readUrls() {
   return urls;
 }
 
-async function submit(urls, { key, fileName }, attempt = 1) {
+/**
+ * 发送 JSON POST。
+ * 优先用 curl：它默认读取 HTTP(S)_PROXY 环境变量，能走本机代理；
+ * 而 Node 自带 fetch（undici）在 Node 24 之前不读代理环境变量，
+ * 在需要代理的网络里会直接 fetch failed。curl 不可用时再退回 fetch。
+ */
+function postJson(endpoint, payload) {
+  const json = JSON.stringify(payload);
+  const tmp = join(tmpdir(), `indexnow-${process.pid}-${Date.now()}.json`);
+  writeFileSync(tmp, json, 'utf8');
+
+  const curl = spawnSync(
+    'curl',
+    ['-s', '-m', '60', '-o', '-', '-w', '\n%{http_code}', '-X', 'POST', endpoint,
+      '-H', 'Content-Type: application/json; charset=utf-8',
+      '--data-binary', `@${tmp}`],
+    { encoding: 'utf8' },
+  );
+  try {
+    unlinkSync(tmp);
+  } catch {}
+
+  if (!curl.error && curl.stdout) {
+    const parts = String(curl.stdout).trimEnd().split('\n');
+    const status = Number(parts.pop());
+    if (Number.isFinite(status)) {
+      return Promise.resolve({ status, text: parts.join('\n').slice(0, 200) });
+    }
+  }
+
+  // 回退：Node 原生 fetch
+  return fetch(endpoint, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json; charset=utf-8' },
+    body: json,
+  })
+    .then(async (res) => ({ status: res.status, text: (await res.text().catch(() => '')).slice(0, 200) }))
+    .catch((err) => ({ status: 0, text: String(err).slice(0, 200) }));
+}
+
+async function submit(urls, { key, fileName }) {
   const body = {
     host: HOST,
     key,
@@ -64,14 +106,23 @@ async function submit(urls, { key, fileName }, attempt = 1) {
     urlList: urls,
   };
 
-  const res = await fetch('https://api.indexnow.org/indexnow', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json; charset=utf-8' },
-    body: JSON.stringify(body),
-  });
+  // 多端点轮询：api.indexnow.org 是官方共享端点，但部分网络环境下 POST 会被
+  // 中间设备拦掉。Bing 与 Yandex 各自也有端点，任一返回 200/202 即视为成功。
+  const endpoints = [
+    'https://api.indexnow.org/indexnow',
+    'https://www.bing.com/indexnow',
+    'https://yandex.com/indexnow',
+  ];
 
-  const text = await res.text().catch(() => '');
-  return { status: res.status, text: text.slice(0, 300), attempt };
+  const results = [];
+  for (const endpoint of endpoints) {
+    const r = await postJson(endpoint, body);
+    results.push({ endpoint, ...r });
+    if (r.status === 200 || r.status === 202) {
+      return { ok: true, acceptedBy: endpoint, status: r.status, results };
+    }
+  }
+  return { ok: false, acceptedBy: null, status: 0, results };
 }
 
 const args = process.argv.slice(2);
@@ -103,25 +154,19 @@ for (let i = 0; i < urls.length; i += BATCH_SIZE) {
   const total = Math.ceil(urls.length / BATCH_SIZE);
 
   let result;
-  for (let attempt = 1; attempt <= 3; attempt++) {
-    try {
-      result = await submit(batch, keyInfo, attempt);
-      // 200 / 202 表示已接受
-      if (result.status === 200 || result.status === 202) break;
-      // 429 限流才值得重试，其他 4xx 是配置问题，重试无用
-      if (result.status !== 429) break;
-      await new Promise((r) => setTimeout(r, 3000 * attempt));
-    } catch (err) {
-      result = { status: 0, text: String(err), attempt };
-    }
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    result = await submit(batch, keyInfo);
+    if (result.ok) break;
+    await new Promise((r) => setTimeout(r, 2000 * attempt));
   }
 
-  const ok = result.status === 200 || result.status === 202;
-  console.log(
-    `[${n}/${total}] ${batch.length} 条 → HTTP ${result.status} ${ok ? '✔ 已接受' : '✘ 失败'}` +
-      (result.text ? `\n         ${result.text}` : ''),
-  );
-  if (!ok) failed++;
+  if (result.ok) {
+    console.log(`[${n}/${total}] ${batch.length} 条 → HTTP ${result.status} ✔ 已接受（${result.acceptedBy}）`);
+  } else {
+    console.log(`[${n}/${total}] ${batch.length} 条 → ✘ 全部端点失败`);
+    result.results.forEach((r) => console.log(`         ${r.endpoint} → ${r.status} ${r.text}`));
+    failed++;
+  }
 }
 
 console.log('');
