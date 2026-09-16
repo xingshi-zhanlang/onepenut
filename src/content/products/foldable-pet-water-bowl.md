@@ -4,14 +4,15 @@ description: "Lightweight collapsible water bowl for travel and outdoor adventur
 image: "/images/products/foldable-pet-water-bowl-1.webp"
 category: "accessories"
 seoTitle: "Foldable Pet Water Bowl | ONEPENUT"
-sku: "HD028002"
+sku: "OP028002"
 seoDescription: "Lightweight collapsible water bowl for travel and outdoor adventures with pets. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
 keywords:
-  - "foldable dog bowl"
-  - "portable pet bowl"
-  - "travel water bowl"
-  - "collapsible bowl"
-  - "pet travel"
+  - "foldable pet water bowl"
+  - "wholesale foldable pet water bowl"
+  - "custom foldable pet water bowl"
+  - "foldable pet water bowl manufacturer"
+  - "pet accessories"
+  - "wholesale pet accessories"
 gallery:
   - "/images/products/foldable-pet-water-bowl-1.webp"
   - "/images/products/foldable-pet-water-bowl-2.webp"
@@ -20,14 +21,22 @@ gallery:
   - "/images/products/foldable-pet-water-bowl-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Foldable Pet Water Bowl — premium quality, designed for comfort and safety.
+- **Collection**: Accessories & Cat Gear
+- **SKU**: OP028002
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD028002
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
+## Sizing and fit
 
-## Contact for Details
+This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
 
-Contact us on WhatsApp for pricing, samples and customization options.
+## Typical use
+
+Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

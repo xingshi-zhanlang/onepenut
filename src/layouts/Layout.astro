@@ -21,6 +21,23 @@ const pageDesc = description || SITE.description;
 // canonical URL（基于当前请求地址）
 const canonicalUrl = new URL(Astro.url.pathname, SITE.url).href;
 
+// ---------------------------------------------------------------------------
+// 搜索引擎站长平台「所有权验证」标签
+// 在 Cloudflare Pages 的 Environment variables 里配置即可，无需改代码：
+//   PUBLIC_GOOGLE_SITE_VERIFICATION  Google Search Console
+//   PUBLIC_BING_SITE_VERIFICATION    Bing Webmaster Tools
+//   PUBLIC_YANDEX_VERIFICATION       Yandex Webmaster
+//   PUBLIC_BAIDU_VERIFICATION        百度搜索资源平台
+// 未配置时对应标签不会输出，页面不受影响。
+// ---------------------------------------------------------------------------
+const verifications: { name: string; value: string | undefined }[] = [
+  { name: 'google-site-verification', value: import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION },
+  { name: 'msvalidate.01', value: import.meta.env.PUBLIC_BING_SITE_VERIFICATION },
+  { name: 'yandex-verification', value: import.meta.env.PUBLIC_YANDEX_VERIFICATION },
+  { name: 'baidu-site-verification', value: import.meta.env.PUBLIC_BAIDU_VERIFICATION },
+];
+const activeVerifications = verifications.filter((v) => Boolean(v.value));
+
 // OG 图片（默认用品牌字母 Logo 分享图，可用 props 覆盖）
 const ogImage = image
   ? new URL(image, SITE.url).href
@@ -59,6 +76,9 @@ const orgSchema = JSON.stringify({
 
     <!-- Canonical -->
     <link rel="canonical" href={canonicalUrl} />
+
+    <!-- 搜索引擎站长平台验证（由环境变量驱动，未配置则不输出） -->
+    {activeVerifications.map((v) => <meta name={v.name} content={v.value} />)}
 
     <!-- Open Graph -->
     <meta property="og:type" content={type || 'website'} />

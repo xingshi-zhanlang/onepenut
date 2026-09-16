@@ -4,13 +4,15 @@ description: "A catnip-filled fish toy that delights cats with irresistible text
 image: "/images/products/catnip-fish-toy-2-1.webp"
 category: "accessories"
 seoTitle: "Catnip Fish Toy | ONEPENUT"
-sku: "HD015045"
+sku: "OP015045"
 seoDescription: "A catnip-filled fish toy that delights cats with irresistible texture and scent. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
 keywords:
   - "catnip fish toy"
-  - "catnip filled toy"
-  - "cat chew toy"
-  - "interactive cat toy"
+  - "wholesale catnip fish toy"
+  - "custom catnip fish toy"
+  - "catnip fish toy manufacturer"
+  - "pet accessories"
+  - "wholesale pet accessories"
 gallery:
   - "/images/products/catnip-fish-toy-2-1.webp"
   - "/images/products/catnip-fish-toy-2-2.webp"
@@ -19,14 +21,22 @@ gallery:
   - "/images/products/catnip-fish-toy-2-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Catnip Fish Toy — premium quality, designed for comfort and safety.
+- **Collection**: Accessories & Cat Gear
+- **SKU**: OP015045
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD015045
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
+## Sizing and fit
 
-## Contact for Details
+This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
 
-Contact us on WhatsApp for pricing, samples and customization options.
+## Typical use
+
+Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

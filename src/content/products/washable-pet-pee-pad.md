@@ -4,14 +4,15 @@ description: "Reusable washable pet pee pad, fast-absorbing and leak-proof. Prem
 image: "/images/products/washable-pet-pee-pad-1.webp"
 category: "accessories"
 seoTitle: "Washable Pet Pee Pad | ONEPENUT"
-sku: "HD015047-03XS"
+sku: "OP015047-03XS"
 seoDescription: "Reusable washable pet pee pad, fast-absorbing and leak-proof. Premium pet gear from ONEPENUT."
 keywords:
-  - pet travel
-  - pet products
-  - wholesale
-  - OEM
-  - accessories
+  - "washable pet pee pad"
+  - "wholesale washable pet pee pad"
+  - "custom washable pet pee pad"
+  - "washable pet pee pad manufacturer"
+  - "pet accessories"
+  - "wholesale pet accessories"
 gallery:
   - "/images/products/washable-pet-pee-pad-1.webp"
   - "/images/products/washable-pet-pee-pad-2.webp"
@@ -20,26 +21,28 @@ gallery:
   - "/images/products/washable-pet-pee-pad-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Washable Pet Pee Pad — premium quality, designed for comfort, safety and everyday use.
+- **Collection**: Accessories & Cat Gear
+- **SKU**: OP015047-03XS
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD015047-03XS
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
-
-## Key Features
+## Key features
 
 - Absorbent cotton top
 - TPU waterproof layer
 - Machine washable, reusable
 
-## Specification
+## Sizing and fit
 
-- Materials: durable, pet-safe fabrics
-- Sizes: multiple to fit different pets
-- Custom OEM: colors, logo, packaging available
+This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
 
-## Contact for Details
+## Typical use
 
-Contact us on WhatsApp for pricing, samples and customization options.
+Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

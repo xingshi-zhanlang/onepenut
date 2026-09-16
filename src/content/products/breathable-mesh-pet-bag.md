@@ -4,14 +4,15 @@ description: "A breathable mesh crossbody carrier that keeps pets cool and visib
 image: "/images/products/breathable-mesh-pet-bag-1.webp"
 category: "carrier-bags"
 seoTitle: "Breathable Mesh Pet Crossbody Bag | ONEPENUT"
-sku: "HD020018"
+sku: "OP020018"
 seoDescription: "A breathable mesh crossbody carrier that keeps pets cool and visible. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
 keywords:
-  - "mesh pet carrier"
-  - "breathable pet bag"
-  - "crossbody pet carrier"
-  - "summer pet bag"
-  - "ONEPENUT"
+  - "breathable mesh pet crossbody bag"
+  - "wholesale breathable mesh pet crossbody bag"
+  - "custom breathable mesh pet crossbody bag"
+  - "breathable mesh pet crossbody bag manufacturer"
+  - "pet carrier"
+  - "wholesale pet carriers"
 gallery:
   - "/images/products/breathable-mesh-pet-bag-1.webp"
   - "/images/products/breathable-mesh-pet-bag-2.webp"
@@ -20,14 +21,22 @@ gallery:
   - "/images/products/breathable-mesh-pet-bag-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Breathable Mesh Pet Crossbody Bag — premium quality, designed for comfort and safety.
+- **Collection**: Carrier Bags & Backpacks
+- **SKU**: OP020018
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD020018
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
+## Sizing and fit
 
-## Contact for Details
+Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
 
-Contact us on WhatsApp for pricing, samples and customization options.
+## Typical use
+
+The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

@@ -4,14 +4,15 @@ description: "A cute toast-shaped carrier sized for airline-comfort travel with 
 image: "/images/products/pet-airline-toast-travel-bag-2-1.webp"
 category: "carrier-bags"
 seoTitle: "Toast-Shaped Pet Travel Bag | ONEPENUT"
-sku: "HD030006"
+sku: "OP030006"
 seoDescription: "A cute toast-shaped carrier sized for airline-comfort travel with small pets. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
 keywords:
-  - "airline pet carrier"
-  - "toast pet bag"
-  - "pet travel bag"
-  - "small pet carrier"
-  - "ONEPENUT"
+  - "toast-shaped pet travel bag"
+  - "wholesale toast-shaped pet travel bag"
+  - "custom toast-shaped pet travel bag"
+  - "toast-shaped pet travel bag manufacturer"
+  - "pet carrier"
+  - "wholesale pet carriers"
 gallery:
   - "/images/products/pet-airline-toast-travel-bag-2-1.webp"
   - "/images/products/pet-airline-toast-travel-bag-2-2.webp"
@@ -20,14 +21,22 @@ gallery:
   - "/images/products/pet-airline-toast-travel-bag-2-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Toast-Shaped Pet Travel Bag — premium quality, designed for comfort and safety.
+- **Collection**: Carrier Bags & Backpacks
+- **SKU**: OP030006
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD030006
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
+## Sizing and fit
 
-## Contact for Details
+Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
 
-Contact us on WhatsApp for pricing, samples and customization options.
+## Typical use
+
+The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

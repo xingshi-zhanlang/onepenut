@@ -4,14 +4,15 @@ description: "A premium leather color-block cat harness with matching leash, cra
 image: "/images/products/leather-colorblock-cat-harness-set-1.webp"
 category: "harnesses-leashes"
 seoTitle: "Leather Color-Block Cat Harness Set | ONEPENUT"
-sku: "HD024016"
+sku: "OP024016"
 seoDescription: "A premium leather color-block cat harness with matching leash, crafted for comfortable, escape-free walking. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
 keywords:
-  - "cat harness"
-  - "leather cat harness"
-  - "color block harness"
-  - "cat leash set"
-  - "escape proof cat harness"
+  - "leather color-block cat harness set"
+  - "wholesale leather color-block cat harness set"
+  - "custom leather color-block cat harness set"
+  - "leather color-block cat harness set manufacturer"
+  - "dog harness"
+  - "wholesale pet harnesses"
 gallery:
   - "/images/products/leather-colorblock-cat-harness-set-1.webp"
   - "/images/products/leather-colorblock-cat-harness-set-2.webp"
@@ -20,14 +21,22 @@ gallery:
   - "/images/products/leather-colorblock-cat-harness-set-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Leather Color-Block Cat Harness Set — premium quality, designed for comfort and safety.
+- **Collection**: Harnesses & Leashes
+- **SKU**: OP024016
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD024016
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
+## Sizing and fit
 
-## Contact for Details
+Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
 
-Contact us on WhatsApp for pricing, samples and customization options.
+## Typical use
+
+Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

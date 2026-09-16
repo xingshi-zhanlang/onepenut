@@ -15,6 +15,13 @@ export interface CategoryContent {
   intro: string[];
   /** 采购关注点 / 品类卖点 */
   highlights: { title: string; desc: string }[];
+  /**
+   * 使用场景 / 目标人群。
+   * 场景词全部来自本品类真实产品名（如 Safe Cycling、Mountain Style、
+   * Spine-Protecting、Anti-Pull、Car Safety Belt），用于承接场景型长尾搜索，
+   * 不要在此处添加没有产品支撑的场景。
+   */
+  useCases: { title: string; desc: string }[];
   /** 常见问题（同时输出 FAQPage 结构化数据） */
   faqs: { q: string; a: string }[];
 }
@@ -98,6 +105,28 @@ export const CATEGORY_CONTENT: Record<string, CategoryContent> = {
         desc: 'Woven labels, logo patches, embossed metal tags and custom print can be placed from the sample stage, so what you approve is what you receive.',
       },
     ],
+    useCases: [
+      {
+        title: 'Airline cabin travel',
+        desc: 'Tote and tent-backpack formats sized around common in-cabin limits, for owners who fly with cats and small dogs. Confirm your airline before fixing a size.',
+      },
+      {
+        title: 'Car and road trips',
+        desc: 'Console bags, armrest carriers and front-seat pads keep a pet secured and visible on short journeys, and double as everyday storage in the car.',
+      },
+      {
+        title: 'Hiking and full days outdoors',
+        desc: 'Chest bags and spine-support backpacks spread the load across the shoulders, which is what makes a long walk comfortable for both pet and owner.',
+      },
+      {
+        title: 'Cycling and urban commutes',
+        desc: 'Front-mounted and sling formats sit close to the body, so the pet stays stable on a bike, a scooter or in a crowd.',
+      },
+      {
+        title: 'Training and treat handling',
+        desc: 'Waist packs and treat pouches keep rewards within reach — a small category that buyers use to round out a walking range.',
+      },
+    ],
     faqs: [
       {
         q: 'What is your MOQ for pet carriers?',
@@ -151,6 +180,28 @@ export const CATEGORY_CONTENT: Record<string, CategoryContent> = {
       {
         title: 'Colour programme',
         desc: 'Core neutrals and seasonal accents can run together, so even a small buyer can offer real variety.',
+      },
+    ],
+    useCases: [
+      {
+        title: 'Anti-pull and no-pull training',
+        desc: 'Front-clip harnesses, head halters and half-P collars redirect pulling without loading the throat — the entry point for most training ranges, and the design most buyers ask for first.',
+      },
+      {
+        title: 'Cat walking',
+        desc: 'Close-fitting adjustable cat harnesses with matching leashes, built on a separate pattern from dog gear rather than scaled down from it.',
+      },
+      {
+        title: 'Car travel safety',
+        desc: 'Shock-absorbing safety belts and tethers that pair with a harness so a pet is restrained on the road, not loose in the cabin.',
+      },
+      {
+        title: 'Walking two or more dogs',
+        desc: 'Couplers and multi-function leashes for owners who walk several dogs at once — a niche that sells well alongside standard leads.',
+      },
+      {
+        title: 'Active and sporting dogs',
+        desc: 'Lightweight vest and sports harnesses for running, hiking and high-energy use, where weight and freedom of movement matter more than padding.',
       },
     ],
     faqs: [
@@ -208,6 +259,24 @@ export const CATEGORY_CONTENT: Record<string, CategoryContent> = {
         desc: 'Neutral colours and unbranded packing suit veterinary clinics and professional distributors.',
       },
     ],
+    useCases: [
+      {
+        title: 'Abdominal and limb recovery',
+        desc: 'Donut, petal and flower shapes give a pet a soft barrier in front of the wound while keeping food and water within reach. The usual choice for spay, neuter and orthopaedic recovery.',
+      },
+      {
+        title: 'Head, ear and eye procedures',
+        desc: 'Deeper conical and Elizabethan shapes limit how far a pet can turn and reach, which is what these procedures require. Fit is by neck circumference, so the size chart does the work.',
+      },
+      {
+        title: 'Cats and small breeds',
+        desc: 'Lighter fabric collars sized for cats and small dogs, who generally tolerate soft construction far better than rigid plastic.',
+      },
+      {
+        title: 'Veterinary clinics and distributors',
+        desc: 'Mixed-size clinic packs and neutral, unbranded packing for buyers who supply professional channels rather than retail.',
+      },
+    ],
     faqs: [
       {
         q: 'How do I choose between a donut collar and an E-collar?',
@@ -263,6 +332,20 @@ export const CATEGORY_CONTENT: Record<string, CategoryContent> = {
         desc: 'Folding dimensions are kept within common checked-luggage limits wherever the model allows.',
       },
     ],
+    useCases: [
+      {
+        title: 'Senior pets and recovery walks',
+        desc: 'For pets who still want the outing but cannot manage the distance any more — the use case that drives most stroller enquiries.',
+      },
+      {
+        title: 'Small dogs and cats in the city',
+        desc: 'Compact one-hand-folding frames for pavement, parks and public transport, where getting the folded stroller onto a train or into a boot matters as much as the ride.',
+      },
+      {
+        title: 'Day trips and travel',
+        desc: 'Folding dimensions are kept within common luggage limits wherever the model allows, so the stroller can travel with you rather than stay at home.',
+      },
+    ],
     faqs: [
       {
         q: 'Do the strollers fold small enough for air travel?',
@@ -316,6 +399,32 @@ export const CATEGORY_CONTENT: Record<string, CategoryContent> = {
       {
         title: 'Private label ready',
         desc: 'Every item can carry your logo, colour and packaging without changing the underlying product.',
+      },
+    ],
+    useCases: [
+      {
+        title: 'Car travel safety',
+        desc: 'Seat pads, car seat beds and full-surround covers that protect the upholstery and keep the pet in one place on the road.',
+      },
+      {
+        title: 'Grooming and bath time',
+        desc: 'Quick-dry towels, anti-dirty bibs and washable mats — the wet half of pet ownership, and a reliable repeat-purchase area for retailers.',
+      },
+      {
+        title: 'Recovery support',
+        desc: 'Surgery suits, anti-escape suits and cooling items that sit alongside the recovery collar range as a second purchase.',
+      },
+      {
+        title: 'Feeding at home and away',
+        desc: 'Ceramic bowls for the kitchen and folding or silicone travel bowls for the road — two very different feeding situations in one category.',
+      },
+      {
+        title: 'Sleeping and settling',
+        desc: 'Semi-enclosed beds, flat washable mats and window-mounted cat beds, so a buyer can cover both dogs that sprawl and cats that burrow.',
+      },
+      {
+        title: 'Cat enrichment and walk cleanup',
+        desc: 'Catnip toys for the cat side of the range, and leash clips and poop bag holders that help a small order reach its minimum value.',
       },
     ],
     faqs: [

@@ -4,14 +4,15 @@ description: "A rugged tote-style crossbody bag for outdoor outings with your pe
 image: "/images/products/mountain-style-pet-tote-bag-1.webp"
 category: "carrier-bags"
 seoTitle: "Mountain Style Pet Tote Crossbody Bag | ONEPENUT"
-sku: "HD030007"
+sku: "OP030007"
 seoDescription: "A rugged tote-style crossbody bag for outdoor outings with your pet. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
 keywords:
-  - "pet tote bag"
-  - "outdoor pet carrier"
-  - "crossbody pet bag"
-  - "mountain pet bag"
-  - "ONEPENUT"
+  - "mountain style pet tote crossbody bag"
+  - "wholesale mountain style pet tote crossbody bag"
+  - "custom mountain style pet tote crossbody bag"
+  - "mountain style pet tote crossbody bag manufacturer"
+  - "pet carrier"
+  - "wholesale pet carriers"
 gallery:
   - "/images/products/mountain-style-pet-tote-bag-1.webp"
   - "/images/products/mountain-style-pet-tote-bag-2.webp"
@@ -20,14 +21,22 @@ gallery:
   - "/images/products/mountain-style-pet-tote-bag-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Mountain Style Pet Tote Crossbody Bag — premium quality, designed for comfort and safety.
+- **Collection**: Carrier Bags & Backpacks
+- **SKU**: OP030007
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD030007
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
+## Sizing and fit
 
-## Contact for Details
+Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
 
-Contact us on WhatsApp for pricing, samples and customization options.
+## Typical use
+
+The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

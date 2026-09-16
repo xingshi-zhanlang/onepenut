@@ -4,14 +4,15 @@ description: "Plush catnip fish toy for cats. Premium pet gear from ONEPENUT, av
 image: "/images/products/catnip-fish-toy-1.webp"
 category: "accessories"
 seoTitle: "Catnip Fish Toy | ONEPENUT"
-sku: "HD014010"
+sku: "OP014010"
 seoDescription: "Plush catnip fish toy for cats. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
 keywords:
-  - pet travel
-  - pet products
-  - wholesale
-  - OEM
-  - accessories
+  - "catnip fish toy"
+  - "wholesale catnip fish toy"
+  - "custom catnip fish toy"
+  - "catnip fish toy manufacturer"
+  - "pet accessories"
+  - "wholesale pet accessories"
 gallery:
   - "/images/products/catnip-fish-toy-1.webp"
   - "/images/products/catnip-fish-toy-2.webp"
@@ -20,26 +21,28 @@ gallery:
   - "/images/products/catnip-fish-toy-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Catnip Fish Toy — premium quality, designed for comfort, safety and everyday use.
+- **Collection**: Accessories & Cat Gear
+- **SKU**: OP014010
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD014010
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
-
-## Key Features
+## Key features
 
 - Built-in catnip and bell for play
 - Soft, bite-resistant plush
 - Cleans teeth while playing
 
-## Specification
+## Sizing and fit
 
-- Materials: durable, pet-safe fabrics
-- Sizes: multiple to fit different pets
-- Custom OEM: colors, logo, packaging available
+This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
 
-## Contact for Details
+## Typical use
 
-Contact us on WhatsApp for pricing, samples and customization options.
+Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

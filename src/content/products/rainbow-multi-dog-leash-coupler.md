@@ -4,14 +4,15 @@ description: "A multi-dog leash coupler with extension from the Rainbow collecti
 image: "/images/products/rainbow-multi-dog-leash-coupler-1.webp"
 category: "harnesses-leashes"
 seoTitle: "Rainbow Series Multi-Dog Leash Coupler | ONEPENUT"
-sku: "HD002013"
+sku: "OP002013"
 seoDescription: "A multi-dog leash coupler with extension from the Rainbow collection, letting you walk multiple pets comfortably on one lead. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
 keywords:
-  - "multi dog leash"
-  - "double dog leash coupler"
-  - "leash splitter"
-  - "rainbow pet leash"
-  - "extension leash"
+  - "rainbow series multi-dog leash coupler"
+  - "wholesale rainbow series multi-dog leash coupler"
+  - "custom rainbow series multi-dog leash coupler"
+  - "rainbow series multi-dog leash coupler manufacturer"
+  - "dog harness"
+  - "wholesale pet harnesses"
 gallery:
   - "/images/products/rainbow-multi-dog-leash-coupler-1.webp"
   - "/images/products/rainbow-multi-dog-leash-coupler-2.webp"
@@ -20,14 +21,22 @@ gallery:
   - "/images/products/rainbow-multi-dog-leash-coupler-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Rainbow Series Multi-Dog Leash Coupler — premium quality, designed for comfort and safety.
+- **Collection**: Harnesses & Leashes
+- **SKU**: OP002013
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD002013
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
+## Sizing and fit
 
-## Contact for Details
+Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
 
-Contact us on WhatsApp for pricing, samples and customization options.
+## Typical use
+
+Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

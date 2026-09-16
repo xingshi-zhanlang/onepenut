@@ -4,13 +4,15 @@ description: "First-Class Cat Backpack for cats and dogs. Premium quality pet tr
 image: "/images/products/first-class-cat-backpack-1.webp"
 category: "carrier-bags"
 seoTitle: "First-Class Cat Backpack | ONEPENUT"
-sku: "HD015049"
+sku: "OP015049"
 seoDescription: "First-Class Cat Backpack. Premium pet products for wholesale, OEM and ODM from ONEPENUT."
 keywords:
-  - pet travel
-  - pet products
-  - wholesale
-  - OEM
+  - "first-class cat backpack"
+  - "wholesale first-class cat backpack"
+  - "custom first-class cat backpack"
+  - "first-class cat backpack manufacturer"
+  - "pet carrier"
+  - "wholesale pet carriers"
 gallery:
   - "/images/products/first-class-cat-backpack-1.webp"
   - "/images/products/first-class-cat-backpack-2.webp"
@@ -19,15 +21,22 @@ gallery:
   - "/images/products/first-class-cat-backpack-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-First-Class Cat Backpack — premium quality, designed for comfort and safety.
+- **Collection**: Carrier Bags & Backpacks
+- **SKU**: OP015049
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD015049
-- Product: 头等舱猫咪双肩背包
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
+## Sizing and fit
 
-## Contact for Details
+Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
 
-Contact us on WhatsApp for pricing, samples and customization options.
+## Typical use
+
+The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

@@ -4,14 +4,15 @@ description: "A lightweight sun hat for cats and dogs that provides UV protectio
 image: "/images/products/pet-lightweight-sun-hat-1.webp"
 category: "accessories"
 seoTitle: "Pet Lightweight Sun Hat | ONEPENUT"
-sku: "HD028003"
+sku: "OP028003"
 seoDescription: "A lightweight sun hat for cats and dogs that provides UV protection with a cute style for outdoor adventures. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
 keywords:
-  - "pet sun hat"
-  - "cat sun hat"
-  - "dog sun hat"
-  - "pet UV protection cap"
-  - "pet hat"
+  - "pet lightweight sun hat"
+  - "wholesale pet lightweight sun hat"
+  - "custom pet lightweight sun hat"
+  - "pet lightweight sun hat manufacturer"
+  - "pet accessories"
+  - "wholesale pet accessories"
 gallery:
   - "/images/products/pet-lightweight-sun-hat-1.webp"
   - "/images/products/pet-lightweight-sun-hat-2.webp"
@@ -20,14 +21,22 @@ gallery:
   - "/images/products/pet-lightweight-sun-hat-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Pet Lightweight Sun Hat — premium quality, designed for comfort and safety.
+- **Collection**: Accessories & Cat Gear
+- **SKU**: OP028003
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD028003
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
+## Sizing and fit
 
-## Contact for Details
+This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
 
-Contact us on WhatsApp for pricing, samples and customization options.
+## Typical use
+
+Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

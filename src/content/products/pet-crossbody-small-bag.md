@@ -4,14 +4,15 @@ description: "Compact crossbody small bag for small pets, lightweight and breath
 image: "/images/products/pet-crossbody-small-bag-1.webp"
 category: "carrier-bags"
 seoTitle: "Pet Crossbody Small Bag | ONEPENUT"
-sku: "HD015056"
+sku: "OP015056"
 seoDescription: "Compact crossbody small bag for small pets, lightweight and breathable. Premium pet gear from ONEPENUT."
 keywords:
-  - pet travel
-  - pet products
-  - wholesale
-  - OEM
-  - carrier-bags
+  - "pet crossbody small bag"
+  - "wholesale pet crossbody small bag"
+  - "custom pet crossbody small bag"
+  - "pet crossbody small bag manufacturer"
+  - "pet carrier"
+  - "wholesale pet carriers"
 gallery:
   - "/images/products/pet-crossbody-small-bag-1.webp"
   - "/images/products/pet-crossbody-small-bag-2.webp"
@@ -20,26 +21,28 @@ gallery:
   - "/images/products/pet-crossbody-small-bag-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Pet Crossbody Small Bag — premium quality, designed for comfort, safety and everyday use.
+- **Collection**: Carrier Bags & Backpacks
+- **SKU**: OP015056
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD015056
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
-
-## Key Features
+## Key features
 
 - Lightweight, breathable mesh
 - Hidden safety buckle
 - Adjustable strap
 
-## Specification
+## Sizing and fit
 
-- Materials: durable, pet-safe fabrics
-- Sizes: multiple to fit different pets
-- Custom OEM: colors, logo, packaging available
+Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
 
-## Contact for Details
+## Typical use
 
-Contact us on WhatsApp for pricing, samples and customization options.
+The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

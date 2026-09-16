@@ -4,14 +4,15 @@ description: "Cooling gel mat for pets, pairs with travel bags. 3D cooling beads
 image: "/images/products/cooling-pet-ice-mat-1.webp"
 category: "accessories"
 seoTitle: "Cooling Pet Ice Mat | ONEPENUT"
-sku: "HD015047"
+sku: "OP015047"
 seoDescription: "Cooling gel mat for pets, pairs with travel bags. 3D cooling beads, breathable. Premium pet gear from ONEPENUT."
 keywords:
-  - pet travel
-  - pet products
-  - wholesale
-  - OEM
-  - accessories
+  - "cooling pet ice mat"
+  - "wholesale cooling pet ice mat"
+  - "custom cooling pet ice mat"
+  - "cooling pet ice mat manufacturer"
+  - "pet accessories"
+  - "wholesale pet accessories"
 gallery:
   - "/images/products/cooling-pet-ice-mat-1.webp"
   - "/images/products/cooling-pet-ice-mat-2.webp"
@@ -20,26 +21,28 @@ gallery:
   - "/images/products/cooling-pet-ice-mat-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Cooling Pet Ice Mat — premium quality, designed for comfort, safety and everyday use.
+- **Collection**: Accessories & Cat Gear
+- **SKU**: OP015047
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD015047
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
-
-## Key Features
+## Key features
 
 - Cooling fiber, physical cooling
 - 3D massage bumps
 - Breathable honeycomb base
 
-## Specification
+## Sizing and fit
 
-- Materials: durable, pet-safe fabrics
-- Sizes: multiple to fit different pets
-- Custom OEM: colors, logo, packaging available
+This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
 
-## Contact for Details
+## Typical use
 
-Contact us on WhatsApp for pricing, samples and customization options.
+Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

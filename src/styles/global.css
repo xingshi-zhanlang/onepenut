@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  /* 品牌暖色自然风 - 参考 HiDREAM 设计语言 */
+  /* 品牌暖色自然风 */
   --color-cream: #faf7f2;
   --color-milk-tea: #ece4d8;
   --color-caramel: #c98a4b;

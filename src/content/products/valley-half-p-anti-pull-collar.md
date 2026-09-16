@@ -4,14 +4,15 @@ description: "Semi-P collar with a no-pull design that gently guides your dog in
 image: "/images/products/valley-half-p-anti-pull-collar-1.webp"
 category: "harnesses-leashes"
 seoTitle: "Valley Series Half-P Anti-Pull Collar | ONEPENUT"
-sku: "HD029005"
+sku: "OP029005"
 seoDescription: "Semi-P collar with a no-pull design that gently guides your dog into position without choking or straining. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
 keywords:
-  - "half-P collar"
-  - "anti pull collar"
-  - "no choke dog collar"
-  - "dog training collar"
-  - "ONEPENUT collar"
+  - "valley series half-p anti-pull collar"
+  - "wholesale valley series half-p anti-pull collar"
+  - "custom valley series half-p anti-pull collar"
+  - "valley series half-p anti-pull collar manufacturer"
+  - "dog harness"
+  - "wholesale pet harnesses"
 gallery:
   - "/images/products/valley-half-p-anti-pull-collar-1.webp"
   - "/images/products/valley-half-p-anti-pull-collar-2.webp"
@@ -20,14 +21,22 @@ gallery:
   - "/images/products/valley-half-p-anti-pull-collar-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Valley Series Half-P Anti-Pull Collar — premium quality, designed for comfort and safety.
+- **Collection**: Harnesses & Leashes
+- **SKU**: OP029005
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD029005
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
+## Sizing and fit
 
-## Contact for Details
+Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
 
-Contact us on WhatsApp for pricing, samples and customization options.
+## Typical use
+
+Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

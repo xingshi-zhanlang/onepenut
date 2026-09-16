@@ -4,14 +4,15 @@ description: "Double-expandable airline travel bag for pets, fits under the seat
 image: "/images/products/double-tent-airline-travel-bag-1.webp"
 category: "carrier-bags"
 seoTitle: "Double Tent Airline Travel Bag | ONEPENUT"
-sku: "HD030025"
+sku: "OP030025"
 seoDescription: "Double-expandable airline travel bag for pets, fits under the seat, breathable and comfy. Premium pet gear from ONEPENUT."
 keywords:
-  - pet travel
-  - pet products
-  - wholesale
-  - OEM
-  - carrier-bags
+  - "double tent airline travel bag"
+  - "wholesale double tent airline travel bag"
+  - "custom double tent airline travel bag"
+  - "double tent airline travel bag manufacturer"
+  - "pet carrier"
+  - "wholesale pet carriers"
 gallery:
   - "/images/products/double-tent-airline-travel-bag-1.webp"
   - "/images/products/double-tent-airline-travel-bag-2.webp"
@@ -20,26 +21,28 @@ gallery:
   - "/images/products/double-tent-airline-travel-bag-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Double Tent Airline Travel Bag — premium quality, designed for comfort, safety and everyday use.
+- **Collection**: Carrier Bags & Backpacks
+- **SKU**: OP030025
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD030025
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
-
-## Key Features
+## Key features
 
 - Two-way expansion for more space
 - Airline cabin approved
 - Breathable mesh windows
 
-## Specification
+## Sizing and fit
 
-- Materials: durable, pet-safe fabrics
-- Sizes: multiple to fit different pets
-- Custom OEM: colors, logo, packaging available
+Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
 
-## Contact for Details
+## Typical use
 
-Contact us on WhatsApp for pricing, samples and customization options.
+The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

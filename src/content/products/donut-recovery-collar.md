@@ -1,30 +1,30 @@
 ---
-title: "Toast Recovery Collar"
-description: "Cute toast-shaped recovery collar that gently prevents licking and scratching. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
-image: "/images/products/toast-recovery-collar-1.webp"
+title: "Donut Recovery Collar"
+description: "Fluffy donut-shaped recovery collar that prevents licking and comforts pets after surgery. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
+image: "/images/products/donut-recovery-collar-1.webp"
 category: "recovery-collars"
-seoTitle: "Toast Recovery Collar | ONEPENUT"
-sku: "OP027007"
-seoDescription: "Cute toast-shaped recovery collar that gently prevents licking and scratching. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
+seoTitle: "Donut Recovery Collar | ONEPENUT"
+sku: "OP027006"
+seoDescription: "Fluffy donut-shaped recovery collar that prevents licking and comforts pets after surgery. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
 keywords:
-  - "toast recovery collar"
-  - "wholesale toast recovery collar"
-  - "custom toast recovery collar"
-  - "toast recovery collar manufacturer"
+  - "donut recovery collar"
+  - "wholesale donut recovery collar"
+  - "custom donut recovery collar"
+  - "donut recovery collar manufacturer"
   - "recovery collar"
   - "soft e-collar"
 gallery:
-  - "/images/products/toast-recovery-collar-1.webp"
-  - "/images/products/toast-recovery-collar-2.webp"
-  - "/images/products/toast-recovery-collar-3.webp"
-  - "/images/products/toast-recovery-collar-4.webp"
-  - "/images/products/toast-recovery-collar-5.webp"
+  - "/images/products/donut-recovery-collar-1.webp"
+  - "/images/products/donut-recovery-collar-2.webp"
+  - "/images/products/donut-recovery-collar-3.webp"
+  - "/images/products/donut-recovery-collar-4.webp"
+  - "/images/products/donut-recovery-collar-5.webp"
 ---
 
 ## Product facts
 
 - **Collection**: Recovery Collars
-- **SKU**: OP027007
+- **SKU**: OP027006
 - **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
 - **Sampling**: a sample is produced and approved before bulk production begins
 - **Order type**: wholesale, OEM and ODM

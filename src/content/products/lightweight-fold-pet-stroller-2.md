@@ -4,14 +4,15 @@ description: "Lightweight one-hand-fold pet stroller with a sturdy frame for sen
 image: "/images/products/lightweight-fold-pet-stroller-2-1.webp"
 category: "pet-strollers"
 seoTitle: "Lightweight Fold Pet Stroller | ONEPENUT"
-sku: "HD031001"
+sku: "OP031001"
 seoDescription: "Lightweight one-hand-fold pet stroller with a sturdy frame for senior pets and small dogs. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
 keywords:
+  - "lightweight fold pet stroller"
+  - "wholesale lightweight fold pet stroller"
+  - "custom lightweight fold pet stroller"
+  - "lightweight fold pet stroller manufacturer"
   - "pet stroller"
-  - "dog stroller"
-  - "lightweight stroller"
-  - "fold stroller"
-  - "pet travel"
+  - "wholesale pet strollers"
 gallery:
   - "/images/products/lightweight-fold-pet-stroller-2-1.webp"
   - "/images/products/lightweight-fold-pet-stroller-2-2.webp"
@@ -20,14 +21,22 @@ gallery:
   - "/images/products/lightweight-fold-pet-stroller-2-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Lightweight Fold Pet Stroller — premium quality, designed for comfort and safety.
+- **Collection**: Pet Strollers
+- **SKU**: OP031001
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD031001
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
+## Sizing and fit
 
-## Contact for Details
+Strollers are matched to the pet's size and to how the stroller will be used, rather than to a single dimension. Tell us the intended use and we will confirm the suitable frame and wheel configuration.
 
-Contact us on WhatsApp for pricing, samples and customization options.
+## Typical use
+
+Built for pets that tire on longer outings and for travel where carrying is not practical. Fold behaviour and frame weight are the two points buyers raise most.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

@@ -4,14 +4,15 @@ description: "A breathable, lightweight vest-style harness with soft padding and
 image: "/images/products/castle-lightweight-vest-harness-1.webp"
 category: "harnesses-leashes"
 seoTitle: "Castle Series Lightweight Vest Harness | ONEPENUT"
-sku: "HD006003"
+sku: "OP006003"
 seoDescription: "A breathable, lightweight vest-style harness with soft padding and easy clip-on buckles for all-day comfort. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
 keywords:
-  - "dog vest harness"
-  - "lightweight harness"
-  - "no-pull harness"
-  - "adjustable pet harness"
-  - "soft padded harness"
+  - "castle series lightweight vest harness"
+  - "wholesale castle series lightweight vest harness"
+  - "custom castle series lightweight vest harness"
+  - "castle series lightweight vest harness manufacturer"
+  - "dog harness"
+  - "wholesale pet harnesses"
 gallery:
   - "/images/products/castle-lightweight-vest-harness-1.webp"
   - "/images/products/castle-lightweight-vest-harness-2.webp"
@@ -20,14 +21,22 @@ gallery:
   - "/images/products/castle-lightweight-vest-harness-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Castle Series Lightweight Vest Harness — premium quality, designed for comfort and safety.
+- **Collection**: Harnesses & Leashes
+- **SKU**: OP006003
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD006003
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
+## Sizing and fit
 
-## Contact for Details
+Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
 
-Contact us on WhatsApp for pricing, samples and customization options.
+## Typical use
+
+Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

@@ -1,0 +1,17 @@
+# Cloudflare Pages 重定向规则
+# ---------------------------------------------------------------------------
+# 语法：<来源路径>  <目标路径>  <状态码>
+# 作用：产品 slug / 图片路径规范化后，把旧 URL 301 到新 URL，
+#       避免旧链接 404 并保住已经积累的链接权重。
+# ---------------------------------------------------------------------------
+
+# 产品页：去掉 slug 里多余的品牌词后缀
+/products/donut-recovery-collar-hidream/  /products/donut-recovery-collar/  301
+/products/donut-recovery-collar-hidream   /products/donut-recovery-collar/  301
+
+# 同批产品图：文件名同步规范化
+/images/products/donut-recovery-collar-hidream-1.webp  /images/products/donut-recovery-collar-1.webp  301
+/images/products/donut-recovery-collar-hidream-2.webp  /images/products/donut-recovery-collar-2.webp  301
+/images/products/donut-recovery-collar-hidream-3.webp  /images/products/donut-recovery-collar-3.webp  301
+/images/products/donut-recovery-collar-hidream-4.webp  /images/products/donut-recovery-collar-4.webp  301
+/images/products/donut-recovery-collar-hidream-5.webp  /images/products/donut-recovery-collar-5.webp  301

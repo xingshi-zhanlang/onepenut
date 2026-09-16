@@ -4,14 +4,15 @@ description: "Convertible sling-to-backpack carrier that adjusts for the way you
 image: "/images/products/pet-sling-backpack-1.webp"
 category: "carrier-bags"
 seoTitle: "Free Spirit Pet Sling-Backpack | ONEPENUT"
-sku: "HD030014"
+sku: "OP030014"
 seoDescription: "Convertible sling-to-backpack carrier that adjusts for the way you prefer to wear it. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
 keywords:
-  - "pet sling backpack"
-  - "convertible pet carrier"
-  - "sling pet bag"
-  - "pet crossbody bag"
-  - "adjustable pet carrier"
+  - "free spirit pet sling-backpack"
+  - "wholesale free spirit pet sling-backpack"
+  - "custom free spirit pet sling-backpack"
+  - "free spirit pet sling-backpack manufacturer"
+  - "pet carrier"
+  - "wholesale pet carriers"
 gallery:
   - "/images/products/pet-sling-backpack-1.webp"
   - "/images/products/pet-sling-backpack-2.webp"
@@ -20,14 +21,22 @@ gallery:
   - "/images/products/pet-sling-backpack-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Free Spirit Pet Sling-Backpack — premium quality, designed for comfort and safety.
+- **Collection**: Carrier Bags & Backpacks
+- **SKU**: OP030014
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD030014
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
+## Sizing and fit
 
-## Contact for Details
+Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
 
-Contact us on WhatsApp for pricing, samples and customization options.
+## Typical use
+
+The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

@@ -4,13 +4,15 @@ description: "A slim baguette-style backpack that keeps small pets close and han
 image: "/images/products/baguette-pet-backpack-carrier-1.webp"
 category: "carrier-bags"
 seoTitle: "Baguette Pet Backpack Carrier | ONEPENUT"
-sku: "HD030022"
+sku: "OP030022"
 seoDescription: "A slim baguette-style backpack that keeps small pets close and hands-free on every outing. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
 keywords:
-  - "pet backpack"
-  - "baguette carrier"
-  - "dog backpack"
-  - "hands-free pet carrier"
+  - "baguette pet backpack carrier"
+  - "wholesale baguette pet backpack carrier"
+  - "custom baguette pet backpack carrier"
+  - "baguette pet backpack carrier manufacturer"
+  - "pet carrier"
+  - "wholesale pet carriers"
 gallery:
   - "/images/products/baguette-pet-backpack-carrier-1.webp"
   - "/images/products/baguette-pet-backpack-carrier-2.webp"
@@ -19,14 +21,22 @@ gallery:
   - "/images/products/baguette-pet-backpack-carrier-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Baguette Pet Backpack Carrier — premium quality, designed for comfort and safety.
+- **Collection**: Carrier Bags & Backpacks
+- **SKU**: OP030022
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD030022
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
+## Sizing and fit
 
-## Contact for Details
+Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
 
-Contact us on WhatsApp for pricing, samples and customization options.
+## Typical use
+
+The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

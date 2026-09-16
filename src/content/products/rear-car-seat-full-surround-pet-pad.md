@@ -4,14 +4,15 @@ description: "Full-coverage rear car seat pad that protects upholstery and keeps
 image: "/images/products/rear-car-seat-full-surround-pet-pad-1.webp"
 category: "accessories"
 seoTitle: "Rear Car Seat Full-Surround Pet Pad | ONEPENUT"
-sku: "HD025037"
+sku: "OP025037"
 seoDescription: "Full-coverage rear car seat pad that protects upholstery and keeps pets secure in transit. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
 keywords:
-  - "car seat cover"
-  - "rear seat pad"
-  - "pet car mat"
-  - "dog car seat"
-  - "seat protector"
+  - "rear car seat full-surround pet pad"
+  - "wholesale rear car seat full-surround pet pad"
+  - "custom rear car seat full-surround pet pad"
+  - "rear car seat full-surround pet pad manufacturer"
+  - "pet accessories"
+  - "wholesale pet accessories"
 gallery:
   - "/images/products/rear-car-seat-full-surround-pet-pad-1.webp"
   - "/images/products/rear-car-seat-full-surround-pet-pad-2.webp"
@@ -20,14 +21,22 @@ gallery:
   - "/images/products/rear-car-seat-full-surround-pet-pad-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Rear Car Seat Full-Surround Pet Pad — premium quality, designed for comfort and safety.
+- **Collection**: Accessories & Cat Gear
+- **SKU**: OP025037
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD025037
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
+## Sizing and fit
 
-## Contact for Details
+This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
 
-Contact us on WhatsApp for pricing, samples and customization options.
+## Typical use
+
+Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

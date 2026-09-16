@@ -4,14 +4,15 @@ description: "A featherlight, ventilated backpack to carry your cat or small dog
 image: "/images/products/lightweight-pet-backpack-1.webp"
 category: "carrier-bags"
 seoTitle: "Lightweight Pet Backpack | ONEPENUT"
-sku: "HD015061"
+sku: "OP015061"
 seoDescription: "A featherlight, ventilated backpack to carry your cat or small dog comfortably wherever you go. Premium pet gear from ONEPENUT, available for wholesale, OEM and ODM."
 keywords:
   - "lightweight pet backpack"
-  - "cat carrier backpack"
-  - "small dog backpack"
-  - "pet travel carrier"
-  - "wholesale OEM"
+  - "wholesale lightweight pet backpack"
+  - "custom lightweight pet backpack"
+  - "lightweight pet backpack manufacturer"
+  - "pet carrier"
+  - "wholesale pet carriers"
 gallery:
   - "/images/products/lightweight-pet-backpack-1.webp"
   - "/images/products/lightweight-pet-backpack-2.webp"
@@ -20,14 +21,22 @@ gallery:
   - "/images/products/lightweight-pet-backpack-5.webp"
 ---
 
-## Product Overview
+## Product facts
 
-Lightweight Pet Backpack — premium quality, designed for comfort and safety.
+- **Collection**: Carrier Bags & Backpacks
+- **SKU**: OP015061
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
+- **Sampling**: a sample is produced and approved before bulk production begins
+- **Order type**: wholesale, OEM and ODM
 
-- SKU: HD015061
-- OEM / ODM: custom branding, colors and packaging available
-- Wholesale: competitive pricing for global retailers
+## Sizing and fit
 
-## Contact for Details
+Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
 
-Contact us on WhatsApp for pricing, samples and customization options.
+## Typical use
+
+The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+
+## Wholesale and OEM
+
+Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
