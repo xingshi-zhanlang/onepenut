@@ -38,6 +38,23 @@ const verifications: { name: string; value: string | undefined }[] = [
 ];
 const activeVerifications = verifications.filter((v) => Boolean(v.value));
 
+// ---------------------------------------------------------------------------
+// 访问统计（可选，环境变量驱动；未配置时不会输出任何脚本）
+//
+//   PUBLIC_CF_ANALYTICS_TOKEN  Cloudflare Web Analytics 的 beacon token
+//     → 无 Cookie、不采集个人数据，因此**不需要同意横幅**，B2B 站首选。
+//       数据给的是：访问量 / 来源 / 落地页 / 国家 / Core Web Vitals。
+//
+//   PUBLIC_GA4_ID              GA4 衡量 ID（形如 G-XXXXXXXXXX）
+//     → 会写 Cookie，面向欧盟访客需要配合同意管理平台（CMP）才能合规。
+//       只有在你已有 CMP 或只投北美/东南亚时才建议启用。
+//
+// 这两个都不装的话，站点流量就是完全不可观测的——Cloudflare Pages 默认
+// 只提供带宽和请求数这类基础设施指标，不含页面访问数据。
+// ---------------------------------------------------------------------------
+const cfAnalyticsToken = import.meta.env.PUBLIC_CF_ANALYTICS_TOKEN;
+const ga4Id = import.meta.env.PUBLIC_GA4_ID;
+
 // OG 图片（默认用品牌字母 Logo 分享图，可用 props 覆盖）
 const ogImage = image
   ? new URL(image, SITE.url).href
@@ -118,6 +135,26 @@ const orgSchema = JSON.stringify({
 
     <!-- 结构化数据 -->
     <script type="application/ld+json" set:html={orgSchema}></script>
+
+    <!-- 访问统计：Cloudflare Web Analytics（无 Cookie，免同意横幅） -->
+    {cfAnalyticsToken && (
+      <script
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon={JSON.stringify({ token: cfAnalyticsToken })}
+      ></script>
+    )}
+
+    <!-- 访问统计：GA4（仅在配置了 PUBLIC_GA4_ID 时输出） -->
+    {ga4Id && (
+      <>
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`}></script>
+        <script
+          is:inline
+          set:html={`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${ga4Id}');`}
+        ></script>
+      </>
+    )}
   </head>
   <body class="flex min-h-screen flex-col">
     <Header />
