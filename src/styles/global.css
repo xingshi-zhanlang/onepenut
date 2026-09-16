@@ -45,6 +45,43 @@
   .btn-caramel {
     @apply inline-flex items-center gap-2 rounded-full bg-caramel px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-olive hover:shadow-hover;
   }
+  /* Markdown 正文排版（博客文章 / 商品正文共用） */
+  .prose-article {
+    @apply text-base leading-relaxed text-stone;
+  }
+  .prose-article h2 {
+    @apply mt-10 mb-3 font-display text-2xl font-bold text-dark-brown;
+  }
+  .prose-article h3 {
+    @apply mt-8 mb-3 font-display text-xl font-bold text-dark-brown;
+  }
+  .prose-article h4 {
+    @apply mt-6 mb-2 font-display text-lg font-bold text-dark-brown;
+  }
+  .prose-article p {
+    @apply mt-4 leading-relaxed;
+  }
+  .prose-article ul {
+    @apply mt-4 list-disc space-y-2 pl-6;
+  }
+  .prose-article ol {
+    @apply mt-4 list-decimal space-y-2 pl-6;
+  }
+  .prose-article strong {
+    @apply font-semibold text-dark-brown;
+  }
+  .prose-article a {
+    @apply font-medium text-olive-dark underline underline-offset-2 transition-colors hover:text-caramel-dark;
+  }
+  .prose-article blockquote {
+    @apply mt-4 border-l-4 border-milk-tea pl-4 italic;
+  }
+  .prose-article code {
+    @apply rounded bg-milk-tea/50 px-1.5 py-0.5 text-sm;
+  }
+  .prose-article hr {
+    @apply my-10 border-milk-tea/60;
+  }
 }
 
 /* WhatsApp 脉冲动画 */

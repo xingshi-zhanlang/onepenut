@@ -27,4 +27,22 @@ const products = defineCollection({
   }),
 });
 
-export const collections = { products };
+const blog = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    /** 发布日期（用于排序与 Article schema datePublished） */
+    publishDate: z.coerce.date(),
+    /** 更新日期（可选，用于 dateModified） */
+    updatedDate: z.coerce.date().optional(),
+    author: z.string().default('ONEPENUT Team'),
+    keywords: z.array(z.string()).optional(),
+    image: z.string().optional(),
+    seoTitle: z.string().optional(),
+    seoDescription: z.string().optional(),
+  }),
+});
+
+export const collections = { products, blog };
+

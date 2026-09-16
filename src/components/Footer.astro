@@ -1,13 +1,13 @@
 ---
 // 页脚
-import { CONTACT, NAV_LINKS, SITE, whatsappLink } from '../consts';
+import { CATEGORIES, CONTACT, NAV_LINKS, SITE, whatsappLink } from '../consts';
 const contactMsg = 'Hello ONEPENUT, I have a question about your products.';
 ---
 
 <footer class="border-t border-milk-tea/60 bg-white/50">
-  <div class="container-site grid gap-10 py-14 md:grid-cols-4">
+  <div class="container-site grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-5">
     <!-- 品牌 -->
-    <div class="md:col-span-2">
+    <div class="sm:col-span-2 lg:col-span-2">
       <div class="flex items-center gap-2.5">
         <img
           src="/images/onepenut-logo.png"
@@ -40,6 +40,20 @@ const contactMsg = 'Hello ONEPENUT, I have a question about your products.';
           <li>
             <a href={link.href} class="text-sm text-stone transition-colors hover:text-olive-dark">
               {link.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <!-- 分类（SEO 内链：所有页面均可抵达 5 个分类落地页） -->
+    <div>
+      <h3 class="text-sm font-semibold text-dark-brown">Collections</h3>
+      <ul class="mt-4 space-y-2.5">
+        {CATEGORIES.map((c) => (
+          <li>
+            <a href={c.path} class="text-sm text-stone transition-colors hover:text-olive-dark">
+              {c.name}
             </a>
           </li>
         ))}

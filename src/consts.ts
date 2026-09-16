@@ -29,7 +29,9 @@ export const whatsappLink = (msg: string) =>
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/products', label: 'Products' },
+  { href: '/collections', label: 'Collections' },
   { href: '/factory', label: 'Factory' },
+  { href: '/blog', label: 'Guides' },
   { href: '/quote', label: 'Get a Quote' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
@@ -39,6 +41,8 @@ export const NAV_LINKS = [
 // ① 外出包/背包（品牌主打）② 胸背+牵引 ③ 伊丽莎白圈/防护 ④ 推车 ⑤ 功能配件/猫用品
 export interface CategoryInfo {
   slug: string;
+  /** 分类落地页路径（SEO：独立 URL，承载分类商业词） */
+  path: string;
   name: string;
   description: string;
   tagline: string;
@@ -48,6 +52,7 @@ export interface CategoryInfo {
 export const CATEGORIES: CategoryInfo[] = [
   {
     slug: 'carrier-bags',
+    path: '/collections/pet-carrier-bags/',
     name: 'Carrier Bags & Backpacks',
     description:
       'Airline-approved pet carriers, backpacks, totes and travel bags for cats and dogs. The core of our travel collection.',
@@ -56,6 +61,7 @@ export const CATEGORIES: CategoryInfo[] = [
   },
   {
     slug: 'harnesses-leashes',
+    path: '/collections/pet-harnesses-leashes/',
     name: 'Harnesses & Leashes',
     description:
       'Escape-proof cat harnesses, no-pull dog harnesses, collars and bungee leashes. Comfortable, adjustable and training-friendly.',
@@ -64,6 +70,7 @@ export const CATEGORIES: CategoryInfo[] = [
   },
   {
     slug: 'recovery-collars',
+    path: '/collections/pet-recovery-collars/',
     name: 'Recovery Collars',
     description:
       'Soft fabric Elizabethan collars, donut collars and cone alternatives — gentle post-surgery protection that pets actually tolerate.',
@@ -72,6 +79,7 @@ export const CATEGORIES: CategoryInfo[] = [
   },
   {
     slug: 'pet-strollers',
+    path: '/collections/pet-strollers/',
     name: 'Pet Strollers',
     description:
       'Lightweight one-hand-fold pet strollers with sturdy aluminum frames. Built for senior pets, small dogs and travel.',
@@ -80,6 +88,7 @@ export const CATEGORIES: CategoryInfo[] = [
   },
   {
     slug: 'accessories',
+    path: '/collections/pet-accessories/',
     name: 'Accessories & Cat Gear',
     description:
       'Car seat belts, recovery suits, beds, bowls, toys and everyday essentials that complete every journey.',
@@ -90,6 +99,10 @@ export const CATEGORIES: CategoryInfo[] = [
 
 export const getCategory = (slug: string) =>
   CATEGORIES.find((c) => c.slug === slug);
+
+// 分类落地页路径（不存在时兜底回产品总览，避免出现空链接）
+export const getCategoryPath = (slug: string) =>
+  getCategory(slug)?.path || '/products';
 
 // 优势
 export const ADVANTAGES = [
