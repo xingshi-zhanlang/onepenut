@@ -24,19 +24,22 @@ gallery:
 ## Product facts
 
 - **Collection**: Carrier Bags & Backpacks
-- **SKU**: OP030002
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP030002
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+- **Specifications**: full dimensions, materials and weight data are confirmed per order
 
-## Sizing and fit
+## Key features
 
-Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
+- Water-resistant nylon with cotton padding so the bag holds its shape
+- Wide padded shoulder strap adjusts for different heights
+- Multiple pockets for phone, bags and treats
+- Wears on the chest for hands-free carry
 
-## Typical use
+## Design and use
 
-The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+The Soft Fufu Pet Chest Bag is the front-carry member of the Soft Fufu family. The shell is water-resistant nylon padded with cotton, so the bag keeps its shape instead of folding around the pet, and the shoulder strap is widened and thickened to move weight off a single shoulder point. Pockets on the outside take a phone, spare bags and a handful of treats, which means the bag is also the thing you carry rather than something you carry in addition. It is a chest carry, so the pet stays in front of you where you can watch it. The matching crossbody version covers the same pockets in a body-worn format.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Soft Fufu Pet Chest Bag can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

@@ -24,19 +24,44 @@ gallery:
 ## Product facts
 
 - **Collection**: Recovery Collars
-- **SKU**: OP015018
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP015018
+- **Sizes**: S/M/L
+- **Recommended for**: pets 0–3 / 3–6 / 5–9 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Neck girth | Outer diameter | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| S | Wisteria Purple | pets 0–3 kg | 13-22 cm | 25 cm | 70 g | 110 g | Zip bag 20 × 35.5 cm |
+| M | — | pets 3–6 kg | 17-27 cm | 29 cm | 115 g | 160 g | Zip bag 27.5 × 45 cm |
+| L | — | pets 5–9 kg | 20-32 cm | 33 cm | 130 g | 175 g | Zip bag 27.5 × 45 cm |
+| S | Tile Pine Green | pets 0–3 kg | 13-22 cm | 25 cm | 70 g | 110 g | Zip bag 20 × 35.5 cm |
+| M | — | pets 3–6 kg | 17-27 cm | 29 cm | 115 g | 160 g | Zip bag 27.5 × 45 cm |
+| L | — | pets 5–9 kg | 20-32 cm | 33 cm | 130 g | 175 g | Zip bag 27.5 × 45 cm |
+| S | Pumpkin Orange | pets 0–3 kg | 13-22 cm | 25 cm | 70 g | 110 g | Zip bag 20 × 35.5 cm |
+| M | — | pets 3–6 kg | 17-27 cm | 29 cm | 115 g | 160 g | Zip bag 27.5 × 45 cm |
+| L | — | pets 5–9 kg | 20-32 cm | 33 cm | 130 g | 175 g | Zip bag 27.5 × 45 cm |
+| S | Cappuccino Blue | pets 3–6 kg | 17-27 cm | 29 cm | 70 g | 110 g | Zip bag 20 × 35.5 cm |
+| M | — | pets 5–9 kg | 20-32 cm | 33 cm | 115 g | 160 g | Zip bag 27.5 × 45 cm |
+| L | — | pets 5–9 kg | 20-32 cm | 33 cm | 130 g | 175 g | Zip bag 27.5 × 45 cm |
+
+## Key features
+
+- Petal silhouette is far less alarming to a nervous pet than a plastic cone
+- Soft water-resistant shell wipes clean
+- Wider protective diameter than a standard soft collar
+- Sized for both cats and dogs
 
 ## Sizing and fit
 
-Fit here is decided by neck circumference, so each size is defined by a neck range with an adjustable closure. Sizes are measured on the finished item, not estimated from a pattern.
+Flower Recovery E-Collar is supplied in S, M, L. Net weight starts at 70 g. Recommended for pets 0–3 / 3–6 / 5–9 kg.
 
 ## Typical use
 
-Soft fabric shapes are generally tolerated better than rigid plastic, which is why this range uses fabric construction throughout. Collars, suits and donut shapes cover different levels of restriction.
+Built for post-surgery recovery, wound protection and vet visits. Available in 4 colours: Wisteria Purple, Tile Pine Green, Pumpkin Orange, Cappuccino Blue. Packed as Zip bag 20 × 35.5 cm; Zip bag 27.5 × 45 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Flower Recovery E-Collar can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

@@ -24,19 +24,33 @@ gallery:
 ## Product facts
 
 - **Collection**: Accessories & Cat Gear
-- **SKU**: OP002015
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP002015
+- **Sizes**: One size/Box
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Quantity | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- |
+| One size | Purple Black | 9.5 × 4.5 × 9.5 cm | — | 60 g | 90 g | Zip bag 20 × 24.5 cm |
+| Box | — | 35 × 23 cm | 120 | 35 g | 300 g | — |
+
+## Key features
+
+- Felt body with a clip that fixes to the lead
+- Refillable roll compartment
+- Matches the Rainbow series
+- Small enough to forget you are carrying it
 
 ## Sizing and fit
 
-This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
+Sizing runs across One size, Box. External dimensions are 9.5 × 4.5 × 9.5 cm and 35 × 23 cm. Net weight starts at 35 g.
 
 ## Typical use
 
-Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+Suited to everyday use alongside a carrier or harness, at home and on the move. Supplied in Purple Black. Packed as Zip bag 20 × 24.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Rainbow Poop Bag Holder can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

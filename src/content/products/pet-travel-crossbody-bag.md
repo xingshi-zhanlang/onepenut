@@ -24,19 +24,39 @@ gallery:
 ## Product facts
 
 - **Collection**: Carrier Bags & Backpacks
-- **SKU**: OP020015
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP020015
+- **Materials**: 100%100% cotton
+- **Sizes**: One size
+- **Recommended for**: pets up to 9 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Materials | Recommended for | Pocket depth | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- |
+| One size | 100%100% cotton | pets up to 7 kg | 30 cm | 330 g | 360 g | Zip bag 27.5 × 45 cm |
+| One size | 100%100% cotton | pets up to 9 kg | 35 cm | 350 g | 380 g | Zip bag 27.5 × 45 cm |
+
+## Key features
+
+- Multi-panel construction with an ergonomic cradle shape
+- Breathable enough for summer, lined for winter
+- Colour-blocked panels in seven colourways
+- Crossbody strap keeps both hands free
 
 ## Sizing and fit
 
-Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
+Sizing runs across One size. Net weight starts at 330 g. Recommended for pets up to 9 kg.
+
+## Materials and packing
+
+Body materials: 100%100% cotton. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+Built for cabin travel, car journeys, daily errands and longer outdoor trips. Packed as Zip bag 27.5 × 45 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Pet Travel Crossbody Bag can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

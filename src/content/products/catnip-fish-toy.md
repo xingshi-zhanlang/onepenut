@@ -24,25 +24,39 @@ gallery:
 ## Product facts
 
 - **Collection**: Accessories & Cat Gear
-- **SKU**: OP014010
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP014010
+- **Materials**: Polyester + PP cotton
+- **Sizes**: One size
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- |
+| One size | Pretzel | 11 × 3.5 cm | Polyester + PP cotton | 25 g | 30 g | OPP bag 20.5 × 15 cm |
+| One size | Pumpkin | 9 × 7 cm | Polyester + PP cotton | 25 g | 30 g | OPP bag 20.5 × 15 cm |
+| One size | Banana | 16 × 6 cm | Polyester + PP cotton | 25 g | 30 g | OPP bag 20.5 × 15 cm |
 
 ## Key features
 
-- Built-in catnip and bell for play
-- Soft, bite-resistant plush
-- Cleans teeth while playing
+- Five times the usual catnip loading for a stronger response
+- Soft plush surface is safe for biting and bunny-kicking
+- Holds its scent longer than loosely filled toys
+- Chunky enough to grip with both front paws
 
 ## Sizing and fit
 
-This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
+Catnip Fish Toy is supplied in One size. External dimensions are 11 × 3.5 cm and 9 × 7 cm and 16 × 6 cm. Net weight starts at 25 g.
+
+## Materials and packing
+
+Body materials: Polyester + PP cotton. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+Intended for everyday use alongside a carrier or harness, at home and on the move. Available in 3 colours: Pretzel, Pumpkin, Banana. Packed as OPP bag 20.5 × 15 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Catnip Fish Toy can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

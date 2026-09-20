@@ -24,19 +24,39 @@ gallery:
 ## Product facts
 
 - **Collection**: Accessories & Cat Gear
-- **SKU**: OP025016
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP025016
+- **Materials**: Ceramic
+- **Sizes**: One size
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Materials | Bowl inner diameter | Height | Net weight | Gross weight | Packaging | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Single-Layer Cream | Ceramic | 14 cm | 5.5 cm | 610 g | 630 g | Foam box 22.5 × 22.5 × 9 cm | 350ML |
+| One size | Single-Layer Puff Yellow | Ceramic | 14 cm | 5.5 cm | 610 g | 630 g | Foam box 22.5 × 22.5 × 9 cm | 350ML |
+| One size | Single-Layer Taro Purple | Ceramic | 14 cm | 5.5 cm | 610 g | 630 g | Foam box 22.5 × 22.5 × 9 cm | 350ML |
+
+## Key features
+
+- Under-glaze fired at high temperature — no lead leaching, no fading
+- Wide shallow profile reduces whisker fatigue
+- Glazed surface rinses clean under the tap
+- Weighted base resists sliding across the floor
 
 ## Sizing and fit
 
-This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
+Donut Ceramic Pet Bowl is supplied in One size. Net weight starts at 610 g.
+
+## Materials and packing
+
+Body materials: Ceramic. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+Intended for everyday use alongside a carrier or harness, at home and on the move. Available in 3 colours: Single-Layer Cream, Single-Layer Puff Yellow, Single-Layer Taro Purple. Packed as Foam box 22.5 × 22.5 × 9 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Donut Ceramic Pet Bowl can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

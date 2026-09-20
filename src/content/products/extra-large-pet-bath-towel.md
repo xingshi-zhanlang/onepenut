@@ -24,19 +24,39 @@ gallery:
 ## Product facts
 
 - **Collection**: Accessories & Cat Gear
-- **SKU**: OP015039-01F
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP015039-01F
+- **Materials**: Coral fleece
+- **Size**: One size
+- **Customisation**: size, colour, logo, label and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- |
+| One size | Dusk Grey | 140 × 70 cm | Coral fleece | 235 g | 260 g | Frosted zip bag 34 × 30 cm |
+
+## Key features
+
+- 140 × 70 cm — wide enough to wrap a medium dog or to dry a large one in sections
+- Specially finished coral fleece lifts water off the coat rather than spreading it around
+- One pass leaves the coat semi-dry, so the pet is not sitting damp after a bath
+- Machine washable, and it dries soft rather than stiffening after repeated washing
+- 235 g — light enough to pack for travel, and it does not need a separate towel bag
+- Sold alongside the quick-dry range, which covers the smaller sizes
 
 ## Sizing and fit
 
-This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
+Extra-Large Soft Pet Bath Towel is supplied in One size, measuring 140 × 70 cm. Net weight is 235 g and gross weight 260 g. This is the largest size in the towel range; smaller formats are available as separate models.
+
+## Materials and packing
+
+Made from coral fleece with a fast-absorbing finish, supplied in Dusk Grey and packed in a frosted zip bag measuring 34 × 30 cm. The zip bag doubles as the storage pouch, which is how most buyers merchandise it.
 
 ## Typical use
 
-Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+Bath time, wet walks, grooming salons and travel. Buyers usually pair this size with a smaller towel in the same fabric so one range covers both small and large breeds.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Extra-Large Soft Pet Bath Towel can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

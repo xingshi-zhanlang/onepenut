@@ -24,19 +24,34 @@ gallery:
 ## Product facts
 
 - **Collection**: Harnesses & Leashes
-- **SKU**: OP024016
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP024016
+- **Sizes**: One size
+- **Recommended for**: cats up to 8 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Neck girth | Chest girth | Back length | Leash length | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Berry Purple | cats up to 8 kg | 21-31 cm | 31-53 cm | 7-12 cm | 130 cm | 65 g | 95 g | Zip bag 20 × 35.5 cm |
+| One size | Stem Yellow | cats up to 8 kg | 21-31 cm | 31-53 cm | 7-12 cm | 130 cm | 65 g | 95 g | Zip bag 20 × 35.5 cm |
+
+## Key features
+
+- Adjustable at the back — suits both short- and long-bodied cats
+- Zinc-alloy side-release buckles resist deformation under load
+- H-shape keeps coverage off the coat in warm weather
+- Colour-blocked leather panels
 
 ## Sizing and fit
 
-Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
+Leather Color-Block Cat Harness Set is built around One size. Net weight starts at 65 g. Recommended for cats up to 8 kg.
 
 ## Typical use
 
-Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+Built for daily walks, training sessions and travel by car or public transport. Available in 2 colours: Berry Purple, Stem Yellow. Packed as Zip bag 20 × 35.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Leather Color-Block Cat Harness Set can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

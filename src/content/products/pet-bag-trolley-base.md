@@ -24,19 +24,37 @@ gallery:
 ## Product facts
 
 - **Collection**: Accessories & Cat Gear
-- **SKU**: OP031003
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP031003
+- **Materials**: Aluminium alloy + plastic
+- **Sizes**: One size
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Materials | Base board | Handle length | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Black | Aluminium alloy + plastic | 38 × 35 cm | 86 cm | 1710 g | 2110 g | Cardboard box 47 × 15 × 39 cm |
+
+## Key features
+
+- Wheeled base turns most ONEPENUT carriers into rolling luggage
+- Telescopic handle and a stable wheelbase
+- Fits several bags across the range
+- Takes the weight off your shoulder on travel days
 
 ## Sizing and fit
 
-This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
+Pet Bag Trolley Base covers One size. Net weight starts at 1710 g.
+
+## Materials and packing
+
+Body materials: Aluminium alloy + plastic. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+Intended for everyday use alongside a carrier or harness, at home and on the move. Supplied in Black. Packed as Cardboard box 47 × 15 × 39 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Pet Bag Trolley Base can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

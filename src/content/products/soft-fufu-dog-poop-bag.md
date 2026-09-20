@@ -24,19 +24,37 @@ gallery:
 ## Product facts
 
 - **Collection**: Accessories & Cat Gear
-- **SKU**: OP030005
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP030005
+- **Materials**: Nylon
+- **Sizes**: One size
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- |
+| One size | Butter Pudding | 9 × 4.5 × 8 cm | Nylon | 35 g | 40 g | Zip bag 20 × 24.5 cm |
+
+## Key features
+
+- Wide mouth for easy access
+- Front slot feeds out the bag roll
+- Easy-clean nylon
+- Colour-matched to the Soft Fufu range
 
 ## Sizing and fit
 
-This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
+Soft Fufu Dog Poop Bag Holder is built around One size. External dimensions are 9 × 4.5 × 8 cm. Net weight starts at 35 g.
+
+## Materials and packing
+
+Body materials: Nylon. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+Designed around everyday use alongside a carrier or harness, at home and on the move. Supplied in Butter Pudding. Packed as Zip bag 20 × 24.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Soft Fufu Dog Poop Bag Holder can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

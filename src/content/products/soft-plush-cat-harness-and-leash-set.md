@@ -24,19 +24,36 @@ gallery:
 ## Product facts
 
 - **Collection**: Harnesses & Leashes
-- **SKU**: OP024018
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP024018
+- **Sizes**: One size
+- **Recommended for**: cats up to 8 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Neck girth | Chest girth | Back length | Leash length | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Sandstone Brown | cats up to 8 kg | 10-33 cm | 31-53 cm | 9-12 cm | 125-220 cm | 100 g | 125 g | Zip bag 20 × 35.5 cm |
+| One size | Turquoise | cats up to 8 kg | 10-33 cm | 31-53 cm | 9-12 cm | 125-220 cm | 100 g | 125 g | Zip bag 20 × 35.5 cm |
+| One size | Caramel Brown | cats up to 8 kg | 10-33 cm | 31-53 cm | 9-12 cm | 125-220 cm | — | — | — |
+| One size | Clay Grey | cats up to 8 kg | 10-33 cm | 31-53 cm | 9-12 cm | 125-220 cm | — | — | — |
+
+## Key features
+
+- PVC slider at the back adjusts the fit without buckles
+- H-shape keeps coverage minimal
+- Shoulder or waist carry
+- Plush lining on the contact areas
 
 ## Sizing and fit
 
-Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
+Soft Plush Cat Harness & Leash Set is built around One size. Net weight starts at 100 g. Recommended for cats up to 8 kg.
 
 ## Typical use
 
-Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+Intended for daily walks, training sessions and travel by car or public transport. Available in 4 colours: Sandstone Brown, Turquoise, Caramel Brown, Clay Grey. Packed as Zip bag 20 × 35.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Soft Plush Cat Harness & Leash Set can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

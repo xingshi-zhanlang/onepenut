@@ -24,19 +24,38 @@ gallery:
 ## Product facts
 
 - **Collection**: Carrier Bags & Backpacks
-- **SKU**: OP030016
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP030016
+- **Materials**: Nylon
+- **Sizes**: One size
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- |
+| One size | Deep Moss Green | 16 × 6 × 16 cm | Nylon | 220 g | 255 g | Cardboard box 18 × 18 × 5.5 cm |
+| One size | Terracotta Brown | 16 × 6 × 16 cm | Nylon | 220 g | 255 g | Cardboard box 18 × 18 × 5.5 cm |
+
+## Key features
+
+- 16 cm mouth stays open for one-handed access while you keep your eyes on the dog
+- Magnetic closure stops treats spilling on a run
+- Wears on a belt or on a crossbody strap
+- Separate compartments keep high-value rewards apart
 
 ## Sizing and fit
 
-Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
+Toast Dog Training Treat Pouch is built around One size. External dimensions are 16 × 6 × 16 cm. Net weight starts at 220 g.
+
+## Materials and packing
+
+Body materials: Nylon. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+Built for cabin travel, car journeys, daily errands and longer outdoor trips. Available in 2 colours: Deep Moss Green, Terracotta Brown. Packed as Cardboard box 18 × 18 × 5.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Toast Dog Training Treat Pouch can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

@@ -24,19 +24,39 @@ gallery:
 ## Product facts
 
 - **Collection**: Pet Strollers
-- **SKU**: OP031004
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP031004
+- **Materials**: Powder-coated aircraft-grade aluminium + engineering plastic + linen-look fabricfabric; Powder-coated aircraft-grade aluminium + engineering plastic + cationic-dyed polyester + polyester fabric
+- **Sizes**: One size
+- **Recommended for**: pets up to 30 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Open dimensions | Cabin dimensions | Folded dimensions | Materials | Recommended for | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Wheat Brown | L90.5xW59.5xH103 cm | L68xW40xL(29+30)cm | L46xW29xH75 cm | Powder-coated aircraft-grade aluminium + engineering plastic + linen-look fabricfabric | pets up to 30 kg | 8810 g | 11185 g | Cardboard box 76 × 52 × 30 cm |
+| One size | Turquoise Mist | L90.5xW59.5xH103 cm | L68xW40xL(29+30)cm | L46xW29xH75 cm | Powder-coated aircraft-grade aluminium + engineering plastic + cationic-dyed polyester + polyester fabric | pets up to 30 kg | 8810 g | 11185 g | Cardboard box 76 × 52 × 30 cm |
+
+## Key features
+
+- 68 cm cabin rated to 30 kg — room for two pets
+- One-key fold takes roughly 70% less effort than a manual collapse
+- Snap-lock keeps the frame rigid when open
+- Aluminium frame with a linen-look fabric cabin
 
 ## Sizing and fit
 
-Strollers are matched to the pet's size and to how the stroller will be used, rather than to a single dimension. Tell us the intended use and we will confirm the suitable frame and wheel configuration.
+One-Key Fold Pet Stroller (Large) covers One size. External dimensions are L90.5xW59.5xH103 cm. Net weight starts at 8810 g. Recommended for pets up to 30 kg.
+
+## Materials and packing
+
+Body materials: Powder-coated aircraft-grade aluminium + engineering plastic + linen-look fabricfabric; Powder-coated aircraft-grade aluminium + engineering plastic + cationic-dyed polyester + polyester fabric. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-Built for pets that tire on longer outings and for travel where carrying is not practical. Fold behaviour and frame weight are the two points buyers raise most.
+Built for senior pets, longer city walks and travel where carrying is not practical. Available in 2 colours: Wheat Brown, Turquoise Mist. Packed as Cardboard box 76 × 52 × 30 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+One-Key Fold Pet Stroller (Large) can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

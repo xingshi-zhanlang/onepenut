@@ -24,19 +24,22 @@ gallery:
 ## Product facts
 
 - **Collection**: Accessories & Cat Gear
-- **SKU**: OP025034
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP025034
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+- **Specifications**: full dimensions, materials and weight data are confirmed per order
 
-## Sizing and fit
+## Key features
 
-This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
+- Egg-tart shell shape gives cats a raised rim to lean against
+- Removable cushion for washing
+- Holds its shape instead of flattening with use
+- Wide enough for a cat to curl or stretch out
 
-## Typical use
+## Design and use
 
-Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+The Egg Tart Cat Bed borrows its shape from a pastry shell: a raised rim that gives cats something to lean against, and a low centre they can sink into. Cats that will not use a flat mat usually accept a bed with a rim, because it reads as cover without being an enclosed box. The cushion lifts out for washing and the shell holds its shape instead of flattening after a few weeks of use. The footprint suits a windowsill, a desk corner or the floor beside a radiator. Fabric, colour and packaging can all be produced to your own specification.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Multi-Function Egg Tart Cat Bed can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

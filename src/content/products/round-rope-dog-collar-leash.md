@@ -24,19 +24,35 @@ gallery:
 ## Product facts
 
 - **Collection**: Harnesses & Leashes
-- **SKU**: OP029017
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP029017
+- **Sizes**: M/L/One size
+- **Recommended for**: pets up to 50 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Diameter | Length | Maximum neck girth | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| M | Turquoise | pets up to 50 kg | 11 mm | — | 48 cm | 70 g | 80 g | Zip bag 13 × 38 cm |
+| L | — | pets up to 50 kg | 11 mm | — | 62 cm | 75 g | 85 g | Zip bag 13 × 38 cm |
+| One size | — | pets up to 50 kg | 11 mm | 120-210 cm | — | 170 g | 180 g | Zip bag 13 × 38 cm |
+
+## Key features
+
+- Twin stops prevent over-tightening during a pull
+- 11 mm nylon round rope rated to about 100 kg
+- Shoulder or waist carry
+- Round profile resists matting on long coats
 
 ## Sizing and fit
 
-Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
+Round Rope Dog Collar & Adjustable Leash Set is built around M, L, One size. Net weight starts at 70 g. Recommended for pets up to 50 kg.
 
 ## Typical use
 
-Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+Designed around daily walks, training sessions and travel by car or public transport. Supplied in Turquoise. Packed as Zip bag 13 × 38 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Round Rope Dog Collar & Adjustable Leash Set can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

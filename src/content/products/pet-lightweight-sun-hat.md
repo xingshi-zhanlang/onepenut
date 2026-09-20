@@ -24,19 +24,36 @@ gallery:
 ## Product facts
 
 - **Collection**: Accessories & Cat Gear
-- **SKU**: OP028003
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP028003
+- **Sizes**: S/M
+- **Recommended for**: pets up to 8 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Hat width | Chin strap length | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| S | Milk Brown | pets up to 4 kg | 19.5 cm | 16 cm | 10 g | 20 g | Zip bag 24X24 cm |
+| M | — | pets up to 8 kg | 21 cm | 17 cm | 20 g | 30 g | Zip bag 24X24 cm |
+| S | Hibiscus Purple | pets up to 4 kg | 19.5 cm | 16 cm | 10 g | 20 g | Zip bag 24X24 cm |
+| M | — | pets up to 8 kg | 21 cm | 17 cm | 20 g | 30 g | Zip bag 24X24 cm |
+
+## Key features
+
+- Wide brim shades the eyes without blocking the view
+- Light water-repellent shell
+- Adjustable chin strap keeps it on in wind
+- Physical sun protection rather than a chemical coating
 
 ## Sizing and fit
 
-This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
+Pet Lightweight Sun Hat covers S, M. Net weight starts at 10 g. Recommended for pets up to 8 kg.
 
 ## Typical use
 
-Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+Built for everyday use alongside a carrier or harness, at home and on the move. Available in 2 colours: Milk Brown, Hibiscus Purple. Packed as Zip bag 24X24 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Pet Lightweight Sun Hat can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

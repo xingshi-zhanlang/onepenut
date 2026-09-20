@@ -24,19 +24,36 @@ gallery:
 ## Product facts
 
 - **Collection**: Accessories & Cat Gear
-- **SKU**: OP028001
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP028001
+- **Sizes**: M/L
+- **Recommended for**: pets 8–15 / 15–30 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Collar height | Neck length | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| M | Milk Brown | pets 8–15 kg | 9 cm | 25 cm | 240 g | 250 g | Zip bag 20 × 24.5 cm |
+| L | — | pets 15–30 kg | 9 cm | 32 cm | 300 g | 310 g | Zip bag 20 × 24.5 cm |
+| M | Olive Green | pets 8–15 kg | 9 cm | 25 cm | 240 g | 250 g | Zip bag 20 × 24.5 cm |
+| L | — | pets 15–30 kg | 9 cm | 32 cm | 300 g | 310 g | Zip bag 20 × 24.5 cm |
+
+## Key features
+
+- 360 degree gel wrap cools the neck and chest
+- Water-resistant quick-dry nylon shell
+- Flat profile so it does not pull on the neck
+- Refreezes in the freezer between walks
 
 ## Sizing and fit
 
-This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
+Sizing runs across M, L. Net weight starts at 240 g. Recommended for pets 8–15 / 15–30 kg.
 
 ## Typical use
 
-Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+Made for everyday use alongside a carrier or harness, at home and on the move. Available in 2 colours: Milk Brown, Olive Green. Packed as Zip bag 20 × 24.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Pet Ice Cooling Collar can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

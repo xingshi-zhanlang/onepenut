@@ -24,19 +24,32 @@ gallery:
 ## Product facts
 
 - **Collection**: Harnesses & Leashes
-- **SKU**: OP002013
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP002013
+- **Sizes**: M
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Width | Length | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- |
+| M | Red | 2.0 cm | 38-65 cm | 70 g | 90 g | Zip bag 13 × 38 cm |
+
+## Key features
+
+- Extends an existing lead for more roaming room
+- Two couplers walk two dogs on a single lead
+- Lightweight and tangle-resistant
+- Matching Rainbow webbing
 
 ## Sizing and fit
 
-Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
+Rainbow Series Multi-Dog Leash Coupler is built around M. Net weight starts at 70 g.
 
 ## Typical use
 
-Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+Made for daily walks, training sessions and travel by car or public transport. Supplied in Red. Packed as Zip bag 13 × 38 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Rainbow Series Multi-Dog Leash Coupler can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

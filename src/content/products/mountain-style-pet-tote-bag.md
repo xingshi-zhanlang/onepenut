@@ -24,19 +24,39 @@ gallery:
 ## Product facts
 
 - **Collection**: Carrier Bags & Backpacks
-- **SKU**: OP030007
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP030007
+- **Materials**: Nylon
+- **Sizes**: One size
+- **Recommended for**: pets up to 6 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Recommended for | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Volcanic Grey | 45 × 15 × 27 cm | Nylon | pets up to 6 kg | 470 g | 755 g | Cardboard box 47 × 28.5 × 17 cm |
+| One size | Tea Brown Black | 45 × 15 × 27 cm | Nylon | pets up to 6 kg | 470 g | 755 g | Cardboard box 47 × 28.5 × 17 cm |
+
+## Key features
+
+- Anti-collapse webbing outside keeps the walls upright
+- Internal drawstring closes the opening around the pet
+- Wide cradle so the pet can lie down
+- Utility styling with webbing loops for accessories
 
 ## Sizing and fit
 
-Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
+Mountain Style Pet Tote Crossbody Bag is supplied in One size. External dimensions are 45 × 15 × 27 cm. Net weight starts at 470 g. Recommended for pets up to 6 kg.
+
+## Materials and packing
+
+Body materials: Nylon. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+Suited to cabin travel, car journeys, daily errands and longer outdoor trips. Available in 2 colours: Volcanic Grey, Tea Brown Black. Packed as Cardboard box 47 × 28.5 × 17 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Mountain Style Pet Tote Crossbody Bag can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

@@ -24,19 +24,34 @@ gallery:
 ## Product facts
 
 - **Collection**: Harnesses & Leashes
-- **SKU**: OP029002
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP029002
+- **Sizes**: One size
+- **Recommended for**: cats up to 8 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Neck girth | Chest girth | Leash length | Width | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Milk & Purple | cats up to 8 kg | 20-30 cm | 30-52 cm | 130 cm | 1.5 cm | 70 g | 115 g | Zip bag 20 × 35.5 cm |
+| One size | Olive & Grey | cats up to 8 kg | 20-30 cm | 30-52 cm | 130 cm | 1.5 cm | 70 g | 115 g | Zip bag 20 × 35.5 cm |
+
+## Key features
+
+- Padded back panel for comfort on longer wear
+- H-shape makes escape harder
+- Light enough for daily use
+- Adjustable at chest and girth
 
 ## Sizing and fit
 
-Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
+Valley H-Shape Cat Harness Set is supplied in One size. Net weight starts at 70 g. Recommended for cats up to 8 kg.
 
 ## Typical use
 
-Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+Designed around daily walks, training sessions and travel by car or public transport. Available in 2 colours: Milk & Purple, Olive & Grey. Packed as Zip bag 20 × 35.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Valley H-Shape Cat Harness Set can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

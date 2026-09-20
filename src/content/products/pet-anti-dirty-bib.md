@@ -24,25 +24,38 @@ gallery:
 ## Product facts
 
 - **Collection**: Accessories & Cat Gear
-- **SKU**: OP028004
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP028004
+- **Sizes**: S/M/L
+- **Recommended for**: pets up to 10 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Stretch range | Length | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| S | Moss Green Check | pets up to 2.5 kg | 9-16 cm | 14 cm | 15 g | 20 g | Zip bag 15 × 20.5 cm |
+| M | — | pets up to 6 kg | 12-20 cm | 16 cm | 20 g | 30 g | Zip bag 15 × 20.5 cm |
+| L | — | pets up to 10 kg | 14-26 cm | 18 cm | 25 g | 40 g | Zip bag 15 × 20.5 cm |
+| S | Mist Blue Check | pets up to 2.5 kg | 9-16 cm | 14 cm | 15 g | 20 g | Zip bag 15 × 20.5 cm |
+| M | — | pets up to 6 kg | 12-20 cm | 16 cm | 20 g | 30 g | Zip bag 15 × 20.5 cm |
+| L | — | pets up to 10 kg | 14-26 cm | 18 cm | 25 g | 40 g | Zip bag 15 × 20.5 cm |
 
 ## Key features
 
-- 360-degree spill protection
-- Soft, high-elastic, no restraint
-- Easy to clean
+- 360 degree coverage catches drips and crumbs around the bowl
+- Stretch fabric follows the neck without pressure
+- Protects the coat after meals
+- Three sizes from 2.5 kg up to 10 kg
 
 ## Sizing and fit
 
-This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
+Pet Anti-Dirty Bib is built around S, M, L. Net weight starts at 15 g. Recommended for pets up to 10 kg.
 
 ## Typical use
 
-Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+Intended for everyday use alongside a carrier or harness, at home and on the move. Available in 2 colours: Moss Green Check, Mist Blue Check. Packed as Zip bag 15 × 20.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Pet Anti-Dirty Bib can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

@@ -181,7 +181,7 @@ const productSchema = JSON.stringify({
           an order.
         </p>
         <dl class="mt-5 grid gap-x-8 gap-y-4 sm:grid-cols-2">
-          {TRADE_TERMS.slice(0, 6).map((t) => (
+          {TRADE_TERMS.map((t) => (
             <div class="border-t border-milk-tea/60 pt-3">
               <dt class="text-sm font-semibold text-dark-brown">{t.label}</dt>
               <dd class="mt-1 text-sm leading-relaxed text-stone">{t.value}</dd>

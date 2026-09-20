@@ -24,19 +24,33 @@ gallery:
 ## Product facts
 
 - **Collection**: Carrier Bags & Backpacks
-- **SKU**: OP024002
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP024002
+- **Sizes**: One size
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- |
+| One size | Cardamom Red | 28 × 15 cm | 90 g | 110 g | Zip bag 20 × 35.5 cm |
+| One size | Antler Brown | 28 × 15 cm | 90 g | 110 g | Zip bag 20 × 35.5 cm |
+
+## Key features
+
+- PVC shell wipes clean after a muddy walk
+- Sized for a phone, keys, poop bags and a handful of treats
+- Pairs with the packable Bobo lead
+- Wears across the body so both hands stay free
 
 ## Sizing and fit
 
-Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
+Sizing runs across One size. External dimensions are 28 × 15 cm. Net weight starts at 90 g.
 
 ## Typical use
 
-The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+Intended for cabin travel, car journeys, daily errands and longer outdoor trips. Available in 2 colours: Cardamom Red, Antler Brown. Packed as Zip bag 20 × 35.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Bobo Series Crossbody Travel Bag can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

@@ -24,19 +24,42 @@ gallery:
 ## Product facts
 
 - **Collection**: Recovery Collars
-- **SKU**: OP027007
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP027007
+- **Sizes**: XS/S/M/L/XL
+- **Recommended for**: pets 1–2.5 / 2–3.5 / 3–6 / 5–10 / 9–15 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Neck girth | Outer diameter | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| XS | Brown Check | pets 1–2.5 kg | 7-21 cm | 20 cm | 65 g | 80 g | Zip bag 32 × 32 cm |
+| S | — | pets 2–3.5 kg | 11-23 cm | 25 cm | 95 g | 110 g | Zip bag 32 × 32 cm |
+| M | — | pets 3–6 kg | 15-27 cm | 30 cm | 135 g | 150 g | Zip bag 40 × 40 cm |
+| L | — | pets 5–10 kg | 23-35 cm | 38 cm | 200 g | 225 g | Zip bag 40 × 40 cm |
+| XL | — | pets 9–15 kg | 32-45 cm | 45 cm | 265 g | 295 g | Zip bag 50 × 50 cm |
+| XS | Grey Check | pets 1–2.5 kg | 7-21 cm | 20 cm | 65 g | 80 g | Zip bag 32 × 32 cm |
+| S | — | pets 2–3.5 kg | 11-23 cm | 25 cm | 95 g | 110 g | Zip bag 32 × 32 cm |
+| M | — | pets 3–6 kg | 15-27 cm | 30 cm | 135 g | 150 g | Zip bag 40 × 40 cm |
+| L | — | pets 5–10 kg | 23-35 cm | 38 cm | 200 g | 225 g | Zip bag 40 × 40 cm |
+| XL | — | pets 9–15 kg | 32-45 cm | 45 cm | 265 g | 295 g | Zip bag 50 × 50 cm |
+
+## Key features
+
+- Toast silhouette blocks licking across a wide diameter
+- Light enough for normal play and movement
+- Soft edge will not mark furniture
+- Adjustable neck strap
 
 ## Sizing and fit
 
-Fit here is decided by neck circumference, so each size is defined by a neck range with an adjustable closure. Sizes are measured on the finished item, not estimated from a pattern.
+Toast Recovery Collar covers XS, S, M, L, XL. Net weight starts at 65 g. Recommended for pets 1–2.5 / 2–3.5 / 3–6 / 5–10 / 9–15 kg.
 
 ## Typical use
 
-Soft fabric shapes are generally tolerated better than rigid plastic, which is why this range uses fabric construction throughout. Collars, suits and donut shapes cover different levels of restriction.
+Intended for post-surgery recovery, wound protection and vet visits. Available in 2 colours: Brown Check, Grey Check. Packed as Zip bag 32 × 32 cm; Zip bag 40 × 40 cm; Zip bag 50 × 50 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Toast Recovery Collar can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

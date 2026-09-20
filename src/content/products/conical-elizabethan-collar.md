@@ -24,19 +24,22 @@ gallery:
 ## Product facts
 
 - **Collection**: Recovery Collars
-- **SKU**: OP015024
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP015024
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+- **Specifications**: full dimensions, materials and weight data are confirmed per order
 
-## Sizing and fit
+## Key features
 
-Fit here is decided by neck circumference, so each size is defined by a neck range with an adjustable closure. Sizes are measured on the finished item, not estimated from a pattern.
+- Classic conical profile keeps the pet from reaching stitches or a wound
+- Soft fabric rim replaces the hard plastic edge of a veterinary cone
+- Adjustable neck strap for a secure, comfortable fit
+- Collapses flat for storage between uses
 
-## Typical use
+## Design and use
 
-Soft fabric shapes are generally tolerated better than rigid plastic, which is why this range uses fabric construction throughout. Collars, suits and donut shapes cover different levels of restriction.
+The Conical Recovery E-Collar is the plain, dependable version of the ONEPENUT recovery range: a soft fabric cone that keeps a pet away from stitches and dressings without the hard plastic edge of a veterinary collar. The rim is wide enough to stop licking, the neck strap adjusts across a generation of sizes, and the whole collar folds flat when it is not in use. Because it is built from flexible fabric rather than moulded plastic, pets tolerate it for longer stretches and it does not mark skirting boards or furniture. Cats and small dogs can use the same design — sizing is confirmed per order.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Conical Recovery E-Collar can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

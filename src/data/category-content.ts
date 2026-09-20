@@ -63,9 +63,9 @@ export const TRADE_TERMS: { label: string; value: string }[] = [
     value: 'Terms are agreed with our sales team when your order is confirmed.',
   },
   {
-    label: 'Compliance',
+    label: 'Testing and compliance',
     value:
-      'REACH, CPSIA, AZO and colour-fastness testing can be arranged for your destination market.',
+      'Tell us which tests your market or your own customer requires, and we will supply what the laboratory needs to run them — layered material samples, same-batch production samples, BOM with layer weights, SDS, TDS and a stamped declaration of conformity. If a result misses, we adjust the formulation and re-test. The testing itself is commissioned by you or by your nominated laboratory, so the report is issued in a name your market accepts.',
   },
 ];
 
@@ -144,6 +144,10 @@ export const CATEGORY_CONTENT: Record<string, CategoryContent> = {
         q: 'Can the packaging be Amazon FBA ready?',
         a: 'Yes — polybag, hangtag, colour box, barcode and FBA labelling can all be arranged as part of the order.',
       },
+      {
+        q: 'Do you arrange testing and certifications for exported carriers?',
+        a: 'Yes. Tell us which tests your market or your own customer requires and we will support them end to end — layered material samples, same-batch production samples, BOM, SDS, TDS and a stamped declaration of conformity, with a re-test if a result misses. REACH, CPSIA, AZO and colour fastness are the requests we see most often.',
+      },
     ],
   },
 
@@ -221,6 +225,10 @@ export const CATEGORY_CONTENT: Record<string, CategoryContent> = {
         q: 'What hardware options do you offer?',
         a: 'Metal D-rings, aluminium buckles, acetal side-release buckles and welded rings, in several finishes to match your branding.',
       },
+      {
+        q: 'Can you provide the test reports and certifications we need to import?',
+        a: 'We can. Tell us the tests your market or your own customer requires and we will supply what the laboratory needs — layered material samples, same-batch production samples, BOM, SDS and TDS — and adjust the formulation and re-test if a result misses. REACH, CPSIA, AZO and colour fastness are the requests we see most often.',
+      },
     ],
   },
 
@@ -294,6 +302,10 @@ export const CATEGORY_CONTENT: Record<string, CategoryContent> = {
         q: 'Do you offer packing for clinics?',
         a: 'We can produce multi-size clinic packs, and unbranded neutral packaging if you supply professional channels rather than retail.',
       },
+      {
+        q: 'Are test reports and certifications available for the collars?',
+        a: 'Yes — testing is arranged around the requirements of your market or your own customer. We supply layered material samples, same-batch production samples, BOM, SDS, TDS and a stamped declaration of conformity, and we re-test after any formulation change. Tell us the destination country and product list and we will confirm which reports apply.',
+      },
     ],
   },
 
@@ -362,6 +374,10 @@ export const CATEGORY_CONTENT: Record<string, CategoryContent> = {
       {
         q: 'Do you supply replacement parts?',
         a: 'Wheels, liners and canopies can be supplied as spares — useful for retailers who want to support end customers after the sale.',
+      },
+      {
+        q: 'Can you arrange testing and certification for stroller shipments?',
+        a: 'Yes. Tell us the tests your market or your own customer requires and we will supply everything the laboratory needs — layered material samples, same-batch production samples, BOM, SDS, TDS and a stamped declaration of conformity — including the documents your customs broker will ask for.',
       },
     ],
   },
@@ -443,6 +459,186 @@ export const CATEGORY_CONTENT: Record<string, CategoryContent> = {
       {
         q: 'Do you supply samples of mixed items?',
         a: 'Yes, single samples or a small sample set can be arranged so you can review quality across the range before committing.',
+      },
+      {
+        q: 'Do you handle testing and certification for these accessories?',
+        a: 'Yes — tell us the tests your market or your own customer requires and we will supply what the laboratory needs: layered material samples, same-batch production samples, BOM, SDS, TDS and a stamped declaration of conformity. Send us the destination market and product list and we will confirm which reports apply.',
+      },
+    ],
+  },
+
+  // ⑥ 一次性护理垫 —— 居家防污（消耗品）
+  // 参考尺寸来自产线幅宽实测：一次性垫产品宽度上限约 120 cm，183×183 cm 在一次性产线上不可行。
+  // 三档均为「参考规格」，页面已声明最终数值以确认样为准，避免与工厂实际大货不一致。
+  'pee-pads': {
+    h1: 'Disposable Extra-Large Pet Pee Pads & Bed Pads',
+    seoTitle: 'Wholesale Disposable Pet Pee Pads & Bed Pads — OEM Supplier',
+    seoDescription:
+      'Disposable extra-large pet pee pads up to 120 × 180 cm, bed pads and training pads. Custom sizing, four-corner adhesive tabs and private-label packaging for wholesale and OEM.',
+    intro: [
+      'This range exists because of one problem: a pad that is too small or too thin to protect a bed, a sofa or a car seat. Our disposable pads go up to 120 × 180 cm — bed-sized rather than floor-sized — so an accident never reaches the mattress underneath.',
+      'Each pad is a five-layer build: a hot-air non-woven top sheet, a tissue acquisition layer, a fluff pulp and SAP core, a breathable PE backsheet, and four-corner adhesive tabs that hold the pad flat under a bedsheet. Tell us the size, the grammage and the absorbency target and we build the pad around them.',
+      'Sizes shown here are reference models. Anything within our production width can be made to order, and every size ships under your own brand.',
+    ],
+    highlights: [
+      {
+        title: 'Bed-sized, not floor-sized',
+        desc: 'Reference sizes run from 90 × 150 cm up to 120 × 180 cm, and a 90 × 180 cm pad is supplied as a two-pad set that covers a full double bed.',
+      },
+      {
+        title: 'Five-layer absorbent build',
+        desc: 'Hot-air non-woven top sheet, tissue acquisition layer, fluff pulp and SAP core, breathable PE backsheet. Layer weights and SAP loading are set to your absorbency target.',
+      },
+      {
+        title: 'Four-corner adhesive tabs',
+        desc: 'The one detail that decides whether a pad works under a bedsheet. Without tabs the pad shifts the moment the pet moves, and the protection is gone.',
+      },
+      {
+        title: 'Leak and rewet control',
+        desc: 'We work to a reference rewet target of 15 g or less and a leakage target of 1 g or less, so the surface stays dry rather than merely absorbent.',
+      },
+      {
+        title: 'Private label and carton',
+        desc: 'Bag format, pad count, printed carton, barcode and multilingual labels are all part of the order, and editable label artwork is supplied so your importer can localise it.',
+      },
+      {
+        title: 'Sample-supported testing',
+        desc: 'Testing is commissioned by you or by your nominated laboratory. We supply layered material samples, same-batch production samples, BOM, SDS and TDS so the tests can actually be run.',
+      },
+    ],
+    useCases: [
+      {
+        title: 'Under the bedsheet',
+        desc: 'The use case this range was built around. A 120 × 180 cm pad covers the sleeping area of a single or double bed, and the adhesive tabs keep it in place while the bedding is changed.',
+      },
+      {
+        title: 'Senior and incontinent pets',
+        desc: 'Coverage of a whole sleeping area rather than a patch, for pets that cannot reliably last the night.',
+      },
+      {
+        title: 'Whelping and newborns',
+        desc: 'Large pads give a litter room to move while keeping the box dry. Here absorbency and surface dryness matter more than size.',
+      },
+      {
+        title: 'Sofa and car seat protection',
+        desc: 'The same structure in 90 × 150 cm and 90 × 180 cm for furniture and boots, sold alongside our car seat belt and boot liner range.',
+      },
+      {
+        title: 'Travel and hotel stays',
+        desc: 'Flat-packed pads that protect unfamiliar accommodation, for owners travelling with an older pet.',
+      },
+      {
+        title: 'Pet shops and boarding kennels',
+        desc: 'Trade packs for groomers, veterinary waiting areas and boarding kennels, where pads are consumed on a fixed cycle.',
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is the largest pad you can produce?',
+        a: 'Production width limits a disposable pad to roughly 120 cm. Our reference sizes are 90 × 150 cm, 90 × 180 cm and 120 × 180 cm. A 183 × 183 cm pad is not achievable on disposable lines — for full-mattress coverage we supply 120 × 180 cm, or two 90 × 180 cm pads laid side by side as a set.',
+      },
+      {
+        q: 'Why do sizes above 90 cm cost more?',
+        a: 'Most large-pad lines are built around a 91 cm working width. Anything above that runs on a wider line or needs a dedicated setup, and non-standard sizes carry their own minimum order. 90 × 150 cm is the cheapest reference size and the fastest to sample.',
+      },
+      {
+        q: 'Can the pads be printed and branded?',
+        a: 'Yes, this is a private-label range. Print, bag format, pad count, printed carton, barcode and multilingual labels are all produced to your artwork, and we supply editable label files so your importer can localise them.',
+      },
+      {
+        q: 'Who commissions the testing?',
+        a: 'You do, or your nominated laboratory, so the report is issued in a name your market accepts. What we supply is everything the laboratory needs to run the tests: layered material samples, same-batch production samples, BOM with layer weights, SDS and TDS. If a result misses, we adjust the formulation and re-test.',
+      },
+      {
+        q: 'What should we put in the enquiry?',
+        a: 'Size, grammage, absorbency target, surface material, whether the pad needs adhesive tabs, bag format and pad count, and your destination market. With those six points we can quote against your specification rather than a catalogue.',
+      },
+    ],
+  },
+
+  // ⑦ 可单块拆洗拼接地毯 —— 居家防污（耐用品）
+  'carpet-tiles': {
+    h1: 'Modular Pet Carpet Tiles & Washable Floor Mats',
+    seoTitle: 'Wholesale Modular Pet Carpet Tiles — Washable, Glue-Free, OEM',
+    seoDescription:
+      'Modular pet carpet tiles that lift out one at a time. Glue-free, PVC-free and trimmable 400 × 400 mm modules for living rooms, crate areas and car boots. OEM and private label.',
+    intro: [
+      'A pet does not ruin a whole floor. It ruins one patch of it — and that is the entire logic of this range. These are modular carpet tiles you lift out one at a time, so an accident costs you one tile instead of the room.',
+      'The reference module is 400 × 400 mm with a cut-pile face over a glue-free backing: no PVC, no bitumen and no fibreglass. The face is solution-dyed nylon by default, because pet owners clean accidents with bleach-based products and a piece-dyed face will not survive that.',
+      'Modules can be trimmed on site to fit a car boot, a crate tray or an awkward corner. Module size, pile weight, thickness and colour are all made to order, and the range ships under your own brand.',
+    ],
+    highlights: [
+      {
+        title: 'Replace one tile, wash one tile',
+        desc: 'Accidents, chewing and scratching are local. Lift the affected module, wash it or swap it, and the floor is back to normal the same day.',
+      },
+      {
+        title: 'Glue-free, PVC-free backing',
+        desc: 'No PVC and no bitumen in the backing, and no fibreglass in the construction — the points buyers check first, and the ones that also affect odour and fire performance.',
+      },
+      {
+        title: 'Solution-dyed cut pile',
+        desc: 'Solution-dyed nylon holds colour through bleach-based cleaning, and cut pile does not snag or pull yarn the way loop pile does under a pet\u2019s claws.',
+      },
+      {
+        title: 'Trimmable without fraying',
+        desc: 'Modules cut to shape on site for a car boot or a crate tray, on a sealed edge that does not unravel. Boot shapes are not standard, which is exactly why a trimmable module fits every vehicle.',
+      },
+      {
+        title: 'Built for a modern home',
+        desc: 'Compatible with underfloor heating, and light enough for a robot vacuum to pass over without stalling.',
+      },
+      {
+        title: 'Replacement-part retail logic',
+        desc: 'Sell the floor as a system and the module as the spare. It is a different pricing model from square-metre carpet, and it is what makes the category defensible.',
+      },
+    ],
+    useCases: [
+      {
+        title: 'Living room and pet play area',
+        desc: 'A defined area where the pet eats, sleeps and plays, laid over a hard floor. Modules lift for cleaning and go back without adhesive.',
+      },
+      {
+        title: 'Car boot and rear seats',
+        desc: 'A trimmable module set shaped to the boot, so sand, mud and hair are caught on a surface you can pull out and hose down.',
+      },
+      {
+        title: 'Crate and pen floors',
+        desc: 'A softer, warmer surface inside a crate or pen that comes straight out for washing, instead of a loose blanket that bunches up.',
+      },
+      {
+        title: 'Under food and water bowls',
+        desc: 'A washable module around the feeding station catches spills and kibble dust without committing to a permanent floor covering.',
+      },
+      {
+        title: 'Hallways and entryways',
+        desc: 'The highest-traffic area in a pet household, where a replaceable module handles mud better than a fixed runner.',
+      },
+      {
+        title: 'Rental and multi-pet households',
+        desc: 'No adhesive means nothing to damage in a rented property, and a multi-pet house only replaces the tiles that were actually used.',
+      },
+    ],
+    faqs: [
+      {
+        q: 'What module size do you recommend?',
+        a: '400 × 400 mm is the reference size, and the one most comparable products use. 300 × 300 mm and 500 × 500 mm can be produced for volume programmes.',
+      },
+      {
+        q: 'Are the tiles fixed down with adhesive?',
+        a: 'No. The modules rely on tile weight and backing grip rather than glue, so they lift out for cleaning and go back down. No adhesive also means nothing to damage a rented floor.',
+      },
+      {
+        q: 'Can a tile be trimmed to fit a car boot?',
+        a: 'Yes, and it is one of the main uses for the range. A module is cut to shape on site on a sealed edge that does not fray. Boot shapes vary by vehicle, which is why a trimmable module outsells a fixed moulded liner.',
+      },
+      {
+        q: 'Who commissions the testing?',
+        a: 'You do, or your nominated laboratory, so the report is issued in a name your market accepts. We supply layered material samples, same-batch production samples, backing and filler information, SDS and TDS. If a result misses, we adjust the construction and re-test.',
+      },
+      {
+        q: 'What should we put in the enquiry?',
+        a: 'Module size, face fibre, whether the pile must be solution-dyed, pile weight and total thickness, backing type, colour, carton format, and whether the tiles need a fire or VOC test package. Tell us the end use as well — residential retail and contract flooring are specified differently.',
       },
     ],
   },

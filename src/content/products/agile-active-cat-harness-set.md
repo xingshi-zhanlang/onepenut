@@ -24,19 +24,33 @@ gallery:
 ## Product facts
 
 - **Collection**: Harnesses & Leashes
-- **SKU**: OP024017
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP024017
+- **Sizes**: One size
+- **Recommended for**: cats up to 6 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Neck girth | Chest girth | Leash length | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Milk Brown | cats up to 6 kg | 16-22 cm | 28-36 cm | 130 cm | 90 g | 120 g | Zip bag 20 × 35.5 cm |
+| One size | Turquoise | cats up to 6 kg | 16-22 cm | 28-36 cm | 130 cm | 90 g | 120 g | Zip bag 20 × 35.5 cm |
+
+## Key features
+
+- Leather slider sets neck and chest in one pull, with four fixed positions
+- X-shape construction cuts body coverage so the harness sits lightly on the coat
+- Soft polyester round rope resists matting and stays gentle on fur
 
 ## Sizing and fit
 
-Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
+Agile Active Cat Harness Set is built around One size. Net weight starts at 90 g. Recommended for cats up to 6 kg.
 
 ## Typical use
 
-Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+Built for daily walks, training sessions and travel by car or public transport. Available in 2 colours: Milk Brown, Turquoise. Packed as Zip bag 20 × 35.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Agile Active Cat Harness Set can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

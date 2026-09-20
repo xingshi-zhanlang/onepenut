@@ -24,19 +24,42 @@ gallery:
 ## Product facts
 
 - **Collection**: Harnesses & Leashes
-- **SKU**: OP024008-01F
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP024008-01F
+- **Materials**: Leather and elastic nylon
+- **Size**: One size
+- **Recommended for**: dogs up to 40 kg
+- **Customisation**: length, diameter, colour, hardware, logo and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Length | Diameter | Materials | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Moss Green | 150 cm | 7 mm | Leather and elastic nylon | 105 g | 135 g | Zip bag 13 × 38 cm |
+
+## Key features
+
+- Leather-topped handle with a widened grip, so a sudden pull does not cut into the arm
+- Elastic nylon core absorbs the shock of a lunge rather than passing it straight to the neck
+- Double limit stops let you set the working loop and tighten it under load
+- One-piece construction, with no separate collar, clip or joint to fail
+- 7 mm diameter gives enough body to hold shape without the weight of a solid leather lead
+- Recommended for dogs up to 40 kg
 
 ## Sizing and fit
 
-Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
+Bobobo Leather Handle P-Leash is supplied in One size: 150 cm long and 7 mm in diameter. Net weight is 105 g and gross weight 135 g. The model is recommended for dogs up to 40 kg.
+
+The P-loop is fully open, so it can be used as a slip lead, a hand-loop lead or a training lead without a second product.
+
+## Materials and packing
+
+The handle is leather and the body is a high-elasticity nylon cord, joined as a single piece. Supplied in Moss Green and packed in a zip bag measuring 13 × 38 cm.
 
 ## Typical use
 
-Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+Walking and training, particularly for strong dogs that lunge. The elastic core and the widened handle are the two features buyers ask about first, because they are the two that decide whether the lead is comfortable on a long walk.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Bobobo Leather Handle P-Leash can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

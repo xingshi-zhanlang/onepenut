@@ -24,19 +24,41 @@ gallery:
 ## Product facts
 
 - **Collection**: Recovery Collars
-- **SKU**: OP027002
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP027002
+- **Sizes**: S/M/L
+- **Recommended for**: pets 0–3 / 3–6 / 5–9 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Neck girth | Outer diameter | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| S | Wisteria Purple | pets 0–3 kg | 13-22 cm | 25 cm | 60 g | 80 g | Zip bag 20 × 35.5 cm |
+| M | — | pets 3–6 kg | 17-27 cm | 29 cm | 95 g | 125 g | Zip bag 27.5 × 45 cm |
+| L | — | pets 5–9 kg | 20-32 cm | 33 cm | 115 g | 145 g | Zip bag 27.5 × 45 cm |
+| S | Iceland Blue | pets 0–3 kg | 13-22 cm | 25 cm | 60 g | 80 g | Zip bag 20 × 35.5 cm |
+| M | — | pets 3–6 kg | 17-27 cm | 29 cm | 95 g | 125 g | Zip bag 27.5 × 45 cm |
+| L | — | pets 5–9 kg | 20-32 cm | 33 cm | 115 g | 145 g | Zip bag 27.5 × 45 cm |
+| S | Chestnut Pink | pets 0–3 kg | 13-22 cm | 25 cm | 60 g | 80 g | Zip bag 20 × 35.5 cm |
+| M | — | pets 3–6 kg | 17-27 cm | 29 cm | 95 g | 125 g | Zip bag 27.5 × 45 cm |
+| L | — | pets 5–9 kg | 20-32 cm | 33 cm | 115 g | 145 g | Zip bag 27.5 × 45 cm |
+
+## Key features
+
+- Petal shape on the outside, cone once the drawstring is tightened
+- Adjustable circumference adapts to neck size
+- Soft water-resistant shell
+- Upgraded diameter over the original flower collar
 
 ## Sizing and fit
 
-Fit here is decided by neck circumference, so each size is defined by a neck range with an adjustable closure. Sizes are measured on the finished item, not estimated from a pattern.
+Flower Recovery Collar covers S, M, L. Net weight starts at 60 g. Recommended for pets 0–3 / 3–6 / 5–9 kg.
 
 ## Typical use
 
-Soft fabric shapes are generally tolerated better than rigid plastic, which is why this range uses fabric construction throughout. Collars, suits and donut shapes cover different levels of restriction.
+Intended for post-surgery recovery, wound protection and vet visits. Available in 3 colours: Wisteria Purple, Iceland Blue, Chestnut Pink. Packed as Zip bag 20 × 35.5 cm; Zip bag 27.5 × 45 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Flower Recovery Collar can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

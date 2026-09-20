@@ -24,19 +24,38 @@ gallery:
 ## Product facts
 
 - **Collection**: Carrier Bags & Backpacks
-- **SKU**: OP030011
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP030011
+- **Materials**: Nylon
+- **Sizes**: One size
+- **Recommended for**: pets up to 9 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Recommended for | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Greige | 35 × 18 × 38 cm | Nylon | pets up to 9 kg | 630 g | 900 g | Cardboard box 38 × 38 × 8 cm |
+
+## Key features
+
+- Sloped top opening lets the pet keep its head up
+- Storage pockets on the front and both sides
+- Nylon mesh on both flanks for airflow
+- Wears on the chest for hands-free carry
 
 ## Sizing and fit
 
-Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
+Free Spirit Pet Front Carrier Chest Bag covers One size. External dimensions are 35 × 18 × 38 cm. Net weight starts at 630 g. Recommended for pets up to 9 kg.
+
+## Materials and packing
+
+Body materials: Nylon. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+Intended for cabin travel, car journeys, daily errands and longer outdoor trips. Supplied in Greige. Packed as Cardboard box 38 × 38 × 8 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Free Spirit Pet Front Carrier Chest Bag can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

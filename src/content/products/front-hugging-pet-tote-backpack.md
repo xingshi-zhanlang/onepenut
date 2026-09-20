@@ -24,25 +24,41 @@ gallery:
 ## Product facts
 
 - **Collection**: Carrier Bags & Backpacks
-- **SKU**: OP015052
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP015052
+- **Materials**: Nylon
+- **Sizes**: One size
+- **Recommended for**: pets up to 9 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Recommended for | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Milk Brown | 35 × 20 × 36 cm | Nylon | pets up to 9 kg | 750 g | 1000 g | Cardboard box 38 × 38 × 8 cm |
+| One size | Buckwheat Grey | 35 × 20 × 36 cm | Nylon | pets up to 9 kg | 750 g | 1000 g | Cardboard box 38 × 38 × 8 cm |
+| One size | Olive Green | 35 × 20 × 36 cm | Nylon | pets up to 9 kg | 750 g | 1000 g | Cardboard box 38 × 38 × 8 cm |
+| One size | Hibiscus Purple | 35 × 20 × 36 cm | Nylon | pets up to 9 kg | 750 g | 1000 g | Cardboard box 38 × 38 × 8 cm |
 
 ## Key features
 
-- Ergonomic spine support
-- X-style straps for stability
-- Padded, shock-absorbing base
+- Triangular load path moves weight off the shoulders and onto the back
+- Rigid base tray with shock padding under the cushion
+- Wide top opening with a fine ventilation mesh
+- Wears on the chest so you can watch the pet
 
 ## Sizing and fit
 
-Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
+Sizing runs across One size. External dimensions are 35 × 20 × 36 cm. Net weight starts at 750 g. Recommended for pets up to 9 kg.
+
+## Materials and packing
+
+Body materials: Nylon. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+Intended for cabin travel, car journeys, daily errands and longer outdoor trips. Available in 4 colours: Milk Brown, Buckwheat Grey, Olive Green, Hibiscus Purple. Packed as Cardboard box 38 × 38 × 8 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Front-Hugging Pet Tote Backpack can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

@@ -24,25 +24,38 @@ gallery:
 ## Product facts
 
 - **Collection**: Carrier Bags & Backpacks
-- **SKU**: OP030025
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP030025
+- **Materials**: Nylon
+- **Sizes**: One size
+- **Recommended for**: pets up to 10 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Tent dimensions | Materials | Recommended for | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Shell Brown | 43 × 28 × 25 cm | 97 × 28 × 25 cm | Nylon | pets up to 10 kg | 1720 g | 2050 g | Cardboard box 48 × 42 × 8 cm |
 
 ## Key features
 
-- Two-way expansion for more space
-- Airline cabin approved
-- Breathable mesh windows
+- Two-way zip-out tents roughly double the interior volume
+- Fits under an aircraft seat with the tents closed
+- Mesh doors on four sides for cross-flow ventilation
+- Internal frame keeps the bag rigid when empty
 
 ## Sizing and fit
 
-Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
+Sizing runs across One size. External dimensions are 43 × 28 × 25 cm. Net weight starts at 1720 g. Recommended for pets up to 10 kg.
+
+## Materials and packing
+
+Body materials: Nylon. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+Built for cabin travel, car journeys, daily errands and longer outdoor trips. Supplied in Shell Brown. Packed as Cardboard box 48 × 42 × 8 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Double Tent Airline Travel Bag can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

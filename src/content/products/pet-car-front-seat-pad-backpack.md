@@ -24,19 +24,38 @@ gallery:
 ## Product facts
 
 - **Collection**: Carrier Bags & Backpacks
-- **SKU**: OP015069
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP015069
+- **Materials**: 600D Oxford + nylon mesh
+- **Sizes**: One size
+- **Recommended for**: pets up to 7 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Recommended for | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Moss Brown | 42 × 22 × 45 cm | 600D Oxford + nylon mesh | pets up to 7 kg | 1410 g | 1660 g | Cardboard box 50 × 45 × 6.5 cm |
+
+## Key features
+
+- Patented fold converts it between a front-seat pad and a backpack
+- Full-surround structure gives roughly 50% better impact protection than a flat pad
+- Abrasion-resistant shell stands up to clawing
+- Wears on the back once you leave the car
 
 ## Sizing and fit
 
-Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
+Pet Car Front Seat Pad Backpack is supplied in One size. External dimensions are 42 × 22 × 45 cm. Net weight starts at 1410 g. Recommended for pets up to 7 kg.
+
+## Materials and packing
+
+Body materials: 600D Oxford + nylon mesh. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+Intended for cabin travel, car journeys, daily errands and longer outdoor trips. Supplied in Moss Brown. Packed as Cardboard box 50 × 45 × 6.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Pet Car Front Seat Pad Backpack can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

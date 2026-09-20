@@ -24,19 +24,39 @@ gallery:
 ## Product facts
 
 - **Collection**: Carrier Bags & Backpacks
-- **SKU**: OP030010
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP030010
+- **Materials**: Nylon
+- **Sizes**: One size
+- **Recommended for**: pets up to 6 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Recommended for | Strap length | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Chestnut Brown | 40 × 18 × 32 cm | Nylon | pets up to 6 kg | 29 cm | 535 g | 560 g | Zip bag 27.5 × 45 cm |
+| One size | Almond Beige | 40 × 18 × 32 cm | Nylon | pets up to 6 kg | 29 cm | 535 g | 560 g | Zip bag 27.5 × 45 cm |
+
+## Key features
+
+- Opening front mesh window
+- Elastic side vents for cross-flow
+- Escape-resistant top zip
+- Lightweight nylon shell wipes clean
 
 ## Sizing and fit
 
-Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
+Pet Walking Nylon Shoulder Bag is supplied in One size. External dimensions are 40 × 18 × 32 cm. Net weight starts at 535 g. Recommended for pets up to 6 kg.
+
+## Materials and packing
+
+Body materials: Nylon. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+Designed around cabin travel, car journeys, daily errands and longer outdoor trips. Available in 2 colours: Chestnut Brown, Almond Beige. Packed as Zip bag 27.5 × 45 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Pet Walking Nylon Shoulder Bag can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

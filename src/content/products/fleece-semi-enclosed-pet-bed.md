@@ -24,19 +24,41 @@ gallery:
 ## Product facts
 
 - **Collection**: Accessories & Cat Gear
-- **SKU**: OP025002
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP025002
+- **Materials**: Polar fleece
+- **Sizes**: M/L
+- **Recommended for**: pets up to 10 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Recommended for | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| M | Charcoal Bagel | 52 × 52 × 36 cm | Polar fleece | pets up to 6 kg | 450 g | 475 g | OPP bag 66 × 66 × 8 cm |
+| L | — | 62 × 62 × 40 cm | Polar fleece | pets up to 10 kg | 550 g | 625 g | OPP bag 66 × 66 × 8 cm |
+| M | Matcha Scone | 52 × 52 × 36 cm | Polar fleece | pets up to 6 kg | 450 g | 475 g | OPP bag 66 × 66 × 8 cm |
+| L | — | 62 × 62 × 40 cm | Polar fleece | pets up to 10 kg | 550 g | 625 g | OPP bag 66 × 66 × 8 cm |
+
+## Key features
+
+- Polar fleece holds warmth while staying breathable
+- Semi-enclosed rim gives a sense of cover without a hood
+- Light enough to move from room to room
+- Machine washable
 
 ## Sizing and fit
 
-This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
+Fleece Semi-Enclosed Pet Bed covers M, L. External dimensions are 52 × 52 × 36 cm and 62 × 62 × 40 cm. Net weight starts at 450 g. Recommended for pets up to 10 kg.
+
+## Materials and packing
+
+Body materials: Polar fleece. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+Designed around everyday use alongside a carrier or harness, at home and on the move. Available in 2 colours: Charcoal Bagel, Matcha Scone. Packed as OPP bag 66 × 66 × 8 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Fleece Semi-Enclosed Pet Bed can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

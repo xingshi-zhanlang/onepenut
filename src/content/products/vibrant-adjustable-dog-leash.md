@@ -24,19 +24,34 @@ gallery:
 ## Product facts
 
 - **Collection**: Harnesses & Leashes
-- **SKU**: OP010002
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP010002
+- **Sizes**: XS
+- **Recommended for**: pets up to 2.5 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Width | Length | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| XS | Watermelon | pets up to 2.5 kg | 1.0 cm | 86-136 cm | 50 g | 80 g | Zip bag 13 × 38 cm |
+| XS | Totem | pets up to 2.5 kg | 1.0 cm | 86-136 cm | 50 g | 80 g | Zip bag 13 × 38 cm |
+
+## Key features
+
+- Adjusts from 86 to 136 cm
+- Tested to a 300 kg breaking load
+- Matches the Vibrant harness
+- Padded handle section
 
 ## Sizing and fit
 
-Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
+Vibrant Series Adjustable Dog Leash covers XS. Net weight starts at 50 g. Recommended for pets up to 2.5 kg.
 
 ## Typical use
 
-Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+Made for daily walks, training sessions and travel by car or public transport. Available in 2 colours: Watermelon, Totem. Packed as Zip bag 13 × 38 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Vibrant Series Adjustable Dog Leash can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

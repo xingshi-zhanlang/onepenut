@@ -24,19 +24,22 @@ gallery:
 ## Product facts
 
 - **Collection**: Accessories & Cat Gear
-- **SKU**: OP025039
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP025039
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+- **Specifications**: full dimensions, materials and weight data are confirmed per order
 
-## Sizing and fit
+## Key features
 
-This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
+- Moisture-proof base layer keeps damp away from the cushion
+- Folds flat for travel and storage
+- Wipe-clean underside
+- Padded top surface for joints
 
-## Typical use
+## Design and use
 
-Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+The Moisture-Proof Folding Pet Bed is built for damp ground, car boots and travel: a waterproof base layer keeps moisture away from the cushion above it, and the whole bed folds flat into a shape that slides behind a car seat. The top surface is padded for older joints and the underside wipes clean with a cloth, so sand, mud and road grit do not work their way into the fabric. It is the version of a travel bed that survives being used outdoors and then packed away wet. Sizing, fabric and branding are confirmed per order.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Moisture-Proof Folding Pet Bed can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

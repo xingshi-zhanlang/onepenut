@@ -24,19 +24,38 @@ gallery:
 ## Product facts
 
 - **Collection**: Carrier Bags & Backpacks
-- **SKU**: OP030013
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP030013
+- **Materials**: Nylon
+- **Sizes**: One size
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- |
+| One size | Chestnut Brown | 18 × 5 × 11.5 cm | Nylon | 90 g | 100 g | Zip bag 20 × 35.5 cm |
+| One size | Grey Dusk Purple | 18 × 5 × 11.5 cm | Nylon | 90 g | 100 g | Zip bag 20 × 35.5 cm |
+
+## Key features
+
+- Multi-compartment layout keeps bags, treats and phone separate
+- Compact enough for short walks
+- Wears on the waist or across the body
+- Sport mesh back panel for airflow
 
 ## Sizing and fit
 
-Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
+Urban Sport Dog Walking Waist Pack is supplied in One size. External dimensions are 18 × 5 × 11.5 cm. Net weight starts at 90 g.
+
+## Materials and packing
+
+Body materials: Nylon. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+Made for cabin travel, car journeys, daily errands and longer outdoor trips. Available in 2 colours: Chestnut Brown, Grey Dusk Purple. Packed as Zip bag 20 × 35.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Urban Sport Dog Walking Waist Pack can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

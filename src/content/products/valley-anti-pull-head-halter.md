@@ -24,19 +24,35 @@ gallery:
 ## Product facts
 
 - **Collection**: Harnesses & Leashes
-- **SKU**: OP029012
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP029012
+- **Sizes**: S/M/L
+- **Recommended for**: pets up to 40 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Neck girth | Nose girth | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| S | Buckwheat Grey | pets up to 10 kg | 30-42 cm | 0-28 cm | 60 g | 85 g | Zip bag 20 × 24.5 cm |
+| M | — | pets up to 20 kg | 37-48 cm | 0-36 cm | 75 g | 105 g | Zip bag 20 × 24.5 cm |
+| L | — | pets up to 40 kg | 40-54 cm | 0-42 cm | 85 g | 110 g | Zip bag 20 × 24.5 cm |
+
+## Key features
+
+- Light pressure on the nose interrupts pulling before it builds
+- H-frame keeps the halter from being pawed off
+- Padded noseband prevents rubbing
+- Adjusts at nose and behind the ears
 
 ## Sizing and fit
 
-Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
+Valley Series Anti-Pull Training Head Halter is supplied in S, M, L. Net weight starts at 60 g. Recommended for pets up to 40 kg.
 
 ## Typical use
 
-Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+Made for daily walks, training sessions and travel by car or public transport. Supplied in Buckwheat Grey. Packed as Zip bag 20 × 24.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Valley Series Anti-Pull Training Head Halter can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

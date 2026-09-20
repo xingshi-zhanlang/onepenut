@@ -24,19 +24,35 @@ gallery:
 ## Product facts
 
 - **Collection**: Harnesses & Leashes
-- **SKU**: OP029013
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP029013
+- **Sizes**: S/M/L
+- **Recommended for**: pets up to 40 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Neck girth | Nose girth | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| S | Buckwheat Grey | pets up to 10 kg | 30-40 cm | 14-21 cm | 40 g | 50 g | Zip bag 20 × 24.5 cm |
+| M | — | pets up to 20 kg | 35-52 cm | 18-28 cm | 45 g | 55 g | Zip bag 20 × 24.5 cm |
+| L | — | pets up to 40 kg | 40-60 cm | 22-37 cm | 65 g | 75 g | Zip bag 20 × 24.5 cm |
+
+## Key features
+
+- Hook-and-loop adjustment with a contoured frame
+- Bridle-style layout gives control without closing the mouth
+- Padded noseband for long wear
+- Fits quickly with a single strap
 
 ## Sizing and fit
 
-Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
+Valley Series Training Dog Muzzle covers S, M, L. Net weight starts at 40 g. Recommended for pets up to 40 kg.
 
 ## Typical use
 
-Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+Designed around daily walks, training sessions and travel by car or public transport. Supplied in Buckwheat Grey. Packed as Zip bag 20 × 24.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Valley Series Training Dog Muzzle can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

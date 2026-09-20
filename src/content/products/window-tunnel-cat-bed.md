@@ -24,19 +24,22 @@ gallery:
 ## Product facts
 
 - **Collection**: Accessories & Cat Gear
-- **SKU**: OP025040
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP025040
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+- **Specifications**: full dimensions, materials and weight data are confirmed per order
 
-## Sizing and fit
+## Key features
 
-This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
+- Tunnel form gives cats a covered route to the window
+- Holds its shape instead of sagging
+- Surface wipes clean
+- Sits on a sill or against a wall
 
-## Typical use
+## Design and use
 
-Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+The Window Tunnel Cat Bed gives a cat a covered route to the view rather than a flat cushion in front of it. The tunnel form means a cat can sit inside the tube and look out through the opening, which suits nervous cats that want to watch a garden without being out in the open. The walls are stiffened so the shape stays open instead of collapsing inwards, and the surface wipes clean, which matters for a bed that sits against a window. It fits a windowsill or a corner against a wall. Colour, fabric and packaging can be produced to your own specification.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Window Tunnel Cat Bed can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

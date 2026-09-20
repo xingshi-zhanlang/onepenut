@@ -24,19 +24,40 @@ gallery:
 ## Product facts
 
 - **Collection**: Carrier Bags & Backpacks
-- **SKU**: OP030023
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP030023
+- **Sizes**: S/M/L/XL
+- **Recommended for**: pets 2–3.5 / 4–7.5 / 8.5–10.5 / 11–15 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Chest girth | Front leg girth | Rear leg girth | Leg span | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| S | Grey Check | pets 2–3.5 kg | 35 cm | 20 cm | 21.5 cm | 11.5-26 cm | 415 g | 585 g | Cardboard box 34 × 23 × 7.5 cm |
+| M | — | pets 4–7.5 kg | 46 cm | 25 cm | 28 cm | 16-35 cm | 480 g | 645 g | Cardboard box 34 × 23 × 7.5 cm |
+| L | — | pets 8.5–10.5 kg | 49 cm | 27 cm | 29.5 cm | 16.5-36 cm | 500 g | 665 g | Cardboard box 34 × 23 × 7.5 cm |
+| XL | — | pets 11–15 kg | 57.5 cm | 35 cm | 37 cm | 17-44.5 cm | 555 g | 675 g | Cardboard box 34 × 23 × 7.5 cm |
+| S | Brown Check | pets 2–3.5 kg | 35 cm | 20 cm | 21.5 cm | 11.5-26 cm | — | — | — |
+| M | — | pets 4–7.5 kg | 46 cm | 25 cm | 28 cm | 16-35 cm | — | — | — |
+| L | — | pets 8.5–10.5 kg | 49 cm | 27 cm | 29.5 cm | 16.5-36 cm | — | — | — |
+| XL | — | pets 11–15 kg | 57.5 cm | 35 cm | 37 cm | 17-44.5 cm | — | — | — |
+
+## Key features
+
+- Same horizontal spine-supporting layout in a cool-touch ice-silk weave
+- Wears front or back
+- Baby-soft cotton padding at the leg openings
+- Built for warm-weather walks
 
 ## Sizing and fit
 
-Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
+Spine-Support Cooling Pet Backpack is supplied in S, M, L, XL. Net weight starts at 415 g. Recommended for pets 2–3.5 / 4–7.5 / 8.5–10.5 / 11–15 kg.
 
 ## Typical use
 
-The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+Built for cabin travel, car journeys, daily errands and longer outdoor trips. Available in 2 colours: Grey Check, Brown Check. Packed as Cardboard box 34 × 23 × 7.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Spine-Support Cooling Pet Backpack can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

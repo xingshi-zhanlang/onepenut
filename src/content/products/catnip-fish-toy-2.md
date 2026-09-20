@@ -24,19 +24,44 @@ gallery:
 ## Product facts
 
 - **Collection**: Accessories & Cat Gear
-- **SKU**: OP015045
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP015045
+- **Materials**: Plush fabric + polyester filling
+- **Sizes**: One size
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- |
+| One size | Big Knife Fish Orange | 24 × 6 cm | Plush fabric + polyester filling | 35 g | 35 g | OPP bag 23.5 × 12 cm |
+| One size | Big Knife Fish Green | 24 × 6 cm | Plush fabric + polyester filling | 35 g | 35 g | OPP bag 23.5 × 12 cm |
+| One size | Tiger Bream Blue | 20 × 8 cm | Plush fabric + polyester filling | 35 g | 35 g | OPP bag 23.5 × 12 cm |
+| One size | Double-Wing Bream Pink | 20 × 11 cm | Plush fabric + polyester filling | 35 g | 35 g | OPP bag 23.5 × 12 cm |
+| One size | Double-Wing Bream Orange | 20 × 11 cm | Plush fabric + polyester filling | 35 g | 35 g | OPP bag 23.5 × 12 cm |
+| One size | Striped Fish Yellow Orange | 22 × 6.5 cm | Plush fabric + polyester filling | 30 g | 30 g | OPP bag 23.5 × 12 cm |
+| One size | Striped Fish Blue Grey | 22 × 6.5 cm | Plush fabric + polyester filling | 30 g | 30 g | OPP bag 23.5 × 12 cm |
+| One size | Star Bream Blue Grey | 20 × 8 cm | Plush fabric + polyester filling | 35 g | 35 g | OPP bag 23.5 × 12 cm |
+
+## Key features
+
+- Bright fish shape triggers a pounce reflex
+- Catnip packed into the belly rather than sprayed on the surface
+- Built-in bell adds a second layer of interest
+- Reinforced seams survive repeated biting
 
 ## Sizing and fit
 
-This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
+Catnip Fish Toy is supplied in One size. External dimensions are 24 × 6 cm and 20 × 8 cm and 20 × 11 cm and 22 × 6.5 cm. Net weight starts at 30 g.
+
+## Materials and packing
+
+Body materials: Plush fabric + polyester filling. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+Built for everyday use alongside a carrier or harness, at home and on the move. Available in 8 colours: Big Knife Fish Orange, Big Knife Fish Green, Tiger Bream Blue, Double-Wing Bream Pink, Double-Wing Bream Orange, Striped Fish Yellow Orange, Striped Fish Blue Grey, Star Bream Blue Grey. Packed as OPP bag 23.5 × 12 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Catnip Fish Toy can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

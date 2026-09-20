@@ -24,19 +24,38 @@ gallery:
 ## Product facts
 
 - **Collection**: Carrier Bags & Backpacks
-- **SKU**: OP015063
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP015063
+- **Materials**: Nylon
+- **Sizes**: One size
+- **Recommended for**: pets up to 7 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Recommended for | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Chestnut Brown | 43 × 25 × 25 cm | Nylon | pets up to 7 kg | 920 g | 1300 g | Cardboard box 61 × 26 × 11 cm |
+
+## Key features
+
+- Sits on the armrest console at the pet eye level
+- Base webbing adjusts to fit different console widths
+- Three-dimensional PE foam absorbs knocks
+- Keeps the pet beside you rather than in the footwell
 
 ## Sizing and fit
 
-Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
+Pet Armrest Car Carrier Bag covers One size. External dimensions are 43 × 25 × 25 cm. Net weight starts at 920 g. Recommended for pets up to 7 kg.
+
+## Materials and packing
+
+Body materials: Nylon. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+Made for cabin travel, car journeys, daily errands and longer outdoor trips. Supplied in Chestnut Brown. Packed as Cardboard box 61 × 26 × 11 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Pet Armrest Car Carrier Bag can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

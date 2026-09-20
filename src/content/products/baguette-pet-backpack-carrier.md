@@ -24,19 +24,38 @@ gallery:
 ## Product facts
 
 - **Collection**: Carrier Bags & Backpacks
-- **SKU**: OP030022
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP030022
+- **Materials**: Nylon
+- **Sizes**: One size
+- **Recommended for**: pets up to 8 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Recommended for | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Shell Brown | 56 × 17 × 24 cm | Nylon | pets up to 8 kg | 1520 g | 1785 g | Cardboard box 59 × 49 × 26.5 cm |
+
+## Key features
+
+- Zoned foam padding supports the lumbar spine instead of letting the pet hang unsupported
+- Extended body lets the pet lie flat rather than curl up
+- Full-length top mesh opening plus a rear drawstring vent
+- Slim silhouette keeps the bag close to your back
 
 ## Sizing and fit
 
-Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
+Baguette Pet Backpack Carrier covers One size. External dimensions are 56 × 17 × 24 cm. Net weight starts at 1520 g. Recommended for pets up to 8 kg.
+
+## Materials and packing
+
+Body materials: Nylon. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+Made for cabin travel, car journeys, daily errands and longer outdoor trips. Supplied in Shell Brown. Packed as Cardboard box 59 × 49 × 26.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Baguette Pet Backpack Carrier can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

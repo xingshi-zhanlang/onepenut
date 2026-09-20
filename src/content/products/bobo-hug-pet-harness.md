@@ -24,19 +24,41 @@ gallery:
 ## Product facts
 
 - **Collection**: Harnesses & Leashes
-- **SKU**: OP020002
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP020002
+- **Sizes**: XS/S/L/XL
+- **Recommended for**: pets up to 40 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Chest girth | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- |
+| XS | Orange Bobo | pets up to 4 kg | 33-40 cm | 130 g | 170 g | Zip bag 20 × 35.5 cm |
+| S | — | pets up to 8 kg | 40-50 cm | 140 g | 190 g | Zip bag 20 × 35.5 cm |
+| L | — | pets up to 20 kg | 62-76 cm | 270 g | 375 g | Zip bag 27.5 × 45 cm |
+| XL | — | pets up to 40 kg | 76-90 cm | 320 g | 410 g | Zip bag 27.5 × 45 cm |
+| XS | Taro Bobo | pets up to 4 kg | 33-40 cm | 130 g | 170 g | Zip bag 20 × 35.5 cm |
+| L | — | pets up to 20 kg | 62-76 cm | 270 g | 375 g | Zip bag 27.5 × 45 cm |
+| XL | — | pets up to 40 kg | 76-90 cm | 320 g | 410 g | Zip bag 27.5 × 45 cm |
+| XS | Avocado Bobo | pets up to 4 kg | 33-40 cm | 130 g | 170 g | Zip bag 20 × 35.5 cm |
+| XL | — | pets up to 40 kg | 76-90 cm | 320 g | 410 g | Zip bag 27.5 × 45 cm |
+
+## Key features
+
+- Multiple contact points spread the load of a sudden pull
+- Crossed webbing distributes force evenly across the chest
+- Side-release buckles mean nothing is pulled over the head
+- Contrast colour blocking for a bolder look on the street
 
 ## Sizing and fit
 
-Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
+Bobo Series Hug Pet Harness is built around XS, S, L, XL. Net weight starts at 130 g. Recommended for pets up to 40 kg.
 
 ## Typical use
 
-Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+Made for daily walks, training sessions and travel by car or public transport. Available in 3 colours: Orange Bobo, Taro Bobo, Avocado Bobo. Packed as Zip bag 20 × 35.5 cm; Zip bag 27.5 × 45 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Bobo Series Hug Pet Harness can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

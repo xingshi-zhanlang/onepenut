@@ -24,19 +24,38 @@ gallery:
 ## Product facts
 
 - **Collection**: Carrier Bags & Backpacks
-- **SKU**: OP015067
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP015067
+- **Materials**: Linen-look fabric + fibreboard base insert
+- **Sizes**: One size
+- **Recommended for**: pets up to 8 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Recommended for | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Wheat Brown | 36.5 × 28 × 43 cm | Linen-look fabric + fibreboard base insert | pets up to 8 kg | 1185 g | 1530 g | Cardboard box 60 × 38 × 7.5 cm |
+
+## Key features
+
+- Internal frame rods stop the bag folding in on the pet
+- Escape-resistant zip closure
+- Wide cabin for larger cats and small dogs
+- Lightweight shell for a bag this size
 
 ## Sizing and fit
 
-Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
+Sizing runs across One size. External dimensions are 36.5 × 28 × 43 cm. Net weight starts at 1185 g. Recommended for pets up to 8 kg.
+
+## Materials and packing
+
+Body materials: Linen-look fabric + fibreboard base insert. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+Designed around cabin travel, car journeys, daily errands and longer outdoor trips. Supplied in Wheat Brown. Packed as Cardboard box 60 × 38 × 7.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Mobile Castle Ultra-light Pet Backpack can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

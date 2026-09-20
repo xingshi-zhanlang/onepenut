@@ -24,19 +24,34 @@ gallery:
 ## Product facts
 
 - **Collection**: Harnesses & Leashes
-- **SKU**: OP002009
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP002009
+- **Sizes**: M/L
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Width | Length | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- |
+| M | Red | 2.0 cm | 130 cm | 105 g | 135 g | Zip bag 13 × 38 cm |
+| L | Black | 2.5 cm | 130 cm | — | — | Zip bag 13 × 38 cm |
+| M | Green | 2.0 cm | 130 cm | 105 g | 135 g | Zip bag 13 × 38 cm |
+
+## Key features
+
+- 130 cm lead tested to a 300 kg breaking load
+- D-ring takes a poop bag holder or keys
+- Matches the Rainbow harness range
+- Padded neoprene handle section
 
 ## Sizing and fit
 
-Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
+Rainbow Series Leash covers M, L. Net weight starts at 105 g.
 
 ## Typical use
 
-Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+Built for daily walks, training sessions and travel by car or public transport. Available in 3 colours: Red, Black, Green. Packed as Zip bag 13 × 38 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Rainbow Series Leash can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

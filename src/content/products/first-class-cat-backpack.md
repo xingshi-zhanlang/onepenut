@@ -24,19 +24,39 @@ gallery:
 ## Product facts
 
 - **Collection**: Carrier Bags & Backpacks
-- **SKU**: OP015049
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP015049
+- **Materials**: Light water-resistant nylon + fibreboard base insert
+- **Sizes**: One size
+- **Recommended for**: pets up to 8 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Recommended for | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Chestnut Brown | 36.5 × 28 × 43 cm | Light water-resistant nylon + fibreboard base insert | pets up to 8 kg | 1250 g | 1590 g | Cardboard box 60 × 38 × 7.5 cm |
+| One size | Ebony Black | 36.5 × 28 × 43 cm | Light water-resistant nylon + fibreboard base insert | pets up to 8 kg | 1250 g | 1590 g | Cardboard box 60 × 38 × 7.5 cm |
+
+## Key features
+
+- Widened cabin built on a rigid base tray
+- Large-diameter ventilation mesh rather than a scatter of small holes
+- Holds its shape whether the pet is in it or not
+- Padded back panel and shoulder straps
 
 ## Sizing and fit
 
-Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
+First-Class Cat Backpack is supplied in One size. External dimensions are 36.5 × 28 × 43 cm. Net weight starts at 1250 g. Recommended for pets up to 8 kg.
+
+## Materials and packing
+
+Body materials: Light water-resistant nylon + fibreboard base insert. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+Designed around cabin travel, car journeys, daily errands and longer outdoor trips. Available in 2 colours: Chestnut Brown, Ebony Black. Packed as Cardboard box 60 × 38 × 7.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+First-Class Cat Backpack can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

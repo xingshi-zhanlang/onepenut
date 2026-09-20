@@ -24,19 +24,38 @@ gallery:
 ## Product facts
 
 - **Collection**: Harnesses & Leashes
-- **SKU**: OP029014
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP029014
+- **Sizes**: S/M/One size
+- **Recommended for**: pets 3–9 / 9–16 / up to 16 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Chest girth | Diameter | Rope diameter | Length | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| S | Olive Green | pets 3–9 kg | 33-48 cm | — | 8 mm | — | 160 g | 170 g | Zip bag 20 × 35.5 cm |
+| M | — | pets 9–16 kg | 44-66 cm | — | 8 mm | — | 180 g | 200 g | Zip bag 27.5 × 45 cm |
+| One size | — | pets up to 16 kg | — | 8 mm | — | 130 cm | 100 g | 110 g | Zip bag 13 × 38 cm |
+| S | Buckwheat Grey | pets 3–9 kg | 33-48 cm | — | 8 mm | — | 160 g | 170 g | Zip bag 20 × 35.5 cm |
+| M | — | pets 9–16 kg | 44-66 cm | — | 8 mm | — | 180 g | 200 g | Zip bag 27.5 × 45 cm |
+| One size | — | pets up to 16 kg | — | 8 mm | — | 130 cm | 100 g | 110 g | Zip bag 13 × 38 cm |
+
+## Key features
+
+- Adjusts at neck, back length and chest — three independent points
+- Reinforced load-bearing metal buckle
+- RPET recycled webbing with a leather handle panel
+- Locking hook clip for extra security on a strong dog
 
 ## Sizing and fit
 
-Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
+Leather Rope Dog Harness & Leash Set is supplied in S, M, One size. Net weight starts at 100 g. Recommended for pets 3–9 / 9–16 / up to 16 kg.
 
 ## Typical use
 
-Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+Intended for daily walks, training sessions and travel by car or public transport. Available in 2 colours: Olive Green, Buckwheat Grey. Packed as Zip bag 20 × 35.5 cm; Zip bag 27.5 × 45 cm; Zip bag 13 × 38 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Leather Rope Dog Harness & Leash Set can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

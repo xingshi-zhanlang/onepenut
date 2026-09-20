@@ -24,19 +24,34 @@ gallery:
 ## Product facts
 
 - **Collection**: Harnesses & Leashes
-- **SKU**: OP006003
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP006003
+- **Sizes**: L
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Neck girth | Chest girth | Packaging |
+| --- | --- | --- | --- | --- |
+| L | Cocoa Brown | 44-60 cm | 52-70 cm | Zip bag 27.5 × 45 cm |
+| L | Nile Blue | 44-60 cm | 52-70 cm | Zip bag 27.5 × 45 cm |
+| L | Beetroot Pink | 44-60 cm | 52-70 cm | Zip bag 27.5 × 45 cm |
+
+## Key features
+
+- Single-piece sandwich-mesh body spreads pressure across chest and belly
+- Reflective logo front and back for low-light walks
+- Light enough for all-day wear indoors or out
+- Vest cut means no straps across the throat
 
 ## Sizing and fit
 
-Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
+Sizing runs across L.
 
 ## Typical use
 
-Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+Suited to daily walks, training sessions and travel by car or public transport. Available in 3 colours: Cocoa Brown, Nile Blue, Beetroot Pink. Packed as Zip bag 27.5 × 45 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Castle Series Lightweight Vest Harness can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

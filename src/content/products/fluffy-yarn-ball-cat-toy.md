@@ -24,19 +24,37 @@ gallery:
 ## Product facts
 
 - **Collection**: Accessories & Cat Gear
-- **SKU**: OP015040
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP015040
+- **Materials**: Yarn + metal bell
+- **Sizes**: One size
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Materials | Diameter | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- |
+| One size | Nine-Colour Assortment | Yarn + metal bell | 5 cm | 85 g | 95 g | Zip bag 20 × 24.5 cm |
+
+## Key features
+
+- Hand-woven yarn survives biting, clawing and dropping
+- Colourfast and non-shedding
+- Bell inside keeps cats interested after the novelty fades
+- Rolls unpredictably to encourage chasing
 
 ## Sizing and fit
 
-This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
+Fluffy Yarn Ball Cat Toy covers One size. Net weight starts at 85 g.
+
+## Materials and packing
+
+Body materials: Yarn + metal bell. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+Made for everyday use alongside a carrier or harness, at home and on the move. Supplied in Nine-Colour Assortment. Packed as Zip bag 20 × 24.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Fluffy Yarn Ball Cat Toy can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

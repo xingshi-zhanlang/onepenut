@@ -37,8 +37,9 @@ export const NAV_LINKS = [
   { href: '/contact', label: 'Contact' },
 ];
 
-// 产品分类 —— 品牌 5 大核心品类
+// 产品分类 —— 品牌 7 大品类
 // ① 外出包/背包（品牌主打）② 胸背+牵引 ③ 伊丽莎白圈/防护 ④ 推车 ⑤ 功能配件/猫用品
+// ⑥ 一次性护理垫（居家防污·消耗品）⑦ 可单块拆洗拼接地毯（居家防污·耐用品）
 export interface CategoryInfo {
   slug: string;
   /** 分类落地页路径（SEO：独立 URL，承载分类商业词） */
@@ -94,6 +95,24 @@ export const CATEGORIES: CategoryInfo[] = [
       'Car seat belts, recovery suits, beds, bowls, toys and everyday essentials that complete every journey.',
     tagline: 'Thoughtful essentials',
     icon: 'M12 2l10 5-10 5L2 7l10-5zM2 17l10 5 10-5M2 12l10 5 10-5',
+  },
+  {
+    slug: 'pee-pads',
+    path: '/collections/pet-pee-pads/',
+    name: 'Pee Pads & Bed Protection',
+    description:
+      'Disposable extra-large pet pee pads up to 120 × 180 cm, bed pads and training pads. Custom sizing, four-corner adhesive tabs and private-label packaging for wholesale and OEM programmes.',
+    tagline: 'Protect the bed, not just the floor',
+    icon: 'M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM3 10h18M3 14h18M8 3v4M16 3v4',
+  },
+  {
+    slug: 'carpet-tiles',
+    path: '/collections/pet-carpet-tiles/',
+    name: 'Modular Carpet Tiles',
+    description:
+      'Modular pet carpet tiles that lift out one at a time for washing or replacement. Glue-free, PVC-free and trimmable 400 × 400 mm modules for living rooms, crate areas and car boots.',
+    tagline: 'Replace one tile, not the floor',
+    icon: 'M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z',
   },
 ];
 

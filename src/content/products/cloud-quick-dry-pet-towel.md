@@ -24,19 +24,37 @@ gallery:
 ## Product facts
 
 - **Collection**: Accessories & Cat Gear
-- **SKU**: OP015039
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP015039
+- **Materials**: A-class coral fleece
+- **Sizes**: One size
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- |
+| One size | Milk Brown | 80 × 150 cm | A-class coral fleece | 505 g | 545 g | Frosted zip bag |
+
+## Key features
+
+- Absorbs in around 2.3 seconds rather than spreading water around
+- Dense cream coral fleece with a soft, springy pile
+- Baby-grade A-class fabric — no shedding, no dye transfer
+- Large enough to wrap a wet dog end to end
 
 ## Sizing and fit
 
-This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
+Cloud Pet Quick-Dry Bath Towel is built around One size. External dimensions are 80 × 150 cm. Net weight starts at 505 g.
+
+## Materials and packing
+
+Body materials: A-class coral fleece. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+Made for everyday use alongside a carrier or harness, at home and on the move. Supplied in Milk Brown. Packed as Frosted zip bag.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Cloud Pet Quick-Dry Bath Towel can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

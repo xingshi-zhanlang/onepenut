@@ -24,25 +24,37 @@ gallery:
 ## Product facts
 
 - **Collection**: Harnesses & Leashes
-- **SKU**: OP024019
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP024019
+- **Sizes**: One size
+- **Recommended for**: cats up to 8 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Chest girth | Leash length | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Camellia White | cats up to 8 kg | 30-52 cm | 124-240 cm | 80 g | 100 g | Zip bag 20 × 35.5 cm |
+| One size | Pomelo Yellow | cats up to 8 kg | 30-52 cm | 124-240 cm | 80 g | 100 g | Zip bag 20 × 35.5 cm |
+| One size | Beetroot Pink | cats up to 8 kg | 30-52 cm | 124-240 cm | 80 g | 100 g | Zip bag 20 × 35.5 cm |
+| One size | Turquoise | cats up to 8 kg | 30-52 cm | 124-240 cm | — | — | — |
+| One size | Velvet Bean Red | cats up to 8 kg | 30-52 cm | 124-240 cm | — | — | — |
 
 ## Key features
 
-- 8-shape design prevents escape
-- Half-P anti-pull structure
-- Adjustable for wider fit
+- Figure-8 layout tightens briefly if the cat backs out, then releases
+- Stops short of the throat so breathing is never restricted
+- Side slider limits how far the loop can travel
+- Shoulder or waist carry keeps both hands free
 
 ## Sizing and fit
 
-Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
+8-Shape Half-P Cat Harness & Leash is supplied in One size. Net weight starts at 80 g. Recommended for cats up to 8 kg.
 
 ## Typical use
 
-Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+Built for daily walks, training sessions and travel by car or public transport. Available in 5 colours: Camellia White, Pomelo Yellow, Beetroot Pink, Turquoise, Velvet Bean Red. Packed as Zip bag 20 × 35.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+8-Shape Half-P Cat Harness & Leash can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

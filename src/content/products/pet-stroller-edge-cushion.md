@@ -24,19 +24,38 @@ gallery:
 ## Product facts
 
 - **Collection**: Pet Strollers
-- **SKU**: OP031002
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP031002
+- **Materials**: Linen-look fabricfabric
+- **Sizes**: One size
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- |
+| One size | Cloud Grey | 70 × 28 cm | Linen-look fabricfabric | 187 g | 266 g | Zip bag 27.5 × 45 cm |
+| One size | Graphite Black | 70 × 28 cm | Linen-look fabricfabric | 187 g | 266 g | Zip bag 27.5 × 45 cm |
+
+## Key features
+
+- Magnetic padded rim lines the stroller edge
+- Detachable for washing
+- Stops the frame rubbing against the pet
+- Cotton-filled for a soft contact surface
 
 ## Sizing and fit
 
-Strollers are matched to the pet's size and to how the stroller will be used, rather than to a single dimension. Tell us the intended use and we will confirm the suitable frame and wheel configuration.
+Sizing runs across One size. External dimensions are 70 × 28 cm. Net weight starts at 187 g.
+
+## Materials and packing
+
+Body materials: Linen-look fabricfabric. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-Built for pets that tire on longer outings and for travel where carrying is not practical. Fold behaviour and frame weight are the two points buyers raise most.
+Suited to senior pets, longer city walks and travel where carrying is not practical. Available in 2 colours: Cloud Grey, Graphite Black. Packed as Zip bag 27.5 × 45 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Pet Stroller Edge Cushion can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

@@ -24,19 +24,36 @@ gallery:
 ## Product facts
 
 - **Collection**: Harnesses & Leashes
-- **SKU**: OP024015
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP024015
+- **Sizes**: One size
+- **Recommended for**: cats up to 8 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Neck girth | Chest girth | Back length | Leash length | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Milk Brown | cats up to 8 kg | 21-33 cm | 31-53 cm | 9-12 cm | 130 cm | 110 g | 160 g | Zip bag 20 × 35.5 cm |
+| One size | Buckwheat Grey | cats up to 8 kg | 21-33 cm | 31-53 cm | 9-12 cm | 130 cm | 110 g | 160 g | Zip bag 20 × 35.5 cm |
+| One size | Olive Green | cats up to 8 kg | 21-33 cm | 31-53 cm | 9-12 cm | 130 cm | 110 g | 160 g | Zip bag 20 × 35.5 cm |
+| One size | Hibiscus Purple | cats up to 8 kg | 21-33 cm | 31-53 cm | 9-12 cm | 130 cm | 110 g | 160 g | Zip bag 20 × 35.5 cm |
+
+## Key features
+
+- Sliding ring at the back fine-tunes the fit without buckles
+- Leather slider adjusts the neck
+- H-shape reduces coverage so the cat stays cool
+- Round rope profile resists matting
 
 ## Sizing and fit
 
-Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
+Sizing runs across One size. Net weight starts at 110 g. Recommended for cats up to 8 kg.
 
 ## Typical use
 
-Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+Made for daily walks, training sessions and travel by car or public transport. Available in 4 colours: Milk Brown, Buckwheat Grey, Olive Green, Hibiscus Purple. Packed as Zip bag 20 × 35.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Leather Rope Cat Harness & Leash Set can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

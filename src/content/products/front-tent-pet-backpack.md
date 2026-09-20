@@ -24,19 +24,38 @@ gallery:
 ## Product facts
 
 - **Collection**: Carrier Bags & Backpacks
-- **SKU**: OP015062
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP015062
+- **Materials**: Nylon
+- **Sizes**: One size
+- **Recommended for**: pets up to 10 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Tent dimensions | Materials | Recommended for | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Chestnut Brown | 36.5 × 28 × 43 cm | 36.5 × 88 × 43 cm | Nylon | pets up to 10 kg | 2060 g | 2480 g | Cardboard box 62 × 38 × 8.5 cm |
+
+## Key features
+
+- Zip-out tent doubles the interior when you are stationary
+- Three-zone layout with roll-up panels for ventilation or privacy
+- Rigid base tray prevents sagging
+- Widened body over the standard front carrier
 
 ## Sizing and fit
 
-Carrier sizing is the decision that makes or breaks a model. Our travel carriers follow common in-cabin dimensions, but airline rules differ by carrier and route, so confirm your target airline before fixing a size. A measuring guide is supplied with every range.
+Front Tent Pet Backpack is built around One size. External dimensions are 36.5 × 28 × 43 cm. Net weight starts at 2060 g. Recommended for pets up to 10 kg.
+
+## Materials and packing
+
+Body materials: Nylon. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-The range covers cabin travel, car journeys, daily errands and longer outdoor trips. Shoulder, crossbody, backpack and canopy-tent formats sit alongside each other, so a single line can serve several sales channels.
+Intended for cabin travel, car journeys, daily errands and longer outdoor trips. Supplied in Chestnut Brown. Packed as Cardboard box 62 × 38 × 8.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Front Tent Pet Backpack can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

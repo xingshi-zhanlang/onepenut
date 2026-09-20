@@ -24,19 +24,39 @@ gallery:
 ## Product facts
 
 - **Collection**: Accessories & Cat Gear
-- **SKU**: OP013017
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP013017
+- **Materials**: Silicone
+- **Sizes**: One size
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Net weight | Gross weight | Packaging | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Khaki | 6 × 15 cm | Silicone | 90 g | 105 g | Zip bag 20 × 24.5 cm | 600ML |
+| One size | Grey Green | 6 × 15 cm | Silicone | 90 g | 105 g | Zip bag 20 × 24.5 cm | 600ML |
+| One size | Chestnut Pink | 6 × 15 cm | Silicone | 90 g | 105 g | Zip bag 20 × 24.5 cm | 600ML |
+
+## Key features
+
+- Food-grade silicone, heat- and cold-resistant
+- Collapses flat for travel
+- Rinses clean in seconds
+- Works as a water bowl or a food bowl
 
 ## Sizing and fit
 
-This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
+Silicone Folding Travel Bowl covers One size. External dimensions are 6 × 15 cm. Net weight starts at 90 g.
+
+## Materials and packing
+
+Body materials: Silicone. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+Built for everyday use alongside a carrier or harness, at home and on the move. Available in 3 colours: Khaki, Grey Green, Chestnut Pink. Packed as Zip bag 20 × 24.5 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Silicone Folding Travel Bowl can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

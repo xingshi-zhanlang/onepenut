@@ -24,19 +24,38 @@ gallery:
 ## Product facts
 
 - **Collection**: Accessories & Cat Gear
-- **SKU**: OP025037
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP025037
+- **Materials**: 600D Oxford
+- **Sizes**: One size
+- **Recommended for**: all pet sizes
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Dimensions | Materials | Recommended for | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Khaki Brown | 135 × 46 × 52 cm | 600D Oxford | all pet sizes | 2100 g | 2455 g | Transparent zip bag |
+
+## Key features
+
+- Four-sided surround protects the rear bench from claws and dirt
+- Centre window keeps the pet in view while driving
+- Dual side anchors stop the pad shifting
+- 135 x 46 x 52 cm — fits the full width of most rear benches
 
 ## Sizing and fit
 
-This collection spans several small categories, so dimensions vary by model. Confirm the exact measurements you need at sample stage.
+Rear Car Seat Full-Surround Pet Pad is built around One size. External dimensions are 135 × 46 × 52 cm. Net weight starts at 2100 g. Recommended for all pet sizes.
+
+## Materials and packing
+
+Body materials: 600D Oxford. Net and gross weights are listed per size so carton planning and freight estimates can be done before sampling.
 
 ## Typical use
 
-Car travel, feeding, grooming, play and general comfort — the everyday items that complete a travel range.
+Built for everyday use alongside a carrier or harness, at home and on the move. Supplied in Khaki Brown. Packed as Transparent zip bag.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Rear Car Seat Full-Surround Pet Pad can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.

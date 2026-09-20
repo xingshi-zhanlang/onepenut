@@ -24,19 +24,36 @@ gallery:
 ## Product facts
 
 - **Collection**: Harnesses & Leashes
-- **SKU**: OP029011
-- **Customisation**: fabric, colour, sizing, logo, hardware and packaging can be built to your brand
-- **Sampling**: a sample is produced and approved before bulk production begins
+- **Model**: OP029011
+- **Sizes**: One size
+- **Recommended for**: pets up to 40 kg
+- **Customisation**: fabric, colour, sizing, logo, hardware and packaging
 - **Order type**: wholesale, OEM and ODM
+
+## Specification
+
+| Size | Colour | Recommended for | Width | Length | Net weight | Gross weight | Packaging |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| One size | Milk Brown | pets up to 40 kg | 2.0 cm | 62-82 cm | 95 g | 110 g | Zip bag 13 × 38 cm |
+| One size | Olive Green | pets up to 40 kg | 2.0 cm | 62-82 cm | 95 g | 110 g | Zip bag 13 × 38 cm |
+| One size | Buckwheat Grey | pets up to 40 kg | 2.0 cm | 62-82 cm | 95 g | 110 g | Zip bag 13 × 38 cm |
+| One size | Hibiscus Purple | pets up to 40 kg | 2.0 cm | 62-82 cm | 95 g | 110 g | Zip bag 13 × 38 cm |
+
+## Key features
+
+- Colour-blocked webbing coordinates with the Valley range
+- Clips to a harness for car travel
+- Shock-absorbing section cushions sudden stops
+- Adjustable length for different seat positions
 
 ## Sizing and fit
 
-Walk gear lives or dies on fit. Neck and chest ranges are measured on the finished sample rather than calculated from the pattern, so the size chart you publish matches what actually ships. Cat and dog harnesses are built on separate patterns rather than sharing one compromise shape.
+Valley Series Shock-Absorbing Car Safety Belt covers One size. Net weight starts at 95 g. Recommended for pets up to 40 kg.
 
 ## Typical use
 
-Everyday walking, training, hiking and multi-dog setups, for both cats and dogs. Bungee sections, side handles and traffic loops can be added per model without changing the base pattern.
+Suited to daily walks, training sessions and travel by car or public transport. Available in 4 colours: Milk Brown, Olive Green, Buckwheat Grey, Hibiscus Purple. Packed as Zip bag 13 × 38 cm.
 
 ## Wholesale and OEM
 
-Every model can be produced to your own specification: fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
+Valley Series Shock-Absorbing Car Safety Belt can be produced to your own specification — fabric, colour, sizing, logo, hardware and packaging. A sample is produced and approved before bulk production begins, and export documentation is handled end to end. Exact terms depend on the model, so confirm them with us before you plan an order.
