@@ -1,0 +1,41 @@
+---
+// MOQ 阶梯表 —— 从 src/data/trade.ts 读取，改数字只需改那一个文件
+import { MOQ_TIERS } from '../data/trade';
+---
+
+<div class="overflow-hidden rounded-3xl border border-milk-tea/60 bg-white shadow-card">
+  <table class="w-full text-left text-sm">
+    <thead class="bg-olive-dark text-cream">
+      <tr>
+        <th scope="col" class="px-4 py-3 font-semibold md:px-6">Order type</th>
+        <th scope="col" class="px-4 py-3 font-semibold md:px-6">MOQ</th>
+        <th scope="col" class="px-4 py-3 font-semibold md:px-6">What it covers</th>
+        <th scope="col" class="px-4 py-3 font-semibold md:px-6">Lead time</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-milk-tea/60">
+      {MOQ_TIERS.map((t) => (
+        <tr class="align-top transition-colors hover:bg-cream/60">
+          <th scope="row" class="px-4 py-5 md:px-6">
+            <span class="font-display text-base font-bold text-dark-brown">{t.tier}</span>
+            <span class="mt-1 block text-xs font-normal text-stone">{t.custom}</span>
+          </th>
+          <td class="px-4 py-5 md:px-6">
+            <span class="whitespace-nowrap font-display text-2xl font-bold text-caramel-dark">
+              {t.qty}
+            </span>
+          </td>
+          <td class="px-4 py-5 md:px-6">
+            <span class="font-semibold text-dark-brown">{t.scope}</span>
+            <span class="mt-1 block leading-relaxed text-stone">{t.detail}</span>
+          </td>
+          <td class="px-4 py-5 leading-relaxed text-stone md:px-6">{t.lead}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+<p class="mt-3 text-xs leading-relaxed text-stone">
+  Quantities are per style per colourway unless your quotation says otherwise. Mixed
+  styles can be combined to reach a tier when the same material and hardware are used.
+</p>

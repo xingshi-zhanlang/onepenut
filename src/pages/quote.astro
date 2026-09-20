@@ -212,6 +212,46 @@ const waMsg =
         }
       </script>
 
+      <!-- 询价前的常见问题（内链至 B2B 钱页，减少来回沟通） -->
+      <div class="mt-8 rounded-3xl border border-milk-tea/60 bg-white p-6 md:p-8">
+        <h2 class="font-display text-lg font-bold text-dark-brown">
+          Before you send it — three answers you may want first
+        </h2>
+        <p class="mt-2 text-sm leading-relaxed text-stone">
+          Quantity, timing and customisation decide most of what a quotation looks like.
+          If you want the numbers up front rather than by email, they are published:
+        </p>
+        <ul class="mt-4 space-y-3">
+          {[
+            {
+              href: '/moq-and-sampling/',
+              label: 'MOQ and lead times',
+              note: 'MOQ from 10 pcs on stock designs, sample cycles, and the day production actually starts.',
+            },
+            {
+              href: '/wholesale/',
+              label: 'Wholesale terms',
+              note: 'Volume bands, payment terms, Incoterms and the smallest shipment we accept.',
+            },
+            {
+              href: '/oem-odm/',
+              label: 'OEM / ODM customisation',
+              note: 'What can be changed, development costs, and how your design is protected.',
+            },
+          ].map((l) => (
+            <li>
+              <a
+                href={l.href}
+                class="block rounded-2xl border border-milk-tea/60 p-4 transition-colors hover:border-olive hover:bg-cream/60"
+              >
+                <span class="text-sm font-semibold text-olive-dark">{l.label} →</span>
+                <span class="mt-1 block text-sm leading-relaxed text-stone">{l.note}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
       <!-- 备选：WhatsApp -->
       <div class="mt-8 rounded-3xl border border-milk-tea/60 bg-cream/50 p-6 text-center md:p-8">
         <p class="text-sm text-stone">Prefer instant messaging?</p>

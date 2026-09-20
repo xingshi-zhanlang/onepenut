@@ -1,0 +1,46 @@
+---
+// 询盘行动区 —— 每个 B2B 页面收尾统一用它，把「下一步」收口到两个动作
+import { CONTACT, whatsappLink } from '../consts';
+
+interface Props {
+  title?: string;
+  desc?: string;
+  waMsg?: string;
+}
+const {
+  title = 'Tell us what you need and we will quote it',
+  desc = 'Send the product, the quantity and your destination port. If you are not sure yet, send the closest item you sell today and we will work from there.',
+  waMsg = 'Hello ONEPENUT, I would like a wholesale quotation.',
+} = Astro.props;
+---
+
+<section class="bg-olive-dark">
+  <div class="container-site py-14 md:py-20">
+    <div class="mx-auto max-w-3xl text-center">
+      <h2 class="font-display text-3xl font-bold text-cream md:text-4xl">{title}</h2>
+      <p class="mt-4 leading-relaxed text-cream/80">{desc}</p>
+
+      <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a
+          href={whatsappLink(waMsg)}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-wa"
+        >
+          Message us on WhatsApp
+        </a>
+        <a
+          href="/quote"
+          class="inline-flex items-center justify-center gap-2 rounded-full bg-cream px-6 py-3 text-sm font-semibold text-olive-dark transition-colors hover:bg-white"
+        >
+          Send a detailed quote request
+        </a>
+      </div>
+
+      <p class="mt-6 text-sm text-cream/70">
+        Or email <a href={`mailto:${CONTACT.email}`} class="underline underline-offset-2 hover:text-cream">{CONTACT.email}</a>
+        — we reply within one business day.
+      </p>
+    </div>
+  </div>
+</section>

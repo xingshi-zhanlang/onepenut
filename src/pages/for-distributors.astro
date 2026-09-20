@@ -1,0 +1,360 @@
+---
+// 经销商与进口商页 —— 面向「已经在本国卖宠物品、要找上游供货」的买家
+import Layout from '../layouts/Layout.astro';
+import TradeTerms from '../components/TradeTerms.astro';
+import FaqList from '../components/FaqList.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { CATEGORIES, whatsappLink } from '../consts';
+import { COMMERCIAL, FACTORY, QUOTE_CHECKLIST } from '../data/trade';
+
+const waMsg =
+  'Hello ONEPENUT, I am a distributor / importer in ____ and would like to discuss supply.';
+
+const programme = [
+  {
+    title: 'Territory agreed in writing',
+    desc: 'For catalogue products branded for you, market exclusivity can be agreed against an annual volume commitment. It is a commercial term set out before you order, not a promise made in passing.',
+  },
+  {
+    title: 'One supplier across seven categories',
+    desc: 'Carriers, harnesses, recovery collars, strollers, accessories, pee pads and modular carpet tiles in one container, one document set and one supplier conversation.',
+  },
+  {
+    title: 'A fixed catalogue your team can quote from',
+    desc: 'Your sales team needs to quote without emailing a factory every time. We keep a stable core range so your price list stays valid across the season.',
+  },
+  {
+    title: 'Consistency between shipments',
+    desc: 'The material and hardware on your second order match the first, because the specification is recorded rather than remembered. Substitutions are disclosed, never silent.',
+  },
+  {
+    title: 'Marketing assets you can use',
+    desc: 'Product photography, specification sheets and a catalogue structure you can drop into your own sales material — no need to re-shoot the range.',
+  },
+  {
+    title: 'A named contact, not a shared inbox',
+    desc: 'One person who knows your account, your specifications and your market. It is a small thing until the first time you need an answer on a Friday.',
+  },
+];
+
+const ladder = [
+  {
+    stage: 'Stage 1 — Market test',
+    qty: '10–99 pcs per style',
+    desc: 'A small consignment to validate the products with your own customers before you commit capital. LCL freight from 1 CBM. This is where most of our long-term distributor relationships start.',
+  },
+  {
+    stage: 'Stage 2 — Core range',
+    qty: '100–499 pcs per style',
+    desc: 'Your branding added to a proven range, and your first volume pricing band. This is normally the point at which a range starts appearing in a retail catalogue.',
+  },
+  {
+    stage: 'Stage 3 — Container programme',
+    qty: '500–2,000+ pcs per style',
+    desc: 'Full custom programme with a scheduled delivery calendar across the season, so replenishment arrives ahead of your selling peaks rather than after them.',
+  },
+];
+
+const support = [
+  {
+    title: 'Before the first order',
+    items: [
+      'Quotation with unit price, MOQ, lead times and Incoterm in writing',
+      'Sample of the actual product, sent by courier',
+      'Specification sheet and material declaration on request',
+    ],
+  },
+  {
+    title: 'Before the container ships',
+    items: [
+      'Pre-shipment inspection with a photo report for your approval',
+      'Carton dimensions, weights and CBM so you can plan warehouse space',
+      'Full document set: invoice, packing list, bill of lading, certificate of origin',
+    ],
+  },
+  {
+    title: 'After it lands',
+    items: [
+      'Reorder against the same specification, without re-sampling',
+      'Product photography and specification sheets for your own sales material',
+      'A named contact for after-sales and any claim that needs investigating',
+    ],
+  },
+];
+
+const faqs = [
+  {
+    q: 'Can I have exclusivity in my country?',
+    a: 'For a custom design, yes — the product is developed for you and is not sold to anyone else, in any market. For catalogue products carrying your branding, exclusivity can be agreed and is normally tied to an annual volume commitment. Tell us your market and the volume you can commit to, and we will discuss it as a commercial term rather than a favour. Doing this before the first order is much easier than trying to renegotiate it later.',
+  },
+  {
+    q: 'What is a realistic first order for a distributor?',
+    a: 'Most distributors start smaller than they expect to. A trial consignment of 10–99 pieces per style across a handful of styles is enough to test the products with real customers, and it ships LCL from 1 CBM. Once you know which lines sell, the second order is where the volume tiers and the margin actually start working. Starting with a container you cannot sell through is the most common way a good distributor relationship goes wrong.',
+  },
+  {
+    q: 'Can you consolidate multiple categories into one container?',
+    a: `Yes — that is the main reason to buy across categories from one supplier. Carriers, harnesses, collars, strollers, accessories, pee pads and modular carpet tiles can ship together, on one set of documents and one freight booking. ${FACTORY.capacityNote}`,
+  },
+  {
+    q: 'Do you protect my pricing position?',
+    a: 'We will not quote the same branded product to another buyer in your agreed territory at a price that undercuts you. That commitment is part of the territory arrangement and is documented with it. We will not, however, hide behind a vague promise — ask us to put it in writing and we will.',
+  },
+  {
+    q: 'What payment terms do you offer?',
+    a: `${COMMERCIAL.payment} ${COMMERCIAL.paymentSmall} For established distributors with a volume history, credit terms can be discussed on a case-by-case basis — that conversation happens after a delivery record exists, not before.`,
+  },
+  {
+    q: 'How do you handle reorders?',
+    a: 'A reorder against a product we have already made is quoted and scheduled without re-sampling, which removes the biggest source of delay in a repeat order. Because the specification is recorded, the second shipment matches the first rather than "being close to it", which is what a customer notice most often looks like.',
+  },
+  {
+    q: 'Can I get product photography for my own catalogue?',
+    a: 'Yes. We can supply product imagery, specification sheets and dimensions that you can use in your own sales material. If you need images that match your brand style, tell us what you need and we will tell you what we can produce.',
+  },
+  {
+    q: 'What if a shipment arrives damaged or short?',
+    a: 'Tell us immediately with photographs and the packing list, and we will investigate against the inspection record and the loading documentation. Handling claims properly is mostly a matter of having records — which is why the pre-shipment report and carton documentation exist before anything leaves.',
+  },
+  {
+    q: 'Do you drop-ship or ship direct to my customers?',
+    a: `We ship to your nominated destination on the terms in your quotation — ${COMMERCIAL.incoterms} Handling individual consumer orders is a different operation, and it is not what we are set up to do well. If you need that, your own warehouse is the right layer for it.`,
+  },
+];
+
+const checklist = QUOTE_CHECKLIST;
+---
+
+<Layout
+  title="Distributor & Importer Programme — Pet Products Wholesale"
+  description="Supplying pet product distributors and importers from our own factory: territory agreements, consolidated containers across seven categories, a stable catalogue to quote from, and trial orders from 10 pcs per style."
+>
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-olive-dark py-20 md:py-28">
+    <div class="container-site relative z-10">
+      <div class="max-w-3xl">
+        <nav aria-label="Breadcrumb" class="text-xs text-cream/60">
+          <a href="/" class="hover:text-cream">Home</a>
+          <span class="mx-2">/</span>
+          <span class="text-cream/90">For Distributors</span>
+        </nav>
+        <span class="mt-4 block text-sm font-semibold uppercase tracking-[0.2em] text-cream/70">
+          For Distributors &amp; Importers
+        </span>
+        <h1 class="mt-3 font-display text-4xl font-bold text-cream md:text-5xl">
+          A supply programme built for distributors, not for one-off orders
+        </h1>
+        <p class="mt-5 text-lg leading-relaxed text-cream/85">
+          If your business is buying pet products and selling them on, what you need from
+          a factory is different from what a brand needs: consistency between shipments,
+          a catalogue that stays quotable, and a container that arrives before your
+          selling season rather than during it.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href={whatsappLink(waMsg)} target="_blank" rel="noopener noreferrer" class="btn-wa">
+            Discuss a supply programme
+          </a>
+          <a
+            href="/quote"
+            class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-cream/40 px-6 py-3 text-sm font-semibold text-cream transition-colors hover:bg-cream/10"
+          >
+            Request a quote
+          </a>
+        </div>
+        <p class="mt-5 text-sm text-cream/70">
+          Trial orders from 10 pcs per style · LCL accepted from 1 CBM · Territory
+          agreements available
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 数字 -->
+  <section class="container-site py-14 md:py-16">
+    <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
+      {[
+        { num: '7', label: 'Categories from one supplier' },
+        { num: FACTORY.monthlyCapacity, label: FACTORY.monthlyCapacityUnit },
+        { num: FACTORY.exportCountries, label: 'Export markets' },
+        { num: '1 CBM', label: 'Minimum LCL shipment' },
+      ].map((s) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 text-center shadow-card">
+          <div class="font-display text-3xl font-bold text-olive-dark md:text-4xl">{s.num}</div>
+          <div class="mt-2 text-sm text-stone">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 计划内容 -->
+  <section class="container-site pb-16 md:pb-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        What the distributor programme actually covers
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Six things. The first two are the ones that decide whether a supply relationship
+        is worth having at all.
+      </p>
+    </div>
+    <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {programme.map((p) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+          <h3 class="font-display text-lg font-bold text-dark-brown">{p.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone">{p.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 三级阶梯 -->
+  <section class="border-y border-milk-tea/60 bg-white/50">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          How most distributor relationships actually progress
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          Nobody's first order is a container. Here is the sequence that works, and why
+          each stage exists.
+        </p>
+      </div>
+      <div class="mt-10 grid gap-5 md:grid-cols-3">
+        {ladder.map((l, i) => (
+          <div
+            class={`rounded-3xl border p-6 shadow-card md:p-8 ${
+              i === 0
+                ? 'border-olive/30 bg-olive/5'
+                : i === 1
+                  ? 'border-caramel/30 bg-caramel/5'
+                  : 'border-milk-tea/60 bg-white'
+            }`}
+          >
+            <div class="text-xs font-semibold uppercase tracking-[0.12em] text-stone">{l.stage}</div>
+            <div class="mt-2 font-display text-xl font-bold text-caramel-dark">{l.qty}</div>
+            <p class="mt-3 text-sm leading-relaxed text-stone">{l.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 支持清单 -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        What you get at each stage
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Nothing on this list is an extra service or an upsell — it is how an export order
+        is run.
+      </p>
+    </div>
+    <div class="mt-10 grid gap-5 md:grid-cols-3">
+      {support.map((s) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+          <h3 class="font-display text-lg font-bold text-dark-brown">{s.title}</h3>
+          <ul class="mt-4 space-y-3">
+            {s.items.map((i) => (
+              <li class="flex gap-2.5 text-sm leading-relaxed text-stone">
+                <svg class="mt-0.5 h-4 w-4 shrink-0 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+                <span>{i}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 品类 -->
+  <section class="border-y border-milk-tea/60 bg-cream/60">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          Build a container, not a single line
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          Distributors make their margin on range breadth, not on one hero product. All
+          seven categories are made in the same building, which is what makes a mixed
+          container practical.
+        </p>
+      </div>
+      <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {CATEGORIES.map((c) => (
+          <a
+            href={c.path}
+            class="group rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-hover"
+          >
+            <h3 class="font-display text-base font-bold text-dark-brown group-hover:text-caramel-dark">
+              {c.name}
+            </h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone">{c.tagline}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 条款 -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        Quantities and terms
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        The same figures apply to distributors as to every other buyer. There is no
+        separate, worse price list for the first conversation.
+      </p>
+    </div>
+    <div class="mt-10">
+      <TradeTerms />
+    </div>
+
+    <div class="mt-8 grid gap-5 md:grid-cols-2">
+      <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+        <h3 class="font-display text-lg font-bold text-dark-brown">To quote a mixed container</h3>
+        <ul class="mt-4 space-y-2.5">
+          {checklist.map((c) => (
+            <li class="flex gap-2.5 text-sm leading-relaxed text-stone">
+              <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sage"></span>
+              <span>{c}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div class="rounded-3xl border border-olive/30 bg-olive/5 p-6 shadow-card md:p-8">
+        <h3 class="font-display text-lg font-bold text-dark-brown">Not sure where to start?</h3>
+        <p class="mt-3 text-sm leading-relaxed text-stone">
+          Send the products you sell today, even if they are not ours. We will tell you
+          which items in our range are the closest match, where our price sits against
+          what you are paying now, and whether a trial order makes sense at all. If it
+          does not, we will say so.
+        </p>
+        <div class="mt-5 flex flex-col gap-3 sm:flex-row">
+          <a href={whatsappLink(waMsg)} target="_blank" rel="noopener noreferrer" class="btn-caramel">
+            Talk to us
+          </a>
+          <a
+            href="/wholesale/"
+            class="inline-flex items-center justify-center rounded-full border border-milk-tea px-5 py-2.5 text-sm font-semibold text-stone transition-colors hover:border-olive hover:text-olive-dark"
+          >
+            Wholesale terms
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <FaqList
+    items={faqs}
+    intro="The nine questions distributors ask before committing to a supplier — territory, payment, reorders and what happens when something arrives wrong."
+  />
+
+  <CtaBand
+    title="Tell us your market and what you sell today"
+    desc="Territory, volume, categories and destination port. We will tell you what a realistic first order looks like and what it would cost — including whether it is worth doing at all."
+    waMsg="Hello ONEPENUT, I would like to discuss a distributor supply programme for my market."
+  />
+</Layout>

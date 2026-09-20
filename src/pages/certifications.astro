@@ -1,0 +1,449 @@
+---
+// 检测、合规与单证页
+// 口径纪律：**不声称本厂持有任何第三方证书**。只讲三件事——
+//   ① 我们的品控流程 ② 我们能配合做的检测与提供的单证 ③ 各市场买家常见的合规要求
+// 合规结论涉及法规，页面内必须带免责声明，且法规名称需可核。
+import Layout from '../layouts/Layout.astro';
+import FaqList from '../components/FaqList.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { whatsappLink } from '../consts';
+import { QUALITY } from '../data/trade';
+
+const waMsg =
+  'Hello ONEPENUT, my market requires the following testing / labelling: ____ . Can you support it?';
+
+// 责任划分：采购方最常见的问题是「这些到底谁来做」
+const responsibility = [
+  {
+    who: 'What we do',
+    tone: 'olive',
+    items: [
+      'Third-stage inspection on every order, with a photo report before loading',
+      'Product specification sheet, bill of materials and material declarations on request',
+      'Label, care label and packaging artwork printed exactly to the files you approve',
+      'Batch or lot identification marked on the goods, so a complaint can be traced to a production run',
+      'Samples and production units released for third-party testing whenever you commission it',
+    ],
+  },
+  {
+    who: 'What only you can do',
+    tone: 'caramel',
+    items: [
+      'Appoint the importer of record, and — for the EU — a responsible person established in the EU',
+      'Decide which tests and standards your market requires, and tell us in writing before production',
+      'Hold the technical file and respond to your own market surveillance authority',
+      'Substantiate marketing claims on your packaging and listings',
+      'Own the recall process if one is ever needed, with our production records provided to support it',
+    ],
+  },
+];
+
+const markets = [
+  {
+    market: 'European Union',
+    frame:
+      'Most pet accessories, including carriers, harnesses, beds and mats, are consumer products under the General Product Safety Regulation (EU) 2023/988, which has applied since 13 December 2024. Non-EU manufacturers are expected to have a responsible person established in the EU behind the product, and traceability has to be documented.',
+    commonly: [
+      'REACH restrictions — azo dyes, phthalates, heavy metals',
+      'Material declaration and bill of materials',
+      'Labelling with manufacturer and responsible-person contact details',
+      'Batch or lot identification, so a unit can be traced back to a shipment',
+    ],
+    note:
+      'Your buyer-side obligations are the strictest part, and they are yours rather than ours: the responsible person, the technical file and the distance-selling listing information all sit with the EU economic operator. We supply the factory-side documents that feed that file.',
+  },
+  {
+    market: 'Australia & New Zealand',
+    frame:
+      'There is no dedicated mandatory product standard for pet carriers and soft pet goods at present, but the Australian Consumer Law still applies in full: goods must be of acceptable quality, fit for purpose, and safe in normal use. If the overseas maker has no Australian presence, the importer is treated as the manufacturer for ACL purposes.',
+    commonly: [
+      'Fibre composition and English-language labelling',
+      'Physical performance — tensile strength, tear strength, abrasion, shrinkage',
+      'Chemical performance — formaldehyde and pH, azo dyes, heavy metals',
+      'Colour fastness to water, perspiration and rubbing',
+    ],
+    note:
+      'Two details worth knowing before you plan freight. Care labelling is a mandatory information standard, but its scope excludes bags and cases, canvas goods and floor coverings — so carriers and modular carpet tiles sit outside it, while bed-style soft goods may not. And DAFF biosecurity rules bite on natural materials: jute, sisal, wood, feathers or leather components in a product can change the import pathway, so tell us if your design uses them.',
+  },
+  {
+    market: 'United States',
+    frame:
+      'General consumer product safety applies through the Consumer Product Safety Act framework, and state-level rules such as California Proposition 65 create their own disclosure duties. There is no pet-product-specific federal standard for carriers.',
+    commonly: [
+      'Lead and heavy-metal content, particularly on hardware, zipper pulls and coated fabric',
+      'Phthalate content on plastic components',
+      'Proposition 65 wording, where a listing requires it',
+      'Flammability testing for goods with a pile or plush surface',
+    ],
+    note:
+      'Proposition 65 claims are made by the brand whose name is on the label, so the wording has to be your decision rather than ours. Send us the exact text and we will print it as specified.',
+  },
+  {
+    market: 'Southeast Asia',
+    frame:
+      'Requirements differ by country and are generally lighter for soft pet goods than in the EU, but consumer protection regimes are tightening and import documentation is checked carefully. Standards recognised locally are often used as the practical benchmark.',
+    commonly: [
+      'Azo dye and formaldehyde testing against the recognised local standard',
+      'Import licensing and country-of-origin documentation',
+      'Labelling in the destination language where required',
+      'Halal-adjacent considerations for goods that touch animal feed or food areas',
+    ],
+    note:
+      'Because the rules move at different speeds in each country, tell us the specific destination and we will tell you what we can and cannot produce evidence for. We would rather say "we cannot test to that" than ship something that stalls at your port.',
+  },
+];
+
+// 品类风险画像：来自采购方实际最常问的检测项
+const riskProfiles = [
+  {
+    group: 'Soft goods — carriers, harnesses, collars, beds, mats, carpet tiles',
+    risks:
+      'Textile and dye concerns, odour, washability, colour fastness, flammability on piled surfaces, and durability under repeated use.',
+    evidence: 'Material and dye test reports, care and wash instructions, construction specification.',
+  },
+  {
+    group: 'Load-bearing goods — leashes, harnesses, stroller attachment points',
+    risks:
+      'Mechanical failure rather than chemistry. A clip, buckle or stitch that fails under load is the failure mode that injures an animal and ends a retail relationship.',
+    evidence:
+      'Hardware grade declared in the specification, stitch density and bar-tack placement recorded, pull-strength testing commissioned where your market asks for it.',
+  },
+  {
+    group: 'Disposable and hygiene goods — pee pads and training pads',
+    risks:
+      'Absorbency claims and material safety, plus packaging that has to survive a freight lane without being punctured.',
+    evidence: 'Absorbency and material specification, carton and compression testing, batch coding for traceability.',
+  },
+];
+
+const testProcess = [
+  {
+    n: '01',
+    title: 'You specify',
+    desc: 'Tell us the market, the test standard and the specific tests your buyer or marketplace requires, in writing, before production starts. A verbal "it needs to be REACH compliant" is not enough to work from.',
+  },
+  {
+    n: '02',
+    title: 'We quote the testing',
+    desc: 'We confirm what can be tested, which accredited third-party lab is appropriate, what it costs and how long it takes. Testing is charged at cost — we do not mark it up.',
+  },
+  {
+    n: '03',
+    title: 'Samples are submitted',
+    desc: 'Production-representative samples go to the lab. This matters more than it sounds: a test on a hand-made sample proves nothing about a production run.',
+  },
+  {
+    n: '04',
+    title: 'Reports are issued in your name',
+    desc: 'Reports are issued to you, so you hold the evidence rather than depending on us to produce it later when a retail buyer asks.',
+  },
+  {
+    n: '05',
+    title: 'Batch control holds',
+    desc: 'Once a specification is tested, the materials it covers are recorded against the batch. Substituting a fabric, dye or hardware component without re-testing invalidates the report — so we do not do it without telling you.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'Are you certified?',
+    a: 'Here is the straight answer, because a vague one would waste your time: we do not claim certificates we have not earned, and we will not print a certificate mark on your packaging that we cannot support. What we do is run a three-stage inspection process on every order, hold our own specification and material records, and commission third-party testing through accredited labs whenever your market requires it — with the reports issued in your name. If your programme requires a specific factory certification or a social-compliance audit, tell us the scheme before you place the order and we will tell you honestly whether we can meet it.',
+  },
+  {
+    q: 'Can you print a certificate logo on our packaging or product?',
+    a: 'Only where the claim is genuinely supported by evidence in your name. We will not print a compliance mark that cannot be backed up, because the risk lands on the brand on the label — which is you. Send us the artwork and the report it relies on and we will confirm before production.',
+  },
+  {
+    q: 'Who arranges testing, and who pays for it?',
+    a: 'Testing is charged at cost and quoted before it is commissioned, so you always know the number first. We book the lab, prepare and submit production-representative samples, and have the report issued to you. You choose the standard, because you are the one who answers to your market.',
+  },
+  {
+    q: 'Does your testing cover the whole order, or only the sample?',
+    a: 'Test reports are valid only for the specification and the batch they cover. That is why we record which fabric, dye and hardware components went into a production run, and why we will not quietly swap a material between orders. If a substitution is necessary, we tell you and the testing is redone.',
+  },
+  {
+    q: 'What is the EU responsible person requirement, and does it apply to us?',
+    a: 'Under the General Product Safety Regulation (EU 2023/988), in force since 13 December 2024, products placed on the EU market need an economic operator established in the EU behind them, and their name and contact details have to be available on the product, the packaging or an accompanying document. If we ship to your EU importer, that person is normally your importer or an appointed representative — not us, since we are not established in the EU. What we supply is the factory-side documentation: specification, materials, batch identification, labelling artwork and any test reports. Confirm the arrangement with your importer before the goods ship rather than after.',
+  },
+  {
+    q: 'Do Australian importers need anything specific from us?',
+    a: 'Nothing that is specific to pet carriers, but the general rules still apply. Australian Consumer Law requires goods to be of acceptable quality, fit for purpose and safe, and where the overseas maker has no Australian presence the importer is treated as the manufacturer for those purposes. Practically, the requirements that most often touch our products are English-language fibre-content labelling, and biosecurity rules if a design uses natural materials — jute, sisal, wood, feathers or leather. Tell us if your design includes any of those and we will check the pathway with you before production.',
+  },
+  {
+    q: 'Which documents come with every shipment?',
+    a: QUALITY.documents.join(' · '),
+  },
+  {
+    q: 'Can you sign an NDA and provide a material declaration?',
+    a: 'Yes to both. We will sign your NDA or provide ours before the first technical discussion, and we can issue a specification sheet, bill of materials and material declaration for any product in the range. Buyers compiling a technical file usually need these — ask for them at sampling stage rather than at shipment, while there is still time to change a component.',
+  },
+  {
+    q: 'What happens if a shipment fails inspection?',
+    a: 'It does not ship. We either rework it or we tell you what the defect is and let you decide, with photographs and the inspection record to support the decision. The pre-shipment report exists precisely so that this conversation happens before the container is on the water, when it is still fixable without a recall.',
+  },
+  {
+    q: 'Is this page legal advice?',
+    a: 'No. It sets out what we can produce and supply, and the requirements our buyers most often ask about. Product regulations are market-specific, they change, and they place obligations on the importer and the brand as well as on the factory. Treat your own compliance advisor or customs broker as the authority on what your market requires, then tell us what that means for the product and we will build to it.',
+  },
+];
+---
+
+<Layout
+  title="Testing, Compliance & Documentation — Pet Product Manufacturing"
+  description="How we handle quality control, third-party testing and export documentation for pet carriers, harnesses, pee pads and carpet tiles — including what EU, UK, US, Australian and Southeast Asian buyers most often require."
+>
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-olive-dark py-20 md:py-28">
+    <div class="container-site relative z-10">
+      <div class="max-w-3xl">
+        <nav aria-label="Breadcrumb" class="text-xs text-cream/60">
+          <a href="/" class="hover:text-cream">Home</a>
+          <span class="mx-2">/</span>
+          <span class="text-cream/90">Testing &amp; Compliance</span>
+        </nav>
+        <span class="mt-4 block text-sm font-semibold uppercase tracking-[0.2em] text-cream/70">
+          Quality &amp; Compliance
+        </span>
+        <h1 class="mt-3 font-display text-4xl font-bold text-cream md:text-5xl">
+          Testing, compliance and the paperwork behind every shipment
+        </h1>
+        <p class="mt-5 text-lg leading-relaxed text-cream/85">
+          We will not claim certificates we have not earned. What we do claim is a
+          three-stage inspection process on every order, third-party testing
+          commissioned when your market requires it, and the documents your broker
+          needs — issued in your name, not ours.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href={whatsappLink(waMsg)} target="_blank" rel="noopener noreferrer" class="btn-wa">
+            Ask about your market's requirements
+          </a>
+          <a
+            href="/quote"
+            class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-cream/40 px-6 py-3 text-sm font-semibold text-cream transition-colors hover:bg-cream/10"
+          >
+            Request a quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 责任划分 -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        Who is responsible for what
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Most compliance problems in this trade are not failures of testing. They are
+        assumptions about which side was doing the testing. Here is the split we work to.
+      </p>
+    </div>
+
+    <div class="mt-10 grid gap-5 md:grid-cols-2">
+      {responsibility.map((r) => (
+        <div
+          class={`rounded-3xl border p-6 shadow-card md:p-8 ${
+            r.tone === 'olive'
+              ? 'border-olive/30 bg-olive/5'
+              : 'border-caramel/30 bg-caramel/5'
+          }`}
+        >
+          <h3 class="font-display text-xl font-bold text-dark-brown">{r.who}</h3>
+          <ul class="mt-4 space-y-3">
+            {r.items.map((i) => (
+              <li class="flex gap-3 text-sm leading-relaxed text-stone">
+                <span
+                  class={`mt-2 h-1.5 w-1.5 shrink-0 rounded-full ${
+                    r.tone === 'olive' ? 'bg-olive' : 'bg-caramel'
+                  }`}
+                ></span>
+                <span>{i}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 品控 -->
+  <section class="border-y border-milk-tea/60 bg-white/50">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          Three inspection points, every order
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          Quality is checked where it can still be fixed, not discovered at the loading
+          dock.
+        </p>
+      </div>
+      <div class="mt-10 grid gap-5 md:grid-cols-3">
+        {QUALITY.checkpoints.map((c, i) => (
+          <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+            <span class="font-display text-2xl font-bold text-milk-tea">{`0${i + 1}`}</span>
+            <h3 class="mt-2 font-display text-lg font-bold text-dark-brown">{c.stage}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone">{c.detail}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 各市场 -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        What each market actually asks for
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Four destinations, four different sets of expectations. Send us your market and
+        we will work to that list rather than to a generic one.
+      </p>
+    </div>
+
+    <div class="mt-10 space-y-6">
+      {markets.map((m) => (
+        <div class="overflow-hidden rounded-3xl border border-milk-tea/60 bg-white shadow-card">
+          <div class="border-b border-milk-tea/60 bg-olive-dark px-6 py-4">
+            <h3 class="font-display text-xl font-bold text-cream">{m.market}</h3>
+          </div>
+          <div class="grid gap-6 p-6 md:grid-cols-3 md:p-8">
+            <div class="md:col-span-2">
+              <p class="text-sm leading-relaxed text-stone">{m.frame}</p>
+              <p class="mt-4 text-sm leading-relaxed text-caramel-dark">
+                <span class="font-semibold">Worth planning around: </span>{m.note}
+              </p>
+            </div>
+            <div class="rounded-2xl bg-cream/70 p-5">
+              <h4 class="text-xs font-semibold uppercase tracking-[0.12em] text-stone">
+                Commonly requested
+              </h4>
+              <ul class="mt-3 space-y-2.5">
+                {m.commonly.map((c) => (
+                  <li class="flex gap-2.5 text-sm leading-relaxed text-stone">
+                    <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sage"></span>
+                    <span>{c}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <p class="mt-6 rounded-2xl border border-milk-tea/60 bg-cream/70 p-5 text-xs leading-relaxed text-stone">
+      <span class="font-semibold text-dark-brown">Please note: </span>
+      this section describes what our buyers most often ask for and what we can supply.
+      It is not legal advice, and product regulations are market-specific and change over
+      time. Your compliance advisor or customs broker is the authority on your own
+      obligations — tell us what they require and we will build to it.
+    </p>
+  </section>
+
+  <!-- 品类风险画像 -->
+  <section class="border-y border-milk-tea/60 bg-cream/60">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          Different products, different failure modes
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          A single "pet product compliance checklist" is the wrong tool. Soft goods and
+          load-bearing goods fail in completely different ways, and the evidence you need
+          is different too.
+        </p>
+      </div>
+      <div class="mt-10 grid gap-5 md:grid-cols-3">
+        {riskProfiles.map((r) => (
+          <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+            <h3 class="font-display text-base font-bold text-dark-brown">{r.group}</h3>
+            <p class="mt-3 text-sm leading-relaxed text-stone">
+              <span class="font-semibold text-dark-brown">Typical risk: </span>{r.risks}
+            </p>
+            <p class="mt-3 text-sm leading-relaxed text-stone">
+              <span class="font-semibold text-dark-brown">Evidence we provide: </span>{r.evidence}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 检测流程 + 单证 -->
+  <section class="container-site py-14 md:py-20">
+    <div class="grid gap-10 lg:grid-cols-2">
+      <div>
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          How testing is arranged
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          Five steps, and the first one is yours. Everything downstream depends on how
+          precisely the requirement is stated.
+        </p>
+        <ol class="mt-8 space-y-5">
+          {testProcess.map((t) => (
+            <li class="flex gap-4">
+              <span class="mt-0.5 font-display text-lg font-bold text-milk-tea">{t.n}</span>
+              <div>
+                <h3 class="font-display text-base font-bold text-dark-brown">{t.title}</h3>
+                <p class="mt-1 text-sm leading-relaxed text-stone">{t.desc}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+
+      <div>
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          Documents with every shipment
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          Nothing here is optional and nothing is chargeable — it is part of running an
+          export order properly.
+        </p>
+        <ul class="mt-8 space-y-3">
+          {QUALITY.documents.map((d) => (
+            <li class="flex gap-3 rounded-2xl border border-milk-tea/60 bg-white p-4 shadow-card">
+              <svg class="mt-0.5 h-4 w-4 shrink-0 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+              <span class="text-sm leading-relaxed text-stone">{d}</span>
+            </li>
+          ))}
+        </ul>
+        <div class="mt-6 rounded-3xl border border-olive/30 bg-olive/5 p-6">
+          <h3 class="font-display text-lg font-bold text-dark-brown">
+            Assembling a technical file?
+          </h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone">
+            Ask us for the specification sheet, bill of materials and material
+            declaration at sampling stage. Requesting them at shipment stage leaves no
+            room to change a component that turns out to be a problem.
+          </p>
+          <a
+            href={whatsappLink('Hello ONEPENUT, please send the specification sheet and material declaration for the products we are discussing.')}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-caramel mt-5"
+          >
+            Request documents
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <FaqList
+    items={faqs}
+    intro="Including the question every buyer asks first — 'are you certified?' — answered without the usual hedging."
+  />
+
+  <CtaBand
+    title="Tell us what your market requires"
+    desc="Send the test standard, the labelling rule or the marketplace requirement. We will tell you what we can produce evidence for, how long it takes and what it costs — before you commit to an order."
+    waMsg="Hello ONEPENUT, I need to check whether you can meet my market's compliance requirements."
+  />
+</Layout>

@@ -1,0 +1,423 @@
+---
+// 批发总览页（B2B 钱页枢纽）
+// 交易数字全部来自 src/data/trade.ts，改口径只改那一个文件
+import Layout from '../layouts/Layout.astro';
+import TradeTerms from '../components/TradeTerms.astro';
+import FaqList from '../components/FaqList.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { CATEGORIES, CONTACT, whatsappLink } from '../consts';
+import {
+  BUYER_TYPES,
+  COMMERCIAL,
+  FACTORY,
+  LEAD_TIME,
+  QUOTE_CHECKLIST,
+  SAMPLING,
+} from '../data/trade';
+
+const waMsg =
+  'Hello ONEPENUT, I would like a wholesale quotation. My market is ____ and I am interested in ____.';
+
+const stats = [
+  { num: FACTORY.floorArea, label: `${FACTORY.floorAreaUnit} factory floor` },
+  { num: FACTORY.monthlyCapacity, label: `${FACTORY.monthlyCapacityUnit}` },
+  { num: FACTORY.exportCountries, label: 'Export markets' },
+  { num: '10 pcs', label: 'Trial order MOQ' },
+];
+
+const whyDirect = [
+  {
+    title: 'You are buying from the line, not a trading desk',
+    desc: 'Cutting, sewing, assembly, QC and packing happen in our own workshop. There is no middle layer adding a margin and a week to every reply.',
+  },
+  {
+    title: 'Seven categories, one purchase order',
+    desc: 'Carriers, harnesses, recovery collars, strollers, accessories, pee pads and modular carpet tiles ship on one set of documents and one consolidated container.',
+  },
+  {
+    title: 'A trial order you can actually place',
+    desc: 'Stock designs start at 10 pieces. Test the market with real goods before committing to a container.',
+  },
+  {
+    title: 'Direct answers, from the people who make it',
+    desc: 'Questions about stitch density, webbing strength or packing dimensions are answered by our own production and QC team — not relayed through an agent.',
+  },
+];
+
+const steps = [
+  {
+    n: '01',
+    title: 'Send your list',
+    desc: 'Catalogue items or reference photos, quantities, sizes and your destination port. A rough list is enough to start.',
+  },
+  {
+    n: '02',
+    title: 'Get a quotation',
+    desc: 'Unit price, MOQ, sample and production lead times, and the exact Incoterm — in writing, within one business day.',
+  },
+  {
+    n: '03',
+    title: 'Approve a sample',
+    desc: 'We send the real thing. Nothing goes into production until you have signed off on the physical sample.',
+  },
+  {
+    n: '04',
+    title: 'Production and inspection',
+    desc: `Production runs in ${LEAD_TIME.production}. You receive a pre-shipment photo report before the goods leave.`,
+  },
+  {
+    n: '05',
+    title: 'Shipment and documents',
+    desc: 'We handle booking, loading and the full document set so your broker can clear the container without chasing us.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'What is your minimum order quantity?',
+    a: 'Trial orders on stock designs start at 10 pieces. Adding your logo to an existing design starts at 100 pieces. A new design or full customisation starts at 500 pieces. The reason for the split is straightforward: a stock design already exists and only needs to be picked and packed, while a custom design needs pattern-making, a sample round and a production slot of its own.',
+  },
+  {
+    q: 'Do you give volume discounts?',
+    a: 'Yes. Unit price falls as quantity rises, and the price-break table is issued with your quotation rather than printed on this page — fabric and freight costs move, and a number published on a website goes stale within months. Ask for the current table for your quantity band.',
+  },
+  {
+    q: 'Can I mix styles to reach the next quantity band?',
+    a: 'Usually yes, when the styles share the same material, hardware and colourway. Mixed sizes within one style are always fine. Tell us the mix you want and we will confirm which combinations can be combined.',
+  },
+  {
+    q: 'What are your payment terms?',
+    a: COMMERCIAL.payment,
+  },
+  {
+    q: 'Do you ship small orders, or only full containers?',
+    a: `${COMMERCIAL.lcl} LCL is the normal way to start. Once your order volume is steady, a full container almost always works out cheaper per unit once you net off the freight and destination charges.`,
+  },
+  {
+    q: 'Can I visit the factory or send an inspector?',
+    a: 'Yes. Buyers, their agents and third-party inspectors are welcome — tell us the date in advance so the relevant production and QC staff are on site rather than on the line. If your compliance programme requires a factory audit or a specific audit scheme, raise it before you place the order rather than after.',
+  },
+  {
+    q: 'How long does production take?',
+    a: `Bulk production is normally ${LEAD_TIME.production}, counted from the day after we receive your deposit and your approved pre-production sample — whichever is later. ${LEAD_TIME.productionRush}.`,
+  },
+  {
+    q: 'Which shipping term do you quote on?',
+    a: `${COMMERCIAL.incoterms} ${COMMERCIAL.incotermsAlt}`,
+  },
+];
+---
+
+<Layout
+  title="Wholesale Pet Products — Direct From Our Factory"
+  description="Wholesale pet carriers, harnesses, strollers, pee pads and modular carpet tiles, bought direct from our own factory. Trial orders from 10 pcs, volume pricing, in-house QC and full export documentation."
+>
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-olive-dark py-20 md:py-28">
+    <div class="container-site relative z-10">
+      <div class="max-w-3xl">
+        <nav aria-label="Breadcrumb" class="text-xs text-cream/60">
+          <a href="/" class="hover:text-cream">Home</a>
+          <span class="mx-2">/</span>
+          <span class="text-cream/90">Wholesale</span>
+        </nav>
+        <span class="mt-4 block text-sm font-semibold uppercase tracking-[0.2em] text-cream/70">
+          Wholesale &amp; Bulk Orders
+        </span>
+        <h1 class="mt-3 font-display text-4xl font-bold text-cream md:text-5xl">
+          Wholesale pet products, bought direct from the factory
+        </h1>
+        <p class="mt-5 text-lg leading-relaxed text-cream/85">
+          Carriers, harnesses, recovery collars, strollers, accessories, pee pads and
+          modular carpet tiles — made in our own workshop, sold to retailers,
+          distributors and brands without a trading company in between.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href={whatsappLink(waMsg)} target="_blank" rel="noopener noreferrer" class="btn-wa">
+            Get wholesale pricing
+          </a>
+          <a
+            href="/quote"
+            class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-cream/40 px-6 py-3 text-sm font-semibold text-cream transition-colors hover:bg-cream/10"
+          >
+            Request a quote
+          </a>
+        </div>
+        <p class="mt-5 text-sm text-cream/70">
+          Orders from 10 pcs · Reply within one business day · {COMMERCIAL.currency}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 数字 -->
+  <section class="container-site py-14 md:py-16">
+    <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
+      {stats.map((s) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 text-center shadow-card">
+          <div class="font-display text-3xl font-bold text-olive-dark md:text-4xl">{s.num}</div>
+          <div class="mt-2 text-sm text-stone">{s.label}</div>
+        </div>
+      ))}
+    </div>
+    <p class="mt-4 text-center text-xs text-stone">{FACTORY.capacityNote}</p>
+  </section>
+
+  <!-- 为什么直采 -->
+  <section class="container-site pb-16 md:pb-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        What buying direct actually changes
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Most buyers searching for a pet product supplier are comparing two kinds of
+        seller and cannot tell them apart from the website. This is the difference.
+      </p>
+    </div>
+    <div class="mt-10 grid gap-5 sm:grid-cols-2">
+      {whyDirect.map((item) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+          <h3 class="font-display text-lg font-bold text-dark-brown">{item.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 买家类型 -->
+  <section class="border-y border-milk-tea/60 bg-white/50">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          Who we supply
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          Four kinds of buyer, four different set of requirements. Tell us which one
+          you are and we will quote to that, not to a generic price list.
+        </p>
+      </div>
+      <div class="mt-10 grid gap-5 md:grid-cols-2">
+        {BUYER_TYPES.map((b) => (
+          <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+            <h3 class="font-display text-lg font-bold text-dark-brown">{b.type}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone">
+              <span class="font-semibold text-dark-brown">They need: </span>{b.need}
+            </p>
+            <p class="mt-2 text-sm leading-relaxed text-caramel-dark">
+              <span class="font-semibold">How we help: </span>{b.hook}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 品类 -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        Seven categories, one supplier
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Sourcing each line from a different factory means seven sets of samples,
+        seven lead times and seven documents. We make all seven in the same building.
+      </p>
+    </div>
+    <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {CATEGORIES.map((c) => (
+        <a
+          href={c.path}
+          class="group rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-hover"
+        >
+          <h3 class="font-display text-base font-bold text-dark-brown group-hover:text-caramel-dark">
+            {c.name}
+          </h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone">{c.tagline}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- MOQ 与交易条款 -->
+  <section id="terms" class="border-y border-milk-tea/60 bg-cream/60">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          Order terms at a glance
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          Every number below is the figure we start from — it is what your quotation
+          will be built on, not a ceiling we retreat from later.
+        </p>
+      </div>
+
+      <div class="mt-10">
+        <TradeTerms />
+      </div>
+
+      <div class="mt-8 grid gap-5 md:grid-cols-2">
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+          <h3 class="font-display text-lg font-bold text-dark-brown">Sampling</h3>
+          <dl class="mt-4 space-y-3 text-sm">
+            <div>
+              <dt class="font-semibold text-dark-brown">Stock sample</dt>
+              <dd class="text-stone">{SAMPLING.stockSampleLead}</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-dark-brown">Custom sample</dt>
+              <dd class="text-stone">{SAMPLING.customSampleLead}</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-dark-brown">Sample charge</dt>
+              <dd class="text-stone">{SAMPLING.sampleFee}</dd>
+            </div>
+          </dl>
+          <a href="/moq-and-sampling/" class="mt-4 inline-flex text-sm font-semibold text-olive-dark underline underline-offset-2 hover:text-caramel-dark">
+            Full details on MOQ, sampling and lead times
+          </a>
+        </div>
+
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+          <h3 class="font-display text-lg font-bold text-dark-brown">Commercial terms</h3>
+          <dl class="mt-4 space-y-3 text-sm">
+            <div>
+              <dt class="font-semibold text-dark-brown">Payment</dt>
+              <dd class="text-stone">{COMMERCIAL.payment}</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-dark-brown">Shipping</dt>
+              <dd class="text-stone">{COMMERCIAL.incoterms}</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-dark-brown">Smallest shipment</dt>
+              <dd class="text-stone">{COMMERCIAL.lcl}</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 量价 -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        How volume pricing works
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">{COMMERCIAL.volumePricing}</p>
+    </div>
+    <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {COMMERCIAL.volumeTiers.map((t) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+          <div class="font-display text-xl font-bold text-caramel-dark">{t.qty}</div>
+          <p class="mt-2 text-sm leading-relaxed text-stone">{t.note}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 下单流程 -->
+  <section class="border-y border-milk-tea/60 bg-white/50">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          How an order runs, start to finish
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          Five steps, and no point at which you are waiting on us without knowing what
+          you are waiting for.
+        </p>
+      </div>
+      <ol class="mt-10 grid gap-4 md:grid-cols-5">
+        {steps.map((s) => (
+          <li class="rounded-3xl border border-milk-tea/60 bg-white p-5 shadow-card">
+            <span class="font-display text-2xl font-bold text-milk-tea">{s.n}</span>
+            <h3 class="mt-2 font-display text-base font-bold text-dark-brown">{s.title}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone">{s.desc}</p>
+          </li>
+        ))}
+      </ol>
+
+      <div class="mt-10 rounded-3xl border border-olive/30 bg-olive/5 p-6 md:p-8">
+        <h3 class="font-display text-xl font-bold text-dark-brown">
+          What to include in your quote request
+        </h3>
+        <p class="mt-2 text-sm leading-relaxed text-stone">
+          The more of this you send, the fewer emails it takes to get to a real number.
+        </p>
+        <ul class="mt-4 grid gap-2 md:grid-cols-2">
+          {QUOTE_CHECKLIST.map((q) => (
+            <li class="flex gap-2.5 text-sm leading-relaxed text-stone">
+              <svg class="mt-0.5 h-4 w-4 shrink-0 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+              <span>{q}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品控与单证（引导至检测页） -->
+  <section class="container-site py-14 md:py-20">
+    <div class="grid gap-10 lg:grid-cols-2">
+      <div>
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          Quality, testing and paperwork
+        </h2>
+        <p class="mt-4 leading-relaxed text-stone">
+          Goods are checked at three points before they ship, and every shipment leaves
+          with the document set your customs broker needs. If your market requires test
+          reports, we commission the testing rather than leaving you to arrange it
+          after the goods land.
+        </p>
+        <a
+          href="/certifications/"
+          class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-olive-dark underline underline-offset-2 hover:text-caramel-dark"
+        >
+          Testing, compliance and documentation
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card md:p-8">
+        <h3 class="font-display text-lg font-bold text-dark-brown">
+          Sourcing OEM or your own brand?
+        </h3>
+        <p class="mt-3 text-sm leading-relaxed text-stone">
+          If you need your own design, your own logo on the product, or retail-ready
+          packaging with your artwork, start here instead — the process and the
+          development costs are set out in full.
+        </p>
+        <div class="mt-5 flex flex-col gap-3 sm:flex-row">
+          <a href="/oem-odm/" class="btn-caramel">OEM / ODM services</a>
+          <a
+            href="/for-distributors/"
+            class="inline-flex items-center justify-center rounded-full border border-milk-tea px-5 py-2.5 text-sm font-semibold text-stone transition-colors hover:border-olive hover:text-olive-dark"
+          >
+            Distributor programme
+          </a>
+        </div>
+        <p class="mt-5 text-xs leading-relaxed text-stone">
+          Prefer email? Write to{' '}
+          <a href={`mailto:${CONTACT.email}`} class="font-semibold text-olive-dark underline underline-offset-2">
+            {CONTACT.email}
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <FaqList
+    items={faqs}
+    intro="These are the questions buyers actually ask before their first order. If yours is not here, ask it directly — you will get a straight answer rather than a brochure."
+  />
+
+  <CtaBand
+    title="Send us your list and get a real quotation"
+    desc="Product, quantity, destination port. If you are still at the browsing stage, send the items you sell today and we will suggest the closest match in our range."
+    waMsg="Hello ONEPENUT, I would like a wholesale quotation for my market."
+  />
+</Layout>

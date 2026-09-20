@@ -1,8 +1,10 @@
 // 分类落地页内容
 // ---------------------------------------------------------------------------
-// ⚠️ 发布前请业务确认：TRADE_TERMS 为通用表述，刻意不写具体 MOQ / 交期 / 付款比例
-//    等数字，避免与真实报价不一致。若贵司有对外统一的商务口径，请在此处补齐。
+// ⚠️ 交易数字（MOQ / 打样 / 交期）的**唯一事实来源是 src/data/trade.ts**。
+//    本文件的 TRADE_TERMS 从那里取值拼接，因此不要在此处硬编码数字——
+//    否则分类页与 B2B 钱页会出现两套互相矛盾的口径，比不写更糟。
 // ---------------------------------------------------------------------------
+import { COMMERCIAL, LEAD_TIME, MOQ_TIERS, SAMPLING } from './trade';
 
 export interface CategoryContent {
   /** H1（页面主标题，与 SEO title 区分开） */
@@ -26,22 +28,28 @@ export interface CategoryContent {
   faqs: { q: string; a: string }[];
 }
 
-/** 通用采购条款（所有分类页共用，只在此处维护一份） */
-export const TRADE_TERMS: { label: string; value: string }[] = [
+/** 通用采购条款（所有分类页共用，只在此处维护一份；数字取自 src/data/trade.ts） */
+export const TRADE_TERMS: { label: string; value: string; link?: string }[] = [
   {
     label: 'Minimum order',
-    value:
-      'Set per model and colour and confirmed together with your quotation. Trial orders are reviewed case by case — always worth asking.',
+    value: `${MOQ_TIERS[0].qty} on stock designs, ${MOQ_TIERS[1].qty} once your logo is added and ${MOQ_TIERS[2].qty} for a fully custom product. Per style, per colourway — mixed sizes within a style are always fine.`,
+    link: '/moq-and-sampling/',
   },
   {
     label: 'Sampling',
-    value:
-      'A sample is produced and approved before bulk production. Sample lead time depends on whether stock or custom materials are used.',
+    value: `A physical sample is produced and approved before any bulk production. ${SAMPLING.stockSampleLead} for a stock design, ${SAMPLING.customSampleLead} if it needs developing. ${SAMPLING.sampleFee}`,
+    link: '/moq-and-sampling/',
+  },
+  {
+    label: 'Production lead time',
+    value: `${LEAD_TIME.production} from the day after we receive your deposit and your approved pre-shipment sample, whichever comes later. Sea freight transit is separate.`,
+    link: '/moq-and-sampling/',
   },
   {
     label: 'Customisation',
     value:
-      'OEM / ODM across fabric, colour, sizing, logo, hardware and packaging — from sample stage onward.',
+      'OEM / ODM across fabric, colour, sizing, logo, hardware and packaging — from sample stage onward. Designs developed for you are not produced for anyone else.',
+    link: '/oem-odm/',
   },
   {
     label: 'Packaging',
@@ -56,16 +64,19 @@ export const TRADE_TERMS: { label: string; value: string }[] = [
   {
     label: 'Shipping',
     value:
-      'EXW / FOB / DDP by sea, air or express. Export documentation handled end to end.',
+      'EXW / FOB / CIF by sea, plus air and express. Export documentation handled end to end, including certificate of origin.',
+    link: '/wholesale/',
   },
   {
     label: 'Payment',
-    value: 'Terms are agreed with our sales team when your order is confirmed.',
+    value: COMMERCIAL.payment,
+    link: '/wholesale/',
   },
   {
     label: 'Testing and compliance',
     value:
       'Tell us which tests your market or your own customer requires, and we will supply what the laboratory needs to run them — layered material samples, same-batch production samples, BOM with layer weights, SDS, TDS and a stamped declaration of conformity. If a result misses, we adjust the formulation and re-test. The testing itself is commissioned by you or by your nominated laboratory, so the report is issued in a name your market accepts.',
+    link: '/certifications/',
   },
 ];
 

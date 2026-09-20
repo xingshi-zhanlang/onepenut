@@ -1,0 +1,418 @@
+---
+// OEM / ODM 定制页 —— 面向私有品牌与经销商的定制能力页
+import Layout from '../layouts/Layout.astro';
+import TradeTerms from '../components/TradeTerms.astro';
+import FaqList from '../components/FaqList.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { whatsappLink } from '../consts';
+import { SAMPLING } from '../data/trade';
+
+const waMsg =
+  'Hello ONEPENUT, I am interested in an OEM / ODM project. My product idea is ____ .';
+
+const oemVsOdm = [
+  {
+    label: 'Starting point',
+    oem: 'Your design, your specification, your tech pack',
+    odm: 'Our existing design, adapted to your brand and market',
+  },
+  {
+    label: 'Who owns the design',
+    oem: 'You do. We manufacture it and do not sell it to anyone else.',
+    odm: 'We do. You brand it, and we will not put your brand on anyone else\'s order.',
+  },
+  {
+    label: 'Development time',
+    oem: `Longer — ${SAMPLING.customSampleLead} and often two rounds`,
+    odm: 'Shorter — the pattern already exists, so it is a variation rather than a build',
+  },
+  {
+    label: 'Typical MOQ',
+    oem: '500 pcs per style',
+    odm: 'From 100 pcs, since the base product is already in production',
+  },
+  {
+    label: 'Best for',
+    oem: 'Brands with a product idea and a clear point of difference',
+    odm: 'Retailers and distributors who want their own brand on a proven product, faster',
+  },
+];
+
+const customisable = [
+  {
+    title: 'Materials',
+    items: [
+      'Oxford, polyester, nylon and RPET recycled fabric',
+      'Mesh ventilation panels and breathable side walls',
+      'Foam padding density and thickness — comfort and structure',
+      'Water-resistant and wipe-clean finishes',
+      'Lining options, including fleece for cold markets',
+    ],
+  },
+  {
+    title: 'Colour',
+    items: [
+      'Pantone (PMS) matching on fabric, webbing and trim',
+      'Two-tone and multi-panel colour builds',
+      'Colour-fastness requirement stated up front so the shade holds across repeat orders',
+    ],
+  },
+  {
+    title: 'Branding',
+    items: [
+      'Woven labels and printed labels',
+      'Silicone and PVC patches',
+      'Embroidery and heat-transfer printing',
+      'Metal and plastic logo plates, zipper pulls and hardware branding',
+      'Interior branding: lining print, care label, serial label',
+    ],
+  },
+  {
+    title: 'Hardware',
+    items: [
+      'Buckles, D-rings and sliders — standard or upgraded grade',
+      'Zipper type, pull style and finish',
+      'Leash clips, swivel snaps and bungee sections',
+      'Shoulder-strap padding and load-bearing points',
+    ],
+  },
+  {
+    title: 'Size and fit',
+    items: [
+      'Dimension changes to fit your market\'s pet size profile',
+      'Weight-rated builds, so a carrier is rated for the animal it will actually hold',
+      'Flat-pack and foldable constructions that reduce freight volume',
+    ],
+  },
+  {
+    title: 'Packaging',
+    items: [
+      'Polybag, header card, hangtag and barcode / EAN',
+      'Retail colour box and mailer box with your artwork',
+      'Instruction sheets and care cards, in your language',
+      'Amazon-ready and retail-ready packing conventions',
+      'Carton marking to your specification, including shipping marks',
+    ],
+  },
+];
+
+const development = [
+  {
+    n: '01',
+    title: 'Brief',
+    desc: 'Your reference images, target price point, target market and quantity. Reference images are enough to start — a full tech pack is not required to have a first conversation.',
+  },
+  {
+    n: '02',
+    title: 'Feasibility and costing',
+    desc: 'We tell you what the design will cost to make at your quantity, and which parts of it are driving that cost. This is usually where a project either becomes viable or gets redesigned.',
+  },
+  {
+    n: '03',
+    title: 'Pattern and prototype',
+    desc: 'Pattern-making and a first physical sample. You will hold the object before anyone talks about a bulk order.',
+  },
+  {
+    n: '04',
+    title: 'Revision',
+    desc: `${SAMPLING.revisions} We would rather spend an extra round getting it right than ship a container of something you have to explain to your customers.`,
+  },
+  {
+    n: '05',
+    title: 'Approval and production',
+    desc: 'You approve the pre-production sample in writing, the deposit is received, and the bulk run is scheduled against it.',
+  },
+  {
+    n: '06',
+    title: 'Inspection and delivery',
+    desc: 'Random-sampling inspection with a photo report before loading, then booking, loading and the full document set.',
+  },
+];
+
+const briefChecklist = [
+  'What the product is, and who it is for — pet size, breed range, use case',
+  'Reference images or a sample of the product you are matching or beating',
+  'The features that matter most to your market, and the ones you will drop to hit a price',
+  'Your target retail price, if you have one. It shapes material grade faster than any specification.',
+  'Quantity for the first order and your expected annual volume',
+  'Logo file in vector format, packaging artwork and Pantone references',
+  'Your market\'s labelling and packaging requirements, in writing',
+  'Required in-store date, so we can tell you early whether the schedule works',
+];
+
+const faqs = [
+  {
+    q: 'What is the difference between OEM and ODM with you?',
+    a: 'OEM means you bring the design and we build it. ODM means you pick a design from our catalogue and we adapt it to your brand, colours and packaging. OEM gives you a product nobody else has; ODM gets you to market faster and at a lower quantity. Both are covered by the same development process.',
+  },
+  {
+    q: 'Will you sell my design to another buyer?',
+    a: 'No. A design developed for you — the pattern, the specification and the tooling — is not produced for anyone else, in any market. If you want that committed in writing, we will sign your NDA or provide ours before the first technical discussion. Ask for it at the start rather than at the end; it costs nothing and it is a fair thing to ask any factory.',
+  },
+  {
+    q: 'Can I have exclusivity in my market?',
+    a: 'For a custom design, yes — the product is yours, so nobody else can have it. For catalogue products carrying your branding, market exclusivity can be agreed and is normally tied to an annual volume commitment. Tell us the market and the volume you can commit to, and we will discuss it as a commercial term rather than a favour.',
+  },
+  {
+    q: 'What does development cost, and is it refundable?',
+    a: 'Development is charged — pattern-making, sampling and any tooling are real costs that exist before a single saleable unit does. Where a project goes to bulk production, the tooling and sample charges are normally credited against the order. The exact arrangement is set out in your quotation so there is no ambiguity later. [待核实]',
+  },
+  {
+    q: 'How much does a new mould or tool cost?',
+    a: 'It depends entirely on the part. A new injected buckle or a hardware component needs its own tooling, and tooling lead time runs on top of the production schedule. Soft goods that reuse existing hardware need no tooling at all. Tell us what your design requires and we will cost the tooling separately and transparently rather than burying it in the unit price.',
+  },
+  {
+    q: 'Can you match a sample I send you?',
+    a: 'Yes, and it is often the fastest way to start. Send the physical product you want to match or improve on. We will tell you what the materials and construction most likely are, where it can be improved, and what it would cost to make at your quantity.',
+  },
+  {
+    q: 'I do not have a technical specification. Can we still work together?',
+    a: 'Yes. Most of our projects start from reference images and a description of the problem the product solves. We will build the specification with you. What we do need is the target price and the market, because those two answers decide most of the technical choices.',
+  },
+  {
+    q: 'Can you handle retail-ready packaging and Amazon requirements?',
+    a: 'Yes — colour boxes, mailers, hangtags, barcodes, carton markings and the packing conventions that e-commerce channels require. Send your artwork and your channel\'s packaging requirements and we will confirm what we can produce in-house and what has to be sourced.',
+  },
+  {
+    q: 'What is the minimum order for a custom project?',
+    a: '500 pieces per style for a fully custom product. If the base design already exists in our catalogue, adapting it with your branding starts at 100 pieces, which is usually the better first step for a new market.',
+  },
+  {
+    q: 'How long does a custom project take end to end?',
+    a: `Realistically, allow ${SAMPLING.customSampleLead} for the sample, a round of revisions if needed, then 20–30 days for bulk production after approval. A project that starts today and moves quickly can be shipping in about eight weeks. The variable is almost always how fast the brief and the approval come back, not how fast we build it.`,
+  },
+];
+
+const ipPoints = [
+  {
+    title: 'Your design stays yours',
+    desc: 'A pattern or specification developed for you is not produced for another buyer, in any market.',
+  },
+  {
+    title: 'NDA on request',
+    desc: 'We will sign yours or provide ours before the first technical discussion. Ask early — it costs nothing.',
+  },
+  {
+    title: 'Market exclusivity available',
+    desc: 'For catalogue products branded for you, exclusivity can be agreed against an annual volume commitment.',
+  },
+  {
+    title: 'Your artwork is not reused',
+    desc: 'Packaging artwork, logo files and printed material supplied by you are used for your orders only.',
+  },
+];
+---
+
+<Layout
+  title="OEM / ODM Pet Product Manufacturing & Private Label"
+  description="OEM and ODM manufacturing for pet carriers, harnesses and travel gear. Custom materials, Pantone colour matching, logo methods, retail packaging and product development — with your design kept yours. Custom MOQ 500 pcs, logo orders from 100 pcs."
+>
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-olive-dark py-20 md:py-28">
+    <div class="container-site relative z-10">
+      <div class="max-w-3xl">
+        <nav aria-label="Breadcrumb" class="text-xs text-cream/60">
+          <a href="/" class="hover:text-cream">Home</a>
+          <span class="mx-2">/</span>
+          <span class="text-cream/90">OEM / ODM</span>
+        </nav>
+        <span class="mt-4 block text-sm font-semibold uppercase tracking-[0.2em] text-cream/70">
+          Private Label &amp; Custom Manufacturing
+        </span>
+        <h1 class="mt-3 font-display text-4xl font-bold text-cream md:text-5xl">
+          OEM and ODM — your product, made properly
+        </h1>
+        <p class="mt-5 text-lg leading-relaxed text-cream/85">
+          Bring us a design and we build it. Or bring us your market and we adapt a
+          proven product to your brand. Either way, what we develop for you is not sold
+          to your competitors.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href={whatsappLink(waMsg)} target="_blank" rel="noopener noreferrer" class="btn-wa">
+            Start a development brief
+          </a>
+          <a
+            href="/quote"
+            class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-cream/40 px-6 py-3 text-sm font-semibold text-cream transition-colors hover:bg-cream/10"
+          >
+            Request a quote
+          </a>
+        </div>
+        <p class="mt-5 text-sm text-cream/70">
+          Custom MOQ 500 pcs · Logo on existing design from 100 pcs · NDA available
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OEM vs ODM -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        OEM or ODM — which do you actually need?
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Buyers often use the two words interchangeably. They are different products with
+        different costs, timelines and minimums, and picking the wrong one is the most
+        expensive mistake in private label.
+      </p>
+    </div>
+
+    <div class="mt-10 overflow-hidden rounded-3xl border border-milk-tea/60 bg-white shadow-card">
+      <table class="w-full text-left text-sm">
+        <thead class="bg-olive-dark text-cream">
+          <tr>
+            <th scope="col" class="px-4 py-3 font-semibold md:px-6">&nbsp;</th>
+            <th scope="col" class="px-4 py-3 font-semibold md:px-6">OEM</th>
+            <th scope="col" class="px-4 py-3 font-semibold md:px-6">ODM</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-milk-tea/60">
+          {oemVsOdm.map((row) => (
+            <tr class="align-top">
+              <th scope="row" class="px-4 py-5 font-semibold text-dark-brown md:px-6">{row.label}</th>
+              <td class="px-4 py-5 leading-relaxed text-stone md:px-6">{row.oem}</td>
+              <td class="px-4 py-5 leading-relaxed text-stone md:px-6">{row.odm}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 可定制项 -->
+  <section class="border-y border-milk-tea/60 bg-white/50">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          What we can customise
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          Six dimensions of the product. Most projects change two or three of them — the
+          ones that carry your brand and fit your market.
+        </p>
+      </div>
+      <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {customisable.map((c) => (
+          <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+            <h3 class="font-display text-lg font-bold text-dark-brown">{c.title}</h3>
+            <ul class="mt-3 space-y-2">
+              {c.items.map((i) => (
+                <li class="flex gap-2.5 text-sm leading-relaxed text-stone">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sage"></span>
+                  <span>{i}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 开发流程 -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        How a custom project runs
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Six stages. The two that decide whether the project succeeds are the first one
+        and the fourth one — the brief and the revision.
+      </p>
+    </div>
+    <ol class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {development.map((d) => (
+        <li class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+          <span class="font-display text-2xl font-bold text-milk-tea">{d.n}</span>
+          <h3 class="mt-2 font-display text-base font-bold text-dark-brown">{d.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone">{d.desc}</p>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <!-- 询价清单 -->
+  <section class="border-y border-milk-tea/60 bg-cream/60">
+    <div class="container-site py-14 md:py-20">
+      <div class="grid gap-10 lg:grid-cols-2">
+        <div>
+          <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+            What to send with a development brief
+          </h2>
+          <p class="mt-4 leading-relaxed text-stone">
+            You do not need all of this to start a conversation. But the more of it
+            arrives in the first message, the faster the answer stops being "it depends"
+            and starts being a number.
+          </p>
+          <ul class="mt-6 space-y-3">
+            {briefChecklist.map((b) => (
+              <li class="flex gap-3 text-sm leading-relaxed text-stone">
+                <svg class="mt-0.5 h-4 w-4 shrink-0 text-olive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+                <span>{b}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="rounded-3xl border border-olive/30 bg-white p-6 shadow-card md:p-8">
+          <h2 class="font-display text-2xl font-bold text-dark-brown">
+            Your design, your intellectual property
+          </h2>
+          <p class="mt-3 text-sm leading-relaxed text-stone">
+            This is the part of a factory relationship that buyers worry about most, and
+            it is worth getting an explicit answer to before you send any drawings.
+          </p>
+          <div class="mt-6 space-y-5">
+            {ipPoints.map((p) => (
+              <div>
+                <h3 class="font-display text-base font-bold text-dark-brown">{p.title}</h3>
+                <p class="mt-1 text-sm leading-relaxed text-stone">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+          <a href={whatsappLink('Hello ONEPENUT, please send your NDA before we share our design files.')} target="_blank" rel="noopener noreferrer" class="btn-caramel mt-6">
+            Ask for an NDA first
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOQ 表 -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        Quantities for custom work
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Custom development has its own minimums, because a production slot has to be
+        set up specifically for your product.
+      </p>
+    </div>
+    <div class="mt-10">
+      <TradeTerms />
+    </div>
+    <div class="mt-6 flex flex-wrap gap-3">
+      <a href="/moq-and-sampling/" class="btn-caramel">Sampling and lead time details</a>
+      <a
+        href="/wholesale/"
+        class="inline-flex items-center justify-center rounded-full border border-milk-tea px-5 py-2.5 text-sm font-semibold text-stone transition-colors hover:border-olive hover:text-olive-dark"
+      >
+        Wholesale terms
+      </a>
+    </div>
+  </section>
+
+  <FaqList
+    items={faqs}
+    intro="The questions that come up in almost every private label project — including the ones about design ownership that buyers usually ask too late."
+  />
+
+  <CtaBand
+    title="Send the idea. We will tell you if it is viable."
+    desc="Reference images, target retail price and quantity are enough for a first answer. If the design cannot be made at your price point, we will say so in the first reply rather than three samples later."
+    waMsg="Hello ONEPENUT, I would like to develop a custom product with you."
+  />
+</Layout>

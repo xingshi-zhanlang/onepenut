@@ -243,8 +243,8 @@ const schema = JSON.stringify({
         How we work with buyers
       </h2>
       <p class="mt-3 text-stone">
-        Applies to every range on this site. Exact figures depend on the model,
-        so confirm them with us before you plan an order.
+        The same terms apply across every range on this site. The figures below are the
+        ones we start from — your quotation is built on them.
       </p>
     </div>
 
@@ -252,10 +252,50 @@ const schema = JSON.stringify({
       {TRADE_TERMS.map((t) => (
         <div class="border-t border-milk-tea/60 pt-5">
           <dt class="font-semibold text-dark-brown">{t.label}</dt>
-          <dd class="mt-1.5 text-sm leading-relaxed text-stone">{t.value}</dd>
+          <dd class="mt-1.5 text-sm leading-relaxed text-stone">
+            {t.value}
+            {t.link && (
+              <>
+                {' '}
+                <a
+                  href={t.link}
+                  class="font-medium text-olive-dark underline underline-offset-2 transition-colors hover:text-caramel-dark"
+                >
+                  Details →
+                </a>
+              </>
+            )}
+          </dd>
         </div>
       ))}
     </dl>
+
+    <!-- B2B 采购信息页内链（7 个分类页均指向钱页集群） -->
+    <div class="mt-10 rounded-3xl border border-olive/30 bg-olive/5 p-6 md:p-8">
+      <h3 class="font-display text-lg font-bold text-dark-brown">
+        Buying {category.name.toLowerCase()} wholesale?
+      </h3>
+      <p class="mt-2 text-sm leading-relaxed text-stone">
+        Everything a buyer needs before placing an order — quantities, sample and
+        production lead times, customisation options and the documentation that ships
+        with the goods.
+      </p>
+      <div class="mt-5 flex flex-wrap gap-3">
+        {[
+          { href: '/wholesale/', label: 'Wholesale terms' },
+          { href: '/moq-and-sampling/', label: 'MOQ & lead times' },
+          { href: '/oem-odm/', label: 'OEM / private label' },
+          { href: '/certifications/', label: 'Testing & compliance' },
+        ].map((l) => (
+          <a
+            href={l.href}
+            class="rounded-full border border-milk-tea bg-white px-4 py-2 text-sm font-semibold text-stone transition-colors hover:border-olive hover:text-olive-dark"
+          >
+            {l.label}
+          </a>
+        ))}
+      </div>
+    </div>
   </section>
 
   <!-- 常见问题 -->

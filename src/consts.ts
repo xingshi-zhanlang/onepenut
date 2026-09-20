@@ -26,15 +26,28 @@ export const whatsappLink = (msg: string) =>
   `/api/whatsapp?msg=${encodeURIComponent(msg)}`;
 
 // 导航
+// 说明：右侧常驻「Get a Quote」按钮已覆盖询盘入口，故导航内不再重复该链接，
+// 改为放置 B2B 采购主入口「Wholesale」——采购方到站第一件事就是找它。
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/products', label: 'Products' },
   { href: '/collections', label: 'Collections' },
+  { href: '/wholesale', label: 'Wholesale' },
   { href: '/factory', label: 'Factory' },
   { href: '/blog', label: 'Guides' },
-  { href: '/quote', label: 'Get a Quote' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
+];
+
+// B2B 采购信息页（钱页集群）—— 页脚与各页内链统一引用此表，
+// 避免链接地址散落在多个文件里，日后改路径只需改这一处。
+export const B2B_LINKS = [
+  { href: '/wholesale/', label: 'Wholesale & Bulk Orders' },
+  { href: '/moq-and-sampling/', label: 'MOQ, Sampling & Lead Times' },
+  { href: '/oem-odm/', label: 'OEM / ODM & Private Label' },
+  { href: '/certifications/', label: 'Testing & Compliance' },
+  { href: '/for-distributors/', label: 'For Distributors' },
+  { href: '/pet-products-supplier-australia/', label: 'Supplying Australia' },
 ];
 
 // 产品分类 —— 品牌 7 大品类

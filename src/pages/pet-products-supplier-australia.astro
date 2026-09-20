@@ -1,0 +1,409 @@
+---
+// 澳洲市场页 —— 用户的首要目标市场之一（澳洲 + 东南亚）
+// 内容纪律：合规口径以可核事实为准，不确定的写「请在发货前核实」。
+import Layout from '../layouts/Layout.astro';
+import TradeTerms from '../components/TradeTerms.astro';
+import FaqList from '../components/FaqList.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { CATEGORIES, whatsappLink } from '../consts';
+import { COMMERCIAL, FACTORY } from '../data/trade';
+
+const waMsg =
+  'Hello ONEPENUT, I am buying pet products for the Australian market. My port is ____ .';
+
+const advantages = [
+  {
+    title: 'The same working day',
+    desc: 'We are two hours behind Sydney, three during daylight saving. An email you send mid-afternoon reaches us before the end of our day, which is not true of a European or North American supplier. Over a full order cycle it removes weeks of overnight lag.',
+  },
+  {
+    title: 'Freight to Australian ports is short and frequent',
+    desc: 'Australia is one of the best-served destinations from Chinese ports, with frequent sailings to Sydney, Melbourne, Brisbane, Fremantle and Adelaide. That means more sailing options, less rollover risk and easier consolidation with the goods you buy from other Chinese suppliers.',
+  },
+  {
+    title: 'Smaller first orders are viable',
+    desc: 'Australian businesses are often smaller than the volumes a Chinese factory typically asks for. Stock designs start at 10 pcs, which is deliberately sized for a distributor testing a line before committing to a container.',
+  },
+  {
+    title: 'A product mix that fits the market',
+    desc: 'Soft carriers and harnesses, extra-large pee pads, and modular carpet tiles that can be lifted out one at a time — categories that match how Australian homes are actually laid out, with hard floors and tiled living areas.',
+  },
+];
+
+const productFit = [
+  {
+    name: 'Carrier bags & backpacks',
+    why: 'Travel with pets is common and carriers are a repeat-purchase category rather than a one-off. Airline-friendly dimensions and hard-wearing hardware matter more here than fashion colourways.',
+  },
+  {
+    name: 'Harnesses & leashes',
+    why: 'Escape-proof construction and comfort over long walks. Mechanical failure is the risk that matters, so hardware grade and stitch quality are the specification points to check.',
+  },
+  {
+    name: 'Pee pads & bed protection',
+    why: 'Extra-large sizes up to 120 × 180 cm suit hard-floor and tiled living areas, and the category is consumable, which means it generates repeat orders rather than a single sale.',
+  },
+  {
+    name: 'Modular carpet tiles',
+    why: 'Tiles that lift out one at a time for washing suit rental properties and tiled areas, and they solve a problem a fixed rug cannot — replacing one square rather than the whole floor.',
+  },
+];
+
+const shipping = [
+  {
+    port: 'Sydney (Port Botany)',
+    note: 'The largest container gateway. Frequent sailings and the deepest carrier choice.',
+  },
+  {
+    port: 'Melbourne',
+    note: 'Strong option for Victorian and South Australian distribution. Frequently used for consolidated LCL.',
+  },
+  {
+    port: 'Brisbane',
+    note: 'The shortest sailing time from Chinese ports, and the natural entry point for Queensland.',
+  },
+  {
+    port: 'Fremantle',
+    note: 'Western Australia. Fewer direct services, so transit varies more by carrier.',
+  },
+  {
+    port: 'Adelaide',
+    note: 'Served mainly by feeder services via the eastern seaboard.',
+  },
+];
+
+const complianceNotes = [
+  {
+    title: 'Australian Consumer Law applies whether or not a standard exists',
+    desc: 'There is no dedicated mandatory product standard for pet carriers and soft pet goods at present. The general obligations still apply in full: goods must be of acceptable quality, fit for purpose and safe in normal use. Where the overseas maker has no Australian presence, the importer is treated as the manufacturer for those purposes — so the consumer guarantee obligations land on you rather than on us.',
+  },
+  {
+    title: 'Care labelling: check whether your item is in scope',
+    desc: 'Care labelling for clothing and textiles is a mandatory information standard, but its scope excludes several product groups — among them bags and cases, canvas goods, floor coverings, and jute products. Pet carriers and modular carpet tiles therefore sit outside it, while bed-style soft goods may not. Confirm the position for your exact item before you commit packaging artwork.',
+  },
+  {
+    title: 'Natural materials change the import pathway',
+    desc: 'DAFF biosecurity rules apply to goods made from wood, plant material or animal derivatives — so jute or sisal backing, wooden components, feathers and leather can all trigger additional requirements. Tell us at sampling stage if your design uses any of them, because changing a material after testing is far more expensive than choosing the right one first.',
+  },
+  {
+    title: 'Pallet and timber packaging is regulated too',
+    desc: 'Timber packaging and pallets entering Australia must meet ISPM 15 treatment requirements. We ship on compliant packaging as standard; tell us if your warehouse has a specific pallet specification.',
+  },
+  {
+    title: 'Seasonal biosecurity windows',
+    desc: 'Australia applies seasonal measures against brown marmorated stink bug between September and April to consignments from listed risk countries. As at the time of writing China is not a listed risk origin, but the list is reviewed each season and the window overlaps exactly with peak pet retail shipping. Confirm the current status before you book your Q4 freight.',
+  },
+];
+
+const seasonal = [
+  {
+    period: 'January – February',
+    note: 'Post-Christmas replenishment. Australian retailers restock early in the year, so the order that fills this shelf has to be placed in the fourth quarter.',
+  },
+  {
+    period: 'April – May',
+    note: 'Easter and the approach to the cooler months. Demand shifts toward indoor and comfort-led products rather than travel gear.',
+  },
+  {
+    period: 'June – August',
+    note: 'Australian winter, which is the northern hemisphere off-season for pet travel products. This is the quietest window for freight and often the best time to place a production order with a relaxed schedule.',
+  },
+  {
+    period: 'September – November',
+    note: 'The peak. Everyone producing for northern-hemisphere Christmas is competing for the same line capacity and the same container space, while Australian retailers are placing orders for the December school-holiday trading period at the same time.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'Do you ship to Australia?',
+    a: `${COMMERCIAL.incoterms} ${COMMERCIAL.incotermsAlt} We regularly serve Sydney, Melbourne, Brisbane, Fremantle and Adelaide, and we can quote CIF or deliver to your nominated freight forwarder's Chinese warehouse if you prefer to control the freight yourself — which many Australian importers with an existing forwarder relationship prefer to do.`,
+  },
+  {
+    q: 'What is a realistic first order for an Australian buyer?',
+    a: 'It depends on which side of the equation you are on. If you are testing a line, stock designs start at 10 pcs per style and ship LCL from 1 CBM — enough to put real product in front of your customers before you commit capital. If you are filling a retail catalogue, the volume bands start at 100 pcs per style with your branding. Most Australian distributors start smaller than they expect to, and that is usually the right call.',
+  },
+  {
+    q: 'How long does shipping to Australia take?',
+    a: 'Transit varies by port, carrier and season — broadly two to four weeks port to port, plus the time to book sailing space, load and clear. We quote a transit estimate with your quotation, but treat it as the carrier\'s estimate rather than a promise from us: congestion, blank sailings and the pre-Christmas peak all move it. If you give us your in-store date, we will work backwards from it and tell you early if it is tight.',
+  },
+  {
+    q: 'What compliance do I need as an Australian importer?',
+    a: 'There is no pet-product-specific mandatory standard for carriers and soft goods at present, but the Australian Consumer Law still applies in full — and where the overseas manufacturer has no Australian presence, you are treated as the manufacturer for consumer guarantee purposes. Practically, the requirements that most often touch our products are English-language fibre-content labelling, care labelling if your item falls in scope, DAFF biosecurity rules if the design uses natural materials such as jute, sisal, wood, feathers or leather, and ISPM 15 compliant timber packaging. We hold the specification and material records you will need, and we will tell you plainly what we can and cannot produce evidence for.',
+  },
+  {
+    q: 'Can you supply the care labels and English-language labelling we need?',
+    a: 'Yes. Send us the artwork or the exact wording and we will print to it. The one thing worth checking first is whether your specific item falls inside the mandatory care labelling standard at all — bags and cases, canvas goods and floor coverings are among the excluded groups, so carriers and carpet tiles are typically out of scope while bed-style soft goods may not be. That is a decision for your own compliance advisor, and it is much cheaper to settle before the packaging artwork is printed.',
+  },
+  {
+    q: 'What payment terms and currency do you use?',
+    a: `${COMMERCIAL.payment} We quote in USD as standard, and can quote in AUD by agreement if that makes your own accounting simpler. ${COMMERCIAL.paymentSmall}`,
+  },
+  {
+    q: 'Can you consolidate with goods from my other Chinese suppliers?',
+    a: 'Yes, and Australian importers do this often. We can deliver to your nominated forwarder\'s warehouse in China so your whole order — ours plus everyone else\'s — ships as a single consolidated container. It is one of the simplest ways to reduce landed cost on a first order without increasing quantity.',
+  },
+  {
+    q: 'Do you have Australian customers already?',
+    a: 'We supply buyers across more than 30 export markets. Rather than quoting you a client list, we will tell you the straight answer for your specific category and quantity, and you can judge us on the sample, the paperwork and the first shipment. If a reference matters to your decision, ask us on the call — we will tell you what we can and cannot share.',
+  },
+  {
+    q: 'How do we handle the time difference?',
+    a: 'Easily — this is one of the real advantages of buying from China rather than from Europe or North America. We are two hours behind Sydney and three during daylight saving, so a message you send in the afternoon is answered the same day rather than overnight. We reply within one business day, and there is a WhatsApp contact for anything that needs a faster answer than email.',
+  },
+];
+
+const ports = shipping;
+---
+
+<Layout
+  title="Pet Product Supplier for Australia — Wholesale & OEM"
+  description="Wholesale and OEM pet products for Australian brands, retailers and distributors — carriers, harnesses, pee pads and modular carpet tiles. Shipping to Sydney, Melbourne, Brisbane, Fremantle and Adelaide, with trial orders from 10 pcs and same-day time-zone overlap."
+>
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-olive-dark py-20 md:py-28">
+    <div class="container-site relative z-10">
+      <div class="max-w-3xl">
+        <nav aria-label="Breadcrumb" class="text-xs text-cream/60">
+          <a href="/" class="hover:text-cream">Home</a>
+          <span class="mx-2">/</span>
+          <span class="text-cream/90">Australia</span>
+        </nav>
+        <span class="mt-4 block text-sm font-semibold uppercase tracking-[0.2em] text-cream/70">
+          For Australian Buyers
+        </span>
+        <h1 class="mt-3 font-display text-4xl font-bold text-cream md:text-5xl">
+          Pet product supplier for Australian brands, retailers and distributors
+        </h1>
+        <p class="mt-5 text-lg leading-relaxed text-cream/85">
+          Carriers, harnesses, recovery collars, strollers, accessories, extra-large pee
+          pads and modular carpet tiles — manufactured in our own workshop and shipped to
+          Sydney, Melbourne, Brisbane, Fremantle and Adelaide.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href={whatsappLink(waMsg)} target="_blank" rel="noopener noreferrer" class="btn-wa">
+            Ask for an Australian quote
+          </a>
+          <a
+            href="/quote"
+            class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-cream/40 px-6 py-3 text-sm font-semibold text-cream transition-colors hover:bg-cream/10"
+          >
+            Request a quote
+          </a>
+        </div>
+        <p class="mt-5 text-sm text-cream/70">
+          Trial orders from 10 pcs · LCL from 1 CBM · Two hours behind Sydney
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 数字 -->
+  <section class="container-site py-14 md:py-16">
+    <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
+      {[
+        { num: '+2h', label: 'From Sydney (same working day)' },
+        { num: '5', label: 'Australian ports we ship to' },
+        { num: FACTORY.monthlyCapacity, label: FACTORY.monthlyCapacityUnit },
+        { num: '10 pcs', label: 'Trial order MOQ' },
+      ].map((s) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 text-center shadow-card">
+          <div class="font-display text-3xl font-bold text-olive-dark md:text-4xl">{s.num}</div>
+          <div class="mt-2 text-sm text-stone">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 为什么 -->
+  <section class="container-site pb-16 md:pb-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        What changes when you buy from China rather than Europe
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Price is the obvious difference. The two that affect how an order actually runs
+        are the time zone and the sailing schedule.
+      </p>
+    </div>
+    <div class="mt-10 grid gap-5 sm:grid-cols-2">
+      {advantages.map((a) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+          <h3 class="font-display text-lg font-bold text-dark-brown">{a.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone">{a.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 产品匹配 -->
+  <section class="border-y border-milk-tea/60 bg-white/50">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          Which products sell into the Australian market
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          Australian homes and Australian pet ownership are different from the northern
+          hemisphere, and the range that works reflects that.
+        </p>
+      </div>
+      <div class="mt-10 grid gap-5 sm:grid-cols-2">
+        {productFit.map((p) => (
+          <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+            <h3 class="font-display text-lg font-bold text-dark-brown">{p.name}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone">{p.why}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        {CATEGORIES.map((c) => (
+          <a
+            href={c.path}
+            class="rounded-full border border-milk-tea bg-cream px-4 py-2 text-sm font-medium text-stone transition-colors hover:border-olive hover:text-olive-dark"
+          >
+            {c.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 航运 -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        Shipping to Australia
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Five gateways, and which one you use changes both transit and cost. Tell us your
+        city and we will quote the port that actually suits your distribution rather than
+        the one that is easiest for us.
+      </p>
+    </div>
+    <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {ports.map((p) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+          <h3 class="font-display text-base font-bold text-dark-brown">{p.port}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone">{p.note}</p>
+        </div>
+      ))}
+      <div class="rounded-3xl border border-olive/30 bg-olive/5 p-6">
+        <h3 class="font-display text-base font-bold text-dark-brown">Terms and consolidation</h3>
+        <p class="mt-2 text-sm leading-relaxed text-stone">
+          {COMMERCIAL.incoterms} {COMMERCIAL.lcl} We can also deliver to your nominated
+          forwarder's Chinese warehouse so your whole order ships as one consolidated
+          container.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 合规 -->
+  <section class="border-y border-milk-tea/60 bg-cream/60">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          What Australian importers should know before ordering
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          Four practical points, plus one seasonal one. None of them are reasons not to
+          order — they are reasons to settle a few questions before you print packaging
+          artwork rather than afterwards.
+        </p>
+      </div>
+      <div class="mt-10 grid gap-5 md:grid-cols-2">
+        {complianceNotes.map((c) => (
+          <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+            <h3 class="font-display text-base font-bold text-dark-brown">{c.title}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone">{c.desc}</p>
+          </div>
+        ))}
+      </div>
+      <p class="mt-6 rounded-2xl border border-milk-tea/60 bg-white/70 p-5 text-xs leading-relaxed text-stone">
+        <span class="font-semibold text-dark-brown">Please note: </span>
+        this is general information about what other Australian buyers have asked us to
+        work to. It is not legal advice, and the requirements change. Your compliance
+        advisor or customs broker is the authority — tell us what they require and we will
+        build to it.
+      </p>
+      <a
+        href="/certifications/"
+        class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-olive-dark underline underline-offset-2 hover:text-caramel-dark"
+      >
+        See our full testing, compliance and documentation process
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- 季节日历 -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        The Australian selling calendar runs against the Chinese one
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Australian retail peaks in December, which is the same month the northern
+        hemisphere is selling. If you plan your order around a European calendar, you
+        will be booking production at the most congested and most expensive time of the
+        Chinese year. Planning against your own calendar is the single cheapest advantage
+        available.
+      </p>
+    </div>
+    <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {seasonal.map((s) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+          <h3 class="font-display text-base font-bold text-caramel-dark">{s.period}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone">{s.note}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- MOQ -->
+  <section class="border-y border-milk-tea/60 bg-white/50">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          Quantities and lead times
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          The same figures apply to Australian orders as to any other market.
+        </p>
+      </div>
+      <div class="mt-10">
+        <TradeTerms />
+      </div>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="/moq-and-sampling/" class="btn-caramel">Sampling and lead time details</a>
+        <a
+          href="/for-distributors/"
+          class="inline-flex items-center justify-center rounded-full border border-milk-tea px-5 py-2.5 text-sm font-semibold text-stone transition-colors hover:border-olive hover:text-olive-dark"
+        >
+          Distributor programme
+        </a>
+        <a
+          href="/wholesale/"
+          class="inline-flex items-center justify-center rounded-full border border-milk-tea px-5 py-2.5 text-sm font-semibold text-stone transition-colors hover:border-olive hover:text-olive-dark"
+        >
+          Wholesale terms
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <FaqList
+    items={faqs}
+    intro="The nine questions Australian buyers ask us most often, including the ones about compliance and freight that most suppliers answer with a brochure."
+  />
+
+  <CtaBand
+    title="Tell us your port and your in-store date"
+    desc="Send the products you are interested in and where they need to land. We will quote the unit price, the sailings that fit your date, and a realistic production slot — and tell you early if the timing will not work."
+    waMsg="Hello ONEPENUT, I am sourcing for the Australian market and would like a quote."
+  />
+</Layout>
