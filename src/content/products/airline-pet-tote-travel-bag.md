@@ -1,7 +1,7 @@
 ---
 title: "Airline Pet Tote Travel Bag"
 description: "A spacious, airline-approved tote bag to carry your pet comfortably during travel and daily outings. Premium cat and dog gear from ONEPENUT, available for wholesale, OEM and ODM."
-image: "/images/products/airline-pet-tote-travel-bag-1.webp"
+image: "/images/products/airline-pet-tote-travel-bag-1.webp?v=2"
 category: "carrier-bags"
 seoTitle: "Airline Pet Tote Travel Bag | ONEPENUT"
 sku: "OP015057"
@@ -14,7 +14,7 @@ keywords:
   - "pet carrier"
   - "wholesale pet carriers"
 gallery:
-  - "/images/products/airline-pet-tote-travel-bag-1.webp"
+  - "/images/products/airline-pet-tote-travel-bag-1.webp?v=2"
   - "/images/products/airline-pet-tote-travel-bag-2.webp"
   - "/images/products/airline-pet-tote-travel-bag-4.webp"
   - "/images/products/airline-pet-tote-travel-bag-3.webp"
