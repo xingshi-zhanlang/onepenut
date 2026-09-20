@@ -6,7 +6,7 @@ import TradeTerms from '../components/TradeTerms.astro';
 import FaqList from '../components/FaqList.astro';
 import CtaBand from '../components/CtaBand.astro';
 import { whatsappLink } from '../consts';
-import { COMMERCIAL, LEAD_TIME, MOQ_TIERS, SAMPLING } from '../data/trade';
+import { COMMERCIAL, INDICATIVE, LEAD_TIME, MOQ_TIERS, SAMPLING } from '../data/trade';
 
 const waMsg =
   'Hello ONEPENUT, I have a question about your MOQ and lead times. My order would be ____ pcs of ____ .';
@@ -48,6 +48,10 @@ const timeline = [
 ];
 
 const faqs = [
+  {
+    q: 'Are these figures a commitment?',
+    a: 'No, and it is worth being precise about that. They are the figures our lines run to today, which is not the same thing as a quotation. We would rather say so plainly than let you plan a launch around a number from a webpage. When your enquiry arrives we check your quantity and specification against the live production calendar, then confirm the MOQ, sample time and lead time in writing with your quotation. If a figure has to move, you hear it from us before you commit — not after the deposit is paid.',
+  },
   {
     q: 'Is 10 pieces really your minimum order quantity?',
     a: 'Yes, for stock designs — products that already exist in our catalogue in their current colours and sizes. There is no tooling or pattern work involved, so a trial order that small costs us very little to run and it gets real goods into your hands before you commit to a container. It does not apply to custom products: if your design does not exist yet, the minimum is 500 pieces, because a production slot has to be set up specifically for it.',
@@ -133,8 +137,9 @@ const limits = [
           MOQ, sampling and lead times — the numbers, not a vague reply
         </h1>
         <p class="mt-5 text-lg leading-relaxed text-cream/85">
-          Most suppliers answer "MOQ?" with "it depends". Here are our actual figures,
-          including when the production clock starts and what it does not cover.
+          Most suppliers answer "MOQ?" with "it depends". Here are the figures we run to,
+          including when the production clock starts and what it does not cover. Yours are
+          confirmed in writing when you enquire.
         </p>
         <div class="mt-8 flex flex-col gap-3 sm:flex-row">
           <a href={whatsappLink(waMsg)} target="_blank" rel="noopener noreferrer" class="btn-wa">
@@ -161,6 +166,37 @@ const limits = [
           <div class="mt-2 text-sm leading-relaxed text-stone">{a.note}</div>
         </div>
       ))}
+    </div>
+  </section>
+
+  <!-- 典型值说明 —— 主动讲清「页面数字 vs 报价单数字」，不藏进免责声明 -->
+  <section class="container-site pt-12 md:pt-14">
+    <div class="rounded-3xl border border-caramel/30 bg-caramel/5 p-6 md:p-8">
+      <h2 class="font-display text-2xl font-bold text-dark-brown">
+        The figures are typical — your quotation is what counts
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">{INDICATIVE.body}</p>
+      <div class="mt-7 grid gap-7 md:grid-cols-2">
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-[0.12em] text-caramel-dark">
+            Checked against the schedule when you order
+          </h3>
+          <ul class="mt-3 space-y-2.5">
+            {INDICATIVE.whatChanges.map((i) => (
+              <li class="flex gap-3 text-sm leading-relaxed text-stone">
+                <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-caramel"></span>
+                <span>{i}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-[0.12em] text-olive-dark">
+            What stays the same regardless
+          </h3>
+          <p class="mt-3 text-sm leading-relaxed text-stone">{INDICATIVE.whatDoesNot}</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -373,7 +409,7 @@ const limits = [
 
   <FaqList
     items={faqs}
-    intro="Ten questions buyers ask about quantities and timing, answered with the figures rather than with the answer 'it depends'."
+    intro="The questions buyers ask about quantities and timing, answered with figures rather than with the answer 'it depends'."
   />
 
   <CtaBand

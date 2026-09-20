@@ -1,6 +1,6 @@
 ---
 // MOQ 阶梯表 —— 从 src/data/trade.ts 读取，改数字只需改那一个文件
-import { MOQ_TIERS } from '../data/trade';
+import { INDICATIVE, MOQ_TIERS } from '../data/trade';
 ---
 
 <div class="overflow-hidden rounded-3xl border border-milk-tea/60 bg-white shadow-card">
@@ -38,4 +38,8 @@ import { MOQ_TIERS } from '../data/trade';
 <p class="mt-3 text-xs leading-relaxed text-stone">
   Quantities are per style per colourway unless your quotation says otherwise. Mixed
   styles can be combined to reach a tier when the same material and hardware are used.
+</p>
+<p class="mt-2 text-xs leading-relaxed text-caramel-dark">
+  {INDICATIVE.short} The figures on your quotation, not on this page, are the ones your
+  order runs to.
 </p>

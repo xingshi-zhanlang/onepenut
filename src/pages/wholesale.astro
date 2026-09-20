@@ -10,6 +10,7 @@ import {
   BUYER_TYPES,
   COMMERCIAL,
   FACTORY,
+  INDICATIVE,
   LEAD_TIME,
   QUOTE_CHECKLIST,
   SAMPLING,
@@ -76,6 +77,10 @@ const faqs = [
   {
     q: 'What is your minimum order quantity?',
     a: 'Trial orders on stock designs start at 10 pieces. Adding your logo to an existing design starts at 100 pieces. A new design or full customisation starts at 500 pieces. The reason for the split is straightforward: a stock design already exists and only needs to be picked and packed, while a custom design needs pattern-making, a sample round and a production slot of its own.',
+  },
+  {
+    q: 'Are these figures fixed, or can they change?',
+    a: `They are the figures our lines run to today — not a standing offer. What we can take on depends on what is already booked into the production calendar, and material and freight costs move through the year. So we confirm the MOQ, sample time and lead time for your order in writing with your quotation, checked against the schedule at that moment. If a figure has to move, you hear it from us before you commit rather than after. ${INDICATIVE.whatDoesNot}`,
   },
   {
     q: 'Do you give volume discounts?',
