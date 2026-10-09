@@ -298,6 +298,29 @@ const schema = JSON.stringify({
     </div>
   </section>
 
+  <!-- 相关主题（内链：把「按需求选品」的主题页与品类页双向连起来） -->
+  {content.related && (
+    <section class="container-site py-14 md:py-16">
+      <div class="rounded-3xl border border-milk-tea/60 bg-cream/70 p-7 shadow-card md:p-10">
+        <h2 class="font-display text-2xl font-bold text-dark-brown md:text-3xl">
+          {content.related.title}
+        </h2>
+        <p class="mt-3 max-w-3xl text-sm leading-relaxed text-stone">
+          {content.related.desc}
+        </p>
+        <a
+          href={content.related.href}
+          class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-olive-dark underline underline-offset-2 hover:text-caramel-dark"
+        >
+          {content.related.label}
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </section>
+  )}
+
   <!-- 常见问题 -->
   <section class="bg-white/50 py-14 md:py-20">
     <div class="container-site grid gap-10 lg:grid-cols-3">

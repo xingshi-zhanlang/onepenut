@@ -1,0 +1,500 @@
+---
+// 老年宠物产品页 —— 内容枢纽 + 品类桥接
+// 定位：承接 S 层内容词（senior dog support harness / older dog accidents / pet carpet tile）
+//      同时面向采购方（B2B），是「按需求选品」的入口
+//
+// ⚠️ 内容纪律（改动前必读）：
+//   1. 不做医疗/治疗宣称。护理垫只写「管理实际后果」，不写治疗失禁/关节炎；
+//      一旦宣称治疗用途，中国落二类医疗器械、澳洲落 TGA 治疗用品，是红线。
+//   2. 拼接地毯**不是**防水/阻液产品。它的价值是「把受损面积缩小到一块可拆洗替换的方块」，
+//      真正隔液的是护理垫（可水洗款带 TPU 防水层）。不要写成防尿地毯。
+//   3. 所有规格数字均为 reference values，以 approved sample 为准。
+//   4. 交易数字只从 src/data/trade.ts 取，不在此硬编码。
+import Layout from '../layouts/Layout.astro';
+import FaqList from '../components/FaqList.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { SITE, whatsappLink } from '../consts';
+import { MOQ_TIERS, SAMPLING } from '../data/trade';
+
+const waMsg =
+  'Hello ONEPENUT, I am building a senior pet range and would like a quote.';
+
+const breadcrumbSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Senior Pet Care',
+      item: `${SITE.url}/senior-pet-care/`,
+    },
+  ],
+});
+
+const stats = [
+  { num: '5', label: 'Product groups in the range' },
+  { num: '120 × 180 cm', label: 'Largest reference bed pad' },
+  { num: '400 × 400 mm', label: 'Single replaceable tile module' },
+  { num: MOQ_TIERS[0].qty, label: 'Trial order, stock designs' },
+];
+
+const marketPoints = [
+  {
+    title: 'The pet outlives the range it was sold',
+    desc: 'Most pet ranges are designed around puppies, kittens and travel — the first third of an animal’s life. The buying shifts in the last third, and the shelf does not follow it. That gap is the reason this page exists.',
+  },
+  {
+    title: 'It is a replenishment category, not a one-off',
+    desc: 'Pads and bed protection are consumable. A customer who buys a carrier buys it once; a customer managing an older pet comes back every month for the same line. For a retailer, that changes the value of the account entirely.',
+  },
+  {
+    title: 'Demand tracks the installed base, not fashion',
+    desc: 'The number of pets reaching old age grows with the pet population itself. There is no trend to catch and no season to miss — which also makes it a safe first order for a buyer testing a new shelf.',
+  },
+  {
+    title: 'It is under-served at retail',
+    desc: 'Shelves are crowded with puppy and travel SKUs. Buyers looking for a point of difference find senior care is usually the thinnest part of a competitor’s catalogue, and the easiest to assemble from a single supplier.',
+  },
+];
+
+const problems = [
+  {
+    n: '01',
+    problem: 'Accidents come back, often overnight',
+    solution: 'Pee pads & bed protection',
+    body: 'The change most owners notice first. A pad that is floor-sized does not protect a bed, so the reference range runs to 120 × 180 cm — the sleeping area of a single or double bed rather than a patch of floor. Disposable pads carry a five-layer build with an SAP core; four-corner adhesive tabs hold the pad flat under a bedsheet, which is the difference between a pad that works and one that shifts the moment the pet moves.',
+    link: '/collections/pet-pee-pads/',
+    linkLabel: 'See the pee pads & bed protection range',
+    note: 'Reference absorbency 1,000–1,500 ml, rewet target 15 g or less. Consumable — it reorders.',
+  },
+  {
+    n: '02',
+    problem: 'The floor covering carries the damage',
+    solution: 'Modular carpet tiles',
+    body: 'Once accidents happen on a floor, the problem stops being the pet and becomes the carpet. A 400 × 400 mm module lifts out on its own, so a single tile gets washed or replaced instead of an entire covering. The backing is glue-free, PVC-free and fibreglass-free, and the cut pile is solution-dyed, which holds colour through bleach-based cleaning.',
+    link: '/collections/pet-carpet-tiles/',
+    linkLabel: 'See the modular carpet tiles',
+    note: 'A replaceable surface, not a liquid barrier — see the limits below.',
+  },
+  {
+    n: '03',
+    problem: 'Walks need support, not just restraint',
+    solution: 'Harnesses & leashes',
+    body: 'When a pet starts losing strength in the back end, the walk changes from a control problem to a support problem. A harness with a lift point over the shoulders lets the owner take some of the weight rather than pulling on the neck, and an adjustable fit matters more than a colourway. Built to your specification across webbing, hardware, stitching and sizing.',
+    link: '/collections/pet-harnesses-leashes/',
+    linkLabel: 'See harnesses & leashes',
+    note: 'Mechanical failure is the risk that matters here — hardware grade and stitch quality are the specification points.',
+  },
+  {
+    n: '04',
+    problem: 'Keeping a pet away from a wound',
+    solution: 'Recovery collars',
+    body: 'Post-surgery protection is the other reason an older pet ends up in a pet shop. A soft fabric collar is the version an animal will actually tolerate, which is the whole point — a collar that gets removed protects nothing. Donut and cone-alternative shapes across a spread of neck sizes.',
+    link: '/collections/pet-recovery-collars/',
+    linkLabel: 'See recovery collars',
+    note: 'Comfort and tolerance are the buying criteria, not stiffness.',
+  },
+  {
+    n: '05',
+    problem: 'A long walk is no longer possible',
+    solution: 'Pet strollers',
+    body: 'The end point of the same journey. Once a walk becomes too much, the choice is to stop going out or to carry the pet — and a stroller keeps the pet in the routine without asking the owner to carry weight. Lightweight aluminium frames with a one-hand fold.',
+    link: '/collections/pet-strollers/',
+    linkLabel: 'See pet strollers',
+    note: 'Also the category for pets recovering from surgery or on restricted exercise.',
+  },
+];
+
+const rangeTable = [
+  {
+    group: 'Pee pads & bed protection',
+    solves: 'Night-time accidents, bed and sofa protection, travel and crate lining',
+    spec: 'Up to 120 × 180 cm · 5-layer build · 1,000–1,500 ml reference absorbency · adhesive corner tabs',
+    href: '/collections/pet-pee-pads/',
+    status: 'Consumable',
+  },
+  {
+    group: 'Washable pee pad',
+    solves: 'The same accidents where a reusable pad suits the household better',
+    spec: 'Absorbent cotton face over a TPU waterproof layer · machine washable',
+    href: '/products/washable-pet-pee-pad/',
+    status: 'Reusable',
+  },
+  {
+    group: 'Modular carpet tiles',
+    solves: 'Floor and crate areas where accidents, chews and scratches concentrate',
+    spec: '400 × 400 mm module · 15–20 mm reference thickness · 650–750 g/m² reference pile weight',
+    href: '/collections/pet-carpet-tiles/',
+    status: 'Durable',
+  },
+  {
+    group: 'Harnesses & leashes',
+    solves: 'Support on walks, and safe restraint for a pet that can no longer be pulled on',
+    spec: 'Built to your spec — webbing, hardware grade, stitching, sizing and colour',
+    href: '/collections/pet-harnesses-leashes/',
+    status: 'Durable',
+  },
+  {
+    group: 'Recovery collars',
+    solves: 'Post-surgery and wound protection that the pet will keep on',
+    spec: 'Soft fabric construction · donut and cone-alternative shapes · spread of neck sizes',
+    href: '/collections/pet-recovery-collars/',
+    status: 'Durable',
+  },
+  {
+    group: 'Pet strollers',
+    solves: 'Pets that can no longer manage a full walk, or are on restricted exercise',
+    spec: 'Lightweight aluminium frame · one-hand fold',
+    href: '/collections/pet-strollers/',
+    status: 'Durable',
+  },
+];
+
+const limits = [
+  {
+    title: 'We do not present these products as treatment',
+    desc: 'A pee pad manages the consequence of an accident; it does not treat a condition. If your market requires the product to be sold with a therapeutic claim, the regulatory path changes completely — in China that points toward Class II medical device registration, and in Australia toward the Therapeutic Goods Administration. We will not build to a claim of that kind, and we will tell you so before you print packaging.',
+  },
+  {
+    title: 'Carpet tiles are a replaceable surface, not a liquid barrier',
+    desc: 'The value of a modular tile is that the damaged area stays small and cheap to fix: lift out one 400 × 400 mm module, wash it or swap it. It is not a waterproof membrane, and we do not sell it as one. Where a product genuinely needs to hold liquid, that is the absorbent range — and the washable pad is the one built with a TPU waterproof layer.',
+  },
+  {
+    title: 'Reference values are confirmed on the approved sample',
+    desc: 'Absorbency, pad dimensions, pile weight and module thickness shown across this site are reference figures for the model, not a production guarantee. The approved sample is the specification — everything is confirmed against it before bulk production begins.',
+  },
+  {
+    title: 'On a support harness, mechanical failure is the risk',
+    desc: 'A harness that takes weight has a different failure mode from a decorative one, and the detection work is different too — hardware grade, stitch density and webbing tensile strength rather than fibre content. Tell us the working load you need to design to and we will build and test to it, with your nominated laboratory issuing the report.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'What products does an older dog or cat actually need?',
+    a: 'In practice, five groups cover most of what changes with age. Pee pads and bed protection for the accidents that return — often overnight — and for protecting a bed, a sofa or a car seat. Modular carpet tiles where those accidents reach the floor and the covering, rather than the pet, becomes the problem. A harness with a proper support point for walks where the pet needs help rather than control. A recovery collar for post-surgery wound protection. And a stroller for when a full walk is no longer manageable. Buyers building a senior shelf usually take all five, because a customer managing an ageing pet tends to buy across them.',
+  },
+  {
+    q: 'What size pee pad suits a pet that has accidents overnight?',
+    a: 'Overnight accidents are a coverage problem rather than an absorbency problem, so the answer is usually the largest pad that fits the sleeping area. Our reference range runs to 120 × 180 cm, which covers the sleeping area of a single or double bed rather than a patch of floor, and a 90 × 180 cm pad is supplied as a two-pad set for a full double bed. Four-corner adhesive tabs are the detail that decides whether it works under a bedsheet — without tabs the pad shifts as soon as the pet moves. Production width caps a single disposable pad at roughly 120 cm, so anything wider has to be a set.',
+  },
+  {
+    q: 'Are your modular carpet tiles waterproof?',
+    a: 'No, and we would rather say so plainly. Our modular carpet tiles are a replaceable surface, not a liquid barrier. Their purpose is to make the damaged area small and cheap to fix: a 400 × 400 mm module lifts out on its own, so one tile is washed or replaced instead of an entire covering, and the cut pile is solution-dyed to hold colour through bleach-based cleaning. If you need a surface that actually holds liquid, that is the absorbent range — and the washable pee pad is the one built with a TPU waterproof layer.',
+  },
+  {
+    q: 'Can you build a harness with a support handle for an older dog?',
+    a: 'Yes, and it is one of the more common OEM briefs we receive. The specification points that matter are the position of the lift point over the shoulders, the hardware grade for the working load, stitch density, and a fit range wide enough to adjust as the pet’s shape changes. We build to the load you need to design to and arrange testing through you or your nominated laboratory, so the report is issued in a name your market accepts.',
+  },
+  {
+    q: 'Do these products treat incontinence or arthritis?',
+    a: 'No. These products manage the practical consequences of ageing — covering a sleeping area, keeping a floor covering repairable, supporting a walk, protecting a wound — and none of them is presented as a treatment. That distinction is not just wording: in China a product sold with a therapeutic claim points toward Class II medical device registration, and in Australia toward the TGA. We build to the product specification, not to a therapeutic claim, and we will flag it early if a claim you want to make would change the regulatory position.',
+  },
+  {
+    q: 'What is the minimum order for a senior pet range?',
+    a: `${MOQ_TIERS[0].qty} per style on stock designs, ${MOQ_TIERS[1].qty} once your own logo is added, and ${MOQ_TIERS[2].qty} for a fully custom product — per style, per colourway, and mixed sizes within a style are always fine. ${SAMPLING.stockSampleLead} for a stock sample, ${SAMPLING.customSampleLead} if it needs developing. A senior range assembled from five groups does not have to be ordered at once; most buyers start with the two or three lines their customers already ask for and add the rest on the second order. Confirm the current figures with us before you plan a container.`,
+  },
+  {
+    q: 'Can we private-label the senior range under our own brand?',
+    a: 'Yes — the whole collection is available as wholesale, OEM and ODM. Across the range that covers fabric, colour, sizing, print, logo, hardware, packing format, carton and multilingual labelling. Designs developed for you are not produced for anyone else. On pads specifically, layer weights and SAP loading are set to your absorbency and rewet targets, so the same reference model can be built lighter for volume retail or heavier for overnight use under a different brand.',
+  },
+  {
+    q: 'Do you supply senior pet products to Australia and Southeast Asia?',
+    a: 'Yes, and those are the two markets we are built around. For Australia we regularly ship to Sydney, Melbourne, Brisbane, Fremantle and Adelaide, and we are two hours behind Sydney so a message sent in the afternoon is answered the same working day. For Southeast Asia we supply buyers in Singapore, Malaysia, Thailand, Vietnam and Indonesia. Freight terms, consolidated shipping and the market-specific labelling points are covered on the individual market pages.',
+  },
+];
+
+const relatedLinks = [
+  { href: '/collections/pet-pee-pads/', label: 'Pee pads & bed protection' },
+  { href: '/collections/pet-carpet-tiles/', label: 'Modular carpet tiles' },
+  { href: '/collections/pet-harnesses-leashes/', label: 'Harnesses & leashes' },
+  { href: '/collections/pet-recovery-collars/', label: 'Recovery collars' },
+  { href: '/collections/pet-strollers/', label: 'Pet strollers' },
+];
+---
+
+<Layout
+  title="Senior Pet Products — Wholesale & OEM Range for Ageing Dogs and Cats"
+  description="Wholesale and OEM products for senior dogs and cats — extra-large pee pads and bed protection, modular carpet tiles, support harnesses, recovery collars and pet strollers. Reference specifications, honest limits, and trial orders from 10 pcs."
+>
+  <script type="application/ld+json" set:html={breadcrumbSchema} />
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-olive-dark py-20 md:py-28">
+    <div class="container-site relative z-10">
+      <div class="max-w-3xl">
+        <nav aria-label="Breadcrumb" class="text-xs text-cream/60">
+          <a href="/" class="hover:text-cream">Home</a>
+          <span class="mx-2">/</span>
+          <span class="text-cream/90">Senior Pet Care</span>
+        </nav>
+        <span class="mt-4 block text-sm font-semibold uppercase tracking-[0.2em] text-cream/70">
+          Buyer&rsquo;s range guide
+        </span>
+        <h1 class="mt-3 font-display text-4xl font-bold text-cream md:text-5xl">
+          Senior pet products: the range for ageing dogs and cats
+        </h1>
+        <p class="mt-5 text-lg leading-relaxed text-cream/85">
+          An older pet does not need different products so much as a different mix of them.
+          Five groups cover most of what changes with age — and they are the categories
+          buyers ask us to build first.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href={whatsappLink(waMsg)} target="_blank" rel="noopener noreferrer" class="btn-wa">
+            Discuss a senior range
+          </a>
+          <a
+            href="/quote"
+            class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-cream/40 px-6 py-3 text-sm font-semibold text-cream transition-colors hover:bg-cream/10"
+          >
+            Request a quote
+          </a>
+        </div>
+        <p class="mt-5 text-sm text-cream/70">
+          Five product groups · one supplier · reference specs confirmed on the approved sample
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 数字 -->
+  <section class="container-site py-14 md:py-16">
+    <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
+      {stats.map((s) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 text-center shadow-card">
+          <div class="font-display text-2xl font-bold text-olive-dark md:text-3xl">{s.num}</div>
+          <div class="mt-2 text-sm text-stone">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 为什么成立 -->
+  <section class="container-site pb-16 md:pb-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        Why senior pets are a range, not a niche
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Four reasons this group is worth a shelf of its own, and why it behaves differently
+        from the rest of a pet catalogue.
+      </p>
+    </div>
+    <div class="mt-10 grid gap-5 sm:grid-cols-2">
+      {marketPoints.map((m) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+          <h3 class="font-display text-lg font-bold text-dark-brown">{m.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone">{m.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 五个问题 → 五组产品（桥接核心） -->
+  <section class="border-y border-milk-tea/60 bg-white/50">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          Five problems, five product groups
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          This is the whole logic of the range. Each problem is one a buyer hears from
+          customers, and each maps to one group we already produce.
+        </p>
+      </div>
+
+      <div class="mt-10 space-y-5">
+        {problems.map((p) => (
+          <div class="grid gap-4 rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card md:grid-cols-[auto_1fr] md:gap-6 md:p-8">
+            <div class="font-display text-3xl font-bold text-caramel/40 md:text-4xl">{p.n}</div>
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-caramel">
+                {p.problem}
+              </p>
+              <h3 class="mt-2 font-display text-xl font-bold text-dark-brown">{p.solution}</h3>
+              <p class="mt-3 text-sm leading-relaxed text-stone">{p.body}</p>
+              <p class="mt-3 rounded-2xl bg-cream px-4 py-3 text-xs leading-relaxed text-stone">
+                {p.note}
+              </p>
+              <a
+                href={p.link}
+                class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-olive-dark underline underline-offset-2 hover:text-caramel-dark"
+              >
+                {p.linkLabel}
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 范围一览表 -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        The range at a glance
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Six lines, what each one actually solves, and the reference specification behind it.
+        Specifications are reference values for the model and are confirmed on the approved
+        sample.
+      </p>
+    </div>
+
+    <div class="mt-10 overflow-x-auto rounded-3xl border border-milk-tea/60 bg-white shadow-card">
+      <table class="w-full text-left text-sm">
+        <thead class="bg-cream text-xs uppercase tracking-wide text-stone">
+          <tr>
+            <th class="px-5 py-4 font-semibold">Product group</th>
+            <th class="px-5 py-4 font-semibold">What it solves</th>
+            <th class="px-5 py-4 font-semibold">Reference specification</th>
+            <th class="px-5 py-4 font-semibold">Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rangeTable.map((r) => (
+            <tr class="border-t border-milk-tea/50 align-top">
+              <td class="px-5 py-4">
+                <a
+                  href={r.href}
+                  class="font-semibold text-olive-dark underline underline-offset-2 hover:text-caramel-dark"
+                >
+                  {r.group}
+                </a>
+              </td>
+              <td class="px-5 py-4 leading-relaxed text-stone">{r.solves}</td>
+              <td class="px-5 py-4 leading-relaxed text-stone">{r.spec}</td>
+              <td class="px-5 py-4">
+                <span class="inline-block whitespace-nowrap rounded-full bg-olive/10 px-3 py-1 text-xs font-medium text-olive-dark">
+                  {r.status}
+                </span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      {relatedLinks.map((l) => (
+        <a
+          href={l.href}
+          class="rounded-full border border-milk-tea bg-cream px-4 py-2 text-sm font-medium text-stone transition-colors hover:border-olive hover:text-olive-dark"
+        >
+          {l.label}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- 边界与口径（诚实说明） -->
+  <section class="border-y border-milk-tea/60 bg-cream/60">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          What to check before you specify
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          Four limits, stated up front. Buyers tend to find them more useful than a
+          specification sheet, and they are cheaper to settle now than after the packaging
+          artwork is printed.
+        </p>
+      </div>
+      <div class="mt-10 grid gap-5 md:grid-cols-2">
+        {limits.map((l) => (
+          <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+            <h3 class="font-display text-base font-bold text-dark-brown">{l.title}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone">{l.desc}</p>
+          </div>
+        ))}
+      </div>
+      <p class="mt-6 rounded-2xl border border-milk-tea/60 bg-white/70 p-5 text-xs leading-relaxed text-stone">
+        <span class="font-semibold text-dark-brown">Please note: </span>
+        this page is a product range guide, not veterinary or legal advice. Whether a
+        product may be sold with a particular claim in your market is a question for your
+        own regulatory advisor — tell us what they require and we will build to it.
+      </p>
+      <a
+        href="/certifications/"
+        class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-olive-dark underline underline-offset-2 hover:text-caramel-dark"
+      >
+        See our full testing, compliance and documentation process
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- MOQ -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        Building the range from one supplier
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        A senior range assembled across five groups does not have to be ordered at once,
+        and it does not have to come from five suppliers. Most buyers start with the two
+        or three lines their customers already ask for.
+      </p>
+    </div>
+    <div class="mt-10 grid gap-5 sm:grid-cols-3">
+      <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+        <div class="font-display text-2xl font-bold text-olive-dark">{MOQ_TIERS[0].qty}</div>
+        <p class="mt-2 text-sm font-semibold text-dark-brown">Stock designs</p>
+        <p class="mt-1 text-sm leading-relaxed text-stone">
+          Per style, per colourway. Sized for a distributor testing a line before committing
+          to a container.
+        </p>
+      </div>
+      <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+        <div class="font-display text-2xl font-bold text-olive-dark">{MOQ_TIERS[1].qty}</div>
+        <p class="mt-2 text-sm font-semibold text-dark-brown">With your logo</p>
+        <p class="mt-1 text-sm leading-relaxed text-stone">
+          Private label on a stock design — your branding, your artwork, the existing
+          construction.
+        </p>
+      </div>
+      <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+        <div class="font-display text-2xl font-bold text-olive-dark">{MOQ_TIERS[2].qty}</div>
+        <p class="mt-2 text-sm font-semibold text-dark-brown">Fully custom</p>
+        <p class="mt-1 text-sm leading-relaxed text-stone">
+          Built to your specification, with a physical sample approved before bulk
+          production.
+        </p>
+      </div>
+    </div>
+    <div class="mt-6 flex flex-wrap gap-3">
+      <a href="/moq-and-sampling/" class="btn-caramel">Sampling and lead time details</a>
+      <a
+        href="/oem-odm/"
+        class="inline-flex items-center justify-center rounded-full border border-milk-tea px-5 py-2.5 text-sm font-semibold text-stone transition-colors hover:border-olive hover:text-olive-dark"
+      >
+        OEM / ODM &amp; private label
+      </a>
+      <a
+        href="/wholesale/"
+        class="inline-flex items-center justify-center rounded-full border border-milk-tea px-5 py-2.5 text-sm font-semibold text-stone transition-colors hover:border-olive hover:text-olive-dark"
+      >
+        Wholesale terms
+      </a>
+    </div>
+  </section>
+
+  <FaqList
+    items={faqs}
+    intro="The eight questions buyers ask us most often about a senior pet range — including the ones about waterproofing and therapeutic claims, where the honest answer is more useful than a confident one."
+  />
+
+  <CtaBand
+    title="Tell us which groups you want to start with"
+    desc="Send the lines you are considering, the quantities and your destination market. We will quote unit price, sampling time and a realistic production slot — and tell you plainly where a product cannot do what you need it to."
+    waMsg="Hello ONEPENUT, I am building a senior pet range and would like a quote."
+  />
+</Layout>
