@@ -5,7 +5,7 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
-import { CONTACT, SITE } from '../consts';
+import { CATEGORIES, CONTACT, SITE } from '../consts';
 
 interface Props {
   title?: string;
@@ -61,6 +61,13 @@ const ogImage = image
   : `${SITE.url}/og-default.png`;
 
 // 结构化数据：Organization + WebSite
+// GEO 说明：AI 搜索靠「实体锚点」识别品牌是谁。下面 logo / knowsAbout /
+//          contactPoint 三项都是站内既有事实，用来强化实体一致性。
+// ⚠️ 待补（**需业务确认后再填，不要凭空造**——填错反而伤害实体可信度）：
+//    · sameAs           站外主页 URL（LinkedIn / Alibaba / Facebook / 展商页等）
+//    · address          含城市与国家的完整地址
+//    · telephone        对外公开电话
+//    · foundingDate     成立年份
 const orgSchema = JSON.stringify({
   '@context': 'https://schema.org',
   '@graph': [
@@ -70,6 +77,14 @@ const orgSchema = JSON.stringify({
       url: SITE.url,
       description: SITE.description,
       email: CONTACT.email,
+      logo: `${SITE.url}/favicon-512.png`,
+      knowsAbout: CATEGORIES.map((c) => c.name),
+      contactPoint: {
+        '@type': 'ContactPoint',
+        contactType: 'sales',
+        email: CONTACT.email,
+        availableLanguage: ['en'],
+      },
     },
     {
       '@type': 'WebSite',

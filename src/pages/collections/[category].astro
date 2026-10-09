@@ -298,25 +298,27 @@ const schema = JSON.stringify({
     </div>
   </section>
 
-  <!-- 相关主题（内链：把「按需求选品」的主题页与品类页双向连起来） -->
-  {content.related && (
+  <!-- 相关主题（内链：把「按需求选品」的主题页 / 制造方页与品类页双向连起来） -->
+  {content.related && content.related.length > 0 && (
     <section class="container-site py-14 md:py-16">
-      <div class="rounded-3xl border border-milk-tea/60 bg-cream/70 p-7 shadow-card md:p-10">
-        <h2 class="font-display text-2xl font-bold text-dark-brown md:text-3xl">
-          {content.related.title}
-        </h2>
-        <p class="mt-3 max-w-3xl text-sm leading-relaxed text-stone">
-          {content.related.desc}
-        </p>
-        <a
-          href={content.related.href}
-          class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-olive-dark underline underline-offset-2 hover:text-caramel-dark"
-        >
-          {content.related.label}
-          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </a>
+      <div class="grid gap-5 md:grid-cols-2">
+        {content.related.map((r) => (
+          <div class="rounded-3xl border border-milk-tea/60 bg-cream/70 p-7 shadow-card md:p-8">
+            <h2 class="font-display text-xl font-bold text-dark-brown md:text-2xl">
+              {r.title}
+            </h2>
+            <p class="mt-3 text-sm leading-relaxed text-stone">{r.desc}</p>
+            <a
+              href={r.href}
+              class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-olive-dark underline underline-offset-2 hover:text-caramel-dark"
+            >
+              {r.label}
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        ))}
       </div>
     </section>
   )}

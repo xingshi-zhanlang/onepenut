@@ -34,3 +34,7 @@ User-agent: CCBot
 Disallow: /
 
 Sitemap: https://onepenut.com/sitemap-index.xml
+
+# 供大模型与 AI 检索读取的站点说明（非爬虫规则，仅作发现用途）
+# https://onepenut.com/llms.txt
+

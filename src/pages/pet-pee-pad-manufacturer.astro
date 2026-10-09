@@ -1,0 +1,380 @@
+---
+// 尿垫制造方页 —— 承接 T2/T3 采购词
+//   主词：pet pee pad manufacturer / disposable pet training pad supplier / wholesale pee pads
+//   变体：extra large pee pad supplier / bed pad manufacturer / OEM pee pad private label
+// 定位：把「尿垫」这个类目从「产品集合页」升格为「可被采购方搜到的制造方落地页」。
+//
+// ⚠️ 内容纪律（改动前必读）：
+//   1. 不做医疗/治疗/护理宣称。护理垫一旦宣称医疗、护理或失禁治疗用途，
+//      中国落二类医疗器械、澳洲落 TGA 治疗用品 —— 这是红线。
+//      只写「吸收什么、由什么构成、保护什么」，不写「治疗什么」。
+//   2. 所有规格数字均为 reference values，以 approved sample 为准。
+//   3. 交易数字只从 src/data/trade.ts 取，不在此硬编码。
+import Layout from '../layouts/Layout.astro';
+import TradeTerms from '../components/TradeTerms.astro';
+import FaqList from '../components/FaqList.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { SITE, whatsappLink } from '../consts';
+import { MOQ_TIERS, FACTORY } from '../data/trade';
+
+const waMsg =
+  'Hello ONEPENUT, I am sourcing pet pee pads and would like a quote. My target size is ____ .';
+
+const breadcrumbSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Pet Pee Pad Manufacturer',
+      item: `${SITE.url}/pet-pee-pad-manufacturer/`,
+    },
+  ],
+});
+
+// 参考规格 —— 全部取自已上架的 3 款尿垫产品页，口径一致
+const range = [
+  {
+    model: 'Extra-large bed pad',
+    size: '120 × 180 cm',
+    absorbency: '1,500 ml',
+    weight: '100–130 g',
+    pack: '6–10 per bag',
+    use: 'Covers the sleeping area of a single or double bed',
+  },
+  {
+    model: 'Large pad',
+    size: '90 × 180 cm',
+    absorbency: '1,000 ml',
+    weight: '70–90 g',
+    pack: '8 per bag',
+    use: 'Full-length floor and furniture protection',
+  },
+  {
+    model: 'Twin bed set',
+    size: '90 × 180 cm × 2',
+    absorbency: '2 × 1,000 ml',
+    weight: '70–90 g each',
+    pack: '4–6 per bag (2–3 sets)',
+    use: 'Two standard-width pads laid side by side cover 180 × 180 cm',
+  },
+  {
+    model: 'Training pad',
+    size: '90 × 150 cm',
+    absorbency: '1,000 ml',
+    weight: '60–80 g',
+    pack: '10 per bag',
+    use: 'The lowest-cost size — runs on the standard 91 cm line width',
+  },
+];
+
+const specifiable = [
+  {
+    title: 'Size',
+    desc: 'Reference models run 90 × 150 cm to 120 × 180 cm. Anything inside our production width can be built to order, so treat the sizes above as starting points rather than a fixed list.',
+  },
+  {
+    title: 'Grammage and absorbency',
+    desc: 'Layer weights and SAP loading are set to your absorbency target, so the same reference model can be built as a thin volume line or a heavier overnight line.',
+  },
+  {
+    title: 'Rewet and leakage targets',
+    desc: 'We work to a reference rewet target of 15 g or less and a leakage target of 1 g or less. If your market tests to a different method, give us the method and the limit and we build to that instead.',
+  },
+  {
+    title: 'Top sheet and backsheet',
+    desc: 'Hot-air non-woven top sheet over a tissue or hydrophilic acquisition layer, with a breathable PE cast-film backsheet — PE rather than PVC, which is the material point buyers raise first.',
+  },
+  {
+    title: 'Adhesive tabs',
+    desc: 'Four-corner adhesive tabs hold the pad flat under a bedsheet, where an untabbed pad shifts as soon as the pet moves. Optional on the training model, standard on the bed pads.',
+  },
+  {
+    title: 'Bag, carton and label',
+    desc: 'Handled bag or polybag, pad count per pack, printed carton, barcode and multilingual labels are all part of the order. Editable label files are supplied so your importer can localise them.',
+  },
+];
+
+const buyingNotes = [
+  {
+    title: 'Size is decided by the width of the line, not by preference',
+    desc: 'A pad wider than the production width cannot simply be cut — it means a different line or a different construction. This is why 120 × 180 cm is our largest single pad and the twin-set format exists: two standard-width pads reach 180 × 180 cm without asking the line to run a non-standard width, which keeps both cost and lead time down.',
+  },
+  {
+    title: 'Absorbency and surface dryness are two different specifications',
+    desc: 'A pad can hold a lot of liquid and still feel wet on the surface. If your customer complaint is "it leaks through", the specification to move is the rewet target, not the total capacity. Tell us which complaint you are trying to solve and we will point at the layer that fixes it.',
+  },
+  {
+    title: 'Consumables are sold on reorder rate, not unit margin',
+    desc: 'Pads are consumed on a fixed cycle, so the number that decides whether the line works for you is the reorder frequency, not the price of the first container. That usually argues for a slightly heavier pad and a smaller pack, which is what makes a customer come back.',
+  },
+  {
+    title: 'This is a hygiene product, not a medical device',
+    desc: 'We make absorbent pads for pet care. We do not market them as medical devices and we make no therapeutic claim for them. What we can state is what the pad is made of, what it absorbs and what it protects — ask us for the material records and we will send them.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'What sizes of pet pee pad can you manufacture?',
+    a: 'Reference models run from 90 × 150 cm up to 120 × 180 cm, including a twin-set format that lays two 90 × 180 cm pads side by side to cover 180 × 180 cm. Those are starting points, not a fixed list: any size inside our production width can be made to your specification, and 120 cm is the widest single pad we build. Tell us the surface you need to protect and we will tell you the closest size that runs without tooling changes.',
+  },
+  {
+    q: 'What is the MOQ for pet pee pads?',
+    a: `Stock designs start at ${MOQ_TIERS[0].qty} — enough for a buyer sample or a market test. Your logo on an existing design starts at ${MOQ_TIERS[1].qty}. A new size, a custom perforation pattern or bespoke packaging starts at ${MOQ_TIERS[2].qty} per style. The exact figure for your order is checked against the production calendar when your enquiry comes in and confirmed in writing with the quotation.`,
+  },
+  {
+    q: 'Do you make reusable / washable pee pads as well as disposable ones?',
+    a: 'Yes. Alongside the disposable range we produce a machine-washable pad built on an absorbent cotton face over a TPU layer, for buyers whose customers want a re-usable option rather than a consumable. The two are specified and tested differently — ask us for both data sheets if you are deciding which to list.',
+  },
+  {
+    q: 'Are these pads medical or incontinence products?',
+    a: 'No, and we do not describe them that way. They are absorbent hygiene pads for pet care. Marketing a pad as treating a condition is what turns an ordinary pet product into a regulated one in several markets, and it is a claim we do not make. What we do state is factual: the construction, the absorbency, the rewet target, and what the pad protects. Any claim you put on the packaging is your decision for your own market, and we will tell you plainly what we can and cannot supply evidence for.',
+  },
+  {
+    q: 'Can you print our brand, barcode and pack count?',
+    a: 'Yes. Bag format, pad count per pack, printed carton, barcode / EAN and multilingual labels are all part of the order, and we supply editable label files so your importer can localise the copy without reprinting the artwork from scratch. Send the artwork or the exact wording and we print to it.',
+  },
+  {
+    q: 'How do we verify absorbency and rewet before we commit?',
+    a: 'Testing is commissioned by you or by your nominated laboratory — we do not certify our own product, and a report we produced ourselves would not carry weight with your buyer or your customs broker anyway. What we supply is everything the test needs to actually run: layered material samples, a same-batch production sample, the bill of materials, and the material safety and technical data sheets. Give us the test standard and the acceptance limit and we will tell you whether the reference model meets it or what has to change.',
+  },
+  {
+    q: 'What is the production lead time?',
+    a: 'Production runs 20–30 days from the working day after we receive your deposit and your approved pre-production sample — whichever comes later, because the count is meaningless until both clocks have started. The confirmed figure for your order is checked against the production calendar at the time you order; a run booked into a full month takes longer, and we will tell you that before you commit rather than after.',
+  },
+];
+
+const stats = [
+  { num: '120 × 180 cm', label: 'Largest reference bed pad' },
+  { num: '1,500 ml', label: 'Reference absorbency, XL model' },
+  { num: MOQ_TIERS[0].qty, label: 'Trial order, stock designs' },
+  { num: FACTORY.monthlyCapacity, label: FACTORY.monthlyCapacityUnit },
+];
+---
+
+<Layout
+  title="Pet Pee Pad Manufacturer — Extra-Large & Bed Pads, Wholesale & OEM"
+  description="We manufacture disposable pet pee pads up to 120 × 180 cm, bed pads and training pads, plus a machine-washable line. Five-layer SAP build, custom sizes, adhesive tabs and private-label packaging — trial orders from 10 pcs, custom programmes from 500 pcs."
+>
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-olive-dark py-20 md:py-28">
+    <div class="container-site relative z-10">
+      <div class="max-w-3xl">
+        <nav aria-label="Breadcrumb" class="text-xs text-cream/60">
+          <a href="/" class="hover:text-cream">Home</a>
+          <span class="mx-2">/</span>
+          <span class="text-cream/90">Pet Pee Pad Manufacturer</span>
+        </nav>
+        <span class="mt-4 block text-sm font-semibold uppercase tracking-[0.2em] text-cream/70">
+          For importers, retailers &amp; private label
+        </span>
+        <h1 class="mt-3 font-display text-4xl font-bold text-cream md:text-5xl">
+          Pet pee pad manufacturer for extra-large, bed-sized and training pads
+        </h1>
+        <p class="mt-5 text-lg leading-relaxed text-cream/85">
+          We manufacture disposable pet pee pads up to 120 × 180 cm — bed-sized rather than
+          floor-sized — plus a machine-washable line. Every pad is a five-layer build with an
+          SAP core, customisable in size, grammage and absorbency, and supplied under your own
+          brand. Trial orders start at 10 pcs; full custom programmes at 500 pcs.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href={whatsappLink(waMsg)} target="_blank" rel="noopener noreferrer" class="btn-wa">
+            Ask for a pee pad quote
+          </a>
+          <a
+            href="/quote"
+            class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-cream/40 px-6 py-3 text-sm font-semibold text-cream transition-colors hover:bg-cream/10"
+          >
+            Request a quote
+          </a>
+        </div>
+        <p class="mt-5 text-sm text-cream/70">
+          Sizes to 120 × 180 cm · Custom grammage &amp; absorbency · Private label from 100 pcs
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 数字 -->
+  <section class="container-site py-14 md:py-16">
+    <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
+      {stats.map((s) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 text-center shadow-card">
+          <div class="font-display text-2xl font-bold text-olive-dark md:text-3xl">{s.num}</div>
+          <div class="mt-2 text-sm text-stone">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 参考规格表 -->
+  <section class="container-site pb-16 md:pb-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        Reference models we manufacture
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Four reference models, all built on the same five-layer construction. These are the
+        starting sizes — the specification that ships is the one on your approved sample.
+      </p>
+    </div>
+
+    <div class="mt-10 overflow-x-auto rounded-3xl border border-milk-tea/60 bg-white shadow-card">
+      <table class="w-full min-w-[720px] border-collapse text-left text-sm">
+        <thead>
+          <tr class="border-b border-milk-tea/60 bg-cream/60 text-xs uppercase tracking-wide text-stone">
+            <th class="px-5 py-4 font-semibold">Model</th>
+            <th class="px-5 py-4 font-semibold">Dimensions</th>
+            <th class="px-5 py-4 font-semibold">Reference absorbency</th>
+            <th class="px-5 py-4 font-semibold">Reference net weight</th>
+            <th class="px-5 py-4 font-semibold">Standard pack</th>
+            <th class="px-5 py-4 font-semibold">Typical fit</th>
+          </tr>
+        </thead>
+        <tbody>
+          {range.map((r) => (
+            <tr class="border-b border-milk-tea/40 last:border-0">
+              <td class="px-5 py-4 font-semibold text-dark-brown">{r.model}</td>
+              <td class="px-5 py-4 text-stone">{r.size}</td>
+              <td class="px-5 py-4 text-stone">{r.absorbency}</td>
+              <td class="px-5 py-4 text-stone">{r.weight}</td>
+              <td class="px-5 py-4 text-stone">{r.pack}</td>
+              <td class="px-5 py-4 text-stone">{r.use}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-4 rounded-2xl border border-milk-tea/60 bg-cream/50 p-4 text-xs leading-relaxed text-stone">
+      Figures are reference values for the models shown. Final grammage, absorbency and pack
+      count are confirmed on the approved sample. Absorbency values are laboratory reference
+      figures, not a guarantee of performance in use — how a pad performs depends on the size
+      of the pet and how long it is left in place.
+    </p>
+
+    <div class="mt-6">
+      <a
+        href="/collections/pet-pee-pads/"
+        class="inline-flex items-center gap-2 text-sm font-semibold text-olive-dark underline underline-offset-2 hover:text-caramel-dark"
+      >
+        See the full pee pad range with images and per-model detail
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- 可定制项 -->
+  <section class="border-y border-milk-tea/60 bg-white/50">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          What you can specify on a pee pad order
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          A pad is not one product — it is six decisions. The four reference models exist so you
+          have somewhere to start, not so you have to choose from a list.
+        </p>
+      </div>
+      <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {specifiable.map((s) => (
+          <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+            <h3 class="font-display text-lg font-bold text-dark-brown">{s.title}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone">{s.desc}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="/oem-odm/" class="btn-caramel">OEM / ODM &amp; private label</a>
+        <a
+          href="/senior-pet-care/"
+          class="inline-flex items-center justify-center rounded-full border border-milk-tea px-5 py-2.5 text-sm font-semibold text-stone transition-colors hover:border-olive hover:text-olive-dark"
+        >
+          Pee pads in a senior pet range
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 采购须知 -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        Four things that decide whether the line sells
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        These are the points buyers get wrong most often, and they are all cheaper to settle
+        before the artwork is printed than after.
+      </p>
+    </div>
+    <div class="mt-10 grid gap-5 md:grid-cols-2">
+      {buyingNotes.map((n) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+          <h3 class="font-display text-base font-bold text-dark-brown">{n.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone">{n.desc}</p>
+        </div>
+      ))}
+    </div>
+    <a
+      href="/certifications/"
+      class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-olive-dark underline underline-offset-2 hover:text-caramel-dark"
+    >
+      See how we handle testing, samples and documentation
+      <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </a>
+  </section>
+
+  <!-- MOQ / 打样 / 交期 -->
+  <section class="border-y border-milk-tea/60 bg-cream/60">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          Quantities, sampling and lead times
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          The same three tiers apply to pee pads as to every other category we make.
+        </p>
+      </div>
+      <div class="mt-10">
+        <TradeTerms />
+      </div>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="/moq-and-sampling/" class="btn-caramel">Sampling and lead time details</a>
+        <a
+          href="/wholesale/"
+          class="inline-flex items-center justify-center rounded-full border border-milk-tea px-5 py-2.5 text-sm font-semibold text-stone transition-colors hover:border-olive hover:text-olive-dark"
+        >
+          Wholesale terms
+        </a>
+        <a
+          href="/for-distributors/"
+          class="inline-flex items-center justify-center rounded-full border border-milk-tea px-5 py-2.5 text-sm font-semibold text-stone transition-colors hover:border-olive hover:text-olive-dark"
+        >
+          Distributor programme
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <FaqList
+    items={faqs}
+    intro="The seven questions buyers ask us most often about pee pads — including the one about medical claims, where the honest answer is more useful than a confident one."
+  />
+
+  <CtaBand
+    title="Send the size and the absorbency you need"
+    desc="Tell us the surface you need to protect, the size, the absorbency target, the pack count and your destination market. We will quote the unit price, sampling time and a realistic production slot — and tell you plainly if the size you want does not run."
+    waMsg="Hello ONEPENUT, I am sourcing pet pee pads and would like a quote."
+  />
+
+  <!-- BreadcrumbList 结构化数据 -->
+  <script type="application/ld+json" set:html={breadcrumbSchema} />
+</Layout>

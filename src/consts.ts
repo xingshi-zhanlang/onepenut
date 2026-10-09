@@ -45,6 +45,7 @@ export const B2B_LINKS = [
   { href: '/wholesale/', label: 'Wholesale & Bulk Orders' },
   { href: '/moq-and-sampling/', label: 'MOQ, Sampling & Lead Times' },
   { href: '/oem-odm/', label: 'OEM / ODM & Private Label' },
+  { href: '/pet-pee-pad-manufacturer/', label: 'Pet Pee Pad Manufacturing' },
   { href: '/certifications/', label: 'Testing & Compliance' },
   { href: '/for-distributors/', label: 'For Distributors' },
   { href: '/pet-products-supplier-australia/', label: 'Supplying Australia' },

@@ -27,11 +27,12 @@ export interface CategoryContent {
   /** 常见问题（同时输出 FAQPage 结构化数据） */
   faqs: { q: string; a: string }[];
   /**
-   * 可选：相关主题内链块（渲染在品类页 FAQ 之前）。
-   * 用于把「按需求选品」的主题页与品类页双向连起来——
-   * 例如尿垫页反链 /senior-pet-care/，让权重在两条路径之间流动。
+   * 可选：相关主题内链块（渲染在品类页 FAQ 之前，按数组渲染成卡片栅格）。
+   * 用于把「按需求选品」的主题页、以及该类目对应的制造方页与品类页双向连起来——
+   * 例如尿垫页同时反链 /senior-pet-care/ 与 /pet-pee-pad-manufacturer/，
+   * 让权重在「场景路径」和「采购路径」之间流动。
    */
-  related?: { title: string; desc: string; href: string; label: string };
+  related?: { title: string; desc: string; href: string; label: string }[];
 }
 
 /** 通用采购条款（所有分类页共用，只在此处维护一份；数字取自 src/data/trade.ts） */
@@ -571,12 +572,20 @@ export const CATEGORY_CONTENT: Record<string, CategoryContent> = {
         a: 'Size, grammage, absorbency target, surface material, whether the pad needs adhesive tabs, bag format and pad count, and your destination market. With those six points we can quote against your specification rather than a catalogue.',
       },
     ],
-    related: {
-      title: 'Pads are one line of a senior pet range',
-      desc: 'Buyers assembling products for older dogs and cats usually take bed protection alongside four other groups — support harnesses, recovery collars, strollers and replaceable floor tiles. The senior range guide explains what each one solves, and where the limits are.',
-      href: '/senior-pet-care/',
-      label: 'Read the senior pet range guide',
-    },
+    related: [
+      {
+        title: 'Pads are one line of a senior pet range',
+        desc: 'Buyers assembling products for older dogs and cats usually take bed protection alongside four other groups — support harnesses, recovery collars, strollers and replaceable floor tiles. The senior range guide explains what each one solves, and where the limits are.',
+        href: '/senior-pet-care/',
+        label: 'Read the senior pet range guide',
+      },
+      {
+        title: 'Buying pads at container volume',
+        desc: 'This range is also sold as an OEM line: reference sizes from 90 × 150 cm to 120 × 180 cm, settable grammage and absorbency, adhesive tabs and private-label packaging. The manufacturer page sets out what can be specified and what it costs to change.',
+        href: '/pet-pee-pad-manufacturer/',
+        label: 'See the pee pad manufacturer page',
+      },
+    ],
   },
 
   // ⑦ 可单块拆洗拼接地毯 —— 居家防污（耐用品）
@@ -664,11 +673,13 @@ export const CATEGORY_CONTENT: Record<string, CategoryContent> = {
         a: 'Module size, face fibre, whether the pile must be solution-dyed, pile weight and total thickness, backing type, colour, carton format, and whether the tiles need a fire or VOC test package. Tell us the end use as well — residential retail and contract flooring are specified differently.',
       },
     ],
-    related: {
-      title: 'Floor protection is one line of a senior pet range',
-      desc: 'Where accidents on a floor are the problem rather than the pet, tiles make the damaged area small and replaceable — but they are a replaceable surface, not a liquid barrier. The senior range guide sets out which product holds liquid and which one absorbs it.',
-      href: '/senior-pet-care/',
-      label: 'Read the senior pet range guide',
-    },
+    related: [
+      {
+        title: 'Floor protection is one line of a senior pet range',
+        desc: 'Where accidents on a floor are the problem rather than the pet, tiles make the damaged area small and replaceable — but they are a replaceable surface, not a liquid barrier. The senior range guide sets out which product holds liquid and which one absorbs it.',
+        href: '/senior-pet-care/',
+        label: 'Read the senior pet range guide',
+      },
+    ],
   },
 };
