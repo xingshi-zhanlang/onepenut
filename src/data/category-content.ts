@@ -33,6 +33,12 @@ export interface CategoryContent {
    * 让权重在「场景路径」和「采购路径」之间流动。
    */
   related?: { title: string; desc: string; href: string; label: string }[];
+  /**
+   * 可选：覆盖该品类页的采购条款区块。
+   * 默认使用全站共用的 TRADE_TERMS；开发中/尚未定产能的品类可用一份
+   * 不含数字的软条款替代，避免在页面里承诺未确认的 MOQ 与交期。
+   */
+  tradeTermsOverride?: { label: string; value: string; link?: string }[];
 }
 
 /** 通用采购条款（所有分类页共用，只在此处维护一份；数字取自 src/data/trade.ts） */
@@ -699,6 +705,148 @@ export const CATEGORY_CONTENT: Record<string, CategoryContent> = {
         desc: 'Where accidents on a floor are the problem rather than the pet, tiles make the damaged area small and replaceable — but they are a replaceable surface, not a liquid barrier. The senior range guide sets out which product holds liquid and which one absorbs it.',
         href: '/senior-pet-care/',
         label: 'Read the senior pet range guide',
+      },
+      {
+        title: 'Need a mat that holds liquid, not one that just replaces?',
+        desc: 'These tiles are a replaceable surface and contain no liquid barrier — we do not sell them as one. If the requirement is that liquid must not reach the floor, the washable absorbent mat range is the one to specify: an absorbent core sits on top of a TPU film.',
+        href: '/collections/washable-absorbent-mats/',
+        label: 'See the washable absorbent mats',
+      },
+    ],
+  },
+
+  // ⑧ 可洗吸水地垫 —— 四层复合，真正阻液（耐用品，与 ⑦ 明确区分）
+  'washable-absorbent-mats': {
+    h1: 'Washable Absorbent Mats for Pets',
+    seoTitle: 'Washable Absorbent Pet Mats — Wholesale & OEM Manufacturer',
+    seoDescription:
+      'Four-layer washable pet mats that hold liquid in a high-density absorbent core and block it with a TPU film. Knitted face, silicone-grip base, solid colours, sizes to 120 × 180 cm. Wholesale, OEM and private label.',
+    intro: [
+      'A washable absorbent mat is a floor covering built like a reusable pad. Liquid passes through a knitted face and is held inside a high-density core; a film underneath stops it reaching the floor, and a gripped base keeps the mat where it was put. Because nothing is thrown away, one mat covers an accident, a water bowl spill, a wet dog in from a walk, and a senior pet that does not always make it outside.',
+      'This is a different product from our modular carpet tile range. Those tiles are a replaceable surface — an accident means one tile lifts out and is washed — and they contain no liquid barrier, which is why we do not sell them as one. When the requirement is that liquid must not reach the floor, this is the range to specify, and the four-layer build is what makes that possible.',
+      'The range is built in solid colours as standard. A solid face avoids print registration, colour matching and strike-off costs on a first order, and it photographs consistently for your own product listings. A printed face is available as an OEM option once there is a design and a volume to justify the tooling.',
+    ],
+    highlights: [
+      {
+        title: 'Absorbency per square metre',
+        desc: 'How much liquid the core holds before it needs washing is the number that decides the size you stock. We specify it in ml/m² and confirm it on the approved sample rather than quoting a marketing multiple.',
+      },
+      {
+        title: 'The film underneath',
+        desc: 'A mat is only useful if liquid stops at the film. Ask for a hydrostatic head figure, not the word waterproof — the failures in this category all come from a film that was too light for the wash cycle.',
+      },
+      {
+        title: 'Wash durability',
+        desc: 'The realistic question is how many domestic wash cycles the film and the core survive before performance drops. Ask for the cycle count and the absorbency measured after it, not before.',
+      },
+      {
+        title: 'Grammage and total thickness',
+        desc: 'Face grammage, core grammage and total build thickness decide both performance and freight. A heavier build costs more to ship, so the two are specified together.',
+      },
+      {
+        title: 'Face fabric and colour',
+        desc: 'A knit face is softer under paw but shows soiling sooner than a flat weave. Solution-dyed yarns hold colour through bleach-based cleaning; stock-dyed yarns are cheaper on a first order.',
+      },
+      {
+        title: 'Edge finish',
+        desc: 'A stitched border or a bound edge decides whether the mat survives washing without the core migrating to one corner. It is also the fastest way to tell a sample from a finished product.',
+      },
+    ],
+    useCases: [
+      {
+        title: 'Senior dogs and cats',
+        desc: 'For pets that cannot always hold on until they reach the door, a mat that can be picked up, washed and put back handles the night-time accidents without a consumable to rebuy.',
+      },
+      {
+        title: 'Puppy and kitten training',
+        desc: 'A washable mat costs more than a pack of disposables once and less than the pack every week afterwards — the economics only work if the mat survives the wash cycles, which is why we specify the cycle count.',
+      },
+      {
+        title: 'Water bowls and feeding stations',
+        desc: 'The everyday spill that ruins a floor finish is water and kibble, not urine. A gripped base and an absorbent core solve it without a trip hazard in the kitchen.',
+      },
+      {
+        title: 'Crates, car boots and travel',
+        desc: 'Cut to the crate tray or laid flat in a car boot, and interchangeable between the two. A stitched edge matters more here than in a living room because the mat gets folded.',
+      },
+      {
+        title: 'Doorways and hallways',
+        desc: 'Wet paws and muddy feet arrive in the same half metre of floor. A washable mat at the door is the first surface they hit and the one that gets changed most often.',
+      },
+      {
+        title: 'Multi-pet and breeding households',
+        desc: 'Where several animals share a floor, a washable mat is the difference between rotating two mats through the wash and replacing a covering. Whelping and kitten-rearing are specified with a larger size and a heavier core.',
+      },
+    ],
+    faqs: [
+      {
+        q: 'Is the mat machine washable, and how many times?',
+        a: 'It is built to be washed, and the number that matters is how many cycles the film and the core survive before absorbency drops. We quote a cycle count and the absorbency measured after those cycles, not the figure off a fresh sample. Domestic washing at the temperature we specify preserves both.',
+      },
+      {
+        q: 'Does liquid go through to the floor?',
+        a: 'Not when the film is specified correctly — this is the whole point of the fourth layer. Ask for a hydrostatic head figure in mm H₂O rather than the word waterproof: a mat that fails in this category almost always failed because the film was too light for the wash cycle, not because it was never there.',
+      },
+      {
+        q: 'What sizes can you produce?',
+        a: 'The reference build tops out around 120 × 180 cm because of the machine width, with 60 × 90 cm and 90 × 150 cm as the volume sizes. Widths above roughly 160 cm cannot be produced as one piece — a mat that wide would have to be seamed, which we would rather tell you upfront than after a sample.',
+      },
+      {
+        q: 'One large mat, or modular squares?',
+        a: 'Both can be produced from the same four-layer material. A single mat is cheaper per square metre and looks more like a rug; modular squares cost more because every piece is edged and cut separately, but a damaged or heavily used piece can be washed or replaced on its own. Tell us the end use and we will say which one we would specify.',
+      },
+      {
+        q: 'Can the face be printed?',
+        a: 'Yes, as an OEM option. Solid colours are the standard build because they avoid print registration and colour-matching costs on a first order and photograph consistently for a listing. A printed face needs a design and a volume that justifies the tooling.',
+      },
+      {
+        q: 'Does it need a fire or VOC test package?',
+        a: 'That depends on where it is sold and as what. Residential retail in Australia and Southeast Asia is a different specification from contract flooring, and the labelling standard that applies depends on how the product is named. Tell us the market and the end use and we will list the tests that are actually being asked for there.',
+      },
+      {
+        q: 'Who commissions the testing?',
+        a: 'You do, or your nominated laboratory, so the report is issued in a name your market accepts. We supply layered material samples, same-batch production samples, film and core information, SDS and TDS, and we adjust the construction and re-test if a result misses.',
+      },
+    ],
+    related: [
+      {
+        title: 'Liquid held, or just a surface you can replace?',
+        desc: 'The two floor ranges solve different problems. Absorbent mats hold liquid in a core over a TPU film; modular tiles are a surface that lifts out and washes. The senior range guide sets out which one fits a senior pet, and where each one stops.',
+        href: '/senior-pet-care/',
+        label: 'Read the senior pet range guide',
+      },
+      {
+        title: 'Disposable or washable — which does your market buy?',
+        desc: 'Disposable pads win on first cost and hygiene; washable mats win on cost per month and on the plastic a buyer does not throw away. Both ranges are made to order, and the enquiry sheet for each one lists the same specification points.',
+        href: '/pet-pee-pad-manufacturer/',
+        label: 'See how disposable pads are specified',
+      },
+    ],
+    // 开发中品类：产能与 MOQ 未定稿，页面不写具体数字，避免承诺未确认的条款。
+    tradeTermsOverride: [
+      {
+        label: 'Order type',
+        value:
+          'Wholesale, OEM and private label. This range is made to order, so tell us your target sizes, colours and quantity and we will come back with what we can commit to.',
+        link: '/wholesale/',
+      },
+      {
+        label: 'Sampling',
+        value:
+          'A physical sample is produced and approved before any bulk production. Ask us for the current sample lead time and cost for this four-layer construction.',
+        link: '/moq-and-sampling/',
+      },
+      {
+        label: 'Lead time',
+        value:
+          'Confirmed on enquiry. The build follows your approved sample rather than a published catalogue figure, so the schedule is quoted with your order.',
+        link: '/moq-and-sampling/',
+      },
+      {
+        label: 'Customisation',
+        value:
+          'Face fabric, colour, size, edge finish, grip base, logo label and packaging. Solid colours are standard; a printed face is an OEM option.',
+        link: '/oem-odm/',
       },
     ],
   },

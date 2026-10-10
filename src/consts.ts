@@ -128,6 +128,15 @@ export const CATEGORIES: CategoryInfo[] = [
     tagline: 'Replace one tile, not the floor',
     icon: 'M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z',
   },
+  {
+    slug: 'washable-absorbent-mats',
+    path: '/collections/washable-absorbent-mats/',
+    name: 'Washable Absorbent Mats',
+    description:
+      'Four-layer washable floor mats that hold liquid instead of passing it straight through — knitted face, high-density absorbent core, a TPU film that blocks liquid, and a silicone-grip base. Solid colours, built up to 120 × 180 cm.',
+    tagline: 'Absorb it, wash it, reuse it',
+    icon: 'M12 3s6 6.5 6 10.5a6 6 0 0 1-12 0C6 9.5 12 3 12 3zM4 21h16',
+  },
 ];
 
 export const getCategory = (slug: string) =>

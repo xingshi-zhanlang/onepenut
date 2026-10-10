@@ -243,13 +243,14 @@ const schema = JSON.stringify({
         How we work with buyers
       </h2>
       <p class="mt-3 text-stone">
-        The same terms apply across every range on this site. The figures below are the
-        ones we start from — your quotation is built on them.
+        {content.tradeTermsOverride
+          ? 'This range is developed to order, so the terms below are the ones we agree with you rather than a published figure.'
+          : 'The same terms apply across every range on this site. The figures below are the ones we start from — your quotation is built on them.'}
       </p>
     </div>
 
     <dl class="mt-10 grid gap-x-10 gap-y-6 md:grid-cols-2">
-      {TRADE_TERMS.map((t) => (
+      {(content.tradeTermsOverride ?? TRADE_TERMS).map((t) => (
         <div class="border-t border-milk-tea/60 pt-5">
           <dt class="font-semibold text-dark-brown">{t.label}</dt>
           <dd class="mt-1.5 text-sm leading-relaxed text-stone">
