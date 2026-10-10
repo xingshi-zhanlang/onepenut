@@ -167,6 +167,26 @@ export const CATEGORY_CONTENT: Record<string, CategoryContent> = {
         a: 'Yes. Tell us which tests your market or your own customer requires and we will support them end to end — layered material samples, same-batch production samples, BOM, SDS, TDS and a stamped declaration of conformity, with a re-test if a result misses. REACH, CPSIA, AZO and colour fastness are the requests we see most often.',
       },
     ],
+    related: [
+      {
+        title: 'Airline cabin carriers',
+        desc: 'Five cabin models with documented footprints of 35 × 28 × 24 cm and 43 × 28 × 25 cm, plus a straight answer on what “airline approved” does and does not mean for a soft bag.',
+        href: '/airline-approved-pet-carriers/',
+        label: 'Open the cabin range',
+      },
+      {
+        title: 'Backpack carriers',
+        desc: 'Thirteen models split between shells that carry the pet inside and wearable harness-backpacks the pet wears, plus zip-out tent versions — so a buyer does not order the wrong structure.',
+        href: '/pet-backpack-carriers/',
+        label: 'Open the backpack range',
+      },
+      {
+        title: 'Sling & crossbody carriers',
+        desc: 'Sixteen hands-free models across four carry positions, for pets from 5 kg to 9 kg — the most compact part of the carrier range and the usual starting point for cat owners.',
+        href: '/pet-sling-carriers/',
+        label: 'Open the hands-free range',
+      },
+    ],
   },
 
   'harnesses-leashes': {

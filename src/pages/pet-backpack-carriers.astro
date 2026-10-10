@@ -1,0 +1,526 @@
+---
+// 宠物背包 —— 子类落地页（collections/pet-carrier-bags 之下）
+// 定位：承接 pet backpack carrier / dog backpack carrier / cat backpack wholesale 采购词
+//
+// ⚠️ 合规纪律（改动前必读）：
+//   1. 不得宣称本厂或产品持有任何第三方认证；规格均为 reference values，以 approved sample 为准。
+//   2. spine-protect 系两款为「穿戴式」结构（规格按胸围/腿围），不是装桶式背包 ——
+//      页面必须把两种结构分开讲，否则采购方会买错。
+//   3. 交易数字只从 src/data/trade.ts 取，不在此硬编码。
+import Layout from '../layouts/Layout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import FaqList from '../components/FaqList.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { getCollection } from 'astro:content';
+import { SITE, whatsappLink } from '../consts';
+import { MOQ_TIERS } from '../data/trade';
+
+const waMsg =
+  'Hello ONEPENUT, I am sourcing pet backpack carriers and would like a quote.';
+
+const allProducts = await getCollection('products');
+const SLUGS = [
+  'first-class-cat-backpack',
+  'baguette-pet-backpack-carrier',
+  'mobile-castle-ultra-light-pet-backpack',
+  'free-spirit-pet-backpack',
+  'front-hugging-pet-tote-backpack',
+  'lightweight-pet-backpack',
+  'pet-sling-backpack',
+  'spine-protect-pet-backpack',
+  'spine-support-cooling-pet-backpack',
+  'tent-pet-backpack',
+  'first-class-tent-pet-backpack',
+  'front-tent-pet-backpack',
+  'weekend-pet-tent-backpack',
+];
+const products = allProducts.filter((p) => SLUGS.includes(p.slug));
+
+const breadcrumbSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Carrier Bags & Backpacks',
+      item: `${SITE.url}/collections/pet-carrier-bags/`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'Pet Backpack Carriers',
+      item: `${SITE.url}/pet-backpack-carriers/`,
+    },
+  ],
+});
+
+const stats = [
+  { num: '13', label: 'Backpack models in this sub-range' },
+  { num: '2', label: 'Structures: carry-inside & wearable' },
+  { num: '35–56 cm', label: 'Closed length range' },
+  { num: 'up to 15 kg', label: 'Largest pet weight guide' },
+];
+
+const structures = [
+  {
+    title: 'Carry-inside shell',
+    desc: 'A rigid or semi-rigid shell the pet sits in, with mesh windows on the front and sides, worn on your back. This is the structure most buyers picture when they search for a pet backpack. It suits cats and small dogs that settle in a confined space, and it is the format that takes a bubble window, a removable liner and a structured base board most easily.',
+    tag: 'Most searched',
+  },
+  {
+    title: 'Wearable harness-backpack',
+    desc: 'The pet wears a harness built into the pack, and the pack carries the pet against the chest or the back with the animal’s legs supported rather than tucked. Specifications for this structure are quoted by chest girth and leg span rather than an interior length, because the fit is on the animal, not inside a box. It is the usual pick for owners who want to carry a heavier pet and keep its posture supported.',
+    tag: 'Fit by girth',
+  },
+  {
+    title: 'Zip-out tent',
+    desc: 'A carry-inside backpack with a second section that unzips to roughly double the floor area — the pet travels in the closed footprint and has a small enclosure to rest in once you arrive. Two measurements matter here: the closed size for travel and the expanded size for use at the destination. We publish both so they are not confused.',
+    tag: 'Two footprints',
+  },
+  {
+    title: 'Soft tote-backpack',
+    desc: 'A fabric tote with dual straps so it can be carried on the back or by the handle. Lighter than a hard shell and cheaper to ship, but with less structure, so it suits small cats and toy breeds rather than larger animals. It is the entry price point in a backpack range and the model most buyers test the market with.',
+    tag: 'Entry price',
+  },
+];
+
+const backpackTable = [
+  {
+    model: 'First-Class Cat Backpack',
+    slug: 'first-class-cat-backpack',
+    structure: 'Carry-inside shell',
+    closed: '36.5 × 28 × 43 cm',
+    expands: '—',
+    pet: 'up to 8 kg',
+    net: '1,250 g',
+  },
+  {
+    model: 'Baguette Pet Backpack Carrier',
+    slug: 'baguette-pet-backpack-carrier',
+    structure: 'Carry-inside shell',
+    closed: '56 × 17 × 24 cm',
+    expands: '—',
+    pet: 'up to 8 kg',
+    net: '1,520 g',
+  },
+  {
+    model: 'Mobile Castle Ultra-light Pet Backpack',
+    slug: 'mobile-castle-ultra-light-pet-backpack',
+    structure: 'Carry-inside shell',
+    closed: '36.5 × 28 × 43 cm',
+    expands: '—',
+    pet: 'up to 8 kg',
+    net: '1,185 g',
+  },
+  {
+    model: 'Free Spirit Pet Backpack',
+    slug: 'free-spirit-pet-backpack',
+    structure: 'Carry-inside shell',
+    closed: '36.5 × 24.5 × 43 cm',
+    expands: '—',
+    pet: 'up to 8 kg',
+    net: '1,335 g',
+  },
+  {
+    model: 'Front-Hugging Pet Tote Backpack',
+    slug: 'front-hugging-pet-tote-backpack',
+    structure: 'Soft tote-backpack',
+    closed: '35 × 20 × 36 cm',
+    expands: '—',
+    pet: 'up to 9 kg',
+    net: '750 g',
+  },
+  {
+    model: 'Lightweight Pet Backpack',
+    slug: 'lightweight-pet-backpack',
+    structure: 'Soft tote-backpack',
+    closed: '36 × 23 × 43 cm',
+    expands: '—',
+    pet: 'up to 7 kg',
+    net: '555 g',
+  },
+  {
+    model: 'Free Spirit Pet Sling-Backpack',
+    slug: 'pet-sling-backpack',
+    structure: 'Soft tote-backpack',
+    closed: '43 × 19 × 42 cm',
+    expands: '—',
+    pet: 'up to 8 kg',
+    net: '760 g',
+  },
+  {
+    model: 'Spine-Protecting Pet Backpack',
+    slug: 'spine-protect-pet-backpack',
+    structure: 'Wearable, S–XL',
+    closed: 'chest girth 35–57.5 cm',
+    expands: '—',
+    pet: '2–15 kg',
+    net: '350–500 g',
+  },
+  {
+    model: 'Spine-Support Cooling Pet Backpack',
+    slug: 'spine-support-cooling-pet-backpack',
+    structure: 'Wearable, S–XL',
+    closed: 'chest girth 35–57.5 cm',
+    expands: '—',
+    pet: '2–15 kg',
+    net: '415–555 g',
+  },
+  {
+    model: 'Tent Pet Backpack',
+    slug: 'tent-pet-backpack',
+    structure: 'Zip-out tent',
+    closed: '36 × 26 × 43 cm',
+    expands: '36 × 63 × 43 cm',
+    pet: 'up to 7 kg',
+    net: '1,950 g',
+  },
+  {
+    model: 'First Class Tent Pet Backpack',
+    slug: 'first-class-tent-pet-backpack',
+    structure: 'Zip-out tent',
+    closed: '36.5 × 28 × 43 cm',
+    expands: '36.5 × 63 × 43 cm',
+    pet: 'up to 8 kg',
+    net: '1,550 g',
+  },
+  {
+    model: 'Front Tent Pet Backpack',
+    slug: 'front-tent-pet-backpack',
+    structure: 'Zip-out tent',
+    closed: '36.5 × 28 × 43 cm',
+    expands: '36.5 × 88 × 43 cm',
+    pet: 'up to 10 kg',
+    net: '2,060 g',
+  },
+  {
+    model: 'Not Just Weekends Pet Tent Backpack',
+    slug: 'weekend-pet-tent-backpack',
+    structure: 'Zip-out tent',
+    closed: '35 × 25 × 42 cm',
+    expands: '35 × 59 × 42 cm',
+    pet: 'up to 8 kg',
+    net: '1,620 g',
+  },
+];
+
+const specPoints = [
+  {
+    title: 'Structure first, then size',
+    desc: 'Decide whether the pet goes inside a shell or wears the pack before you look at dimensions — the two are specified in different units. Everything else, from ventilation to price point, follows from that one decision.',
+  },
+  {
+    title: 'Closed size and expanded size',
+    desc: 'For tent models, quote both figures separately. The closed size is what a shelf, a car seat or a cabin allowance sees; the expanded size is what the pet uses at rest. Publishing one number without the other is the most common listing error in this category.',
+  },
+  {
+    title: 'Base board, frame and liner',
+    desc: 'A structured base holds the shape under load and stops the pack collapsing onto the animal. Removable, washable liners are the usual premium upgrade. Tell us whether the base is fibreboard or a moulded panel and we build around it.',
+  },
+  {
+    title: 'Ventilation and visibility',
+    desc: 'Mesh windows, a top hatch, side vents or a bubble window change both airflow and how the pet can see out. Ventilated panels are the retail talking point, so specify how many faces carry mesh and how large the openings are.',
+  },
+  {
+    title: 'Carry system',
+    desc: 'Padded shoulder straps, chest and waist belts, a rear handle and a grab handle all affect how the pack carries a load. A heavier pet needs the chest belt and a reinforced rear panel; a toy-breed model can trade these for weight.',
+  },
+  {
+    title: 'Colour, hardware and packaging',
+    desc: 'Colourways, zip and buckle hardware, woven labels and retail cartons are all open to specification. Stock models already run several colours, so a private-label order can often start from an existing colourway and add only branding.',
+  },
+];
+
+const limits = [
+  {
+    title: 'Weight guides assume a healthy adult pet',
+    desc: 'The pet-weight figure is a guide for a settled animal, not a guarantee. A restless or unusually long animal needs more interior length than the weight alone suggests. The standing test — can the pet stand and turn inside the pack — matters more than the number.',
+  },
+  {
+    title: 'Wearable models are not size-graded by weight',
+    desc: 'For the wearable harness-backpacks, fit is set by chest girth and leg span, not by the pet’s weight. Two animals of the same weight can take different sizes. Send the girth measurements and we match the size rather than guessing from the breed.',
+  },
+  {
+    title: 'Tent models are heavier',
+    desc: 'A zip-out tent adds structure, so tent backpacks run roughly 1.5 to 2 kg in net weight against under 1 kg for a soft tote-backpack. For travel that matters, because the carrier weight is carried by the owner on top of the pet.',
+  },
+  {
+    title: 'Cabin rules are not implied by “backpack”',
+    desc: 'Being a backpack does not make a carrier cabin-compatible — that depends on the closed footprint and the airline’s rule. If cabin use is the goal, check the closed size against the airline, or ask us for a cabin footprint we can build to.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'What is the difference between a carry-inside backpack and a wearable one?',
+    a: 'A carry-inside backpack is a shell the pet sits in and you wear on your back; it is specified by interior dimensions and pet weight. A wearable harness-backpack is a pack the pet itself wears, with its legs supported, specified by chest girth and leg span. They solve similar needs but are bought and sized differently, and confusing the two is the most common sourcing mistake in this category.',
+  },
+  {
+    q: 'How do I size a pet backpack carrier?',
+    a: 'For a carry-inside pack, use the standing test: the pet should be able to stand and turn inside the closed bag, and the weight guide is only a starting point. For a wearable pack, send the chest girth and leg span and we match the size. When in doubt, size up one step for long-backed animals.',
+  },
+  {
+    q: 'Do pet backpack carriers work for cats?',
+    a: 'Yes — several models in this range, including the First-Class Cat Backpack and the Mobile Castle Ultra-light, are built around cats. Cats tend to prefer a more enclosed shell with good side ventilation, so a carry-inside model with mesh on several faces generally suits them better than a soft tote-backpack.',
+  },
+  {
+    q: 'Are the tent backpacks airline-cabin compatible?',
+    a: 'With the tent zipped closed, the travel footprint is the dimension the airline sees; the expanded size only applies once you arrive. Whether that closed footprint fits a given airline is a route-specific question, so check the closed size against the airline you are flying, or ask us to build to a cabin dimension.',
+  },
+  {
+    q: 'What is the minimum order quantity for backpack carriers?',
+    a: `Trial orders on stock designs start at ${MOQ_TIERS[0].qty}. A new structure, a custom frame or a bespoke colourway needs its own sampling round and carries a higher minimum, with the exact figure following the specification. Volume pricing applies as quantities step up.`,
+  },
+  {
+    q: 'Can backpack carriers be private-labelled?',
+    a: 'Yes. Woven and printed labels, custom colourways, branded hardware, logo patches and retail packaging are all part of the OEM programme. Stock models already run multiple colours, so many private-label orders start from an existing colourway and add only your branding.',
+  },
+  {
+    q: 'Which model is best to test a new market with?',
+    a: 'The soft tote-backpacks are the usual trial pick — lightest, lowest unit cost, lower freight, and the fastest way to test whether the market responds to the format before committing to a hard-shell tooling round. Once the format sells, the carry-inside shells and tent models are the natural step up.',
+  },
+];
+
+const relatedLinks = [
+  { href: '/collections/pet-carrier-bags/', label: 'All carrier bags & backpacks' },
+  { href: '/airline-approved-pet-carriers/', label: 'Airline cabin carriers' },
+  { href: '/pet-sling-carriers/', label: 'Pet sling & crossbody carriers' },
+  { href: '/wholesale/', label: 'Wholesale programme' },
+  { href: '/oem-odm/', label: 'OEM / ODM & private label' },
+];
+---
+
+<Layout
+  title="Pet Backpack Carrier Manufacturer — Wholesale & OEM"
+  description="Pet backpack carrier manufacturer with 13 models across two structures — carry-inside shells and wearable harness-backpacks — plus zip-out tent versions. Closed sizes from 35 to 56 cm, pets up to 15 kg, OEM and private label. Trial orders from 10 pcs."
+>
+  <script type="application/ld+json" set:html={breadcrumbSchema} />
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-olive-dark py-20 md:py-28">
+    <div class="container-site relative z-10">
+      <div class="max-w-3xl">
+        <nav aria-label="Breadcrumb" class="text-xs text-cream/60">
+          <a href="/" class="hover:text-cream">Home</a>
+          <span class="mx-2">/</span>
+          <a href="/collections/pet-carrier-bags/" class="hover:text-cream">Carrier Bags</a>
+          <span class="mx-2">/</span>
+          <span class="text-cream/90">Pet Backpack Carriers</span>
+        </nav>
+        <span class="mt-4 block text-sm font-semibold uppercase tracking-[0.2em] text-cream/70">
+          Sub-category · 13 models
+        </span>
+        <h1 class="mt-3 font-display text-4xl font-bold text-cream md:text-5xl">
+          Pet backpack carriers for wholesale, OEM and private label
+        </h1>
+        <p class="mt-5 text-lg leading-relaxed text-cream/85">
+          Pet backpack carriers fall into two structures buyers often confuse: a shell that carries
+          the pet inside, and a wearable harness-backpack the pet wears while being carried.
+          ONEPENUT builds 13 models across both, plus zip-out tent versions, in closed sizes from
+          35 × 20 × 36 cm to 56 × 17 × 24 cm, for pets up to 15 kg.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href={whatsappLink(waMsg)} target="_blank" rel="noopener noreferrer" class="btn-wa">
+            Discuss a backpack range
+          </a>
+          <a
+            href="/quote"
+            class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-cream/40 px-6 py-3 text-sm font-semibold text-cream transition-colors hover:bg-cream/10"
+          >
+            Request a quote
+          </a>
+        </div>
+        <p class="mt-5 text-sm text-cream/70">
+          13 models · two structures · one supplier · reference specs confirmed on the approved sample
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 数字 -->
+  <section class="container-site py-14 md:py-16">
+    <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
+      {stats.map((s) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 text-center shadow-card">
+          <div class="font-display text-2xl font-bold text-olive-dark md:text-3xl">{s.num}</div>
+          <div class="mt-2 text-sm text-stone">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 两种结构 -->
+  <section class="container-site pb-16 md:pb-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        Two structures hiding under one search term
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Buyers search for &ldquo;pet backpack carrier&rdquo; and assume one product. In practice
+        there are four formats in this range, specified in different units and bought for
+        different customers.
+      </p>
+    </div>
+    <div class="mt-10 grid gap-5 sm:grid-cols-2">
+      {structures.map((m) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+          <span class="inline-block rounded-full bg-olive/10 px-3 py-1 text-xs font-medium text-olive-dark">
+            {m.tag}
+          </span>
+          <h3 class="mt-3 font-display text-lg font-bold text-dark-brown">{m.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone">{m.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 规格对照表 -->
+  <section class="border-y border-milk-tea/60 bg-white/50">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          The backpack range at a glance
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          All 13 models, grouped by structure. Sizes are reference values and are confirmed on the
+          approved sample. Wearable models are quoted by chest girth rather than interior length.
+        </p>
+      </div>
+
+      <div class="mt-10 overflow-x-auto rounded-3xl border border-milk-tea/60 bg-white shadow-card">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-cream text-xs uppercase tracking-wide text-stone">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Model</th>
+              <th class="px-5 py-4 font-semibold">Structure</th>
+              <th class="px-5 py-4 font-semibold">Closed size</th>
+              <th class="px-5 py-4 font-semibold">Expands to</th>
+              <th class="px-5 py-4 font-semibold">Pet up to</th>
+              <th class="px-5 py-4 font-semibold">Net weight</th>
+            </tr>
+          </thead>
+          <tbody>
+            {backpackTable.map((r) => (
+              <tr class="border-t border-milk-tea/50 align-top">
+                <td class="px-5 py-4">
+                  <a
+                    href={`/products/${r.slug}/`}
+                    class="font-semibold text-olive-dark underline underline-offset-2 hover:text-caramel-dark"
+                  >
+                    {r.model}
+                  </a>
+                </td>
+                <td class="px-5 py-4 leading-relaxed text-stone">{r.structure}</td>
+                <td class="px-5 py-4 leading-relaxed text-stone">{r.closed}</td>
+                <td class="px-5 py-4 leading-relaxed text-stone">{r.expands}</td>
+                <td class="px-5 py-4 leading-relaxed text-stone">{r.pet}</td>
+                <td class="px-5 py-4 leading-relaxed text-stone">{r.net}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 产品栅格 -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        Every model in the range
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Open any model for its full specification, sizing and packing detail.
+      </p>
+    </div>
+    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {products.map((p) => (
+        <ProductCard product={p} />
+      ))}
+    </div>
+  </section>
+
+  <!-- 定制要点 -->
+  <section class="border-y border-milk-tea/60 bg-cream/50">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          What to specify on a backpack carrier
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          Six points that separate a backpack carrier that sells from one that gets returned. All
+          six are open to your specification.
+        </p>
+      </div>
+      <div class="mt-10 grid gap-5 md:grid-cols-2">
+        {specPoints.map((s) => (
+          <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+            <h3 class="font-display text-base font-bold text-dark-brown">{s.title}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone">{s.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 边界与口径 -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        What to check before you buy
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Four limits, stated up front — cheaper to settle now than after the listing is live.
+      </p>
+    </div>
+    <div class="mt-10 grid gap-5 md:grid-cols-2">
+      {limits.map((l) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+          <h3 class="font-display text-base font-bold text-dark-brown">{l.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone">{l.desc}</p>
+        </div>
+      ))}
+    </div>
+    <p class="mt-6 rounded-2xl border border-milk-tea/60 bg-white/70 p-5 text-xs leading-relaxed text-stone">
+      <span class="font-semibold text-dark-brown">Please note: </span>
+      this page is a product range guide, not legal or veterinary advice. Whether a product may be
+      sold in your market with a particular claim is a question for your own regulatory advisor —
+      tell us what they require and we will build to it.
+    </p>
+  </section>
+
+  <!-- 相关主题 -->
+  <section class="border-y border-milk-tea/60 bg-white/50">
+    <div class="container-site py-12 md:py-16">
+      <h2 class="font-display text-2xl font-bold text-dark-brown md:text-3xl">
+        Continue through this range
+      </h2>
+      <div class="mt-6 flex flex-wrap gap-3">
+        {relatedLinks.map((l) => (
+          <a
+            href={l.href}
+            class="rounded-full border border-milk-tea bg-cream px-4 py-2 text-sm font-medium text-stone transition-colors hover:border-olive hover:text-olive-dark"
+          >
+            {l.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="container-site py-14 md:py-20">
+    <FaqList
+      items={faqs}
+      intro="The seven questions buyers ask most often about pet backpack carriers, answered the same way we would answer them on a call."
+    />
+  </section>
+
+  <CtaBand
+    title="Tell us the pet and we will match the structure"
+    desc="Send the pet weight and girth, whether the pet travels inside the pack or wears it, and your destination market. If you are unsure which of the 13 fits, send the closest one you sell today and we will work from there."
+    waMsg={waMsg}
+  />
+</Layout>

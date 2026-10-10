@@ -1,0 +1,440 @@
+---
+// 航空合规运输包 —— 子类落地页（collections/pet-carrier-bags 之下）
+// 定位：承接 airline approved pet carrier / under-seat pet carrier / cabin carrier 采购词
+//
+// ⚠️ 合规纪律（改动前必读）：
+//   1. 不得宣称本厂或任何产品持有 IATA / 航司「认证」。宠物软包没有第三方认证机构，
+//      「airline approved」只是各航司 cabin 尺寸规则的通俗说法 —— 页面必须把这一点讲清楚。
+//      澳洲 ACCC 要求宣称可证实、欧盟 GPSR 同样禁虚假宣称，这是硬要求。
+//   2. 规格均为 reference values，以 approved sample 为准。
+//   3. 交易数字只从 src/data/trade.ts 取，不在此硬编码。
+import Layout from '../layouts/Layout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import FaqList from '../components/FaqList.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { getCollection } from 'astro:content';
+import { SITE, whatsappLink } from '../consts';
+import { MOQ_TIERS } from '../data/trade';
+
+const waMsg =
+  'Hello ONEPENUT, I am sourcing airline cabin pet carriers and would like a quote.';
+
+const allProducts = await getCollection('products');
+const SLUGS = [
+  'airline-pet-tote-travel-bag',
+  'pet-airline-toast-travel-bag-2',
+  'airline-pet-tote-tent',
+  'double-tent-airline-travel-bag',
+  'max-pet-tent-travel-bag',
+];
+const products = allProducts.filter((p) => SLUGS.includes(p.slug));
+
+const breadcrumbSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Carrier Bags & Backpacks',
+      item: `${SITE.url}/collections/pet-carrier-bags/`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'Airline Cabin Carriers',
+      item: `${SITE.url}/airline-approved-pet-carriers/`,
+    },
+  ],
+});
+
+const stats = [
+  { num: '5', label: 'Cabin carriers in this sub-range' },
+  { num: '35 × 28 × 24 cm', label: 'Domestic cabin footprint' },
+  { num: '43 × 28 × 25 cm', label: 'International cabin footprint' },
+  { num: MOQ_TIERS[0].qty, label: 'Trial order, stock designs' },
+];
+
+const whyPoints = [
+  {
+    title: 'The phrase describes a size, not a certificate',
+    desc: 'No authority certifies a soft-sided pet bag for air travel. “Airline approved” is shorthand for a carrier whose closed footprint and closure system sit inside a given airline’s cabin rules. That is why the same bag can be fine on one carrier and refused on the next route.',
+  },
+  {
+    title: 'Cabin rules are set per airline and per route',
+    desc: 'Under-seat space differs by aircraft, and cabin-versus-hold policy differs by airline and by route. Buyers who sell into travel retail normally stock one domestic and one international footprint rather than a single “universal” size, because a universal size does not exist.',
+  },
+  {
+    title: 'Fit failures turn into returns and chargebacks',
+    desc: 'A carrier that a customer cannot take on board is not a slow-moving SKU, it is a refund plus a one-star review. Selling a documented footprint with a stated pet-weight guide removes most of that, and it is the single thing buyers ask us to confirm first.',
+  },
+  {
+    title: 'It is the highest-intent search in the category',
+    desc: 'People searching for an airline cabin carrier are travelling soon and buying now. That urgency carries into B2B: a distributor adding a travel line wants the under-seat sizes first, because that is the part of a pet carrier range that sells on a deadline.',
+  },
+];
+
+const cabinTable = [
+  {
+    model: 'Airline Pet Tote Travel Bag',
+    slug: 'airline-pet-tote-travel-bag',
+    footprint: '35 × 28 × 24 cm (S) · 43 × 28 × 25 cm (L)',
+    expands: '—',
+    shell: 'Nylon',
+    pet: 'up to 6 / 7 kg',
+    net: '1,340 / 1,440 g',
+  },
+  {
+    model: 'Toast-Shaped Pet Travel Bag',
+    slug: 'pet-airline-toast-travel-bag-2',
+    footprint: '35 × 28 × 24 cm (S) · 43 × 28 × 25 cm (L)',
+    expands: '—',
+    shell: '900D Oxford',
+    pet: 'up to 6 / 7 kg',
+    net: '1,070 / 1,310 g',
+  },
+  {
+    model: 'Airline Pet Tote Travel Bag Tent',
+    slug: 'airline-pet-tote-tent',
+    footprint: '43 × 28 × 25 cm',
+    expands: '—',
+    shell: 'Nylon',
+    pet: 'up to 7 kg',
+    net: '1,660 g',
+  },
+  {
+    model: 'Double Tent Airline Travel Bag',
+    slug: 'double-tent-airline-travel-bag',
+    footprint: '43 × 28 × 25 cm',
+    expands: '97 × 28 × 25 cm (zip-out)',
+    shell: 'Nylon',
+    pet: 'up to 10 kg',
+    net: '1,720 g',
+  },
+  {
+    model: 'MAX Extra Large Pet Tent Travel Bag',
+    slug: 'max-pet-tent-travel-bag',
+    footprint: '50 × 34.5 × 34 cm',
+    expands: '50 × 61.5 × 34 cm (zip-out)',
+    shell: 'Nylon',
+    pet: 'up to 10 kg',
+    net: '2,050 g',
+  },
+];
+
+const specPoints = [
+  {
+    title: 'Closed footprint, stated as H × W × D',
+    desc: 'Quoted with the tent zipped shut and the bag packed, because that is the dimension an airline gate measures. If you are building to one airline’s rule, send us their published cabin figure and we build the frame to it.',
+  },
+  {
+    title: 'Shell fabric and coating',
+    desc: 'Stock models run nylon and 900D Oxford. Both can be specified with a water-repellent face finish, a PU backer, or a heavier denier for markets that handle the bag roughly. Coating choice moves the net weight, so it is fixed before sampling rather than after.',
+  },
+  {
+    title: 'Base board, cushion and frame',
+    desc: 'Every cabin model carries a rigid base board with a padded cushion over it — the pet should not be sitting on the fabric over a car or cabin floor. Bone-stay or wire frames hold the walls upright so they do not collapse onto the animal.',
+  },
+  {
+    title: 'Ventilation and closure',
+    desc: 'Mesh panels, oversized windows and mesh doors on three or four sides, paired with zips and a safety tether clip inside. Ventilation area and closure type are the two features airline staff physically check at the gate.',
+  },
+  {
+    title: 'Hardware, lining and colour',
+    desc: 'Zip pulls, D-rings, shoulder-strap anchors, removable liners and the colourway are all open to specification. Heavier hardware and removable liners are the usual upgrades a brand asks for on a premium tier.',
+  },
+  {
+    title: 'Labels, cartons and private label',
+    desc: 'Woven labels, printed care labels, barcodes, retail cartons and master cartons are part of the OEM programme. Tell us your retail pack format and we build the carton plan around it before the artwork is finalised.',
+  },
+];
+
+const limits = [
+  {
+    title: 'We do not claim a certificate we cannot hold',
+    desc: 'There is no accrediting body that issues an “airline approved” certificate for a soft pet carrier, and we will not print a logo that implies one. What we give you is a documented footprint, materials and construction you can verify on the sample.',
+  },
+  {
+    title: 'Standing height matters more than weight',
+    desc: 'The weight figure is a guide. What actually decides whether a pet travels comfortably is whether it can stand and turn inside the closed bag. A 5 kg dog can be too tall for a bag another 7 kg dog fits, so treat the weight guide as a starting point.',
+  },
+  {
+    title: 'Tent models measure two ways',
+    desc: 'Zip-out tent models have a travel footprint and an expanded footprint. The travel figure is the one that matters for boarding; the expanded figure is what the pet uses at the destination. Both are listed so neither is confused at the gate.',
+  },
+  {
+    title: 'Confirm the route with the airline in writing',
+    desc: 'Cabin policy is set by the airline, changes by aircraft, and can differ between the outbound and return leg. We build to the size you specify; confirming that size against the specific flight remains the buyer’s and the traveller’s call, not ours to guarantee.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'Is there such a thing as an officially airline-approved pet carrier?',
+    a: 'Not in the sense of a certificate. No independent body certifies soft-sided pet carriers for air travel. “Airline approved” means the carrier’s closed footprint and closure system fall inside a particular airline’s cabin rules. Because those rules differ by airline, aircraft and route, the honest approach is a documented size rather than a claim — which is what we publish here.',
+  },
+  {
+    q: 'What cabin sizes do you produce?',
+    a: 'The two reference footprints are 35 × 28 × 24 cm for domestic short-haul cabin rules and 43 × 28 × 25 cm for the larger international carry-on allowance. A third large carrier measures 50 × 34.5 × 34 cm. If your target airline publishes a different figure, send it to us and we build the frame to that dimension.',
+  },
+  {
+    q: 'How do I know which size pet fits?',
+    a: 'Use the standing test, not weight alone. The reference weight guides run from 6 kg to 10 kg across the five models, but the practical limit is whether the pet can stand and turn inside the closed bag. For a large cat or a long-backed small dog, move up one footprint than the weight guide alone would suggest.',
+  },
+  {
+    q: 'Do the tent models count as cabin-size?',
+    a: 'With the tent zipped shut, yes — the travel footprint is the dimension listed for boarding, and the expanded footprint only applies once the bag is open at the destination. We quote both figures separately so there is no confusion about which one the airline will see.',
+  },
+  {
+    q: 'Can you match one specific airline’s cabin rules?',
+    a: 'Yes. Send the published cabin dimension and the closure or ventilation requirements for that airline, and we build to them. This is the most common custom request on this sub-range, and it is settled before the sample is made rather than after production.',
+  },
+  {
+    q: 'What is the minimum order quantity?',
+    a: `Trial orders on stock designs start at ${MOQ_TIERS[0].qty}. A custom size or a new material combination carries a higher minimum because it needs its own frame and sampling round, and the exact figure follows the specification. Volume pricing applies as quantities step up.`,
+  },
+  {
+    q: 'Can these be private-labelled?',
+    a: 'Yes. Woven labels, printed care labels, barcodes, custom colourways, branded zip pulls and retail packaging are all part of the OEM programme. Send your artwork and pack format and we will confirm the carton plan before the label is printed.',
+  },
+];
+
+const relatedLinks = [
+  { href: '/collections/pet-carrier-bags/', label: 'All carrier bags & backpacks' },
+  { href: '/pet-backpack-carriers/', label: 'Pet backpack carriers' },
+  { href: '/pet-sling-carriers/', label: 'Pet sling & crossbody carriers' },
+  { href: '/wholesale/', label: 'Wholesale programme' },
+  { href: '/oem-odm/', label: 'OEM / ODM & private label' },
+];
+---
+
+<Layout
+  title="Airline Approved Pet Carrier Manufacturer — Wholesale & OEM"
+  description="Pet carrier manufacturer supplying cabin-size models to 35 × 28 × 24 cm and 43 × 28 × 25 cm footprints, for wholesale, OEM and private label. Five models, reference specifications, and a straight answer on what 'airline approved' does and does not mean. Trial orders from 10 pcs."
+>
+  <script type="application/ld+json" set:html={breadcrumbSchema} />
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-olive-dark py-20 md:py-28">
+    <div class="container-site relative z-10">
+      <div class="max-w-3xl">
+        <nav aria-label="Breadcrumb" class="text-xs text-cream/60">
+          <a href="/" class="hover:text-cream">Home</a>
+          <span class="mx-2">/</span>
+          <a href="/collections/pet-carrier-bags/" class="hover:text-cream">Carrier Bags</a>
+          <span class="mx-2">/</span>
+          <span class="text-cream/90">Airline Cabin Carriers</span>
+        </nav>
+        <span class="mt-4 block text-sm font-semibold uppercase tracking-[0.2em] text-cream/70">
+          Sub-category · 5 cabin models
+        </span>
+        <h1 class="mt-3 font-display text-4xl font-bold text-cream md:text-5xl">
+          Airline approved pet carriers for wholesale and OEM programmes
+        </h1>
+        <p class="mt-5 text-lg leading-relaxed text-cream/85">
+          Airline approved pet carriers are not certified by any authority — the phrase describes
+          a bag whose closed footprint fits the cabin rules of the airline you are flying. We build
+          five cabin models to 35 × 28 × 24 cm and 43 × 28 × 25 cm footprints, in nylon and 900D
+          Oxford, with dimensions matched to a specific airline on request.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href={whatsappLink(waMsg)} target="_blank" rel="noopener noreferrer" class="btn-wa">
+            Discuss a cabin carrier
+          </a>
+          <a
+            href="/quote"
+            class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-cream/40 px-6 py-3 text-sm font-semibold text-cream transition-colors hover:bg-cream/10"
+          >
+            Request a quote
+          </a>
+        </div>
+        <p class="mt-5 text-sm text-cream/70">
+          Five models · documented cabin footprints · reference specs confirmed on the approved sample
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 数字 -->
+  <section class="container-site py-14 md:py-16">
+    <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
+      {stats.map((s) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 text-center shadow-card">
+          <div class="font-display text-2xl font-bold text-olive-dark md:text-3xl">{s.num}</div>
+          <div class="mt-2 text-sm text-stone">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 为什么这个词值得先弄懂 -->
+  <section class="container-site pb-16 md:pb-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        What &ldquo;airline approved&rdquo; actually means
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Four things a buyer should know before this phrase goes onto a retail listing or a
+        product page of your own.
+      </p>
+    </div>
+    <div class="mt-10 grid gap-5 sm:grid-cols-2">
+      {whyPoints.map((m) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+          <h3 class="font-display text-lg font-bold text-dark-brown">{m.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone">{m.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Cabin 尺寸对照表 -->
+  <section class="border-y border-milk-tea/60 bg-white/50">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          Cabin sizes at a glance
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          Every model in this sub-range, with the footprint that matters at the gate. Sizes are
+          reference values and are confirmed on the approved sample before production.
+        </p>
+      </div>
+
+      <div class="mt-10 overflow-x-auto rounded-3xl border border-milk-tea/60 bg-white shadow-card">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-cream text-xs uppercase tracking-wide text-stone">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Model</th>
+              <th class="px-5 py-4 font-semibold">Closed footprint</th>
+              <th class="px-5 py-4 font-semibold">Expands to</th>
+              <th class="px-5 py-4 font-semibold">Shell</th>
+              <th class="px-5 py-4 font-semibold">Pet up to</th>
+              <th class="px-5 py-4 font-semibold">Net weight</th>
+            </tr>
+          </thead>
+          <tbody>
+            {cabinTable.map((r) => (
+              <tr class="border-t border-milk-tea/50 align-top">
+                <td class="px-5 py-4">
+                  <a
+                    href={`/products/${r.slug}/`}
+                    class="font-semibold text-olive-dark underline underline-offset-2 hover:text-caramel-dark"
+                  >
+                    {r.model}
+                  </a>
+                </td>
+                <td class="px-5 py-4 leading-relaxed text-stone">{r.footprint}</td>
+                <td class="px-5 py-4 leading-relaxed text-stone">{r.expands}</td>
+                <td class="px-5 py-4 leading-relaxed text-stone">{r.shell}</td>
+                <td class="px-5 py-4 leading-relaxed text-stone">{r.pet}</td>
+                <td class="px-5 py-4 leading-relaxed text-stone">{r.net}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 产品栅格 -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        The cabin range
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Five models, each with its own full specification page. Open any one for sizing, materials
+        and packing detail.
+      </p>
+    </div>
+    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {products.map((p) => (
+        <ProductCard product={p} />
+      ))}
+    </div>
+  </section>
+
+  <!-- 定制要点 -->
+  <section class="border-y border-milk-tea/60 bg-cream/50">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          What to specify on a cabin carrier
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          Six points that decide whether a cabin carrier sells as a considered travel product or
+          as a bag with a pet in it. All six are open to your specification.
+        </p>
+      </div>
+      <div class="mt-10 grid gap-5 md:grid-cols-2">
+        {specPoints.map((s) => (
+          <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+            <h3 class="font-display text-base font-bold text-dark-brown">{s.title}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone">{s.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 边界与口径 -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        What to check before you buy
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Four limits, stated up front — cheaper to settle now than after the retail listing is live.
+      </p>
+    </div>
+    <div class="mt-10 grid gap-5 md:grid-cols-2">
+      {limits.map((l) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+          <h3 class="font-display text-base font-bold text-dark-brown">{l.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone">{l.desc}</p>
+        </div>
+      ))}
+    </div>
+    <p class="mt-6 rounded-2xl border border-milk-tea/60 bg-white/70 p-5 text-xs leading-relaxed text-stone">
+      <span class="font-semibold text-dark-brown">Please note: </span>
+      this page is a product range guide, not legal or airline-policy advice. Whether a carrier may
+      be sold in your market with a particular claim is a question for your own regulatory advisor —
+      tell us what they require and we will build to it.
+    </p>
+  </section>
+
+  <!-- 相关主题 -->
+  <section class="border-y border-milk-tea/60 bg-white/50">
+    <div class="container-site py-12 md:py-16">
+      <h2 class="font-display text-2xl font-bold text-dark-brown md:text-3xl">
+        Continue through this range
+      </h2>
+      <div class="mt-6 flex flex-wrap gap-3">
+        {relatedLinks.map((l) => (
+          <a
+            href={l.href}
+            class="rounded-full border border-milk-tea bg-cream px-4 py-2 text-sm font-medium text-stone transition-colors hover:border-olive hover:text-olive-dark"
+          >
+            {l.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="container-site py-14 md:py-20">
+    <FaqList
+      items={faqs}
+      intro="The seven questions buyers ask most often about cabin-size pet carriers, answered the same way we would answer them on a call."
+    />
+  </section>
+
+  <CtaBand
+    title="Tell us the airline and we will size the bag to it"
+    desc="Send the cabin footprint you need, the pet weight range, the material you have in mind and your destination market. If you are not sure which of the five fits, send the closest one you sell today and we will work from there."
+    waMsg={waMsg}
+  />
+</Layout>

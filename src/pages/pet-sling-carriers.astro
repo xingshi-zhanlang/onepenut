@@ -1,0 +1,557 @@
+---
+// 宠物斜挎 / 前抱 / 肩背 —— 子类落地页（collections/pet-carrier-bags 之下）
+// 定位：承接 pet sling carrier / hands-free pet carrier / crossbody pet carrier 采购词
+//
+// ⚠️ 口径纪律（改动前必读）：
+//   1. 本页只收录「宠物坐进去」的免提包。类目里的 bobo-crossbody-travel-bag 与
+//      pet-crossbody-small-bag 实为主人随身收纳包（装手机/零食/拾便袋），不属 carrier，已排除。
+//   2. pet-walking-shoulder-bag 的净重/毛重数据自相矛盾（净重 > 毛重），表格中暂标 — 待工厂核实。
+//   3. 规格均为 reference values，以 approved sample 为准；交易数字只从 src/data/trade.ts 取。
+import Layout from '../layouts/Layout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import FaqList from '../components/FaqList.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { getCollection } from 'astro:content';
+import { SITE, whatsappLink } from '../consts';
+import { MOQ_TIERS } from '../data/trade';
+
+const waMsg =
+  'Hello ONEPENUT, I am sourcing pet sling and crossbody carriers and would like a quote.';
+
+const allProducts = await getCollection('products');
+const SLUGS = [
+  'pet-front-carrier-chest-bag',
+  'mountain-style-pet-chest-bag',
+  'soft-fufu-pet-chest-bag',
+  'safe-cycling-pet-front-bag',
+  'pet-sling-backpack',
+  'soft-fufu-pet-crossbody-bag',
+  'pet-travel-crossbody-bag',
+  'breathable-mesh-pet-bag',
+  'color-block-pet-shoulder-bag',
+  'nylon-pet-shoulder-bag',
+  'pet-walking-shoulder-bag',
+  'baguette-pet-shoulder-bag',
+  'mountain-style-pet-tote-bag',
+  'pet-single-shoulder-tote-bag',
+  'pet-travel-tote-bag',
+  'checkered-horizontal-pet-bag',
+];
+const products = allProducts.filter((p) => SLUGS.includes(p.slug));
+
+const breadcrumbSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Carrier Bags & Backpacks',
+      item: `${SITE.url}/collections/pet-carrier-bags/`,
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'Pet Sling & Crossbody Carriers',
+      item: `${SITE.url}/pet-sling-carriers/`,
+    },
+  ],
+});
+
+const stats = [
+  { num: '16', label: 'Hands-free carriers in this sub-range' },
+  { num: '4', label: 'Carry styles: chest, sling, shoulder, tote' },
+  { num: '5–9 kg', label: 'Reference pet weight band' },
+  { num: '340 g', label: 'Lightest model, net weight' },
+];
+
+const styles = [
+  {
+    title: 'Front chest carrier',
+    desc: 'The pet rides against your chest, held by two straps that cross at the back. This is the most secure hands-free position and the one owners of anxious or clingy pets ask for, because the animal stays in physical contact and can be watched without looking away from where you are walking.',
+    tag: 'Closest to the body',
+  },
+  {
+    title: 'Crossbody and sling',
+    desc: 'A single strap crosses the body and the bag rests at the hip or the chest, so one hand stays free and the carrier can be swung to the front. Slings suit small cats and toy breeds and are the most compact format to ship, because most models fold flat into a zip bag.',
+    tag: 'Most compact',
+  },
+  {
+    title: 'Shoulder bag',
+    desc: 'A structured bag carried on one shoulder, usually with a top opening the pet can be placed into and mesh panels for airflow. It reads as an everyday handbag rather than a pet product, which is why it sells well into fashion-led pet boutiques and gift retail.',
+    tag: 'Retail-led',
+  },
+  {
+    title: 'Tote and carry bag',
+    desc: 'The largest hands-free format, with handles plus an optional shoulder strap and a wider floor area. Totes carry the heaviest pets in this sub-range and double as a general carry bag, which makes them the natural bridge between this sub-category and the airline cabin carriers.',
+    tag: 'Largest capacity',
+  },
+];
+
+const slingTable = [
+  {
+    model: 'Pet Front Carrier Chest Bag',
+    slug: 'pet-front-carrier-chest-bag',
+    style: 'Front chest',
+    size: '35 × 18 × 38 cm',
+    pet: 'up to 9 kg',
+    shell: 'Nylon',
+    net: '630 g',
+  },
+  {
+    model: 'Mountain Style Pet Chest Bag',
+    slug: 'mountain-style-pet-chest-bag',
+    style: 'Front chest',
+    size: '36 × 21 × 34 cm',
+    pet: 'up to 7 kg',
+    shell: 'Nylon',
+    net: '900 g',
+  },
+  {
+    model: 'Soft Fufu Pet Chest Bag',
+    slug: 'soft-fufu-pet-chest-bag',
+    style: 'Front chest (plush)',
+    size: '—',
+    pet: 'small pets',
+    shell: 'Plush',
+    net: '—',
+  },
+  {
+    model: 'Safe Cycling Pet Front Bag',
+    slug: 'safe-cycling-pet-front-bag',
+    style: 'Front chest (cycling)',
+    size: '36.5 × 33 × 24 cm',
+    pet: 'up to 7 kg',
+    shell: '900D Oxford',
+    net: '1,345 g',
+  },
+  {
+    model: 'Free Spirit Pet Sling-Backpack',
+    slug: 'pet-sling-backpack',
+    style: 'Sling',
+    size: '43 × 19 × 42 cm',
+    pet: 'up to 8 kg',
+    shell: 'Nylon',
+    net: '760 g',
+  },
+  {
+    model: 'Soft Fufu Pet Crossbody Bag',
+    slug: 'soft-fufu-pet-crossbody-bag',
+    style: 'Crossbody',
+    size: '43 × 15 × 25 cm',
+    pet: 'up to 6 kg',
+    shell: 'Nylon',
+    net: '770 g',
+  },
+  {
+    model: 'Pet Travel Crossbody Bag',
+    slug: 'pet-travel-crossbody-bag',
+    style: 'Crossbody',
+    size: 'pocket depth 30–35 cm',
+    pet: 'up to 7–9 kg',
+    shell: 'Cotton',
+    net: '330–350 g',
+  },
+  {
+    model: 'Breathable Mesh Pet Crossbody Bag',
+    slug: 'breathable-mesh-pet-bag',
+    style: 'Crossbody',
+    size: 'pocket depth 50 cm',
+    pet: 'up to 7 kg',
+    shell: 'Nylon + mesh',
+    net: '340 g',
+  },
+  {
+    model: 'Color-Block Pet Shoulder Bag',
+    slug: 'color-block-pet-shoulder-bag',
+    style: 'Shoulder',
+    size: '36 × 16 × 35 cm',
+    pet: 'up to 5 kg',
+    shell: '600D Oxford',
+    net: '440 g',
+  },
+  {
+    model: 'Pet Walking Nylon Shoulder Bag',
+    slug: 'nylon-pet-shoulder-bag',
+    style: 'Shoulder',
+    size: '40 × 18 × 32 cm',
+    pet: 'up to 6 kg',
+    shell: 'Nylon',
+    net: '535 g',
+  },
+  {
+    model: 'Pet Walking Shoulder Bag',
+    slug: 'pet-walking-shoulder-bag',
+    style: 'Shoulder',
+    size: '41 × 20 × 30 cm',
+    pet: 'up to 7 kg',
+    shell: 'Nylon',
+    net: '—',
+  },
+  {
+    model: 'Baguette Pet Shoulder Bag',
+    slug: 'baguette-pet-shoulder-bag',
+    style: 'Shoulder',
+    size: '56 × 20 × 33 cm',
+    pet: 'up to 8 kg',
+    shell: 'Nylon',
+    net: '1,200 g',
+  },
+  {
+    model: 'Mountain Style Pet Tote Crossbody Bag',
+    slug: 'mountain-style-pet-tote-bag',
+    style: 'Tote',
+    size: '45 × 15 × 27 cm',
+    pet: 'up to 6 kg',
+    shell: 'Nylon',
+    net: '470 g',
+  },
+  {
+    model: 'Pet Single-Shoulder Tote Bag',
+    slug: 'pet-single-shoulder-tote-bag',
+    style: 'Tote',
+    size: '45 × 20 × 32 cm',
+    pet: 'up to 9 kg',
+    shell: 'Nylon',
+    net: '995 g',
+  },
+  {
+    model: 'Pet Travel Tote Crossbody Bag',
+    slug: 'pet-travel-tote-bag',
+    style: 'Tote',
+    size: 'pocket depth 45 cm',
+    pet: 'up to 9 kg',
+    shell: 'Nylon',
+    net: '390 g',
+  },
+  {
+    model: 'Checkered Horizontal Pet Carry Bag',
+    slug: 'checkered-horizontal-pet-bag',
+    style: 'Tote',
+    size: '43 × 26 × 36 cm',
+    pet: 'up to 9 kg',
+    shell: 'Poly-cotton',
+    net: '1,330 g',
+  },
+];
+
+const specPoints = [
+  {
+    title: 'Carry position and strap geometry',
+    desc: 'Chest, crossbody, shoulder and tote are not marketing labels — they change the strap anchors, the load path and how the bag sits on the body. Tell us the carry position and we set the strap geometry to match rather than adapting a single frame.',
+  },
+  {
+    title: 'Opening and how the pet goes in',
+    desc: 'A top-load opening, a side zip, a full front drop or a wide mouth all change how easy the bag is to use with one hand. For a cat owner, a top opening with a drawcord is usually the deciding feature; for a small dog, a front panel the pet can be lowered into works better.',
+  },
+  {
+    title: 'Ventilation and mesh placement',
+    desc: 'Mesh on one face, three faces or a full breathable panel — the mesh budget decides both airflow and how visible the pet is. High-density mesh is the usual specification for markets that sell on comfort rather than price.',
+  },
+  {
+    title: 'Structure and base support',
+    desc: 'A sling has to hold a fixed shape when the pet moves, so the base panel and any internal frame are specified together with the fabric. A soft sling with no base support is the most common complaint in this format, and the cheapest thing to fix at the sample stage.',
+  },
+  {
+    title: 'Hardware and safety tether',
+    desc: 'Adjustable straps, buckles, D-rings and an internal tether clip that attaches to a collar or harness. The tether is the feature buyers ask about most, because a hands-free carrier that a pet can step out of is a return waiting to happen.',
+  },
+  {
+    title: 'Colourways and retail packaging',
+    desc: 'Stock models already run several colourways, so a private-label order can start from an existing colour and add branded hardware, labels and retail packaging. Zip bags and cartons are specified to your pack format.',
+  },
+];
+
+const limits = [
+  {
+    title: 'A sling carries a small pet better than a large one',
+    desc: 'The reference band in this sub-range runs from 5 kg to 9 kg, and the practical ceiling is lower than a backpack of the same weight guide, because the load sits on one strap. For a pet above roughly 8 kg, a backpack or a tote distributes the weight better than a sling does.',
+  },
+  {
+    title: 'Pets that do not settle need a different format',
+    desc: 'A hands-free carrier keeps the pet close, which helps an anxious pet, but a pet that will not stay still is better in a structured shell where it cannot move around. The carry format should follow the animal’s temperament, not just its weight.',
+  },
+  {
+    title: 'Not every model appears in the comparison table with full figures',
+    desc: 'A small number of models are confirmed on the sample rather than from a fixed spec sheet, and a couple are being re-confirmed with the factory. The product pages carry the current figures, and anything marked — is being checked rather than estimated.',
+  },
+  {
+    title: 'Washability depends on the frame',
+    desc: 'A sling with a moulded base or a wire frame cannot be washed whole — the panel has to be wiped, or the liner removed and washed on its own. If easy cleaning is a selling point in your market, ask for a removable liner at the sample stage. It is far cheaper to add then than to retrofit once the pattern is cut.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'What is a pet sling carrier?',
+    a: 'A pet sling carrier is a hands-free bag worn across the body on a single strap, with the pet riding against the hip or chest. It is the most compact format in a carrier range and usually folds flat for shipping. It suits small cats and toy breeds; for pets above roughly 8 kg a backpack distributes the weight better.',
+  },
+  {
+    q: 'Sling, backpack or tote — which should I stock?',
+    a: 'Stock by the customer, not by the label. Slings and crossbody bags suit cat owners and small-breed buyers who want a discreet everyday carrier. Front chest carriers suit owners of anxious pets. Totes carry the heaviest pets and double as general carry bags. Most distributors carry all three and let the product photography drive the choice.',
+  },
+  {
+    q: 'How do I size a sling carrier for a pet?',
+    a: 'For this format, weight is less useful than body length and whether the pet can sit fully inside the pocket. The reference band runs 5 kg to 9 kg, but a long-backed animal needs a deeper pocket than the weight guide alone suggests. If you can share the pet’s length and weight we will match the model.',
+  },
+  {
+    q: 'Are these carriers suitable for cats?',
+    a: 'Yes — the crossbody and sling models are among the most common cat carriers, because a cat that is held close tends to settle better than in a large open bag, and the tether clip keeps it secure. A model with mesh on several faces and a top opening is usually the easiest for a cat owner to use one-handed.',
+  },
+  {
+    q: 'Can a sling carrier be used on a bicycle?',
+    a: 'A standard sling is not designed for cycling, because the strap can shift under the movement of the ride. The Safe Cycling Pet Front Bag in this range is the model built for it, with a fixed chest position and a wider support base. For any other model, we would not recommend riding with it.',
+  },
+  {
+    q: 'What is the minimum order quantity?',
+    a: `Trial orders on stock designs start at ${MOQ_TIERS[0].qty}. A custom strap geometry, a new material or a bespoke colourway needs its own sampling round and carries a higher minimum, with the exact figure following the specification. Volume pricing applies as quantities step up.`,
+  },
+  {
+    q: 'Can sling carriers be private-labelled?',
+    a: 'Yes. Woven and printed labels, custom colourways, branded hardware, logo patches and retail packaging are all part of the OEM programme. Stock models already run multiple colourways, so many private-label orders start from an existing colour and add only your branding.',
+  },
+];
+
+const relatedLinks = [
+  { href: '/collections/pet-carrier-bags/', label: 'All carrier bags & backpacks' },
+  { href: '/airline-approved-pet-carriers/', label: 'Airline cabin carriers' },
+  { href: '/pet-backpack-carriers/', label: 'Pet backpack carriers' },
+  { href: '/wholesale/', label: 'Wholesale programme' },
+  { href: '/oem-odm/', label: 'OEM / ODM & private label' },
+];
+---
+
+<Layout
+  title="Pet Sling Carrier Manufacturer — Wholesale & OEM"
+  description="Pet sling and crossbody carrier manufacturer with 16 hands-free models across four carry styles — front chest, sling, crossbody, shoulder and tote. For pets from 5 kg to 9 kg, in nylon, 600D Oxford and breathable mesh. OEM, private label and trial orders from 10 pcs."
+>
+  <script type="application/ld+json" set:html={breadcrumbSchema} />
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-olive-dark py-20 md:py-28">
+    <div class="container-site relative z-10">
+      <div class="max-w-3xl">
+        <nav aria-label="Breadcrumb" class="text-xs text-cream/60">
+          <a href="/" class="hover:text-cream">Home</a>
+          <span class="mx-2">/</span>
+          <a href="/collections/pet-carrier-bags/" class="hover:text-cream">Carrier Bags</a>
+          <span class="mx-2">/</span>
+          <span class="text-cream/90">Sling &amp; Crossbody Carriers</span>
+        </nav>
+        <span class="mt-4 block text-sm font-semibold uppercase tracking-[0.2em] text-cream/70">
+          Sub-category · 16 hands-free models
+        </span>
+        <h1 class="mt-3 font-display text-4xl font-bold text-cream md:text-5xl">
+          Pet sling, crossbody and front carriers for wholesale and OEM
+        </h1>
+        <p class="mt-5 text-lg leading-relaxed text-cream/85">
+          Pet sling, crossbody and front carriers are the hands-free end of a carrier range — the
+          pet rides against the body on one strap rather than in a backpack or a tote. ONEPENUT
+          builds 16 models across four carry styles, for pets from 5 kg to 9 kg, in nylon, 600D
+          Oxford and breathable mesh.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href={whatsappLink(waMsg)} target="_blank" rel="noopener noreferrer" class="btn-wa">
+            Discuss a sling range
+          </a>
+          <a
+            href="/quote"
+            class="inline-flex items-center justify-center gap-2 rounded-full border-2 border-cream/40 px-6 py-3 text-sm font-semibold text-cream transition-colors hover:bg-cream/10"
+          >
+            Request a quote
+          </a>
+        </div>
+        <p class="mt-5 text-sm text-cream/70">
+          16 models · four carry styles · reference specs confirmed on the approved sample
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 数字 -->
+  <section class="container-site py-14 md:py-16">
+    <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
+      {stats.map((s) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 text-center shadow-card">
+          <div class="font-display text-2xl font-bold text-olive-dark md:text-3xl">{s.num}</div>
+          <div class="mt-2 text-sm text-stone">{s.label}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 四种背负方式 -->
+  <section class="container-site pb-16 md:pb-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        One strap, four carry positions
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        &ldquo;Hands-free carrier&rdquo; covers four distinct formats, each specified to a
+        different customer and a different load. Getting the format right matters more than the
+        colourway.
+      </p>
+    </div>
+    <div class="mt-10 grid gap-5 sm:grid-cols-2">
+      {styles.map((m) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+          <span class="inline-block rounded-full bg-olive/10 px-3 py-1 text-xs font-medium text-olive-dark">
+            {m.tag}
+          </span>
+          <h3 class="mt-3 font-display text-lg font-bold text-dark-brown">{m.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone">{m.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 规格对照表 -->
+  <section class="border-y border-milk-tea/60 bg-white/50">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          The hands-free range at a glance
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          All 16 models, grouped by carry style. Sizes are reference values and are confirmed on the
+          approved sample. Net weights marked &mdash; are being re-confirmed with the factory rather
+          than estimated.
+        </p>
+      </div>
+
+      <div class="mt-10 overflow-x-auto rounded-3xl border border-milk-tea/60 bg-white shadow-card">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-cream text-xs uppercase tracking-wide text-stone">
+            <tr>
+              <th class="px-5 py-4 font-semibold">Model</th>
+              <th class="px-5 py-4 font-semibold">Carry style</th>
+              <th class="px-5 py-4 font-semibold">Size</th>
+              <th class="px-5 py-4 font-semibold">Pet up to</th>
+              <th class="px-5 py-4 font-semibold">Shell</th>
+              <th class="px-5 py-4 font-semibold">Net weight</th>
+            </tr>
+          </thead>
+          <tbody>
+            {slingTable.map((r) => (
+              <tr class="border-t border-milk-tea/50 align-top">
+                <td class="px-5 py-4">
+                  <a
+                    href={`/products/${r.slug}/`}
+                    class="font-semibold text-olive-dark underline underline-offset-2 hover:text-caramel-dark"
+                  >
+                    {r.model}
+                  </a>
+                </td>
+                <td class="px-5 py-4 leading-relaxed text-stone">{r.style}</td>
+                <td class="px-5 py-4 leading-relaxed text-stone">{r.size}</td>
+                <td class="px-5 py-4 leading-relaxed text-stone">{r.pet}</td>
+                <td class="px-5 py-4 leading-relaxed text-stone">{r.shell}</td>
+                <td class="px-5 py-4 leading-relaxed text-stone">{r.net}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 产品栅格 -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        Every model in the range
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Open any model for its full specification, sizing and packing detail.
+      </p>
+    </div>
+    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {products.map((p) => (
+        <ProductCard product={p} />
+      ))}
+    </div>
+  </section>
+
+  <!-- 定制要点 -->
+  <section class="border-y border-milk-tea/60 bg-cream/50">
+    <div class="container-site py-14 md:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+          What to specify on a hands-free carrier
+        </h2>
+        <p class="mt-3 leading-relaxed text-stone">
+          Six points that decide whether a sling sells as a considered carrier or comes back as a
+          return. All six are open to your specification.
+        </p>
+      </div>
+      <div class="mt-10 grid gap-5 md:grid-cols-2">
+        {specPoints.map((s) => (
+          <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+            <h3 class="font-display text-base font-bold text-dark-brown">{s.title}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone">{s.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 边界与口径 -->
+  <section class="container-site py-14 md:py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-display text-3xl font-bold text-dark-brown md:text-4xl">
+        What to check before you buy
+      </h2>
+      <p class="mt-3 leading-relaxed text-stone">
+        Four limits, stated up front — cheaper to settle now than after the listing is live.
+      </p>
+    </div>
+    <div class="mt-10 grid gap-5 md:grid-cols-2">
+      {limits.map((l) => (
+        <div class="rounded-3xl border border-milk-tea/60 bg-white p-6 shadow-card">
+          <h3 class="font-display text-base font-bold text-dark-brown">{l.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-stone">{l.desc}</p>
+        </div>
+      ))}
+    </div>
+    <p class="mt-6 rounded-2xl border border-milk-tea/60 bg-white/70 p-5 text-xs leading-relaxed text-stone">
+      <span class="font-semibold text-dark-brown">Please note: </span>
+      this page is a product range guide, not veterinary or legal advice. Whether a product may be
+      sold in your market with a particular claim is a question for your own regulatory advisor —
+      tell us what they require and we will build to it.
+    </p>
+  </section>
+
+  <!-- 相关主题 -->
+  <section class="border-y border-milk-tea/60 bg-white/50">
+    <div class="container-site py-12 md:py-16">
+      <h2 class="font-display text-2xl font-bold text-dark-brown md:text-3xl">
+        Continue through this range
+      </h2>
+      <div class="mt-6 flex flex-wrap gap-3">
+        {relatedLinks.map((l) => (
+          <a
+            href={l.href}
+            class="rounded-full border border-milk-tea bg-cream px-4 py-2 text-sm font-medium text-stone transition-colors hover:border-olive hover:text-olive-dark"
+          >
+            {l.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="container-site py-14 md:py-20">
+    <FaqList
+      items={faqs}
+      intro="The seven questions buyers ask most often about sling and crossbody pet carriers, answered the same way we would answer them on a call."
+    />
+  </section>
+
+  <CtaBand
+    title="Tell us the carry position and we will build the strap to it"
+    desc="Send the pet weight and body length, the carry position you want, the material you have in mind and your destination market. If you are unsure which of the 16 fits, send the closest one you sell today and we will work from there."
+    waMsg={waMsg}
+  />
+</Layout>
