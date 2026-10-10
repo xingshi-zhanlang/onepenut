@@ -1,6 +1,6 @@
 # ONEPENUT — Wholesale & OEM Pet Products Manufacturer
 
-> ONEPENUT is a pet products manufacturer and exporter based in China. We supply wholesale, OEM and ODM programmes to importers, distributors, retail chains and private-label brands, with a focus on Australia and Southeast Asia alongside 30+ export markets. Our seven product categories are carrier bags and backpacks, harnesses and leashes, recovery collars, pet strollers, accessories and cat gear, disposable extra-large pee pads, and modular carpet tiles.
+> ONEPENUT is a pet products manufacturer and exporter based in Shanghai, China. We supply wholesale, OEM and ODM programmes to importers, distributors, retail chains and private-label brands, with a focus on Australia and Southeast Asia alongside 30+ export markets. Our eight product categories are carrier bags and backpacks, harnesses and leashes, recovery collars, pet strollers, accessories and cat gear, disposable extra-large pee pads, modular carpet tiles, and four-layer washable absorbent mats.
 
 ## Company
 
@@ -22,6 +22,7 @@
 - [Accessories & cat gear](https://onepenut.com/collections/pet-accessories/): seat belts, recovery suits, beds, bowls and everyday essentials.
 - [Pee pads & bed protection](https://onepenut.com/collections/pet-pee-pads/): disposable pads from 90 × 150 cm up to bed-sized 120 × 180 cm, five-layer SAP build, four-corner adhesive tabs.
 - [Modular carpet tiles](https://onepenut.com/collections/pet-carpet-tiles/): replaceable 400 × 400 mm modules, glue-free, PVC-free and trimmable.
+- [Washable absorbent mats](https://onepenut.com/collections/washable-absorbent-mats/): four-layer washable mats for floors and crates — knitted face, high-density absorbent core, a TPU film that blocks liquid, and a silicone-grip base. Solid colours, built up to 120 × 180 cm.
 - [All products](https://onepenut.com/products/).
 
 ## Buying guides
@@ -39,5 +40,8 @@
 
 ## Contact
 
-- Email: amy@onepenut.com
+- Company: ONEPENUT
+- Based in: Shanghai, China
+- Enquiries: amy@onepenut.com
+- WhatsApp: reachable from https://onepenut.com/contact/ — the number is delivered through a server-side redirect and is not published in page source.
 - Website: https://onepenut.com

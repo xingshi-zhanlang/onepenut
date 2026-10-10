@@ -14,7 +14,17 @@ export const SITE = {
 
 export const CONTACT = {
   email: 'amy@onepenut.com',
-  address: 'ONEPENUT Pet Products Co., Ltd. · China',
+  /** 对外显示的公司名 —— 与 SITE.name 保持同一写法（实体一致性） */
+  legalName: 'ONEPENUT',
+  /** 展示用联系地址（页脚 / 联系页） */
+  address: 'ONEPENUT · Shanghai, China',
+  /** 联系页「Location」卡片用（不带品牌名，避免与页面其它位置重复） */
+  location: 'Shanghai, China',
+  /** 结构化数据专用：城市 + 国家（业务确认，先到城市级，不公开具体门牌） */
+  addressLocality: 'Shanghai',
+  addressCountry: 'CN',
+  /** 成立年份（业务确认） */
+  foundingDate: '2026',
   // Web3Forms access key（公开 key，可用于客户端代码）
   web3formsKey: 'b344153d-527f-49f6-a5c8-5e25b5f4069b',
 } as const;
@@ -51,9 +61,10 @@ export const B2B_LINKS = [
   { href: '/pet-products-supplier-australia/', label: 'Supplying Australia' },
 ];
 
-// 产品分类 —— 品牌 7 大品类
+// 产品分类 —— 品牌 8 大品类
 // ① 外出包/背包（品牌主打）② 胸背+牵引 ③ 伊丽莎白圈/防护 ④ 推车 ⑤ 功能配件/猫用品
 // ⑥ 一次性护理垫（居家防污·消耗品）⑦ 可单块拆洗拼接地毯（居家防污·耐用品）
+// ⑧ 4 层复合可洗吸水垫（居家防污·耐用品）
 export interface CategoryInfo {
   slug: string;
   /** 分类落地页路径（SEO：独立 URL，承载分类商业词） */

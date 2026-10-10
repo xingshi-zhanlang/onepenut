@@ -63,26 +63,36 @@ const ogImage = image
 // 结构化数据：Organization + WebSite
 // GEO 说明：AI 搜索靠「实体锚点」识别品牌是谁。下面 logo / knowsAbout /
 //          contactPoint 三项都是站内既有事实，用来强化实体一致性。
-// ⚠️ 待补（**需业务确认后再填，不要凭空造**——填错反而伤害实体可信度）：
-//    · sameAs           站外主页 URL（LinkedIn / Alibaba / Facebook / 展商页等）
-//    · address          含城市与国家的完整地址
-//    · telephone        对外公开电话
-//    · foundingDate     成立年份
+// 已确认（2026-10-10 业务提供）：公司名 ONEPENUT、成立年份 2026、地址 Shanghai/CN。
+//   · 电话：对外不公开 —— email + WhatsApp 即询盘入口（WhatsApp 走 /api/whatsapp 服务端 302，
+//     前端不出现明文号码），故不写 telephone 字段。
+// ⚠️ 仍待补：sameAs —— 站外主页 URL（LinkedIn / Alibaba / Facebook / 展商页等）。
+//     实体一致性的最高权项，拿到 URL 后填这里即可，勿凭空造。
 const orgSchema = JSON.stringify({
   '@context': 'https://schema.org',
   '@graph': [
     {
       '@type': 'Organization',
       name: SITE.name,
+      legalName: CONTACT.legalName,
       url: SITE.url,
       description: SITE.description,
       email: CONTACT.email,
       logo: `${SITE.url}/favicon-512.png`,
+      foundingDate: CONTACT.foundingDate,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: CONTACT.addressLocality,
+        addressCountry: CONTACT.addressCountry,
+      },
+      // 业务确认的目标市场：澳洲 + 东南亚
+      areaServed: ['AU', 'SG', 'MY', 'TH', 'VN', 'ID'],
       knowsAbout: CATEGORIES.map((c) => c.name),
       contactPoint: {
         '@type': 'ContactPoint',
         contactType: 'sales',
         email: CONTACT.email,
+        url: `${SITE.url}/contact/`,
         availableLanguage: ['en'],
       },
     },

@@ -232,7 +232,7 @@ export const BUYER_TYPES = [
   {
     type: 'Pet retailers & chain stores',
     need: 'Reliable repeat supply, retail-ready packaging, barcodes, and a range that fills a shelf without gaps.',
-    hook: 'Order across all seven categories on one PO and one set of documents.',
+    hook: 'Order across all eight categories on one PO and one set of documents.',
   },
   {
     type: 'Importers & distributors',
