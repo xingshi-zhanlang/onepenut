@@ -176,14 +176,14 @@ const waMsg =
       </form>
 
       <script>
-        const form = document.querySelector('form[action="https://api.web3forms.com/submit"]');
+        const form = document.querySelector<HTMLFormElement>('form[action="https://api.web3forms.com/submit"]');
         const status = document.getElementById('form-status');
         if (form && status) {
           form.addEventListener('submit', async (e) => {
             e.preventDefault();
             status.textContent = 'Sending your request...';
             status.className = 'mt-4 text-center text-xs text-stone';
-            const btn = form.querySelector('button[type="submit"]');
+            const btn = form.querySelector<HTMLButtonElement>('button[type="submit"]');
             if (btn) btn.disabled = true;
             try {
               const res = await fetch(form.action, {

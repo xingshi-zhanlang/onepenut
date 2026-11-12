@@ -23,6 +23,9 @@ export default defineConfig({
     }),
   ],
   vite: {
+    // @ts-expect-error 依赖树里存在两份 vite 类型（根目录 vite 与 astro 内嵌的
+    // vite），Plugin 接口互不兼容但运行时完全正常。等依赖树统一后此行会自动报
+    // unused 提示，届时删除本注释即可。
     plugins: [tailwindcss()],
   },
 });

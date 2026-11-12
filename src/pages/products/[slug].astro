@@ -229,8 +229,8 @@ const productSchema = JSON.stringify({
 
 <script>
   // 产品图画廊：点击缩略图切换主图
-  const mainImage = document.getElementById('main-image');
-  document.querySelectorAll('.gallery-thumb').forEach((thumb) => {
+  const mainImage = document.getElementById('main-image') as HTMLImageElement | null;
+  document.querySelectorAll<HTMLElement>('.gallery-thumb').forEach((thumb) => {
     thumb.addEventListener('click', () => {
       const img = thumb.dataset.img;
       if (img && mainImage) {

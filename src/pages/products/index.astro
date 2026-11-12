@@ -1,7 +1,6 @@
 ---
 // 产品列表页（客户端分类过滤 - 适配纯静态部署）
 import Layout from '../../layouts/Layout.astro';
-import ProductGrid from '../../components/ProductGrid.astro';
 import { getCollection } from 'astro:content';
 import { CATEGORIES } from '../../consts';
 
@@ -135,8 +134,8 @@ const allProducts = await getCollection('products');
 
 <script>
   // 客户端分类过滤
-  const btns = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.product-card');
+  const btns = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+  const cards = document.querySelectorAll<HTMLElement>('.product-card');
   const emptyState = document.getElementById('empty-state');
   const grid = document.getElementById('product-grid');
 
@@ -161,7 +160,7 @@ const allProducts = await getCollection('products');
         (isActive ? 'bg-olive text-cream' : 'border border-milk-tea bg-white text-stone hover:border-olive hover:text-olive-dark');
     });
     // 更新 URL（不刷新页面）
-    const url = new URL(window.location);
+    const url = new URL(window.location.href);
     if (active === 'all') url.searchParams.delete('category');
     else url.searchParams.set('category', active);
     window.history.replaceState({}, '', url);
@@ -171,7 +170,7 @@ const allProducts = await getCollection('products');
     btn.addEventListener('click', (event) => {
       // 无 JS 时链接会直接跳到分类落地页；有 JS 时改为原地过滤
       event.preventDefault();
-      active = btn.dataset.category;
+      active = btn.dataset.category || 'all';
       applyFilter();
     });
   });
